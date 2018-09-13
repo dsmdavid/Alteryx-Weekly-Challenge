@@ -1,0 +1,55 @@
+This week is Thanksgiving week in the USA and I was thinking of two ways we could take these challenges: 1) Make it super easy to match the short week or 2) Or long... long enough to give those of you balancing in-laws, distant relatives, and chaos this week a temporary escape. I hope the Weekly Challenge can be  that one work thing you really 'need to do today or my boss isn't going to be happy'.  I went for the latter. Weekly Challenge has got your back.
+
+ 
+
+This week we are focused on working with data from the game of "Quick, Draw!". Here you can play a game where the computer asks you to draw a picture, and as you draw the picture live, the machine will guess what you are drawing based on a wealth of pictures from other users – machine learning at it’s finest!
+
+ 
+
+This week we will try to take around one thousand pictures of apples from a special file type called .ndjson (new-line delimited JSON) generated from "Quick, Draw", reconstruct it into an image, and develop a heat plot of all the apples and some samples of apples that were drawn. Each record in the data set represents on drawing and contains an array of numbers that represent pixel coordinates on the canvas of the picture ranging from 0-255 for both x and y. The syntax of arrays are as follows:
+
+ 
+
+[
+
+  [  // First stroke
+
+    [x0, x1, x2, x3, ...],
+
+    [y0, y1, y2, y3, ...]
+
+  ],
+
+  [  // Second stroke
+
+    [x0, x1, x2, x3, ...],
+
+    [y0, y1, y2, y3, ...]
+
+  ],
+
+  ... // Additional strokes
+
+]
+
+ 
+
+For additional documentation on the simplified .ndjson file, see here.
+
+The file we have provided contains 1000 apple drawings, but if you are interested in drawing 150K of them or something else entirely check out all the full library of data here.
+As an output, try emulate the output that we made here in PDF:
+
+ 
+
+Drawings will run onto a second page or more based on how it was sized
+Drawings will run onto a second page or more based on how it was sized
+
+A tool from the predictive tool install was used in this solution. If you’d like to generate the visual shown in this sample PDF, please go to downloads.alteryx.com and download our predictive package. If not, just try drawing all the apples with a workflow!
+
+ 
+
+This week there will be no start file! Instead we have attached two things - 1) The .ndjson file from which the drawing are constructed (we are not providing a start file because connecting to the data is a big part of the challenge) and 2) the PDF of the desired output.
+
+ apple.ndjson  
+ apple_drawings.pdf  
+ challenge_95_solution.yxzp  
