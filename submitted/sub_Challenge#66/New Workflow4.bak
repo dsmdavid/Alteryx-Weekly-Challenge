@@ -1,0 +1,791 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="size" />
+          </Fields>
+          <Data>
+            <r>
+              <c>6</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="186" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Order Number</UpdateField_Name>
+          <CreateField_Name>BottleN</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>1</Expression_Init>
+          <Expression_Cond>BottleN &lt;= [diff]</Expression_Cond>
+          <Expression_Loop>BottleN + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="294" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="378" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="mod([BottleN],[size])" field="testMod" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[testMod = mod([BottleN],[size])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="450" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Order Number</UpdateField_Name>
+          <CreateField_Name>Box</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] Endif</Expression>
+          <GroupByFields>
+            <Field field="Order Number" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Order Number" />
+            <Field name="StartingBottleID" />
+            <Field name="EndingBottleID" />
+            <Field name="diff" />
+          </Fields>
+          <Data>
+            <r>
+              <c>3</c>
+              <c>1</c>
+              <c>45</c>
+              <c>44</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="162" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="Order Number" />
+            <Field name="StartingBottleID" />
+            <Field name="EndingBottleID" />
+            <Field name="diff" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>1</c>
+              <c>5</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>1</c>
+              <c>12</c>
+              <c>12</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1</c>
+              <c>45</c>
+              <c>45</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>201</c>
+              <c>470</c>
+              <c>270</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>801</c>
+              <c>801</c>
+              <c>1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="594" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="57" />
+          <Fields>
+            <Field name="Order Number" />
+            <Field name="StartingBottleID" />
+            <Field name="EndingBottleID" />
+            <Field name="BoxNumberForOrder" />
+            <Field name="BottlesInThisBatch" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>1</c>
+              <c>5</c>
+              <c>1</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>1</c>
+              <c>6</c>
+              <c>1</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>7</c>
+              <c>12</c>
+              <c>2</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1</c>
+              <c>6</c>
+              <c>1</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>7</c>
+              <c>12</c>
+              <c>2</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>13</c>
+              <c>18</c>
+              <c>3</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>19</c>
+              <c>24</c>
+              <c>4</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>25</c>
+              <c>30</c>
+              <c>5</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>31</c>
+              <c>36</c>
+              <c>6</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>37</c>
+              <c>42</c>
+              <c>7</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>43</c>
+              <c>45</c>
+              <c>8</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>201</c>
+              <c>206</c>
+              <c>1</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>207</c>
+              <c>212</c>
+              <c>2</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>213</c>
+              <c>218</c>
+              <c>3</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>219</c>
+              <c>224</c>
+              <c>4</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>225</c>
+              <c>230</c>
+              <c>5</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>231</c>
+              <c>236</c>
+              <c>6</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>237</c>
+              <c>242</c>
+              <c>7</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>243</c>
+              <c>248</c>
+              <c>8</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>249</c>
+              <c>254</c>
+              <c>9</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>255</c>
+              <c>260</c>
+              <c>10</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>261</c>
+              <c>266</c>
+              <c>11</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>267</c>
+              <c>272</c>
+              <c>12</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>273</c>
+              <c>278</c>
+              <c>13</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>279</c>
+              <c>284</c>
+              <c>14</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>285</c>
+              <c>290</c>
+              <c>15</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>291</c>
+              <c>296</c>
+              <c>16</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>297</c>
+              <c>302</c>
+              <c>17</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>303</c>
+              <c>308</c>
+              <c>18</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>309</c>
+              <c>314</c>
+              <c>19</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>315</c>
+              <c>320</c>
+              <c>20</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>321</c>
+              <c>326</c>
+              <c>21</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>327</c>
+              <c>332</c>
+              <c>22</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>333</c>
+              <c>338</c>
+              <c>23</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>339</c>
+              <c>344</c>
+              <c>24</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>345</c>
+              <c>350</c>
+              <c>25</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>351</c>
+              <c>356</c>
+              <c>26</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>357</c>
+              <c>362</c>
+              <c>27</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>363</c>
+              <c>368</c>
+              <c>28</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>369</c>
+              <c>374</c>
+              <c>29</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>375</c>
+              <c>380</c>
+              <c>30</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>381</c>
+              <c>386</c>
+              <c>31</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>387</c>
+              <c>392</c>
+              <c>32</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>393</c>
+              <c>398</c>
+              <c>33</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>399</c>
+              <c>404</c>
+              <c>34</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>405</c>
+              <c>410</c>
+              <c>35</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>411</c>
+              <c>416</c>
+              <c>36</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>417</c>
+              <c>422</c>
+              <c>37</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>423</c>
+              <c>428</c>
+              <c>38</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>429</c>
+              <c>434</c>
+              <c>39</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>435</c>
+              <c>440</c>
+              <c>40</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>441</c>
+              <c>446</c>
+              <c>41</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>447</c>
+              <c>452</c>
+              <c>42</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>453</c>
+              <c>458</c>
+              <c>43</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>459</c>
+              <c>464</c>
+              <c>44</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>465</c>
+              <c>470</c>
+              <c>45</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>801</c>
+              <c>801</c>
+              <c>1</c>
+              <c>1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="930" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Order Number" />
+            <Field field="StartingBottleID" />
+            <Field field="EndingBottleID" />
+            <Field field="BoxNumberForOrder" />
+            <Field field="BottlesInThisBatch" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Order Number" />
+            <Field field="StartingBottleID" />
+            <Field field="EndingBottleID" />
+            <Field field="BoxNumberForOrder" />
+            <Field field="BottlesInThisBatch" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Order Number" selected="True" rename="Right_Order Number" />
+                <SelectField field="Right_StartingBottleID" selected="True" rename="Right_StartingBottleID" />
+                <SelectField field="Right_EndingBottleID" selected="True" rename="Right_EndingBottleID" />
+                <SelectField field="Right_BoxNumberForOrder" selected="True" rename="Right_BoxNumberForOrder" />
+                <SelectField field="Right_BottlesInThisBatch" selected="True" rename="Right_BottlesInThisBatch" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="558" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Order Number" action="GroupBy" rename="Order Number" />
+            <SummarizeField field="Box" action="GroupBy" rename="BoxNumberForOrder" />
+            <SummarizeField field="testMod" action="CountDistinct" rename="BottlesInThisBatch" />
+            <SummarizeField field="BottleN" action="Min" rename="StartingBottleID" />
+            <SummarizeField field="StartingBottleID" action="GroupBy" rename="Init_StartingBottleID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="690" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[StartingBottleID] + [Init_StartingBottleID] -1" field="StartingBottleID" size="4" type="Int32" />
+            <FormulaField expression="[StartingBottleID] + [BottlesInThisBatch] -1" field="EndingBottleID" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>StartingBottleID = [StartingBottleID] + [Init_StartingBottleID] -1
+EndingBottleI...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow4</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

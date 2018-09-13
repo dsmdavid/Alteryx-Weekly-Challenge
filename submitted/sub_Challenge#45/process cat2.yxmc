@@ -1,0 +1,1252 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="162" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>Record</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>1</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Record] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="Record" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="Record" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="New" selected="False" />
+            <SelectField field="Record" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input36</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="43" />
+              <Fields>
+                <Field name="DownloadData" />
+                <Field name="New" />
+                <Field name="Record" />
+              </Fields>
+              <Data>
+                <r>
+                  <c><![CDATA[                            Comparison of All Employees, Seasonally Adjusted, before and after the March 2017 Benchmark                            1]]></c>
+                  <c>True</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[                                                                          ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[00000000    Total nonfarm  All Employees (in thousands), Seasonally Adjusted]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[As revised (BM2017)]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2008    138419      138338      138283      138054      137870      137716      137503      137226      136783      136308      135549      134842  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2009    134055      133351      132549      131845      131491      131022      130680      130484      130255      130046      130058      129781  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2010    129799      129726      129919      130140      130662      130522      130444      130428      130365      130632      130761      130834  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2011    130878      131060      131314      131637      131718      131952      132024      132136      132369      132578      132723      132924  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2012    133272      133505      133769      133841      133958      134026      134182      134355      134549      134702      134832      135075  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2013    135282      135547      135703      135882      136122      136280      136391      136651      136852      137062      137283      137376  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2014    137550      137732      137993      138304      138556      138862      139058      139284      139568      139823      140130      140381  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2015    140592      140859      140937      141219      141545      141736      141992      142156      142244      142595      142859      143093  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2016    143196      143453      143688      143862      143896      144181      144506      144681      144945      145085      145257      145437  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2017    145696      145896      145969      146144      146299      146538      146728      146949      146963      147234      147450      147610 p]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[As previously published (BM2016)]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2008    138430      138346      138268      138058      137872      137710      137497      137230      136780      136306      135540      134846  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2009    134053      133351      132528      131841      131492      131021      130692      130479      130259      130055      130053      129778  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2010    129801      129733      129897      130140      130664      130527      130459      130423      130371      130633      130752      130839  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2011    130882      131071      131296      131642      131719      131944      132013      132123      132371      132580      132721      132930  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2012    133288      133525      133758      133836      133951      134027      134170      134347      134550      134696      134828      135072  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2013    135283      135569      135699      135896      136122      136284      136406      136667      136857      137069      137327      137374  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2014    137564      137715      137987      138316      138562      138866      139068      139298      139578      139805      140117      140372  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2015    140606      140844      140930      141192      141536      141742      141996      142153      142253      142574      142846      143085  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2016    143211      143448      143673      143826      143869      144166      144457      144633      144882      145006      145170      145325  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2017    145541      145773      145823      146030      146175      146385      146523      146731      146769      146980      147232 p    147380 p]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[Difference in level]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2008       -11          -8          15          -4          -2           6           6          -4           3           2           9          -4  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2009         2           0          21           4          -1           1         -12           5          -4          -9           5           3  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2010        -2          -7          22           0          -2          -5         -15           5          -6          -1           9          -5  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2011        -4         -11          18          -5          -1           8          11          13          -2          -2           2          -6  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2012       -16         -20          11           5           7          -1          12           8          -1           6           4           3  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2013        -1         -22           4         -14           0          -4         -15         -16          -5          -7         -44           2  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2014       -14          17           6         -12          -6          -4         -10         -14         -10          18          13           9  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2015       -14          15           7          27           9          -6          -4           3          -9          21          13           8  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2016       -15           5          15          36          27          15          49          48          63          79          87         112  ]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[2017       155         123         146         114         124         153         205         218         194         254         218         230 p]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="Record" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="186" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="174" y="132" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="342" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="StartsWith([DownloadData], 'YEAR')" field="New" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[New = StartsWith([DownloadData], 'YEAR')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="462" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>DownloadData</UpdateField_Name>
+          <CreateField_Name>change</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" name="change" source="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="570" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>DownloadData</UpdateField_Name>
+          <CreateField_Name>is_header</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Nearest</OtherRows>
+          <NumRows value="1" />
+          <Expression><![CDATA[if [change] !=[Row+1:change] then 1 else 0 endif
+]]></Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[if [change] !=[Row+1:change] then 1 else 0 endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" name="change" source="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" type="Int32" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings>
+        <Position x="834" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Ranges">4</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" name="change" source="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" type="Int32" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="SelectRecords.yxmc" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" field="keep" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[keep = if Max([is_header], [change]) > 0 then 1 else 0 endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" name="change" source="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" type="Int32" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="930" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>keep</Field>
+            <Operator>IsTrue</Operator>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[keep] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1218" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>filter_empty</Field>
+            <Operator>IsNotEmpty</Operator>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([filter_empty])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="filter_empty" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="filter_empty" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings>
+        <Position x="1122" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"filter_empty"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field name="filter_empty" size="255" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1314" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="keep" selected="False" />
+            <SelectField field="filter_empty" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings>
+        <Position x="1470" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (21)=change
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="O">
+          <RecordInfo>
+            <Field name="Category" size="149" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="YEAR" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JAN" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="FEB" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="MAR" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="APR" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="MAY" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JUN" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JUL" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="AUG" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="SEP" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="OCT" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="NOV" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="DEC" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="process cat3.yxmc" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1314" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="change" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1410" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="change" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: change</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="change" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="change" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="762" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>NewField</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Nearest</OtherRows>
+          <NumRows value="1" />
+          <Expression>if [Row+1:change] != [change] then [Row+1:change] else [change] endif</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>if [Row+1:change] != [change] then [Row+1:change] else [chang...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" name="change" source="Formula: if [New] = 1 then [Row-1:change] +1 else [Row-1:change] endif" type="Int32" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="NewField" source="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="846" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="change" selected="False" />
+            <SelectField field="NewField" selected="True" rename="change" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1626" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="Category" size="149" source="Formula: IF [_CurrentFieldName_] IN(&quot;filter_empty&quot;) &amp;&amp; !IsNull([_CurrentField_]) THEN &#xA;      REGEX_REPLACE([_CurrentField_],'\s+','')&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="YEAR" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JAN" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="FEB" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="MAR" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="APR" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="MAY" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JUN" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JUL" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="AUG" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="SEP" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="OCT" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="NOV" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="DEC" size="149" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="978" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DownloadData" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1710" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output58</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1026" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[DownloadData]" field="filter_empty" size="255" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[filter_empty = [DownloadData]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="Formula: StartsWith([DownloadData], 'YEAR')" type="Bool" />
+            <Field description="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" name="is_header" source="Formula: if [change] !=[Row+1:change] then 1 else 0 endif&#xA;" type="Int32" />
+            <Field name="keep" source="Formula: if Max([is_header], [change]) &gt; 0 then 1 else 0 endif" type="Bool" />
+            <Field description="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" name="change" source="Formula: if [Row+1:change] != [change] then [Row+1:change] else [change] endif" type="Int32" />
+            <Field name="filter_empty" size="255" source="Formula: [DownloadData]" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="102" y="354" width="204" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Iterate through sections</Text>
+          <Font name="Segoe UI" size="14.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="0" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="330" y="354" width="984" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Find category headers (One row before the row that starts with "YEAR") and identify category change.
+Exclude empty rows</Text>
+          <Font name="Segoe UI" size="14.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="0" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1326" y="354" width="204" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Iterate through categories</Text>
+          <Font name="Segoe UI" size="14.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="0" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="774" y="18" width="300" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Obtain "Employment category"</Text>
+          <Font name="Segoe UI" size="14.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="0" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1566" y="354" width="228" height="52" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Combine with "Employment category"</Text>
+          <Font name="Segoe UI" size="14.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="0" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="39" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="38" Connection="Question" />
+      <Destination ToolID="39" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="True" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="True" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="True" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output26" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input20" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Unique" />
+      <Destination ToolID="50" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="O" />
+      <Destination ToolID="55" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="55" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="48" Connection="Input2" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (38)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (58)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>process cat2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="39" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>1</ReplaceText>
+              <Destination>2/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (34)</Name>
+          <ToolId value="34" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (36)</Description>
+              <Name>Macro Input (36)</Name>
+              <ToolId value="36" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (38)</Description>
+              <Name>Control Parameter (38)</Name>
+              <ToolId value="38" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (58)</Description>
+              <Name>Macro Output (58)</Name>
+              <ToolId value="58" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (38)</Name>
+            <Description>Control Parameter (38)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="36" Selected="True" />
+        <Tool ToolId="43" Selected="True" />
+        <Tool ToolId="48" Selected="True" />
+        <Tool ToolId="50" Selected="True" />
+        <Tool ToolId="58" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

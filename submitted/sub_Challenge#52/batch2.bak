@@ -1,0 +1,854 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="30" y="102" width="172" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Iterative
+
+Return X number of combinations</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="294" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([Records], ToString([RecordID],0))</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([Records], ToString([RecordID],0))</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="450" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="dummy" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="dummy" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_kg" selected="True" rename="Right_kg" />
+                <SelectField field="Right_$" selected="True" rename="Right_$" />
+                <SelectField field="Right_dummy" selected="True" rename="Right_dummy" />
+                <SelectField field="Right_Records" selected="False" rename="Right_Records" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="CombinationID" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="dummy" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="CombinationID" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Right_kg" source="TextInput:" type="Byte" />
+            <Field name="Right_$" source="TextInput:" type="Byte" />
+            <Field name="Right_dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="dummy" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="dummy" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="546" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="True" />
+          <UpdateField_Name>CombinationID</UpdateField_Name>
+          <CreateField_Name>CombinationID</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>[Row-1:CombinationID]+1</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Row-1:CombinationID]+1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: [Row-1:CombinationID]+1" name="CombinationID" source="Formula: [Row-1:CombinationID]+1" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="Right_kg" source="TextInput:" type="Byte" />
+            <Field name="Right_$" source="TextInput:" type="Byte" />
+            <Field name="Right_dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="dummy" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="642" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="CombinationID" />
+            <Field field="dummy" />
+          </KeyFields>
+          <DataFields>
+            <Field field="CombinationID" selected="False" />
+            <Field field="$" selected="True" />
+            <Field field="kg" selected="True" />
+            <Field field="Records" selected="True" />
+            <Field field="dummy" selected="False" />
+            <Field field="RecordID" selected="True" />
+            <Field field="Right_kg" selected="True" />
+            <Field field="Right_$" selected="True" />
+            <Field field="Right_dummy" selected="True" />
+            <Field field="Right_Records" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: [Row-1:CombinationID]+1" name="CombinationID" source="Formula: [Row-1:CombinationID]+1" type="Byte" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+            <Field name="Name" size="11" source="Transpose:" type="String" />
+            <Field name="Value" size="3" source="TextInput:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="dummy" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="738" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF Contains([Name], &quot;$&quot;) then ToNumber([Value]) else Null()&#xA;&#xA;endif" field="Score" size="4" type="Int32" />
+            <FormulaField expression="IF Contains([Name], &quot;kg&quot;) then ToNumber([Value]) else Null()&#xA;&#xA;endif" field="Weight" size="4" type="Int32" />
+            <FormulaField expression="IF Contains([Name], &quot;ecord&quot;) then [Value] else Null()&#xA;&#xA;endif" field="Records" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Score = IF Contains([Name], "$") then ToNumber([Value]) else Null()
+
+endif
+Weigh...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: [Row-1:CombinationID]+1" name="CombinationID" source="Formula: [Row-1:CombinationID]+1" type="Byte" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+            <Field name="Name" size="11" source="Transpose:" type="String" />
+            <Field name="Value" size="3" source="TextInput:" type="V_String" />
+            <Field name="Score" source="Formula: IF Contains([Name], &quot;$&quot;) then ToNumber([Value]) else Null()&#xA;&#xA;endif" type="Int32" />
+            <Field name="Weight" source="Formula: IF Contains([Name], &quot;kg&quot;) then ToNumber([Value]) else Null()&#xA;&#xA;endif" type="Int32" />
+            <Field name="Records" size="1073741823" source="Formula: IF Contains([Name], &quot;ecord&quot;) then [Value] else Null()&#xA;&#xA;endif" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="dummy" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="834" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="CombinationID" action="GroupBy" rename="CombinationID" />
+            <SummarizeField field="Score" action="Sum" rename="$" />
+            <SummarizeField field="Weight" action="Sum" rename="kg" />
+            <SummarizeField field="Records" action="Concat" rename="Records">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+            <SummarizeField field="dummy" action="First" rename="dummy" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: [Row-1:CombinationID]+1" name="CombinationID" source="Summarize: GroupBy - CombinationID" type="Byte" />
+            <Field name="$" source="Summarize: Sum - Score" type="Int64" />
+            <Field name="kg" source="Summarize: Sum - Weight" type="Int64" />
+            <Field name="Records" size="1073741823" source="Summarize: Concat - Records" type="V_WString" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="CombinationID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="930" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output13</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="90" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Initial Items</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="5" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="kg" />
+                <Field name="$" />
+                <Field name="dummy" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>12</c>
+                  <c>4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>4</c>
+                  <c>10</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (4)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="198" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Allow</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_CombinationID" selected="False" />
+                <SelectField field="Source_$" selected="False" rename="Source_$" />
+                <SelectField field="Source_kg" selected="False" rename="Source_kg" />
+                <SelectField field="Source_dummy" selected="False" rename="Source_dummy" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="114" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>CombinationID</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>1</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[CombinationID] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="CombinationID" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="CombinationID" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="6" y="366" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="102" y="390" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="30" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Combinations</Name>
+          <Abbrev>C</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="18" />
+              <Fields>
+                <Field name="CombinationID" />
+                <Field name="$" />
+                <Field name="kg" />
+                <Field name="Records" />
+                <Field name="dummy" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>12</c>
+                  <c>12</c>
+                  <c>6</c>
+                  <c>3,5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>12</c>
+                  <c>6</c>
+                  <c>5,3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>11</c>
+                  <c>6</c>
+                  <c>2,5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>11</c>
+                  <c>5</c>
+                  <c>4,5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>11</c>
+                  <c>6</c>
+                  <c>5,2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>11</c>
+                  <c>5</c>
+                  <c>5,4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>6</c>
+                  <c>14</c>
+                  <c>1,3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>6</c>
+                  <c>14</c>
+                  <c>3,1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>14</c>
+                  <c>1,2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>13</c>
+                  <c>1,4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>14</c>
+                  <c>2,1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>5</c>
+                  <c>13</c>
+                  <c>4,1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>2,3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>3,2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>3,4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>4,3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>2,4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>4,2</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (19)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CombinationID" source="TextInput:" type="Byte" />
+            <Field name="$" source="TextInput:" type="Byte" />
+            <Field name="kg" source="TextInput:" type="Byte" />
+            <Field name="Records" size="3" source="TextInput:" type="String" />
+            <Field name="dummy" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="False" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="18" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Question" />
+      <Destination ToolID="22" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="22" Connection="Action" />
+      <Destination ToolID="20" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (21)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (23)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>batch2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="22" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>1</ReplaceText>
+              <Destination>20/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (12)</Name>
+          <ToolId value="12" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (13)</Description>
+              <Name>Macro Output (13)</Name>
+              <ToolId value="13" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (17)</Description>
+              <Name>Macro Input (17)</Name>
+              <ToolId value="17" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (21)</Description>
+              <Name>Control Parameter (21)</Name>
+              <ToolId value="21" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (23)</Description>
+              <Name>Macro Input (23)</Name>
+              <ToolId value="23" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (21)</Name>
+            <Description>Control Parameter (21)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="13" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+        <Tool ToolId="23" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

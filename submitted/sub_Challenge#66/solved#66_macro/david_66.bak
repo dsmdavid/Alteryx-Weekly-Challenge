@@ -1,0 +1,2104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="402" width="132" height="264" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Input</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Yellow" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="Order Number" />
+            <Field name="StartingBottleID" />
+            <Field name="EndingBottleID" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>6</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>1</c>
+              <c>12</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1</c>
+              <c>45</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>201</c>
+              <c>470</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>801</c>
+              <c>801</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Order list</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order Number" source="TextInput:" type="Byte" />
+            <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+            <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="66" width="300" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #66</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="114" width="612" height="276" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[We are selling bottles of wine - each of which has a unique ID since it's a limited vintage.
+
+Customers can request their wine bottles be delivered in various different sizes of delivery box.
+
+Customers order wine in ranges - from ID 1 to 25 for example.
+
+Challenge: Build a macro that takes in order ranges, allows the user to input the box size, and outputs the order broken into the requested box sizes.
+
+There are 3 sample outputs displayed to test the different box sizes:
+- Box size of 6
+- Box size of 12
+- Box size of 120
+
+The macro must check for, or prevent 3 specific error conditions:
+- a null value for either the from or to value on an order range
+- non-numeric values in the from & to values
+- situations where the from ID is greater than the to ID
+
+BONUS - Instead of using an interface tool to allow the user to set 6/12/120 box sizes, build a batch macro that will package all three scenarios at once!
+ 
+]]></Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="138" y="750" width="336" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>The macro must check for, or prevent 3 specific error conditions:
+- a null value for either the from or to value on an order range
+- non-numeric values in the from &amp; to values
+- situations where the from ID is greater than the to ID</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="138" y="894" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if IsNull([StartingBottleID]) or IsNull([EndingBottleID])&#xA;then 1 else 0&#xA;endif" field="Null" size="1" type="Byte" />
+            <FormulaField expression="IF !IsNumber([StartingBottleID]) or !IsNumber([EndingBottleID])&#xA;then 1 else 0 endif" field="Numeric" size="1" type="Byte" />
+            <FormulaField expression="if [StartingBottleID] &gt; [EndingBottleID]&#xA;then 1 else 0&#xA;endif" field="Order" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Null = if IsNull([StartingBottleID]) or IsNull([EndingBottleID])
+then 1 else 0
+e...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Order Number" source="TextInput:" type="Byte" />
+            <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+            <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+            <Field name="Null" source="Formula: if IsNull([StartingBottleID]) or IsNull([EndingBottleID])&#xA;then 1 else 0&#xA;endif" type="Byte" />
+            <Field name="Numeric" source="Formula: IF !IsNumber([StartingBottleID]) or !IsNumber([EndingBottleID])&#xA;then 1 else 0 endif" type="Byte" />
+            <Field name="Order" source="Formula: if [StartingBottleID] &gt; [EndingBottleID]&#xA;then 1 else 0&#xA;endif" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="222" y="894" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Null" action="Sum" rename="Sum_Null" />
+            <SummarizeField field="Numeric" action="Sum" rename="Sum_Numeric" />
+            <SummarizeField field="Order" action="Sum" rename="Sum_Order" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_Null" source="Summarize: Sum - Null" type="Int64" />
+            <Field name="Sum_Numeric" source="Summarize: Sum - Numeric" type="Int64" />
+            <Field name="Sum_Order" source="Summarize: Sum - Order" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="If [Sum_Null]&gt;0 or [Sum_Numeric]&gt;0 or [Sum_Order]&gt;0 then 'There were records with errors: ' + &#xA;ToString([Sum_Null],0) + ' null; ' +&#xA;ToString([Sum_Numeric], 0) +' non-numbers; ' + &#xA;ToString([Sum_Order],0) + ' ID error' &#xA;else&#xA;'No errors' &#xA;endif" field="error" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>error = If [Sum_Null]&gt;0 or [Sum_Numeric]&gt;0 or [Sum_Order]&gt;0 then 'There were rec...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_Null" source="Summarize: Sum - Null" type="Int64" />
+            <Field name="Sum_Numeric" source="Summarize: Sum - Numeric" type="Int64" />
+            <Field name="Sum_Order" source="Summarize: Sum - Order" type="Int64" />
+            <Field name="error" size="1073741823" source="Formula: If [Sum_Null]&gt;0 or [Sum_Numeric]&gt;0 or [Sum_Order]&gt;0 then 'There were records with errors: ' + &#xA;ToString([Sum_Null],0) + ' null; ' +&#xA;ToString([Sum_Numeric], 0) +' non-numbers; ' + &#xA;ToString([Sum_Order],0) + ' ID error' &#xA;else&#xA;'No errors' &#xA;endif" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="402" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>Last</When>
+          <Filter />
+          <Type>Error</Type>
+          <Priority>High</Priority>
+          <Transient>False</Transient>
+          <MessageExpression>[error]</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_Null" source="Summarize: Sum - Null" type="Int64" />
+            <Field name="Sum_Numeric" source="Summarize: Sum - Numeric" type="Int64" />
+            <Field name="Sum_Order" source="Summarize: Sum - Order" type="Int64" />
+            <Field name="error" size="1073741823" source="Formula: If [Sum_Null]&gt;0 or [Sum_Numeric]&gt;0 or [Sum_Order]&gt;0 then 'There were records with errors: ' + &#xA;ToString([Sum_Null],0) + ' null; ' +&#xA;ToString([Sum_Numeric], 0) +' non-numbers; ' + &#xA;ToString([Sum_Order],0) + ' ID error' &#xA;else&#xA;'No errors' &#xA;endif" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="78" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="3" />
+          <Fields>
+            <Field name="Size" />
+          </Fields>
+          <Data>
+            <r>
+              <c>6</c>
+            </r>
+            <r>
+              <c>12</c>
+            </r>
+            <r>
+              <c>96</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Bottles per Box - list of sizes
+]]></AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Size" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="318" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields />
+          <DataFields>
+            <Field field="Sum_Null" selected="True" />
+            <Field field="Sum_Numeric" selected="True" />
+            <Field field="Sum_Order" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="11" source="Transpose:" type="String" />
+            <Field name="Value" source="Summarize: (Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="402" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Value" action="Sum" rename="Total_Errors" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Total_Errors" source="Summarize: Sum - Value" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="221" y="502" width="313" height="172" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Error Gate</Caption>
+          <Style TextColor="#314c4a" FillColor="#ff8040" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="246" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Bring Number of Errors</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Total_Errors" source="Summarize: Sum - Value" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="354" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Field>Total_Errors</Field>
+                <Operator>=</Operator>
+                <Operands>
+                  <Operand>0</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Run only if no errors</AnnotationText>
+              <DefaultAnnotationText>[Total_Errors] = 0</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Total_Errors" source="Summarize: Sum - Value" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Total_Errors" source="Summarize: Sum - Value" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="450" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Total_Errors" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="558" y="414" width="253" height="310" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 82</Caption>
+          <Style TextColor="#314c4a" FillColor="#00ff00" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="583" y="578" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[EndingBottleID]-[StartingBottleID]+1" field="diff" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[diff = [EndingBottleID]-[StartingBottleID]+1
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="diff" source="Formula: [EndingBottleID]-[StartingBottleID]+1" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings>
+            <Position x="679" y="458" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="BatchMacroGroupBy" />
+              <Value name="ControlParams"><![CDATA[Control Parameter (27)=Size
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>Create_Boxes (63)</Name>
+              <AnnotationText>Batch Macro - run for different sizes</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Box Config">
+              <RecordInfo>
+                <Field name="Order Number" source="Summarize: GroupBy - Order Number (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field description="Formula: IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] Endif" name="BoxNumberForOrder" source="Summarize: GroupBy - Box (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="BottlesInThisBatch" source="Summarize: CountDistinct - testMod (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+                <Field name="StartingBottleID" source="Formula: [StartingBottleID] + [Init_StartingBottleID] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Init_StartingBottleID" source="Summarize: GroupBy - StartingBottleID (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+                <Field name="size" source="Summarize: GroupBy - size (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field name="EndingBottleID" source="Formula: [StartingBottleID] + [BottlesInThisBatch] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Create_Boxes.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="870" y="402" width="961" height="489" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Check</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffff80" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="895" y="446" width="264" height="420" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Output</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="943" y="589.9999" width="180" height="108" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>#2 - box size of 12</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="943" y="470" width="180" height="108" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>#1 - box size of 6</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="943" y="722" width="180" height="108" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>#3 - box size of 96</Text>
+              <Font name="Segoe UI" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="955" y="506" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="57" />
+              <Fields>
+                <Field name="Order Number" />
+                <Field name="StartingBottleID" />
+                <Field name="EndingBottleID" />
+                <Field name="BoxNumberForOrder" />
+                <Field name="BottlesInThisBatch" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>7</c>
+                  <c>12</c>
+                  <c>2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>12</c>
+                  <c>2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>13</c>
+                  <c>18</c>
+                  <c>3</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>19</c>
+                  <c>24</c>
+                  <c>4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>25</c>
+                  <c>30</c>
+                  <c>5</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>31</c>
+                  <c>36</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>37</c>
+                  <c>42</c>
+                  <c>7</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>43</c>
+                  <c>45</c>
+                  <c>8</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>201</c>
+                  <c>206</c>
+                  <c>1</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>207</c>
+                  <c>212</c>
+                  <c>2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>213</c>
+                  <c>218</c>
+                  <c>3</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>219</c>
+                  <c>224</c>
+                  <c>4</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>225</c>
+                  <c>230</c>
+                  <c>5</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>231</c>
+                  <c>236</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>237</c>
+                  <c>242</c>
+                  <c>7</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>243</c>
+                  <c>248</c>
+                  <c>8</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>249</c>
+                  <c>254</c>
+                  <c>9</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>255</c>
+                  <c>260</c>
+                  <c>10</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>261</c>
+                  <c>266</c>
+                  <c>11</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>267</c>
+                  <c>272</c>
+                  <c>12</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>273</c>
+                  <c>278</c>
+                  <c>13</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>279</c>
+                  <c>284</c>
+                  <c>14</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>285</c>
+                  <c>290</c>
+                  <c>15</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>291</c>
+                  <c>296</c>
+                  <c>16</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>297</c>
+                  <c>302</c>
+                  <c>17</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>303</c>
+                  <c>308</c>
+                  <c>18</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>309</c>
+                  <c>314</c>
+                  <c>19</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>315</c>
+                  <c>320</c>
+                  <c>20</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>321</c>
+                  <c>326</c>
+                  <c>21</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>327</c>
+                  <c>332</c>
+                  <c>22</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>333</c>
+                  <c>338</c>
+                  <c>23</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>339</c>
+                  <c>344</c>
+                  <c>24</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>345</c>
+                  <c>350</c>
+                  <c>25</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>351</c>
+                  <c>356</c>
+                  <c>26</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>357</c>
+                  <c>362</c>
+                  <c>27</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>363</c>
+                  <c>368</c>
+                  <c>28</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>369</c>
+                  <c>374</c>
+                  <c>29</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>375</c>
+                  <c>380</c>
+                  <c>30</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>381</c>
+                  <c>386</c>
+                  <c>31</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>387</c>
+                  <c>392</c>
+                  <c>32</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>393</c>
+                  <c>398</c>
+                  <c>33</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>399</c>
+                  <c>404</c>
+                  <c>34</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>405</c>
+                  <c>410</c>
+                  <c>35</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>411</c>
+                  <c>416</c>
+                  <c>36</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>417</c>
+                  <c>422</c>
+                  <c>37</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>423</c>
+                  <c>428</c>
+                  <c>38</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>429</c>
+                  <c>434</c>
+                  <c>39</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>435</c>
+                  <c>440</c>
+                  <c>40</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>441</c>
+                  <c>446</c>
+                  <c>41</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>447</c>
+                  <c>452</c>
+                  <c>42</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>453</c>
+                  <c>458</c>
+                  <c>43</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>459</c>
+                  <c>464</c>
+                  <c>44</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>465</c>
+                  <c>470</c>
+                  <c>45</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>801</c>
+                  <c>801</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="955" y="625.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="30" />
+              <Fields>
+                <Field name="Order Number" />
+                <Field name="StartingBottleID" />
+                <Field name="EndingBottleID" />
+                <Field name="BoxNumberForOrder" />
+                <Field name="BottlesInThisBatch" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>12</c>
+                  <c>1</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>12</c>
+                  <c>1</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>13</c>
+                  <c>24</c>
+                  <c>2</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>25</c>
+                  <c>36</c>
+                  <c>3</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>37</c>
+                  <c>45</c>
+                  <c>4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>201</c>
+                  <c>212</c>
+                  <c>1</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>213</c>
+                  <c>224</c>
+                  <c>2</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>225</c>
+                  <c>236</c>
+                  <c>3</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>237</c>
+                  <c>248</c>
+                  <c>4</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>249</c>
+                  <c>260</c>
+                  <c>5</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>261</c>
+                  <c>272</c>
+                  <c>6</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>273</c>
+                  <c>284</c>
+                  <c>7</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>285</c>
+                  <c>296</c>
+                  <c>8</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>297</c>
+                  <c>308</c>
+                  <c>9</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>309</c>
+                  <c>320</c>
+                  <c>10</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>321</c>
+                  <c>332</c>
+                  <c>11</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>333</c>
+                  <c>344</c>
+                  <c>12</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>345</c>
+                  <c>356</c>
+                  <c>13</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>357</c>
+                  <c>368</c>
+                  <c>14</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>369</c>
+                  <c>380</c>
+                  <c>15</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>381</c>
+                  <c>392</c>
+                  <c>16</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>393</c>
+                  <c>404</c>
+                  <c>17</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>405</c>
+                  <c>416</c>
+                  <c>18</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>417</c>
+                  <c>428</c>
+                  <c>19</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>429</c>
+                  <c>440</c>
+                  <c>20</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>441</c>
+                  <c>452</c>
+                  <c>21</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>453</c>
+                  <c>464</c>
+                  <c>22</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>465</c>
+                  <c>470</c>
+                  <c>23</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>801</c>
+                  <c>801</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="955" y="757.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="7" />
+              <Fields>
+                <Field name="Order Number" />
+                <Field name="StartingBottleID" />
+                <Field name="EndingBottleID" />
+                <Field name="BoxNumberForOrder" />
+                <Field name="BottlesInThisBatch" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>12</c>
+                  <c>1</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>45</c>
+                  <c>1</c>
+                  <c>45</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>201</c>
+                  <c>296</c>
+                  <c>1</c>
+                  <c>96</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>297</c>
+                  <c>392</c>
+                  <c>2</c>
+                  <c>96</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>393</c>
+                  <c>470</c>
+                  <c>3</c>
+                  <c>78</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>801</c>
+                  <c>801</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1327" y="494" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Order Number" selected="True" rename="Right_Order Number" />
+                    <SelectField field="Right_StartingBottleID" selected="True" rename="Right_StartingBottleID" />
+                    <SelectField field="Right_EndingBottleID" selected="True" rename="Right_EndingBottleID" />
+                    <SelectField field="Right_BoxNumberForOrder" selected="True" rename="Right_BoxNumberForOrder" />
+                    <SelectField field="Right_BottlesInThisBatch" selected="True" rename="Right_BottlesInThisBatch" />
+                    <SelectField field="Right_size" selected="True" rename="Right_size" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="Order Number" source="Summarize: GroupBy - Order Number (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field description="Formula: IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] Endif" name="BoxNumberForOrder" source="Summarize: GroupBy - Box (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="BottlesInThisBatch" source="Summarize: CountDistinct - testMod (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+                <Field name="StartingBottleID" source="Formula: [StartingBottleID] + [Init_StartingBottleID] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Init_StartingBottleID" source="Summarize: GroupBy - StartingBottleID (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+                <Field name="size" source="Summarize: GroupBy - size (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field name="EndingBottleID" source="Formula: [StartingBottleID] + [BottlesInThisBatch] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="Order Number" source="Summarize: GroupBy - Order Number (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field description="Formula: IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] Endif" name="BoxNumberForOrder" source="Summarize: GroupBy - Box (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="BottlesInThisBatch" source="Summarize: CountDistinct - testMod (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+                <Field name="StartingBottleID" source="Formula: [StartingBottleID] + [Init_StartingBottleID] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Init_StartingBottleID" source="Summarize: GroupBy - StartingBottleID (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+                <Field name="size" source="Summarize: GroupBy - size (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field name="EndingBottleID" source="Formula: [StartingBottleID] + [BottlesInThisBatch] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Right_Order Number" source="TextInput:" type="Byte" />
+                <Field name="Right_StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Right_EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Right_BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="Right_BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="Right_size" source="Formula: 6" type="Int16" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Order Number" order="" />
+                <Field field="BoxNumberForOrder" order="" />
+                <Field field="BottlesInThisBatch" order="" />
+                <Field field="StartingBottleID" order="" />
+                <Field field="EndingBottleID" order="" />
+                <Field field="size" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="size" source="Formula: 6" type="Int16" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1423" y="614" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Order Number" selected="True" rename="Right_Order Number" />
+                    <SelectField field="Right_StartingBottleID" selected="True" rename="Right_StartingBottleID" />
+                    <SelectField field="Right_EndingBottleID" selected="True" rename="Right_EndingBottleID" />
+                    <SelectField field="Right_BoxNumberForOrder" selected="True" rename="Right_BoxNumberForOrder" />
+                    <SelectField field="Right_BottlesInThisBatch" selected="True" rename="Right_BottlesInThisBatch" />
+                    <SelectField field="Right_size" selected="True" rename="Right_size" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="Order Number" source="Summarize: GroupBy - Order Number (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field description="Formula: IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] Endif" name="BoxNumberForOrder" source="Summarize: GroupBy - Box (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="BottlesInThisBatch" source="Summarize: CountDistinct - testMod (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+                <Field name="StartingBottleID" source="Formula: [StartingBottleID] + [Init_StartingBottleID] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Init_StartingBottleID" source="Summarize: GroupBy - StartingBottleID (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+                <Field name="size" source="Summarize: GroupBy - size (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field name="EndingBottleID" source="Formula: [StartingBottleID] + [BottlesInThisBatch] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="Order Number" source="Summarize: GroupBy - Order Number (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field description="Formula: IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] Endif" name="BoxNumberForOrder" source="Summarize: GroupBy - Box (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="BottlesInThisBatch" source="Summarize: CountDistinct - testMod (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+                <Field name="StartingBottleID" source="Formula: [StartingBottleID] + [Init_StartingBottleID] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Init_StartingBottleID" source="Summarize: GroupBy - StartingBottleID (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+                <Field name="size" source="Summarize: GroupBy - size (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field name="EndingBottleID" source="Formula: [StartingBottleID] + [BottlesInThisBatch] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Right_Order Number" source="TextInput:" type="Byte" />
+                <Field name="Right_StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Right_EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Right_BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="Right_BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="Right_size" source="Formula: 12" type="Int16" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Order Number" order="" />
+                <Field field="BoxNumberForOrder" order="" />
+                <Field field="BottlesInThisBatch" order="" />
+                <Field field="StartingBottleID" order="" />
+                <Field field="EndingBottleID" order="" />
+                <Field field="size" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="size" source="Formula: 12" type="Int16" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1531" y="746" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Order Number" selected="True" rename="Right_Order Number" />
+                    <SelectField field="Right_StartingBottleID" selected="True" rename="Right_StartingBottleID" />
+                    <SelectField field="Right_EndingBottleID" selected="True" rename="Right_EndingBottleID" />
+                    <SelectField field="Right_BoxNumberForOrder" selected="True" rename="Right_BoxNumberForOrder" />
+                    <SelectField field="Right_BottlesInThisBatch" selected="True" rename="Right_BottlesInThisBatch" />
+                    <SelectField field="Right_size" selected="True" rename="Right_size" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="Order Number" source="Summarize: GroupBy - Order Number (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field description="Formula: IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] Endif" name="BoxNumberForOrder" source="Summarize: GroupBy - Box (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="BottlesInThisBatch" source="Summarize: CountDistinct - testMod (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+                <Field name="StartingBottleID" source="Formula: [StartingBottleID] + [Init_StartingBottleID] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Init_StartingBottleID" source="Summarize: GroupBy - StartingBottleID (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+                <Field name="size" source="Summarize: GroupBy - size (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field name="EndingBottleID" source="Formula: [StartingBottleID] + [BottlesInThisBatch] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="Order Number" source="Summarize: GroupBy - Order Number (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field description="Formula: IF [Row-1:testMod] = 0 then [Row-1:Box] + 1 else [Row-1:Box] Endif" name="BoxNumberForOrder" source="Summarize: GroupBy - Box (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="BottlesInThisBatch" source="Summarize: CountDistinct - testMod (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+                <Field name="StartingBottleID" source="Formula: [StartingBottleID] + [Init_StartingBottleID] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Init_StartingBottleID" source="Summarize: GroupBy - StartingBottleID (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+                <Field name="size" source="Summarize: GroupBy - size (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+                <Field name="EndingBottleID" source="Formula: [StartingBottleID] + [BottlesInThisBatch] -1 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+                <Field name="Right_Order Number" source="TextInput:" type="Byte" />
+                <Field name="Right_StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Right_EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="Right_BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="Right_BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="Right_size" source="Formula: 96" type="Int16" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Order Number" order="" />
+                <Field field="BoxNumberForOrder" order="" />
+                <Field field="BottlesInThisBatch" order="" />
+                <Field field="StartingBottleID" order="" />
+                <Field field="EndingBottleID" order="" />
+                <Field field="size" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="size" source="Formula: 96" type="Int16" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Order Number" />
+                <Field field="BoxNumberForOrder" />
+                <Field field="BottlesInThisBatch" />
+                <Field field="StartingBottleID" />
+                <Field field="EndingBottleID" />
+                <Field field="size" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1627" y="614" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="(Multiple Sources)" type="Byte" />
+                <Field name="StartingBottleID" source="(Multiple Sources)" type="Int32" />
+                <Field name="EndingBottleID" source="(Multiple Sources)" type="Int32" />
+                <Field name="BoxNumberForOrder" source="(Multiple Sources)" type="Int32" />
+                <Field name="BottlesInThisBatch" source="(Multiple Sources)" type="Int64" />
+                <Field name="size" source="(Multiple Sources)" type="Int16" />
+                <Field name="Init_StartingBottleID" source="Summarize: GroupBy - StartingBottleID (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings>
+            <Position x="1747" y="614" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit>
+                <Dependency Path="_externals\1\CountRecords.yxmc" Package="True" IsMacro="True" IsOutput="False" IsAlias="False" />
+              </Implicit>
+            </Dependencies>
+            <MetaInfo connection="Output9">
+              <RecordInfo>
+                <Field name="Count" source="(Multiple Sources)" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="_externals\1\CountRecords.yxmc" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1171" y="506" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="6" field="size" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[size = 6
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="size" source="Formula: 6" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1171" y="626" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="12" field="size" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[size = 12
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="size" source="Formula: 12" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="74">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1171" y="758" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="96" field="size" size="2" type="Int16" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[size = 96
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Order Number" source="TextInput:" type="Byte" />
+                <Field name="StartingBottleID" source="TextInput:" type="Int16" />
+                <Field name="EndingBottleID" source="TextInput:" type="Int16" />
+                <Field name="BoxNumberForOrder" source="TextInput:" type="Byte" />
+                <Field name="BottlesInThisBatch" source="TextInput:" type="Byte" />
+                <Field name="size" source="Formula: 96" type="Int16" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="78" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="78" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="83" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="83" Connection="List of orders" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="True" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Box Config" />
+      <Destination ToolID="67" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="67" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Left" />
+      <Destination ToolID="68" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="68" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="67" Connection="Right" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="68" Connection="Right" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="69" Connection="Right" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="69" Connection="Left" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Left" />
+      <Destination ToolID="69" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="69" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="71" Connection="Input8" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david_66</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (52)</Name>
+          <ToolId value="52" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="83" Selected="True" />
+        <Tool ToolId="71" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

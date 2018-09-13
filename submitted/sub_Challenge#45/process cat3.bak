@@ -1,0 +1,1238 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="510" y="198" width="468" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Clean the Year/month and make columns</Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="390" y="102" width="192" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Category Name</Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="630" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <NumFields value="1" />
+          <Delimeters value=";" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="534" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <RegExExpression value="(\s+)" />
+          <CaseInsensitve value="True" />
+          <Method>Replace</Method>
+          <Replace expression=";">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>DownloadData_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Replace:
+(\s+)
+;</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="918" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>FirstRow</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="Column_1_DownloadData" />
+            <Field name="Column_2_DownloadData" />
+            <Field name="Column_3_DownloadData" />
+            <Field name="Column_4_DownloadData" />
+            <Field name="Column_5_DownloadData" />
+            <Field name="Column_6_DownloadData" />
+            <Field name="Column_7_DownloadData" />
+            <Field name="Column_8_DownloadData" />
+            <Field name="Column_9_DownloadData" />
+            <Field name="Column_10_DownloadData" />
+            <Field name="Column_11_DownloadData" />
+            <Field name="Column_12_DownloadData" />
+            <Field name="Column_13_DownloadData" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <FirstRow>
+            <OnError>Warn</OnError>
+          </FirstRow>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="YEAR" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JAN" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="FEB" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="MAR" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="APR" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="MAY" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JUN" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JUL" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="AUG" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="SEP" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="OCT" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="NOV" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="DEC" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="726" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>DownloadData</Field>
+            <Operator>!=</Operator>
+            <Operands>
+              <Operand>p</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[DownloadData] != "p"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1290" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>O</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1014" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="149" source="TextInput:" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="YEAR" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JAN" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="FEB" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="MAR" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="APR" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="MAY" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JUN" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="JUL" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="AUG" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="SEP" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="OCT" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="NOV" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="DEC" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MakeColumns.MakeColumns">
+        <Position x="822" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumColumns>13</NumColumns>
+          <IsHorizontal value="True" />
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_1_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_2_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_3_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_4_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_5_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_6_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_7_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_8_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_9_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_10_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_11_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_12_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Column_13_DownloadData" size="149" source="TextToColumns: Parsed from DownloadData" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMakeColumns" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="222" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>change</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>1</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[change] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="change" source="TextInput:" type="Byte" />
+            <Field name="is_header" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="change" source="TextInput:" type="Byte" />
+            <Field name="is_header" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="330" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>is_header</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>1</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[is_header] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="change" source="TextInput:" type="Byte" />
+            <Field name="is_header" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="change" source="TextInput:" type="Byte" />
+            <Field name="is_header" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="New" selected="False" />
+            <SelectField field="change" selected="False" />
+            <SelectField field="is_header" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DownloadData" selected="True" rename="Category" />
+            <SelectField field="New" selected="False" />
+            <SelectField field="change" selected="False" />
+            <SelectField field="is_header" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="149" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="234" y="66" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="228" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="210" y="18" width="648" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Process one category at the time</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="198" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="36" />
+          <Fields>
+            <Field name="DownloadData" />
+            <Field name="New" />
+            <Field name="is_header" />
+            <Field name="change" />
+          </Fields>
+          <Data>
+            <r>
+              <c><![CDATA[As revised (BM2017)
+]]></c>
+              <c>False</c>
+              <c>1</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC
+]]></c>
+              <c>True</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2008    138419      138338      138283      138054      137870      137716      137503      137226      136783      136308      135549      134842  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2009    134055      133351      132549      131845      131491      131022      130680      130484      130255      130046      130058      129781  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2010    129799      129726      129919      130140      130662      130522      130444      130428      130365      130632      130761      130834  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2011    130878      131060      131314      131637      131718      131952      132024      132136      132369      132578      132723      132924  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2012    133272      133505      133769      133841      133958      134026      134182      134355      134549      134702      134832      135075  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2013    135282      135547      135703      135882      136122      136280      136391      136651      136852      137062      137283      137376  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2014    137550      137732      137993      138304      138556      138862      139058      139284      139568      139823      140130      140381  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2015    140592      140859      140937      141219      141545      141736      141992      142156      142244      142595      142859      143093  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2016    143196      143453      143688      143862      143896      144181      144506      144681      144945      145085      145257      145437  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[2017    145696      145896      145969      146144      146299      146538      146728      146949      146963      147234      147450      147610 p
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c><![CDATA[As previously published (BM2016)
+]]></c>
+              <c>False</c>
+              <c>1</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC
+]]></c>
+              <c>True</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2008    138430      138346      138268      138058      137872      137710      137497      137230      136780      136306      135540      134846  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2009    134053      133351      132528      131841      131492      131021      130692      130479      130259      130055      130053      129778  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2010    129801      129733      129897      130140      130664      130527      130459      130423      130371      130633      130752      130839  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2011    130882      131071      131296      131642      131719      131944      132013      132123      132371      132580      132721      132930  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2012    133288      133525      133758      133836      133951      134027      134170      134347      134550      134696      134828      135072  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2013    135283      135569      135699      135896      136122      136284      136406      136667      136857      137069      137327      137374  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2014    137564      137715      137987      138316      138562      138866      139068      139298      139578      139805      140117      140372  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2015    140606      140844      140930      141192      141536      141742      141996      142153      142253      142574      142846      143085  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2016    143211      143448      143673      143826      143869      144166      144457      144633      144882      145006      145170      145325  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[2017    145541      145773      145823      146030      146175      146385      146523      146731      146769      146980      147232 p    147380 p
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c><![CDATA[Difference in level
+]]></c>
+              <c>False</c>
+              <c>1</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC
+]]></c>
+              <c>True</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2008       -11          -8          15          -4          -2           6           6          -4           3           2           9          -4  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2009         2           0          21           4          -1           1         -12           5          -4          -9           5           3  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2010        -2          -7          22           0          -2          -5         -15           5          -6          -1           9          -5  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2011        -4         -11          18          -5          -1           8          11          13          -2          -2           2          -6  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2012       -16         -20          11           5           7          -1          12           8          -1           6           4           3  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2013        -1         -22           4         -14           0          -4         -15         -16          -5          -7         -44           2  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2014       -14          17           6         -12          -6          -4         -10         -14         -10          18          13           9  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2015       -14          15           7          27           9          -6          -4           3          -9          21          13           8  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2016       -15           5          15          36          27          15          49          48          63          79          87         112  
+]]></c>
+              <c>False</c>
+              <c>0</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c><![CDATA[2017       155         123         146         114         124         153         205         218         194         254         218         230 p
+]]></c>
+              <c>False</c>
+              <c>1</c>
+              <c>3</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="is_header" source="TextInput:" type="Byte" />
+            <Field name="change" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="150" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input20</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="36" />
+              <Fields>
+                <Field name="DownloadData" />
+                <Field name="New" />
+                <Field name="change" />
+                <Field name="is_header" />
+              </Fields>
+              <Data>
+                <r>
+                  <c><![CDATA[As revised (BM2017)
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC
+]]></c>
+                  <c>True</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2008    138419      138338      138283      138054      137870      137716      137503      137226      136783      136308      135549      134842  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2009    134055      133351      132549      131845      131491      131022      130680      130484      130255      130046      130058      129781  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2010    129799      129726      129919      130140      130662      130522      130444      130428      130365      130632      130761      130834  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2011    130878      131060      131314      131637      131718      131952      132024      132136      132369      132578      132723      132924  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2012    133272      133505      133769      133841      133958      134026      134182      134355      134549      134702      134832      135075  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2013    135282      135547      135703      135882      136122      136280      136391      136651      136852      137062      137283      137376  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2014    137550      137732      137993      138304      138556      138862      139058      139284      139568      139823      140130      140381  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2015    140592      140859      140937      141219      141545      141736      141992      142156      142244      142595      142859      143093  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2016    143196      143453      143688      143862      143896      144181      144506      144681      144945      145085      145257      145437  
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2017    145696      145896      145969      146144      146299      146538      146728      146949      146963      147234      147450      147610 p
+]]></c>
+                  <c>False</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[As previously published (BM2016)
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC
+]]></c>
+                  <c>True</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2008    138430      138346      138268      138058      137872      137710      137497      137230      136780      136306      135540      134846  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2009    134053      133351      132528      131841      131492      131021      130692      130479      130259      130055      130053      129778  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2010    129801      129733      129897      130140      130664      130527      130459      130423      130371      130633      130752      130839  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2011    130882      131071      131296      131642      131719      131944      132013      132123      132371      132580      132721      132930  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2012    133288      133525      133758      133836      133951      134027      134170      134347      134550      134696      134828      135072  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2013    135283      135569      135699      135896      136122      136284      136406      136667      136857      137069      137327      137374  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2014    137564      137715      137987      138316      138562      138866      139068      139298      139578      139805      140117      140372  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2015    140606      140844      140930      141192      141536      141742      141996      142153      142253      142574      142846      143085  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2016    143211      143448      143673      143826      143869      144166      144457      144633      144882      145006      145170      145325  
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2017    145541      145773      145823      146030      146175      146385      146523      146731      146769      146980      147232 p    147380 p
+]]></c>
+                  <c>False</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[Difference in level
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c><![CDATA[YEAR       JAN         FEB         MAR         APR         MAY         JUN         JUL         AUG         SEP         OCT         NOV         DEC
+]]></c>
+                  <c>True</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2008       -11          -8          15          -4          -2           6           6          -4           3           2           9          -4  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2009         2           0          21           4          -1           1         -12           5          -4          -9           5           3  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2010        -2          -7          22           0          -2          -5         -15           5          -6          -1           9          -5  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2011        -4         -11          18          -5          -1           8          11          13          -2          -2           2          -6  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2012       -16         -20          11           5           7          -1          12           8          -1           6           4           3  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2013        -1         -22           4         -14           0          -4         -15         -16          -5          -7         -44           2  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2014       -14          17           6         -12          -6          -4         -10         -14         -10          18          13           9  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2015       -14          15           7          27           9          -6          -4           3          -9          21          13           8  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2016       -15           5          15          36          27          15          49          48          63          79          87         112  
+]]></c>
+                  <c>False</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c><![CDATA[2017       155         123         146         114         124         153         205         218         194         254         218         230 p
+]]></c>
+                  <c>False</c>
+                  <c>4</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (15)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DownloadData" size="149" source="TextInput:" type="V_String" />
+            <Field name="New" source="TextInput:" type="Bool" />
+            <Field name="change" source="TextInput:" type="Byte" />
+            <Field name="is_header" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="12" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="12" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="4" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="False" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Question" />
+      <Destination ToolID="22" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="22" Connection="Action" />
+      <Destination ToolID="16" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (21)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>process cat3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="22" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>16/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (35)</Description>
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (20)</Description>
+              <Name>Macro Input (20)</Name>
+              <ToolId value="20" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (21)</Description>
+              <Name>Control Parameter (21)</Name>
+              <ToolId value="21" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (21)</Name>
+            <Description>Control Parameter (21)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="11" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

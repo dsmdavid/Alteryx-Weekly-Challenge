@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="url" />
+          </Fields>
+          <Data>
+            <r>
+              <c>https://s3-us-west-1.amazonaws.com/community.uploads/mushrooms.csv</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="438" y="12" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#69\original file solution.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>original file solution.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="class" size="1" source="TextInput:" type="String" />
+            <Field name="cap-shape" size="1" source="TextInput:" type="String" />
+            <Field name="cap-surface" size="1" source="TextInput:" type="String" />
+            <Field name="cap-color" size="1" source="TextInput:" type="String" />
+            <Field name="bruises" source="TextInput:" type="Bool" />
+            <Field name="odor" size="1" source="TextInput:" type="String" />
+            <Field name="gill-attachment" size="1" source="TextInput:" type="String" />
+            <Field name="gill-spacing" size="1" source="TextInput:" type="String" />
+            <Field name="gill-size" size="1" source="TextInput:" type="String" />
+            <Field name="gill-color" size="1" source="TextInput:" type="String" />
+            <Field name="stalk-shape" size="1" source="TextInput:" type="String" />
+            <Field name="stalk-root" size="1" source="TextInput:" type="String" />
+            <Field name="stalk-surface-above-ring" size="1" source="TextInput:" type="String" />
+            <Field name="stalk-surface-below-ring" size="1" source="TextInput:" type="String" />
+            <Field name="stalk-color-above-ring" size="1" source="TextInput:" type="String" />
+            <Field name="stalk-color-below-ring" size="1" source="TextInput:" type="String" />
+            <Field name="veil-type" size="1" source="TextInput:" type="String" />
+            <Field name="veil-color" size="1" source="TextInput:" type="String" />
+            <Field name="ring-number" size="1" source="TextInput:" type="String" />
+            <Field name="ring-type" size="1" source="TextInput:" type="String" />
+            <Field name="spore-print-color" size="1" source="TextInput:" type="String" />
+            <Field name="population" size="1" source="TextInput:" type="String" />
+            <Field name="habitat" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="174" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>url</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="url" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="url" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
+        <Position x="858" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFieldInfo" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
+        <Position x="858" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFieldInfo" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="930" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Name" selected="True" rename="Right_Name" />
+                <SelectField field="Right_Type" selected="True" rename="Right_Type" />
+                <SelectField field="Right_Size" selected="True" rename="Right_Size" />
+                <SelectField field="Right_Scale" selected="True" rename="Right_Scale" />
+                <SelectField field="Right_Source" selected="True" rename="Right_Source" />
+                <SelectField field="Right_Description" selected="True" rename="Right_Description" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="222" y="174" width="312" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Split Data to Rows (single column)</Text>
+          <Font name="Segoe UI" size="14.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="0" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings>
+        <Position x="606" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="606" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="690" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Count" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Count" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Count" selected="True" rename="Right_Count" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="606" y="174" width="156" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Make 23 cols</Text>
+          <Font name="Segoe UI" size="14.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="0" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="702" y="6" width="156" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Check solution</Text>
+          <Font name="Segoe UI" size="14.25" style="0" />
+          <TextColor name="White" />
+          <FillColor r="255" g="0" b="128" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="270" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <NumFields value="1" />
+          <Delimeters value="\n" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="354" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <NumFields value="1" />
+          <Delimeters value="," />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="462" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="DownloadData" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MakeColumns.MakeColumns">
+        <Position x="558" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumColumns>23</NumColumns>
+          <IsHorizontal value="True" />
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMakeColumns" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="690" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>FirstRow</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="Column_1_DownloadData" />
+            <Field name="Column_2_DownloadData" />
+            <Field name="Column_3_DownloadData" />
+            <Field name="Column_4_DownloadData" />
+            <Field name="Column_5_DownloadData" />
+            <Field name="Column_6_DownloadData" />
+            <Field name="Column_7_DownloadData" />
+            <Field name="Column_8_DownloadData" />
+            <Field name="Column_9_DownloadData" />
+            <Field name="Column_10_DownloadData" />
+            <Field name="Column_11_DownloadData" />
+            <Field name="Column_12_DownloadData" />
+            <Field name="Column_13_DownloadData" />
+            <Field name="Column_14_DownloadData" />
+            <Field name="Column_15_DownloadData" />
+            <Field name="Column_16_DownloadData" />
+            <Field name="Column_17_DownloadData" />
+            <Field name="Column_18_DownloadData" />
+            <Field name="Column_19_DownloadData" />
+            <Field name="Column_20_DownloadData" />
+            <Field name="Column_21_DownloadData" />
+            <Field name="Column_22_DownloadData" />
+            <Field name="Column_23_DownloadData" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <FirstRow>
+            <OnError>Warn</OnError>
+          </FirstRow>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="class" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="cap-shape" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="cap-surface" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="cap-color" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="bruises" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="odor" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="gill-attachment" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="gill-spacing" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="gill-size" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="gill-color" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="stalk-shape" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="stalk-root" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="stalk-surface-above-ring" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="stalk-surface-below-ring" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="stalk-color-above-ring" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="stalk-color-below-ring" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="veil-type" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="veil-color" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="ring-number" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="ring-type" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="spore-print-color" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="population" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="habitat" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="20" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output9" />
+      <Destination ToolID="22" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output9" />
+      <Destination ToolID="22" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="21" Connection="Input8" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>solved#69</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
