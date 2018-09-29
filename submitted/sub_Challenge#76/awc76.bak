@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="37">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt</File>
+          <FormatSpecificOptions>
+            <ParseRoot>True</ParseRoot>
+            <OuterXML>True</OuterXML>
+            <IgnoreErrors>True</IgnoreErrors>
+            <XmlElement />
+            <ChildValues>True</ChildValues>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>White_ranch (1).txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="gpx" size="5" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="creator" size="18" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="version" size="3" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="xmlns" size="33" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="xmlns:xsi" size="41" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="xsi:schemaLocation" size="729" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="metadata" size="5" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="metadata_OuterXML" size="59" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="trk" size="8" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="trk_OuterXML" size="459177" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="gpx_OuterXML" size="460142" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="150" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15012_832be5f20a9b48e399fb8a0dd65233b0_\Engine_14116_4abffb354b994e27abad65531f2057ca_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+        <Position x="198" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <XMLField>trk_OuterXML</XMLField>
+          <XMLElement />
+          <ChildValues value="True" />
+          <OuterXML value="False" />
+          <ParseRoot value="False" />
+          <IgnoreErrors value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="trk_OuterXML" size="459177" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#76\White_ranch (1).txt" type="V_String" />
+            <Field name="trkpt" size="14" type="V_String" />
+            <Field name="lat" size="10" type="V_String" />
+            <Field name="lon" size="12" type="V_String" />
+            <Field name="ele" size="6" type="V_String" />
+            <Field name="time" size="20" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="114" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="trk_OuterXML" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="trk_OuterXML" selected="False" />
+            <SelectField field="trkpt" selected="False" />
+            <SelectField field="ele" selected="True" type="Double" size="8" />
+            <SelectField field="time" selected="False" />
+            <SelectField field="Time_HHMMSS" selected="True" rename="Time" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+        <Position x="486" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields fieldX="lon" fieldY="lat" />
+          <Mode>Double</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="582" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15012_832be5f20a9b48e399fb8a0dd65233b0_\Engine_14116_74a4d98b8370485dbdf7fb8d1217bab3_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxReportChartGui.AlteryxReportChartGui">
+        <Position x="1362" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartType>Line</ChartType>
+          <GroupingFields orderChanged="False" />
+          <LabelField>min</LabelField>
+          <GeneralStyles ThreeDInterior="false" GradientColoring="false" ChartSizeW="432" ChartSizeH="288" Resolution="3x (288 dpi)" ChartTitle="" ChartTitleSize="14" ChartSubTitle="" ChartSubTitleSize="12" ChartPrimaryFont="Microsoft Sans Serif" />
+          <TitleStyles ChangeTitleFont="false" ChartTitleFont="Microsoft Sans Serif" ChartTitleSize="14" ChartTitleColor="#000000" ChartTitleAlignment="Center" ChangeSubTitleFont="false" ChartSubTitleFont="Microsoft Sans Serif" ChartSubTitleSize="12" ChartSubTitleColor="#000000" SubTitleAlignment="Center" ChangeLegendTextFont="false" LegendTextFont="Microsoft Sans Serif" LegendTextSize="12" LegendTextColor="#000000" />
+          <Styles UseChartBorder="false" ChartBorderWidth="2" ChartBorderColor="#000000" UseAreaBorder="false" AreaBorderWidth="2" AreaBorderColor="#000000" ChartBGColor="#ffffff" ChartAreaBGColor="#ffffff" ChartInteriorBGColor="#ffffff" />
+          <ChartTypeStyles ShowChartLegend="true" LegendSeparateImage="false" LegendPosition="Top" LegendAlignment="Center" UseLegendBorder="false" LegendBorderWidth="2" LegendBorderColor="#000000" TransposeData="Record" ShowDataPointText="false" DataPointFontFaceName="Microsoft Sans Serif" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" SeriesBorderWidth="2" ShowSeriesDots="true" SeriesDotSize="6" />
+          <YAxis YAxisLabelFont="Microsoft Sans Serif" YAxisLabelSize="8" YAxisLabelColor="#000000" YAxisTitle="" YAxisTitleFont="Microsoft Sans Serif" YAxisTitleSize="10" YAxisTitleColor="#000000" YAxisShowGrid="false" YPrefix="" YPostfix="" YAxisOverrideIncrement="false" YAxisIncrement="100" YAxisOverrideBaseline="false" YAxisBaseline="0" YAxisOverrideTopline="false" YAxisTopline="1000" UseYAxisHiliteline="false" YAxisHiliteValue="0" YAxisHiliteColor="#000000" YAxisOverrideDecimalPlaces="false" YAxisNumDecimalPlaces="0" />
+          <OAxis UseOpposedAxis="false" OAxisLabelFont="Microsoft Sans Serif" OAxisLabelSize="8" OAxisLabelColor="#000000" OAxisTitle="" OAxisTitleFont="Microsoft Sans Serif" OAxisTitleSize="10" OAxisTitleColor="#000000" OAxisShowGrid="true" OPrefix="" OPostfix="" OAxisOverrideOrigin="false" OAxisCustomOrigin="0" OAxisOverrideIncrement="false" OAxisIncrement="100" OAxisOverrideBaseline="false" OAxisBaseline="0" OAxisOverrideTopline="false" OAxisTopline="1000" UseOAxisHiliteline="false" OAxisHiliteValue="0" OAxisHiliteColor="#000000" OAxisOverrideDecimalPlaces="false" OAxisNumDecimalPlaces="0" />
+          <XAxis XAxisLabelFont="Microsoft Sans Serif" XAxisLabelSize="8" XAxisLabelColor="#000000" XAxisTitle="" XAxisTitleFont="Microsoft Sans Serif" XAxisTitleSize="10" XAxisTitleColor="#000000" XAxisShowGrid="false" />
+          <StylesSeries1 ShowDataPointText="false" DataPointFontFaceName="Microsoft Sans Serif" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#b30023" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" SeriesBorderWidth="1" ShowSeriesDots="true" SeriesDotSize="2" PlotOnOpposedAxis="false" />
+          <StylesSeries2 ShowDataPointText="false" DataPointFontFaceName="Microsoft Sans Serif" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#00488c" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" SeriesBorderWidth="1" ShowSeriesDots="true" SeriesDotSize="2" PlotOnOpposedAxis="false" />
+          <StylesSeries3 ShowDataPointText="false" DataPointFontFaceName="Microsoft Sans Serif" DataPointFontSize="8" DataPointTextColor="#000000" DataPointTextOffset="2" DataPointUsePrePostfix="false" DataPointOverrideDecimalPlaces="false" DataPointNumDecimalPlaces="0" SeriesColor="#1e6c0b" SeriesPalette="#b30023,#00488c,#1e6c0b,#d84000,#f0b400,#332600,#5400a8,#434c43" SeriesBorderWidth="2" ShowSeriesDots="true" SeriesDotSize="6" PlotOnOpposedAxis="false" />
+          <WatermarkStyles UseWatermark="None" WatermarkText="Property of Alteryx, Inc." WatermarkTextFont="Microsoft Sans Serif" WatermarkTextSize="14" WatermarkTextColor="#000000" WatermarkOpacity="60" WatermarkImage="" />
+          <AllowMultiple value="true" />
+          <CombinationChart value="false" />
+          <SeriesList numSeries="3">
+            <Series1>
+              <Y_ValueField yValueName="LineValue" yValueDesc="Line">speed</Y_ValueField>
+            </Series1>
+            <Series2>
+              <Y_ValueField yValueName="LineValue" yValueDesc="Line">Sum_Ele_gain</Y_ValueField>
+            </Series2>
+            <Series3>
+              <Y_ValueField yValueName="LineValue" yValueDesc="Line">[None]</Y_ValueField>
+            </Series3>
+          </SeriesList>
+          <CurrentKnownFields>
+            <Field name="min" />
+            <Field name="Sum_distance" />
+            <Field name="Sum_timepassed" />
+            <Field name="Sum_Ele_gain" />
+            <Field name="speed" />
+          </CurrentKnownFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxReportChart.dll" EngineDllEntryPoint="AlteryxReportChartPlugin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="594" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>lat</UpdateField_Name>
+          <CreateField_Name>distance</CreateField_Name>
+          <CreateField_Type>Double</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression><![CDATA[ST_Distance([Row-1:Centroid],[Centroid],"Km")*1000
+]]></Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ST_Distance([Row-1:Centroid],[Centroid],"Km")*1000
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="294" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>time</InputFieldName>
+          <Format>yyyy-MM-ddThh:mm:ssZ</Format>
+          <OutputFieldName>Time_HHMMSS</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert time From:
+Custom</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="426" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False" />
+          <Mode>First</Mode>
+          <N>2</N>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="510" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="Time" />
+          <DataField field="Centroid" />
+          <Methods>
+            <Method method="First" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="2017_06_24_22_51_45" size="2147483647" source="CreatePoints: x=lon y=lat" type="SpatialObj" />
+            <Field name="2017_06_24_22_51_47" size="2147483647" source="CreatePoints: x=lon y=lat" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
+        <Position x="558" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OutputDistance value="True" />
+          <ReturnNearest value="False" />
+          <DistToInsideEdge value="False" />
+          <OutputDriveTimeAndDistance value="False" />
+          <SpatialObjSource>2017_06_24_22_51_45</SpatialObjSource>
+          <SpatialObjDest>2017_06_24_22_51_47</SpatialObjDest>
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <AllowReverseRoute value="True" />
+          <MaxDriveTime value="30" />
+          <DriveDistanceOnly value="False" />
+          <OutputCardinalDirection value="True" />
+          <OutputDirectionDegrees value="False" />
+          <IsMetric value="True" />
+          <OutputUnits>Meters</OutputUnits>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxDistance" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="690" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>lat</UpdateField_Name>
+          <CreateField_Name>timepassed</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>DateTimeDiff([Time],[Row-1:Time],'sec')</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DateTimeDiff([Time],[Row-1:Time],'sec')</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RunningTotal.RunningTotal">
+        <Position x="882" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupByFields />
+          <RunningTotalFields>
+            <Field field="timepassed" />
+          </RunningTotalFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRunningTotal" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="978" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[RunTot_timepassed]/60&#xA;" field="min" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[min = [RunTot_timepassed]/60
+
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1074" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="min" action="GroupBy" rename="min" />
+            <SummarizeField field="distance" action="Sum" rename="Sum_distance" />
+            <SummarizeField field="timepassed" action="Sum" rename="Sum_timepassed" />
+            <SummarizeField field="Ele_gain" action="Sum" rename="Sum_Ele_gain" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1170" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum_distance]/[Sum_timepassed]" field="speed" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[speed = [Sum_distance]/[Sum_timepassed]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="786" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>lat</UpdateField_Name>
+          <CreateField_Name>Ele_gain</CreateField_Name>
+          <CreateField_Type>Double</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>if isnull([distance]) then 0 else
+[ele]-[Row-1:ele]
+endif</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>if isnull([distance]) then 0 else
+[ele]-[Row-1:ele]
+endif</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1458" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_15012_832be5f20a9b48e399fb8a0dd65233b0_\Engine_14116_194ab0017c474cd8814b508af79d0e2c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>awc76</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

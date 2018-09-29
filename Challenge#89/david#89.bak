@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.7">
+<AlteryxDocument yxmdVer="2018.3">
   <Nodes>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="426" y="258" width="240" height="180" />
+        <Position x="439.0001" y="258" width="240" height="180" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -26,7 +26,7 @@ THE SKY'S THE LIMIT!</Text>
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="324" height="72" />
+        <Position x="67.00006" y="54" width="324" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -47,7 +47,7 @@ THE SKY'S THE LIMIT!</Text>
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="414" y="69" width="252" height="40" />
+        <Position x="427.0001" y="69" width="252" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -67,7 +67,7 @@ THE SKY'S THE LIMIT!</Text>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="126" width="612" height="84" />
+        <Position x="67.00006" y="126" width="612" height="84" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -87,9 +87,659 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Annotation>
       </Properties>
     </Node>
+    <Node ToolID="138">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="689" y="141.9999" width="1381" height="544.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 138</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="714" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">.\starting_db.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>starting_db.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ID" source="File: (Multiple Sources)" type="Int64" />
+                <Field name="Tweet" size="166" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="Retweets" source="File: (Multiple Sources)" type="Int32" />
+                <Field name="Favorites" source="File: (Multiple Sources)" type="Int16" />
+                <Field name="Hashtag" size="131" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="Date" size="9" source="File: (Multiple Sources)" type="String" />
+                <Field name="Time" size="8" source="File: (Multiple Sources)" type="String" />
+                <Field name="Retweet" source="File: (Multiple Sources)" type="Bool" />
+                <Field name="User ID" source="File: (Multiple Sources)" type="Int64" />
+                <Field name="User" size="27" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="User Screen Name" size="15" source="File: (Multiple Sources)" type="String" />
+                <Field name="Location" size="144" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="Followers" source="File: (Multiple Sources)" type="Int32" />
+                <Field name="Friends" source="File: (Multiple Sources)" type="Int32" />
+                <Field name="Listed" source="File: (Multiple Sources)" type="Int32" />
+                <Field name="User Total Tweets" source="File: (Multiple Sources)" type="Int32" />
+                <Field name="Replied To" size="15" source="File: (Multiple Sources)" type="String" />
+                <Field name="FileName" size="27" source="File: FileName" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1074" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ID" selected="True" rename="TweetID" type="String" size="21" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="72">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="1362" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>body</Field>
+              <RegExExpression value="(RT\s)*@\w+\:*" />
+              <CaseInsensitve value="True" />
+              <Method>Replace</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName />
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="RegExOut1" type="V_WString" size="254" />
+              </ParseComplex>
+              <Match>
+                <Field>Tweet_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Replace:
+(RT\s)*@\w+\:*
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1170" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Tweet]" field="body" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[body = [Tweet]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="882" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Retweet] = 0 OR [Retweet] = 1</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>IsFalse</Operator>
+                <Field>Retweet</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-26 23:29:29</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2018-09-26 23:29:29</StartDate>
+                  <EndDate>2018-09-26 23:29:29</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Retweet] = 0 OR [Retweet] = 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="1482" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="User ID" action="CountDistinct" rename="CountDistinct_User ID" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="978" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Unique: ID</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1266" y="282" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!Contains([body],"????")</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>NotContains</Operator>
+                <Field>body</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-27 00:00:03</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>????</Operand>
+                  <StartDate>2018-09-27 00:00:03</StartDate>
+                  <EndDate>2018-09-27 00:00:03</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!Contains([body],"????")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="121">
+          <GuiSettings Plugin="JupyterCode">
+            <Position x="1842" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{},"source":"Run `Alteryx.help()` for info about useful functions.  \ni.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.installPackages(\"eli5\")`"},{"cell_type":"code","execution_count":1,"metadata":{"trusted":true},"outputs":[],"source":"import pandas as pd"},{"cell_type":"code","execution_count":2,"metadata":{"trusted":true},"outputs":[{"name":"stderr","output_type":"stream","text":"c:\\program files\\alteryx\\bin\\miniconda3\\pythontool_venv\\lib\\site-packages\\nltk\\twitter\\__init__.py:20: UserWarning: The twython library has not been installed. Some functionality from the twitter package will not be available.\n  warnings.warn(\"The twython library has not been installed. \"\n"}],"source":"\nfrom ayx import Alteryx\nfrom nltk.sentiment.vader import SentimentIntensityAnalyzer"},{"cell_type":"code","execution_count":3,"metadata":{"trusted":true},"outputs":[],"source":"\n# next, we initialize VADER so we can use it within our Python script\nsid = SentimentIntensityAnalyzer()\n"},{"cell_type":"code","execution_count":4,"metadata":{"trusted":true},"outputs":[{"name":"stdout","output_type":"stream","text":"SUCCESS: reading input data \"#1\"\n"}],"source":"df = Alteryx.read('#1')"},{"cell_type":"code","execution_count":5,"metadata":{"trusted":true},"outputs":[{"data":{"text/html":"<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>TweetID</th>\n      <th>body</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>912771881043886000</td>\n      <td>Mind the Gap! Why listening to #citizen is not...</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>912772758370754000</td>\n      <td>#Unesco #agenda2030 https://t.co/g8R3DZleUc</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>912774473065037000</td>\n      <td>Minister  met with  #UNGA #SDGs #ClimateAction...</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>912776851612979000</td>\n      <td>No Progress on #SDGs Without #DataEquality, Tr...</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>912777988747485000</td>\n      <td>https://t.co/0KT1pPE2g8</td>\n    </tr>\n  </tbody>\n</table>\n</div>","text/plain":"              TweetID                                               body\n0  912771881043886000  Mind the Gap! Why listening to #citizen is not...\n1  912772758370754000        #Unesco #agenda2030 https://t.co/g8R3DZleUc\n2  912774473065037000  Minister  met with  #UNGA #SDGs #ClimateAction...\n3  912776851612979000  No Progress on #SDGs Without #DataEquality, Tr...\n4  912777988747485000                          \n https://t.co/0KT1pPE2g8"},"execution_count":5,"metadata":{},"output_type":"execute_result"}],"source":"df.head(5)"},{"cell_type":"code","execution_count":6,"metadata":{"trusted":true},"outputs":[],"source":"df['scores'] = df['body'].apply(lambda x:\n                                sid.polarity_scores(x))\n\ndf = pd.concat([df.drop(['scores'], axis =1), df['scores'].apply(pd.Series)], axis = 1)\n"},{"cell_type":"code","execution_count":7,"metadata":{"trusted":true},"outputs":[{"data":{"text/html":"<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>TweetID</th>\n      <th>body</th>\n      <th>neg</th>\n      <th>neu</th>\n      <th>pos</th>\n      <th>compound</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>912771881043886000</td>\n      <td>Mind the Gap! Why listening to #citizen is not...</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>912772758370754000</td>\n      <td>#Unesco #agenda2030 https://t.co/g8R3DZleUc</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>912774473065037000</td>\n      <td>Minister  met with  #UNGA #SDGs #ClimateAction...</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>912776851612979000</td>\n      <td>No Progress on #SDGs Without #DataEquality, Tr...</td>\n      <td>0.138</td>\n      <td>0.688</td>\n      <td>0.175</td>\n      <td>0.1531</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>912777988747485000</td>\n      <td>https://t.co/0KT1pPE2g8</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n  </tbody>\n</table>\n</div>","text/plain":"              TweetID                                               body  \\\n0  912771881043886000  Mind the Gap! Why listening to #citizen is not...   \n1  912772758370754000        #Unesco #agenda2030 https://t.co/g8R3DZleUc   \n2  912774473065037000  Minister  met with  #UNGA #SDGs #ClimateAction...   \n3  912776851612979000  No Progress on #SDGs Without #DataEquality, Tr...   \n4  912777988747485000                          \n https://t.co/0KT1pPE2g8   \n\n     neg    neu    pos  compound  \n0  0.000  1.000  0.000    0.0000  \n1  0.000  1.000  0.000    0.0000  \n2  0.000  1.000  0.000    0.0000  \n3  0.138  0.688  0.175    0.1531  \n4  0.000  1.000  0.000    0.0000  "},"execution_count":7,"metadata":{},"output_type":"execute_result"}],"source":"df.head(5)"},{"cell_type":"code","execution_count":9,"metadata":{"trusted":true},"outputs":[{"name":"stdout","output_type":"stream","text":"SUCCESS: writing outgoing connection data 1\n"},{"data":{"text/html":"<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>TweetID</th>\n      <th>body</th>\n      <th>neg</th>\n      <th>neu</th>\n      <th>pos</th>\n      <th>compound</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>912771881043886000</td>\n      <td>Mind the Gap! Why listening to #citizen is not...</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>912772758370754000</td>\n      <td>#Unesco #agenda2030 https://t.co/g8R3DZleUc</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>912774473065037000</td>\n      <td>Minister  met with  #UNGA #SDGs #ClimateAction...</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>912776851612979000</td>\n      <td>No Progress on #SDGs Without #DataEquality, Tr...</td>\n      <td>0.138</td>\n      <td>0.688</td>\n      <td>0.175</td>\n      <td>0.1531</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>912777988747485000</td>\n      <td>https://t.co/0KT1pPE2g8</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>912778294671626000</td>\n      <td>The aim of  is to develop future leaders with ...</td>\n      <td>0.000</td>\n      <td>0.704</td>\n      <td>0.296</td>\n      <td>0.7430</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>912779320346710000</td>\n      <td>Explore our 2030 Promise to learn how weÂre he...</td>\n      <td>0.000</td>\n      <td>0.647</td>\n      <td>0.353</td>\n      <td>0.8020</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>912781795938074000</td>\n      <td>\"What #SDGs have you working on?\" Answers for ...</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>912782762955952000</td>\n      <td>#Trade &amp;amp; the #SDGs: To promote #economicgr...</td>\n      <td>0.000</td>\n      <td>0.852</td>\n      <td>0.148</td>\n      <td>0.3818</td>\n    </tr>\n    <tr>\n      <th>9</th>\n      <td>912783853969985000</td>\n      <td>Se avanza en la hoja de ruta para lograr #Cero...</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.0000</td>\n    </tr>\n  </tbody>\n</table>\n</div>","text/plain":"              TweetID                                               body  \\\n0  912771881043886000  Mind the Gap! Why listening to #citizen is not...   \n1  912772758370754000        #Unesco #agenda2030 https://t.co/g8R3DZleUc   \n2  912774473065037000  Minister  met with  #UNGA #SDGs #ClimateAction...   \n3  912776851612979000  No Progress on #SDGs Without #DataEquality, Tr...   \n4  912777988747485000                          \n https://t.co/0KT1pPE2g8   \n5  912778294671626000  The aim of  is to develop future leaders with ...   \n6  912779320346710000  Explore our 2030 Promise to learn how weÂre he...   \n7  912781795938074000  \"What #SDGs have you working on?\" Answers for ...   \n8  912782762955952000  #Trade &amp; the #SDGs: To promote #economicgr...   \n9  912783853969985000  Se avanza en la hoja de ruta para lograr #Cero...   \n\n     neg    neu    pos  compound  \n0  0.000  1.000  0.000    0.0000  \n1  0.000  1.000  0.000    0.0000  \n2  0.000  1.000  0.000    0.0000  \n3  0.138  0.688  0.175    0.1531  \n4  0.000  1.000  0.000    0.0000  \n5  0.000  0.704  0.296    0.7430  \n6  0.000  0.647  0.353    0.8020  \n7  0.000  1.000  0.000    0.0000  \n8  0.000  0.852  0.148    0.3818  \n9  0.000  1.000  0.000    0.0000  "},"execution_count":9,"metadata":{},"output_type":"execute_result"}],"source":"Alteryx.write(df, 1)"},{"cell_type":"code","execution_count":null,"metadata":{"trusted":true},"outputs":[],"source":""}],"metadata":{"kernelspec":{"display_name":"Python 3","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.6.0"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+              <assetGUID>be6df3a6cfdb4a0dbe14698bcb7d5c10</assetGUID>
+              <Port>63108</Port>
+              <GuidDir>f52a35c8-52b3-4fb4-9709-e80d21e2699e</GuidDir>
+              <ToolId>121</ToolId>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output1">
+              <RecordInfo>
+                <Field name="TweetID" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="Tweet" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="Retweets" source="J-DATA:" type="Int64" />
+                <Field name="Favorites" source="J-DATA:" type="Int64" />
+                <Field name="Hashtag" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="Date" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="Time" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="Retweet" source="J-DATA:" type="Int64" />
+                <Field name="User ID" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="User" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="User Screen Name" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="Location" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="Followers" source="J-DATA:" type="Int64" />
+                <Field name="Friends" source="J-DATA:" type="Int64" />
+                <Field name="Listed" source="J-DATA:" type="Int64" />
+                <Field name="User Total Tweets" source="J-DATA:" type="Int64" />
+                <Field name="Replied To" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="FileName" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="body" size="1073741823" source="J-DATA:" type="V_WString" />
+                <Field name="neg" source="J-DATA:" type="Double" />
+                <Field name="neu" source="J-DATA:" type="Double" />
+                <Field name="pos" source="J-DATA:" type="Double" />
+                <Field name="compound" source="J-DATA:" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="1554" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>10</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 10</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="123">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1746" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="User ID" selected="True" type="String" size="21" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="124">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+            <Position x="1458" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <DetourRight value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+        </Node>
+        <Node ToolID="125">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
+            <Position x="1650" y="270" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
+        </Node>
+        <Node ToolID="126">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1938" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">.\tweets_polarity.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>tweets_polarity.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="127">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="750.0001" y="185.9999" width="324" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Keep only original tweets
+with no duplicates</Text>
+              <Font name="Arial" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="128">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1086" y="186" width="324" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Keep only those with valid text</Text>
+              <Font name="Arial" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1518" y="186" width="408" height="72" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Obtain each tweet's polarity/score using nltk &amp; vader</Text>
+              <Font name="Arial" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="130">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1206" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!Contains([Tweet],"????")</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>NotContains</Operator>
+                <Field>Tweet</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-27 11:00:28</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2018-09-27 11:00:28</StartDate>
+                  <EndDate>2018-09-27 11:00:28</EndDate>
+                  <Operand>????</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!Contains([Tweet],"????")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="1410" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>Tweet</FieldFind>
+              <FieldSearch>body</FieldSearch>
+              <ReplaceFoundField>Hashtag</ReplaceFoundField>
+              <FindMode>FindAny</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Append</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields>
+                <Field field="neg" />
+                <Field field="neu" />
+                <Field field="pos" />
+                <Field field="compound" />
+              </ReplaceAppendFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="1074" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Tweet</Field>
+              <RegExExpression value="(RT\s)*@\w+\:*" />
+              <CaseInsensitve value="True" />
+              <Method>Replace</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName />
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="RegExOut1" type="V_WString" size="254" />
+              </ParseComplex>
+              <Match>
+                <Field>Tweet_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Replace:
+(RT\s)*@\w+\:*
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings>
+            <Position x="1302" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"Tweet"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">True</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings>
+            <Position x="1938" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"body"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">True</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="870" y="570" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ID" selected="True" type="String" size="21" />
+                <SelectField field="User ID" selected="True" type="String" size="21" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="810" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([ID])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>ID</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2018-09-27 20:32:37</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2018-09-27 20:32:37</StartDate>
+                  <EndDate>2018-09-27 20:32:37</EndDate>
+                  <Operand>916283779681079000</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([ID])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
     <Node ToolID="68">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="40.99994" y="214" width="106.4582" height="19" />
+        <Position x="53.99991" y="214" width="136.4582" height="19" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -107,7 +757,7 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
       <ChildNodes>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="65.99991" y="258" width="240" height="1164" />
+            <Position x="78.99994" y="258" width="240" height="1164" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -127,11 +777,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="41">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="198" y="318" />
+            <Position x="211" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_0d34b74763944a3396397188a00d0cc8_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_eac6500daa254bdcbe224dba7529227f_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -155,12 +805,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="90.00002" y="318" />
+            <Position x="103.0002" y="317.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\UNGA_.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\UNGA_.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -182,23 +832,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA_.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -207,12 +857,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="47">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="89.99995" y="426" />
+            <Position x="102.9999" y="426.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\UNGA2017.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\UNGA2017.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -234,23 +884,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\UNGA2017.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -259,11 +909,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="48">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="198" y="426" />
+            <Position x="211.0001" y="426" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_4e432715330a4774bea1c70b11470cf6_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_97465469899645158cea4fde2011546e_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -287,12 +937,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="49">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="90.00001" y="534" />
+            <Position x="103.0001" y="534" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\sdgs.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\sdgs.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -314,23 +964,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdgs.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -339,11 +989,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="50">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="198" y="534" />
+            <Position x="211.0001" y="534.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_16031fd83e9a453aac7cfec6acd2a007_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_42bd1a41c3194d859b30f40e1a45bb73_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -367,12 +1017,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="51">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="90.00002" y="641.9999" />
+            <Position x="103.0001" y="641.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\sdginnovation.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\sdginnovation.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -394,23 +1044,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\sdginnovation.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -419,11 +1069,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="52">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="186" y="642" />
+            <Position x="199" y="642.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_5957d481b7ae445482b8b05487817fb4_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_bc3f9fa43b7f4f6799ef6f1cd5724574_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -447,12 +1097,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="90.00001" y="738" />
+            <Position x="103" y="737.9999" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\makeeuropesustainableforall.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -474,23 +1124,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\makeeuropesustainableforall.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -499,11 +1149,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="54">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="186" y="738.0001" />
+            <Position x="199.0001" y="738.0002" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_aaae604e30944adaa7df6086012ebdc1_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_24dbf05a065d439cb48d1b6a267141dd_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -527,12 +1177,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="55">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="90.00004" y="870" />
+            <Position x="103" y="870" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\globalpeoplesummit.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\globalpeoplesummit.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -554,23 +1204,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalpeoplesummit.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -579,11 +1229,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="56">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="186" y="870.0001" />
+            <Position x="199.0001" y="870.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_0d6bbfbdaa564d448ef8ad19ba119f14_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_62416b4dd58c452d90651e4028705ad7_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -607,12 +1257,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="57">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="90.00008" y="990.0001" />
+            <Position x="103.0001" y="990.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\globalgoals.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\globalgoals.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -634,23 +1284,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\globalgoals.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -659,11 +1309,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="58">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="186" y="990" />
+            <Position x="199" y="990" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_fce844354c184c97980db34be780891b_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_c4e200a583e3428b90d27c4cdb3f5fc2_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -687,12 +1337,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="59">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="89.99984" y="1098" />
+            <Position x="102.9999" y="1098" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\aniversarioODS.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\aniversarioODS.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -714,23 +1364,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\aniversarioODS.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -739,11 +1389,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="60">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="186.0001" y="1098" />
+            <Position x="199.0001" y="1098" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_2e10d1240a1d40ada1cac4add6fd27d8_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_a1b7de77f6e14762b8339297d3a6ccfa_.yxdb</TempFile>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -755,12 +1405,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="61">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="90.00001" y="1218" />
+            <Position x="103.0001" y="1218" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\agenda2030.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\agenda2030.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -782,23 +1432,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\agenda2030.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -807,11 +1457,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="62">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="186.0002" y="1218" />
+            <Position x="199.0003" y="1218" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_bc9da5d25c8741ea814c71305517385f_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_7bd8749898204f69b9e92db5fafad090_.yxdb</TempFile>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -823,12 +1473,12 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="63">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="89.99986" y="1314" />
+            <Position x="103" y="1314" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">_externals\1\act4sdgs.csv</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\challenge_89_start_file\_externals\1\act4sdgs.csv</File>
               <FormatSpecificOptions>
                 <CodePage>28591</CodePage>
                 <Delimeter>,</Delimeter>
@@ -850,23 +1500,23 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             </Dependencies>
             <MetaInfo connection="Output">
               <RecordInfo>
-                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
-                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Tweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Retweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Favorites" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Hashtag" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Time" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Retweet" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="User ID" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="User" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="User Screen Name" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Location" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Followers" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Friends" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Listed" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="User Total Tweets" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
+                <Field name="Replied To" size="254" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\challenge_89_start_file\_externals\1\act4sdgs.csv" type="V_String" />
                 <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
               </RecordInfo>
             </MetaInfo>
@@ -875,11 +1525,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="64">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="186" y="1314" />
+            <Position x="199.0001" y="1314" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_25008_e26fa6b1f0b84b6c81237622305b41b1_\Engine_26192_ccfe0d563b4142efbdf3775b5f6942b8_.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23880_19fc0b82a7e148d2aa87e9ea32f967ee_\Engine_12280_9208bc5e9c60405ab9e143c2614d9ac8_.yxdb</TempFile>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
@@ -891,7 +1541,7 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="65">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-            <Position x="510" y="918" />
+            <Position x="523.0001" y="906" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -910,7 +1560,7 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="66">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
-            <Position x="642" y="906" />
+            <Position x="655.0001" y="906.0001" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -944,7 +1594,7 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="ID" source="File: (Multiple Sources)" type="Int64" />
-                <Field name="Tweet" size="162" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="Tweet" size="166" source="File: (Multiple Sources)" type="V_String" />
                 <Field name="Retweets" source="File: (Multiple Sources)" type="Int32" />
                 <Field name="Favorites" source="File: (Multiple Sources)" type="Int16" />
                 <Field name="Hashtag" size="131" source="File: (Multiple Sources)" type="V_String" />
@@ -952,9 +1602,9 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
                 <Field name="Time" size="8" source="File: (Multiple Sources)" type="String" />
                 <Field name="Retweet" source="File: (Multiple Sources)" type="Bool" />
                 <Field name="User ID" source="File: (Multiple Sources)" type="Int64" />
-                <Field name="User" size="26" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="User" size="27" source="File: (Multiple Sources)" type="V_String" />
                 <Field name="User Screen Name" size="15" source="File: (Multiple Sources)" type="String" />
-                <Field name="Location" size="138" source="File: (Multiple Sources)" type="V_String" />
+                <Field name="Location" size="144" source="File: (Multiple Sources)" type="V_String" />
                 <Field name="Followers" source="File: (Multiple Sources)" type="Int32" />
                 <Field name="Friends" source="File: (Multiple Sources)" type="Int32" />
                 <Field name="Listed" source="File: (Multiple Sources)" type="Int32" />
@@ -968,11 +1618,11 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
         <Node ToolID="67">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="810" y="917.9999" />
+            <Position x="762" y="906" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <File FileFormat="19" MaxRecords="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\starting_db.yxdb</File>
+              <File FileFormat="19" MaxRecords="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#89\starting_db.yxdb</File>
               <Passwords />
               <FormatSpecificOptions>
                 <NoSpatialIndex>False</NoSpatialIndex>
@@ -993,154 +1643,103 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
         </Node>
       </ChildNodes>
     </Node>
-    <Node ToolID="69">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="702" y="294" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#89\starting_db.yxdb</File>
-          <FormatSpecificOptions />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>starting_db.yxdb</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="ID" source="File: (Multiple Sources)" type="Int64" />
-            <Field name="Tweet" size="162" source="File: (Multiple Sources)" type="V_String" />
-            <Field name="Retweets" source="File: (Multiple Sources)" type="Int32" />
-            <Field name="Favorites" source="File: (Multiple Sources)" type="Int16" />
-            <Field name="Hashtag" size="131" source="File: (Multiple Sources)" type="V_String" />
-            <Field name="Date" size="9" source="File: (Multiple Sources)" type="String" />
-            <Field name="Time" size="8" source="File: (Multiple Sources)" type="String" />
-            <Field name="Retweet" source="File: (Multiple Sources)" type="Bool" />
-            <Field name="User ID" source="File: (Multiple Sources)" type="Int64" />
-            <Field name="User" size="26" source="File: (Multiple Sources)" type="V_String" />
-            <Field name="User Screen Name" size="15" source="File: (Multiple Sources)" type="String" />
-            <Field name="Location" size="138" source="File: (Multiple Sources)" type="V_String" />
-            <Field name="Followers" source="File: (Multiple Sources)" type="Int32" />
-            <Field name="Friends" source="File: (Multiple Sources)" type="Int32" />
-            <Field name="Listed" source="File: (Multiple Sources)" type="Int32" />
-            <Field name="User Total Tweets" source="File: (Multiple Sources)" type="Int32" />
-            <Field name="Replied To" size="15" source="File: (Multiple Sources)" type="String" />
-            <Field name="FileName" size="27" source="File: FileName" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
-    </Node>
-    <Node ToolID="70">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="798" y="294" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="71">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="798" y="426" width="100" height="40" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Text>id language</Text>
-          <Font name="Segoe UI" size="8.25" style="0" />
-          <TextColor name="Black" />
-          <FillColor name="White" />
-          <Shape shape="0" />
-          <Justification Justification="4" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-    </Node>
-    <Node ToolID="72">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="990" y="294" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Field>body</Field>
-          <RegExExpression value="(RT\s)*@\w+\:*" />
-          <CaseInsensitve value="True" />
-          <Method>Replace</Method>
-          <Replace expression="">
-            <CopyUnmatched value="True" />
-          </Replace>
-          <ParseSimple>
-            <SplitToRows value="False" />
-            <RootName />
-            <NumFields value="3" />
-            <ErrorHandling>Warn</ErrorHandling>
-          </ParseSimple>
-          <ParseComplex>
-            <Field field="RegExOut1" type="V_WString" size="254" />
-          </ParseComplex>
-          <Match>
-            <Field>Tweet_Matched</Field>
-            <ErrorUnmatched value="False" />
-          </Match>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[Replace:
-(RT\s)*@\w+\:*
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
-    </Node>
-    <Node ToolID="73">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="894" y="294" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="[Tweet]" field="body" size="1073741823" type="V_WString" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[body = [Tweet]
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
   </Nodes>
   <Connections>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="124" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="True" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Unique" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="True" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="True" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output1" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output1" />
+      <Destination ToolID="136" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="122" Connection="Output" />
+      <Destination ToolID="125" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="Right" />
+      <Destination ToolID="125" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="123" Connection="Output" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="Left" />
+      <Destination ToolID="122" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="Output" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="True" />
+      <Destination ToolID="135" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="134" Connection="Output" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="135" Connection="Output26" />
+      <Destination ToolID="133" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="136" Connection="Output26" />
+      <Destination ToolID="133" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="134" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="True" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="True" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
     <Connection>
       <Origin ToolID="46" Connection="Output" />
       <Destination ToolID="41" Connection="Input" />
     </Connection>
-    <Connection>
-      <Origin ToolID="47" Connection="Output" />
-      <Destination ToolID="48" Connection="Input" />
+    <Connection name="#10">
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
     </Connection>
     <Connection name="#1">
       <Origin ToolID="47" Connection="Output" />
@@ -1177,6 +1776,10 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
     <Connection name="#9">
       <Origin ToolID="63" Connection="Output" />
       <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="49" Connection="Output" />
@@ -1217,18 +1820,6 @@ Prepare and analyze the data, and format it for visualization in the tool/platfo
     <Connection>
       <Origin ToolID="66" Connection="Output" />
       <Destination ToolID="67" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="69" Connection="Output" />
-      <Destination ToolID="70" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="70" Connection="Output" />
-      <Destination ToolID="73" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="73" Connection="Output" />
-      <Destination ToolID="72" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

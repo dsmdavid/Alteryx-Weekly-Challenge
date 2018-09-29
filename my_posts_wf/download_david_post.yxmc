@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<AlteryxDocument yxmdVer="11.7">
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.2">
   <Nodes>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
@@ -185,9 +185,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output9">
           <RecordInfo>
             <Field name="Count" source="(Multiple Sources)" type="Int64" />
@@ -438,7 +435,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="65" y="54" width="106.4582" height="19" />
+        <Position x="65" y="54" width="136.4582" height="19" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -812,14 +809,20 @@
       <IterativeMacro>
         <Input>Input21</Input>
         <Output>itOutput</Output>
-        <IterationLimit value="4" />
+        <IterationLimit value="100" />
         <LimitBehavior>Warn</LimitBehavior>
         <OutputMode>AllSame</OutputMode>
       </IterativeMacro>
       <Wiz_CustomHelp value="False" />
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
-      <Wiz_OpenOutputTools />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="21" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+        <Tool ToolId="24" Selected="True" />
+        <Tool ToolId="27" Selected="True" />
+        <Tool ToolId="3" Selected="False" />
+      </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
       <Wiz_ChainRunWizard />

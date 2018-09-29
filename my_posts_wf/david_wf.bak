@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <AlteryxDocument yxmdVer="11.7">
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="6" y="102" />
+        <Position x="54" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -22,17 +22,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="url" size="105" source="TextInput:" type="String" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
     <Node ToolID="17">
       <GuiSettings>
-        <Position x="174" y="102" />
+        <Position x="222" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -41,30 +36,16 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-        <MetaInfo connection="Output27">
-          <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData (BatchMacro)" type="V_WString" />
-            <Field name="ITER" source="Formula: [Engine.IterationNumber] (BatchMacro)" type="Int16" />
-          </RecordInfo>
-        </MetaInfo>
-        <MetaInfo connection="itOutput">
-          <RecordInfo>
-            <Field name="url" size="105" source="TextInput:" type="String" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings Macro="download_david_post.yxmc" />
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="270" y="138" />
+        <Position x="318" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_22112_aea8781bb0c74583a2f7e3e1db7966cd_\Engine_10308_9f4d5e963e1748089eb82c71cdeb1bd0_.yxdb</TempFile>
+          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_13856_bbb93a6b4b2d4454b37275ae9fbaa7fc_\Engine_13212_0cd9e6267ba94b549c66d2642bc90666_.yxdb</TempFile>
           <Layout>
             <View1>
               <Hints>
@@ -83,7 +64,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="234" y="174" />
+        <Position x="282" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -99,18 +80,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" source="RegEx: Parsed from DownloadData (BatchMacro)" type="Int32" />
-            <Field name="ITER" source="Formula: [Engine.IterationNumber] (BatchMacro)" type="Int16" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="354" y="174" />
+        <Position x="402" y="126" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -123,30 +98,12 @@
           <DefaultAnnotationText>Unique: Ch</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Unique">
-          <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" source="RegEx: Parsed from DownloadData (BatchMacro)" type="Int32" />
-            <Field name="ITER" source="Formula: [Engine.IterationNumber] (BatchMacro)" type="Int16" />
-          </RecordInfo>
-          <SortInfo>
-            <Field field="Ch" order="Asc" />
-          </SortInfo>
-        </MetaInfo>
-        <MetaInfo connection="Duplicates">
-          <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" source="RegEx: Parsed from DownloadData (BatchMacro)" type="Int32" />
-            <Field name="ITER" source="Formula: [Engine.IterationNumber] (BatchMacro)" type="Int16" />
-          </RecordInfo>
-          <SortInfo>
-            <Field field="Ch" order="Asc" />
-          </SortInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="462" y="162" />
+        <Position x="510" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -159,21 +116,12 @@
           <DefaultAnnotationText>Ch - Ascending</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" source="RegEx: Parsed from DownloadData (BatchMacro)" type="Int32" />
-            <Field name="ITER" source="Formula: [Engine.IterationNumber] (BatchMacro)" type="Int16" />
-          </RecordInfo>
-          <SortInfo>
-            <Field field="Ch" order="Asc" />
-          </SortInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="654" y="114" />
+        <Position x="702" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -192,17 +140,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Field1" source="TextInput:" type="Byte" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="774" y="114" />
+        <Position x="822" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -220,18 +163,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Field1" source="TextInput:" type="Byte" />
-            <Field name="RowCount" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="582" y="186" />
+        <Position x="630" y="138" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -258,33 +195,25 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Left">
-          <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" source="RegEx: Parsed from DownloadData (BatchMacro)" type="Int32" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="Ch" />
-          </SortInfo>
-        </MetaInfo>
-        <MetaInfo connection="Join">
-          <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" source="RegEx: Parsed from DownloadData (BatchMacro)" type="Int32" />
-            <Field name="RowCount" type="Int32" />
-          </RecordInfo>
-          <SortInfo>
-            <Field field="Ch" order="" />
-          </SortInfo>
-        </MetaInfo>
-        <MetaInfo connection="Right">
-          <RecordInfo>
-            <Field name="RowCount" type="Int32" />
-          </RecordInfo>
-          <SortInfo noProgress="True">
-            <Field field="RowCount" />
-          </SortInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="714" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
     </Node>
   </Nodes>
   <Connections>
@@ -319,6 +248,10 @@
     <Connection>
       <Origin ToolID="18" Connection="Output" />
       <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="21" Connection="Input8" />
     </Connection>
   </Connections>
   <Properties>

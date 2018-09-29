@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.7">
+<AlteryxDocument yxmdVer="2018.2">
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
@@ -25,7 +25,7 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="17">
+    <Node ToolID="22">
       <GuiSettings>
         <Position x="222" y="54" />
       </GuiSettings>
@@ -45,13 +45,18 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_13856_bbb93a6b4b2d4454b37275ae9fbaa7fc_\Engine_13212_0cd9e6267ba94b549c66d2642bc90666_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_32980_44b35fba709c457bab03af11216a1eca_\Engine_7352_a5f364ade2664e70a41e0cde91025400_.yxdb</TempFile>
+          <TempFileDataProfiling />
           <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
             <View1>
+              <DefaultTab>Profile</DefaultTab>
               <Hints>
                 <Table />
               </Hints>
             </View1>
+            <View2 />
           </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -155,7 +160,7 @@
           <CreateField_Type>Int32</CreateField_Type>
           <CreateField_Size>4</CreateField_Size>
           <Expression_Init>1</Expression_Init>
-          <Expression_Cond>RowCount &lt;= 100</Expression_Cond>
+          <Expression_Cond>RowCount &lt;= 150</Expression_Cond>
           <Expression_Loop>RowCount + 1</Expression_Loop>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -209,9 +214,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="CountRecords.yxmc" />
     </Node>
@@ -219,14 +221,14 @@
   <Connections>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="17" Connection="Input21" />
+      <Destination ToolID="22" Connection="Input21" />
     </Connection>
     <Connection>
-      <Origin ToolID="17" Connection="Output27" />
+      <Origin ToolID="22" Connection="Output27" />
       <Destination ToolID="7" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="17" Connection="Output27" />
+      <Origin ToolID="22" Connection="Output27" />
       <Destination ToolID="13" Connection="Input" />
     </Connection>
     <Connection>

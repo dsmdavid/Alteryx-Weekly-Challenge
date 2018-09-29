@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.3">
+<AlteryxDocument yxmdVer="2018.3">
   <Nodes>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -142,7 +142,7 @@ The goal is to create an analytical application that allows a HR rep to enter a 
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_10596_ee3a09f2bfac409a9eb786876b238376_\Engine_4584_37895607472b4f8c9528b5b52c0d364c_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5600_bdb443f2b9ad411985d5fcf56fbdbaa4_\Engine_12280_e2916d67d8114943b9ee97bfe41a330a_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -170,7 +170,7 @@ The goal is to create an analytical application that allows a HR rep to enter a 
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_10596_ee3a09f2bfac409a9eb786876b238376_\Engine_4584_f7af5601db71436b885e6f457c465461_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5600_bdb443f2b9ad411985d5fcf56fbdbaa4_\Engine_12280_8d00f8643e5544caad5cd4c8340c4792_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -400,7 +400,7 @@ The goal is to create an analytical application that allows a HR rep to enter a 
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_10596_ee3a09f2bfac409a9eb786876b238376_\Engine_4584_5d2727e2efb746feab7a6247849d43e6_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5600_bdb443f2b9ad411985d5fcf56fbdbaa4_\Engine_12280_f924702f75dc40c6b95239efc25ed988_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -629,7 +629,7 @@ elseif [Position Number] = [Level...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_10596_ee3a09f2bfac409a9eb786876b238376_\Engine_4584_9c43b9c68ec247939a5ef9b438339e8d_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5600_bdb443f2b9ad411985d5fcf56fbdbaa4_\Engine_12280_7ab4f61d00524ea88e8e2d4122dd04b9_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -657,7 +657,7 @@ elseif [Position Number] = [Level...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="19" MaxRecords="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#05\results.yxdb</File>
+          <File FileFormat="19" MaxRecords="">.\results.yxdb</File>
           <Passwords />
           <FormatSpecificOptions>
             <NoSpatialIndex>False</NoSpatialIndex>
@@ -670,6 +670,9 @@ elseif [Position Number] = [Level...</DefaultAnnotationText>
           <DefaultAnnotationText>results.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
@@ -750,7 +753,7 @@ elseif [Position Number] = [Level...</DefaultAnnotationText>
     </Constants>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>challenge_5_start_file_david</Name>
+      <Name>solved#5</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -803,7 +806,7 @@ elseif [Position Number] = [Level...</DefaultAnnotationText>
               <Multiple value="False" />
               <Default>33333</Default>
               <Mode>DW2</Mode>
-              <DW2_Path>C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#05\input values for tool.yxdb</DW2_Path>
+              <DW2_Path>.\input values for tool.yxdb</DW2_Path>
               <DW2_Password />
               <DW2_CachedCosmeticName />
             </Question>
