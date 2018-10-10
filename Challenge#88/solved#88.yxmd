@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.7">
+<AlteryxDocument yxmdVer="2018.3">
   <Nodes>
     <Node ToolID="69">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -83,7 +83,7 @@
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="426" y="258" width="240" height="180" />
+        <Position x="426" y="318" width="240" height="120" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -103,7 +103,7 @@
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="66" y="258" width="240" height="180" />
+        <Position x="66" y="318" width="240" height="120" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -188,35 +188,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11008_b4c788dfb51f48d387e1378ca570a743_\Engine_1272_4837b4638dd447b6b292102af25ace5b_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="43">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="558" y="330" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11008_b4c788dfb51f48d387e1378ca570a743_\Engine_1272_d950b4c9161b4772af56fb97f0d1c415_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_19452_f615cd9363b34ee589e1ade311b3411f_\Engine_8792_ff37aac0e7024ad79068b8aade72d571_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -566,10 +538,23 @@
       </GuiSettings>
       <Properties>
         <Configuration>
+          <Expression>!IsNull([Value])</Expression>
           <Mode>Simple</Mode>
           <Simple>
-            <Field>Value</Field>
             <Operator>IsNotNull</Operator>
+            <Field>Value</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>False</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-10-09 22:33:25</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-10-09 22:33:25</StartDate>
+              <EndDate>2018-10-09 22:33:25</EndDate>
+            </Operands>
           </Simple>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -602,26 +587,6 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="51">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="78" y="558" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FieldName>RecordID</FieldName>
-          <StartValue>1</StartValue>
-          <FieldType>Int32</FieldType>
-          <FieldSize>6</FieldSize>
-          <Position>0</Position>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
-    </Node>
     <Node ToolID="52">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
         <Position x="78" y="666" />
@@ -629,7 +594,7 @@
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#88\primes_under_100.yxdb</File>
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">.\primes_under_100.yxdb</File>
           <FormatSpecificOptions />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -648,45 +613,19 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
     </Node>
-    <Node ToolID="54">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="150" y="666" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FieldName>RecordID</FieldName>
-          <StartValue>1</StartValue>
-          <FieldType>Int32</FieldType>
-          <FieldSize>6</FieldSize>
-          <Position>0</Position>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
-    </Node>
     <Node ToolID="55">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="210" y="570" />
+        <Position x="390" y="534" />
       </GuiSettings>
       <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="RecordID" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="RecordID" />
-          </JoinInfo>
+        <Configuration joinByRecordPos="True">
           <SelectConfiguration>
             <Configuration outputConnection="Join">
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
-                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" />
                 <SelectField field="Right_RowCount" selected="True" rename="Prime" />
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -700,60 +639,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
     </Node>
-    <Node ToolID="56">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
-        <Position x="558" y="522" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <ErrorWarn>Warn</ErrorWarn>
-          <KeyFields>
-            <Field field="Transaction Number" />
-          </KeyFields>
-          <DataFields>
-            <Field field="Transaction Number" selected="False" />
-            <Field field="Item_Number_1" selected="True" />
-            <Field field="Item_Number_2" selected="True" />
-            <Field field="Item_Number_3" selected="True" />
-            <Field field="Item_Number_4" selected="True" />
-            <Field field="Item_Number_5" selected="True" />
-            <Field field="Item_Number_6" selected="True" />
-            <Field field="Item_Number_7" selected="True" />
-            <Field field="Item_Number_8" selected="True" />
-            <Field field="*Unknown" selected="True" />
-          </DataFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
-    </Node>
-    <Node ToolID="57">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="630" y="522" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Field>Value</Field>
-            <Operator>IsNotNull</Operator>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>!IsNull([Value])</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
-        <Position x="738" y="522" />
+        <Position x="606" y="522" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -779,7 +667,7 @@
     </Node>
     <Node ToolID="61">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="810" y="522" />
+        <Position x="714" y="522" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -810,7 +698,7 @@ else
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="918" y="522" />
+        <Position x="822" y="522" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -829,7 +717,7 @@ else
     </Node>
     <Node ToolID="64">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1122" y="522" />
+        <Position x="1050" y="522" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -845,32 +733,12 @@ else
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
+          <AnnotationText>Unique combinations</AnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="65">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1026" y="522" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="Transaction Number" selected="True" type="String" size="3" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
     <Node ToolID="66">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
@@ -878,12 +746,19 @@ else
       </GuiSettings>
       <Properties>
         <Configuration>
+          <Expression>[CountDistinct_Transaction Number] != 1</Expression>
           <Mode>Simple</Mode>
           <Simple>
-            <Field>CountDistinct_Transaction Number</Field>
             <Operator>!=</Operator>
+            <Field>CountDistinct_Transaction Number</Field>
             <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-10-09 22:31:03</PeriodDate>
+              <PeriodCount>0</PeriodCount>
               <Operand>1</Operand>
+              <StartDate>2018-10-09 22:31:03</StartDate>
+              <EndDate>2018-10-09 22:31:03</EndDate>
             </Operands>
           </Simple>
         </Configuration>
@@ -902,7 +777,7 @@ else
       <Properties>
         <Configuration>
           <SummarizeFields>
-            <SummarizeField field="CountDistinct_Transaction Number" action="Sum" rename="Sum_CountDistinct_Transaction Number" />
+            <SummarizeField field="CountDistinct_Transaction Number" action="Sum" rename="Number of Combinations" />
           </SummarizeFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -924,14 +799,6 @@ else
       <Destination ToolID="47" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="44" Connection="Output" />
-      <Destination ToolID="56" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="45" Connection="Output" />
-      <Destination ToolID="43" Connection="Input" />
-    </Connection>
-    <Connection>
       <Origin ToolID="47" Connection="Output" />
       <Destination ToolID="49" Connection="Input" />
     </Connection>
@@ -944,32 +811,20 @@ else
       <Destination ToolID="48" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="50" Connection="Output" />
-      <Destination ToolID="51" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="51" Connection="Output" />
-      <Destination ToolID="55" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="54" Connection="Output" />
-      <Destination ToolID="55" Connection="Right" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="52" Connection="Output" />
-      <Destination ToolID="54" Connection="Input" />
+      <Origin ToolID="49" Connection="True" />
+      <Destination ToolID="58" Connection="Targets" />
     </Connection>
     <Connection>
       <Origin ToolID="55" Connection="Join" />
       <Destination ToolID="58" Connection="Source" />
     </Connection>
     <Connection>
-      <Origin ToolID="57" Connection="True" />
-      <Destination ToolID="58" Connection="Targets" />
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="55" Connection="Left" />
     </Connection>
     <Connection>
-      <Origin ToolID="56" Connection="Output" />
-      <Destination ToolID="57" Connection="Input" />
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="55" Connection="Right" />
     </Connection>
     <Connection>
       <Origin ToolID="58" Connection="Output" />
@@ -981,15 +836,11 @@ else
     </Connection>
     <Connection>
       <Origin ToolID="62" Connection="Output" />
-      <Destination ToolID="65" Connection="Input" />
+      <Destination ToolID="64" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="64" Connection="Output" />
       <Destination ToolID="66" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="65" Connection="Output" />
-      <Destination ToolID="64" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="66" Connection="True" />

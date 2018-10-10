@@ -1,0 +1,1079 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Parent ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Line ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Parent ID" selected="False" />
+                <SelectField field="Right_Line ID" selected="False" rename="Right_Line ID" />
+                <SelectField field="Right_Level" selected="False" rename="Right_Level" />
+                <SelectField field="Right_Part Number" selected="False" rename="Right_Part Number" />
+                <SelectField field="Right_Description" selected="False" rename="Right_Description" />
+                <SelectField field="Right_Unit" selected="False" rename="Right_Unit" />
+                <SelectField field="Right_Quantity" selected="True" rename="Right_Quantity" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Line ID" source="TextInput:" type="Byte" />
+            <Field name="Level" source="TextInput:" type="Byte" />
+            <Field name="Part Number" size="11" source="TextInput:" type="String" />
+            <Field name="Description" size="23" source="TextInput:" type="V_String" />
+            <Field name="Unit" size="2" source="TextInput:" type="String" />
+            <Field name="Quantity" source="TextInput:" type="Double" />
+            <Field name="Parent ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Parent ID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Line ID" source="TextInput:" type="Byte" />
+            <Field name="Level" source="TextInput:" type="Byte" />
+            <Field name="Part Number" size="11" source="TextInput:" type="String" />
+            <Field name="Description" size="23" source="TextInput:" type="V_String" />
+            <Field name="Unit" size="2" source="TextInput:" type="String" />
+            <Field name="Quantity" source="TextInput:" type="Double" />
+            <Field name="Right_Quantity" source="TextInput:" type="Double" />
+            <Field name="Parent ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Line ID" source="TextInput:" type="Byte" />
+            <Field name="Quantity" source="TextInput:" type="Double" />
+            <Field name="Parent ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Line ID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="354" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Quantity]*[Right_Quantity]" field="New Quantity" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[New Quantity = [Quantity]*[Right_Quantity]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Line ID" source="TextInput:" type="Byte" />
+            <Field name="Level" source="TextInput:" type="Byte" />
+            <Field name="Part Number" size="11" source="TextInput:" type="String" />
+            <Field name="Description" size="23" source="TextInput:" type="V_String" />
+            <Field name="Unit" size="2" source="TextInput:" type="String" />
+            <Field name="Quantity" source="TextInput:" type="Double" />
+            <Field name="Right_Quantity" source="TextInput:" type="Double" />
+            <Field name="Parent ID" source="TextInput:" type="Byte" />
+            <Field name="New Quantity" source="Formula: [Quantity]*[Right_Quantity]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Quantity" selected="False" />
+            <SelectField field="Right_Quantity" selected="False" />
+            <SelectField field="New Quantity" selected="True" rename="Quantity" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Line ID" source="TextInput:" type="Byte" />
+            <Field name="Level" source="TextInput:" type="Byte" />
+            <Field name="Part Number" size="11" source="TextInput:" type="String" />
+            <Field name="Description" size="23" source="TextInput:" type="V_String" />
+            <Field name="Unit" size="2" source="TextInput:" type="String" />
+            <Field name="Parent ID" source="TextInput:" type="Byte" />
+            <Field name="Quantity" source="Formula: [Quantity]*[Right_Quantity]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="474" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Line ID" source="TextInput:" type="Byte" />
+            <Field name="Level" source="TextInput:" type="Byte" />
+            <Field name="Part Number" size="11" source="TextInput:" type="String" />
+            <Field name="Description" size="23" source="TextInput:" type="V_String" />
+            <Field name="Unit" size="2" source="TextInput:" type="String" />
+            <Field name="Quantity" source="TextInput:" type="Double" />
+            <Field name="Parent ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Parent ID" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>iterIN</Name>
+          <Abbrev>i</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="35" />
+              <Fields>
+                <Field name="Line ID" />
+                <Field name="Level" />
+                <Field name="Part Number" />
+                <Field name="Description" />
+                <Field name="Unit" />
+                <Field name="Quantity" />
+                <Field name="Parent ID" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>101-101</c>
+                  <c>Car</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>102-102</c>
+                  <c>Wheel</c>
+                  <c>EA</c>
+                  <c>4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>103-103</c>
+                  <c>Bolt Assembly</c>
+                  <c>EA</c>
+                  <c>5</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>104-104</c>
+                  <c>Washer</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>120-001</c>
+                  <c>Trolley, 3 wheeled</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c />
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>112-001</c>
+                  <c>Plywood Platform</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>3</c>
+                  <c>106-001</c>
+                  <c>Plywood,12mm,2400x1200</c>
+                  <c>SH</c>
+                  <c>0.125</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>3</c>
+                  <c>111-006</c>
+                  <c>Varnish, Semi Gloss</c>
+                  <c>L</c>
+                  <c>0.05</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>3</c>
+                  <c>130-001</c>
+                  <c>Labor</c>
+                  <c>HR</c>
+                  <c>0.65</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>2</c>
+                  <c>110-001</c>
+                  <c>Wheel Housing</c>
+                  <c>EA</c>
+                  <c>3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>3</c>
+                  <c>110-003</c>
+                  <c>Side Piece</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>4</c>
+                  <c>105-001</c>
+                  <c>MS Flat 80x8</c>
+                  <c>M</c>
+                  <c>0.1</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>4</c>
+                  <c>111-001</c>
+                  <c>Galvanising</c>
+                  <c>KG</c>
+                  <c>0.001</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>4</c>
+                  <c>130-000</c>
+                  <c>Labor</c>
+                  <c>HR</c>
+                  <c>0.1</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>3</c>
+                  <c>110-002</c>
+                  <c>Top Piece</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>4</c>
+                  <c>105-001</c>
+                  <c>MS Flat 80x8</c>
+                  <c>M</c>
+                  <c>0.05</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>4</c>
+                  <c>111-001</c>
+                  <c>Galvanising</c>
+                  <c>KG</c>
+                  <c>0.001</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>4</c>
+                  <c>130-000</c>
+                  <c>Labor</c>
+                  <c>HR</c>
+                  <c>0.5</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>3</c>
+                  <c>102-108</c>
+                  <c>Wheel, with tyre, 100mm</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>3</c>
+                  <c>100-001</c>
+                  <c>MS Bolt, M10x70, Galv</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>3</c>
+                  <c>100-002</c>
+                  <c>M10, washer, Galv</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>3</c>
+                  <c>100-003</c>
+                  <c>M10, Nut, Galv</c>
+                  <c>EA</c>
+                  <c>3</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>3</c>
+                  <c>100-004</c>
+                  <c>MS Bolt, M10x30, Galv</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>3</c>
+                  <c>100-005</c>
+                  <c>M10 Square Nut</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>1</c>
+                  <c>16844-23003</c>
+                  <c>Field Adapter</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c />
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>2</c>
+                  <c>15476-62009</c>
+                  <c>Control</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>2</c>
+                  <c>16763-87001</c>
+                  <c>Moisture Tester</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>3</c>
+                  <c>18701-19302</c>
+                  <c>Enclosure</c>
+                  <c>EA</c>
+                  <c>4</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>3</c>
+                  <c>12000-14273</c>
+                  <c>Machine Screw</c>
+                  <c>EA</c>
+                  <c>4</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>3</c>
+                  <c>09000-16001</c>
+                  <c>Encapsulant</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>2</c>
+                  <c>14644-38389</c>
+                  <c>Precipitator Assy.</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>3</c>
+                  <c>52010-48007</c>
+                  <c>Element</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>3</c>
+                  <c>57002-55100</c>
+                  <c>Housing</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>3</c>
+                  <c>98002-66600</c>
+                  <c>Machine Screw</c>
+                  <c>EA</c>
+                  <c>8</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>3</c>
+                  <c>12000-14267</c>
+                  <c>Precipitator</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>31</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (3)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Line ID" source="TextInput:" type="Byte" />
+            <Field name="Level" source="TextInput:" type="Byte" />
+            <Field name="Part Number" size="11" source="TextInput:" type="String" />
+            <Field name="Description" size="23" source="TextInput:" type="V_String" />
+            <Field name="Unit" size="2" source="TextInput:" type="String" />
+            <Field name="Quantity" source="TextInput:" type="Double" />
+            <Field name="Parent ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>baseInput</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="35" />
+              <Fields>
+                <Field name="Line ID" />
+                <Field name="Level" />
+                <Field name="Part Number" />
+                <Field name="Description" />
+                <Field name="Unit" />
+                <Field name="Quantity" />
+                <Field name="Parent ID" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>101-101</c>
+                  <c>Car</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c />
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>102-102</c>
+                  <c>Wheel</c>
+                  <c>EA</c>
+                  <c>4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>103-103</c>
+                  <c>Bolt Assembly</c>
+                  <c>EA</c>
+                  <c>5</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>104-104</c>
+                  <c>Washer</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>120-001</c>
+                  <c>Trolley, 3 wheeled</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c />
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>112-001</c>
+                  <c>Plywood Platform</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>3</c>
+                  <c>106-001</c>
+                  <c>Plywood,12mm,2400x1200</c>
+                  <c>SH</c>
+                  <c>0.125</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>3</c>
+                  <c>111-006</c>
+                  <c>Varnish, Semi Gloss</c>
+                  <c>L</c>
+                  <c>0.05</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>3</c>
+                  <c>130-001</c>
+                  <c>Labor</c>
+                  <c>HR</c>
+                  <c>0.65</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>2</c>
+                  <c>110-001</c>
+                  <c>Wheel Housing</c>
+                  <c>EA</c>
+                  <c>3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>3</c>
+                  <c>110-003</c>
+                  <c>Side Piece</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>4</c>
+                  <c>105-001</c>
+                  <c>MS Flat 80x8</c>
+                  <c>M</c>
+                  <c>0.1</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>4</c>
+                  <c>111-001</c>
+                  <c>Galvanising</c>
+                  <c>KG</c>
+                  <c>0.001</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>4</c>
+                  <c>130-000</c>
+                  <c>Labor</c>
+                  <c>HR</c>
+                  <c>0.1</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>3</c>
+                  <c>110-002</c>
+                  <c>Top Piece</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>4</c>
+                  <c>105-001</c>
+                  <c>MS Flat 80x8</c>
+                  <c>M</c>
+                  <c>0.05</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>4</c>
+                  <c>111-001</c>
+                  <c>Galvanising</c>
+                  <c>KG</c>
+                  <c>0.001</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>4</c>
+                  <c>130-000</c>
+                  <c>Labor</c>
+                  <c>HR</c>
+                  <c>0.5</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>3</c>
+                  <c>102-108</c>
+                  <c>Wheel, with tyre, 100mm</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>3</c>
+                  <c>100-001</c>
+                  <c>MS Bolt, M10x70, Galv</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>3</c>
+                  <c>100-002</c>
+                  <c>M10, washer, Galv</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>3</c>
+                  <c>100-003</c>
+                  <c>M10, Nut, Galv</c>
+                  <c>EA</c>
+                  <c>3</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>3</c>
+                  <c>100-004</c>
+                  <c>MS Bolt, M10x30, Galv</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>3</c>
+                  <c>100-005</c>
+                  <c>M10 Square Nut</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>1</c>
+                  <c>16844-23003</c>
+                  <c>Field Adapter</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c />
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>2</c>
+                  <c>15476-62009</c>
+                  <c>Control</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>2</c>
+                  <c>16763-87001</c>
+                  <c>Moisture Tester</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>3</c>
+                  <c>18701-19302</c>
+                  <c>Enclosure</c>
+                  <c>EA</c>
+                  <c>4</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>3</c>
+                  <c>12000-14273</c>
+                  <c>Machine Screw</c>
+                  <c>EA</c>
+                  <c>4</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>3</c>
+                  <c>09000-16001</c>
+                  <c>Encapsulant</c>
+                  <c>EA</c>
+                  <c>1</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>2</c>
+                  <c>14644-38389</c>
+                  <c>Precipitator Assy.</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>3</c>
+                  <c>52010-48007</c>
+                  <c>Element</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>3</c>
+                  <c>57002-55100</c>
+                  <c>Housing</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>3</c>
+                  <c>98002-66600</c>
+                  <c>Machine Screw</c>
+                  <c>EA</c>
+                  <c>8</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>3</c>
+                  <c>12000-14267</c>
+                  <c>Precipitator</c>
+                  <c>EA</c>
+                  <c>2</c>
+                  <c>31</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (5)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Line ID" source="TextInput:" type="Byte" />
+            <Field name="Level" source="TextInput:" type="Byte" />
+            <Field name="Part Number" size="11" source="TextInput:" type="String" />
+            <Field name="Description" size="23" source="TextInput:" type="V_String" />
+            <Field name="Unit" size="2" source="TextInput:" type="String" />
+            <Field name="Quantity" source="TextInput:" type="Double" />
+            <Field name="Parent ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="558" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>bOutput</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="546" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>iterOutput</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Left" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>iterative</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (9)</Name>
+          <ToolId value="9" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (10)</Description>
+              <Name>Macro Input (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (11)</Description>
+              <Name>Macro Input (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (12)</Description>
+              <Name>Macro Output (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (13)</Description>
+              <Name>Macro Output (13)</Name>
+              <ToolId value="13" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>iterIN</Input>
+        <Output>iterOutput</Output>
+        <IterationLimit value="1000" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="11" Selected="True" />
+        <Tool ToolId="12" Selected="True" />
+        <Tool ToolId="13" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
