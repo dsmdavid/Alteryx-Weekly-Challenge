@@ -1,0 +1,897 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="PlinkoSDK">
+        <Position x="246" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumberSlots>9</NumberSlots>
+          <NumberRows>25</NumberRows>
+          <StartingPos>2</StartingPos>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="Python" EngineDllEntryPoint="PlinkoSDK\PlinkoSDKEngine.py" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="606" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>bar</type>
+              <mode>markers</mode>
+              <xsrc>Position</xsrc>
+              <ysrc>Value</ysrc>
+              <name>Finishing position</name>
+              <orientation>v</orientation>
+              <showlegend>false</showlegend>
+              <hoverinfo>x+y</hoverinfo>
+            </Traces>
+            <Layout>
+              <title>Probability of the token finishing in X position</title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <xaxis>
+                <range>-5</range>
+                <range>20</range>
+                <autorange>false</autorange>
+                <type>linear</type>
+                <titlefont>
+                  <size>14</size>
+                </titlefont>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <showline>true</showline>
+                <title>Position</title>
+              </xaxis>
+              <yaxis>
+                <range>0</range>
+                <range>45</range>
+                <autorange>false</autorange>
+                <type>linear</type>
+                <title>Probability</title>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <titlefont>
+                <size>17</size>
+              </titlefont>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Value]*100" field="Value" size="4" type="Float" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Value = [Value]*100
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="510" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Position" selected="True" type="String" size="5" />
+            <SelectField field="Value" selected="True" type="FixedDecimal" size="5.2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="702" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_21180_7a02309427964b39b284543cf45e52d9_\Engine_12008_f925f4c0fff447999cfcc02f17e747ba_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="462" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="846" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="RecordID" />
+          </KeyFields>
+          <DataFields>
+            <Field field="RecordID" selected="False" />
+            <Field field="0" selected="True" />
+            <Field field="1" selected="True" />
+            <Field field="2" selected="True" />
+            <Field field="3" selected="True" />
+            <Field field="4" selected="True" />
+            <Field field="5" selected="True" />
+            <Field field="6" selected="True" />
+            <Field field="7" selected="True" />
+            <Field field="8" selected="True" />
+            <Field field="9" selected="True" />
+            <Field field="10" selected="True" />
+            <Field field="11" selected="True" />
+            <Field field="12" selected="True" />
+            <Field field="13" selected="True" />
+            <Field field="14" selected="True" />
+            <Field field="15" selected="True" />
+            <Field field="16" selected="True" />
+            <Field field="17" selected="True" />
+            <Field field="18" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="1038" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>heatmap</type>
+              <mode>markers</mode>
+              <xsrc>Name</xsrc>
+              <ysrc>RecordID</ysrc>
+              <zsrc>Value</zsrc>
+              <name>l</name>
+              <zmin>0.0004882813</zmin>
+              <zmax>1</zmax>
+              <zauto>true</zauto>
+              <xgap>0</xgap>
+              <ygap>0</ygap>
+              <colorscale json:Array="true">
+                <colorscale>0</colorscale>
+                <colorscale>#c4dff1</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.0196078431372549</colorscale>
+                <colorscale>#b1deee</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.0392156862745098</colorscale>
+                <colorscale>#9fdee6</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.058823529411764705</colorscale>
+                <colorscale>#93dcd8</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.0784313725490196</colorscale>
+                <colorscale>#8edac5</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.098039215686274508</colorscale>
+                <colorscale>#93d6ae</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.11764705882352941</colorscale>
+                <colorscale>#9cd09b</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.13725490196078433</colorscale>
+                <colorscale>#a0cb92</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.15686274509803921</colorscale>
+                <colorscale>#a3c68a</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.17647058823529413</colorscale>
+                <colorscale>#a7c182</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.19607843137254902</colorscale>
+                <colorscale>#aabb7b</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.21568627450980393</colorscale>
+                <colorscale>#adb675</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.23529411764705882</colorscale>
+                <colorscale>#b3af6f</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.25490196078431371</colorscale>
+                <colorscale>#baa86c</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.27450980392156865</colorscale>
+                <colorscale>#c0a06b</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.29411764705882354</colorscale>
+                <colorscale>#c3996c</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.31372549019607843</colorscale>
+                <colorscale>#c6926e</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.33333333333333331</colorscale>
+                <colorscale>#c68c72</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.35294117647058826</colorscale>
+                <colorscale>#c98474</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.37254901960784315</colorscale>
+                <colorscale>#cb7d79</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.39215686274509803</colorscale>
+                <colorscale>#cb767f</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.41176470588235292</colorscale>
+                <colorscale>#c87087</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.43137254901960786</colorscale>
+                <colorscale>#c26c91</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.45098039215686275</colorscale>
+                <colorscale>#ba699a</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.47058823529411764</colorscale>
+                <colorscale>#b2679f</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.49019607843137253</colorscale>
+                <colorscale>#a765a3</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.50980392156862742</colorscale>
+                <colorscale>#9c65a8</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.52941176470588236</colorscale>
+                <colorscale>#8f64ac</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.5490196078431373</colorscale>
+                <colorscale>#7f64af</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.56862745098039214</colorscale>
+                <colorscale>#546bb5</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.58823529411764708</colorscale>
+                <colorscale>#0071af</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.60784313725490191</colorscale>
+                <colorscale>#00739d</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.62745098039215685</colorscale>
+                <colorscale>#007283</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.6470588235294118</colorscale>
+                <colorscale>#006f66</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.66666666666666663</colorscale>
+                <colorscale>#1f694b</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.68627450980392157</colorscale>
+                <colorscale>#206543</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.70588235294117652</colorscale>
+                <colorscale>#21623b</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.72549019607843135</colorscale>
+                <colorscale>#235e33</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.74509803921568629</colorscale>
+                <colorscale>#255a2a</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.76470588235294112</colorscale>
+                <colorscale>#275722</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.78431372549019607</colorscale>
+                <colorscale>#2a521a</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.803921568627451</colorscale>
+                <colorscale>#2e4e16</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.82352941176470584</colorscale>
+                <colorscale>#314a12</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.84313725490196079</colorscale>
+                <colorscale>#33450f</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.86274509803921573</colorscale>
+                <colorscale>#35410d</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.88235294117647056</colorscale>
+                <colorscale>#363c0b</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.90196078431372551</colorscale>
+                <colorscale>#383809</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.92156862745098034</colorscale>
+                <colorscale>#3b3308</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.94117647058823528</colorscale>
+                <colorscale>#3d2e08</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.96078431372549022</colorscale>
+                <colorscale>#3d2909</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>0.98039215686274506</colorscale>
+                <colorscale>#3c240c</colorscale>
+              </colorscale>
+              <colorscale json:Array="true">
+                <colorscale>1</colorscale>
+                <colorscale>#3b200e</colorscale>
+              </colorscale>
+            </Traces>
+            <Layout>
+              <title>
+              </title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <xaxis>
+                <type>linear</type>
+                <range>-4.2099120856014576</range>
+                <range>22.640261887531217</range>
+                <autorange>false</autorange>
+                <titlefont>
+                  <size>14</size>
+                </titlefont>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <title>Column</title>
+              </xaxis>
+              <yaxis>
+                <type>linear</type>
+                <range>-4.64142855214612</range>
+                <range>30.68774772829159</range>
+                <autorange>false</autorange>
+                <title>Row</title>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <titlefont>
+                <size>17</size>
+              </titlefont>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1134" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_21180_7a02309427964b39b284543cf45e52d9_\Engine_12008_b6a5e38d8f394c179e4cfff6d56fe574_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="558" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="654" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="750" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID2" selected="False" rename="RecordID" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="942" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Value] != 0</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Value</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-10-11 22:24:24</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2018-10-11 22:24:24</StartDate>
+              <EndDate>2018-10-11 22:24:24</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Value] != 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="894" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="1002" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>H</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="Chart" selected="True" Alignment="Center" />
+            <Field name="Right_Chart" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Horizontal Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1098" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_21180_7a02309427964b39b284543cf45e52d9_\Engine_12008_7854d0c02a7f47b29cde7ca9e138d9b2_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="1086" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType />
+          <OutputFile>C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#73\output.png</OutputFile>
+          <BatchMode value="False" />
+          <DataField>Layout</DataField>
+          <Separator>Continuous</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="False" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="342" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_21180_7a02309427964b39b284543cf45e52d9_\Engine_12008_db664abe48054728b27a56f8e3220728_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="LastRow" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="DataFrame" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="DataFrame" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>solved#73</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
