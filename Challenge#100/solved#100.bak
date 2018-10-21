@@ -200,9 +200,6 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           <DefaultAnnotationText>TIGER_ColoradoRoads.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="LINEARID" size="22" source="File: C:\Users\ned\AppData\Local\Temp\Engine_8100_0701dd3003e140b2be4d5995019affad_\SHPTemp\*.shp (BatchMacro)" type="V_WString" />
@@ -455,7 +452,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
     </Node>
     <Node ToolID="115">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="833" y="1450" width="1009" height="208" />
+        <Position x="833" y="1450" width="1213" height="208" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -530,7 +527,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="105">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-            <Position x="1350" y="1542" />
+            <Position x="1482" y="1542" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -555,7 +552,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="106">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
-            <Position x="1446" y="1542" />
+            <Position x="1578" y="1542" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -584,7 +581,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="107">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1530" y="1542" />
+            <Position x="1674" y="1542" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -602,7 +599,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="108">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="1626" y="1542" />
+            <Position x="1770" y="1542" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -620,7 +617,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="109">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1758" y="1494" />
+            <Position x="1962" y="1494" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -651,7 +648,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="110">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
-            <Position x="1170" y="1542" />
+            <Position x="1290" y="1542" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -670,7 +667,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="111">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1242" y="1542" />
+            <Position x="1386" y="1542" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -691,7 +688,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="112">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1110" y="1542" />
+            <Position x="1194" y="1542" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -743,7 +740,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="114">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
-            <Position x="1722" y="1542" />
+            <Position x="1866" y="1542" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -760,11 +757,36 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           </Properties>
           <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialInfo" />
         </Node>
+        <Node ToolID="119">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1950" y="1554" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#100\challenge_100_start_file\test.yxdb</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>test.yxdb</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="858" y="1158" width="949" height="232" />
+        <Position x="858" y="1158" width="1152" height="264" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -801,7 +823,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="84">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.MakeGrid.MakeGrid">
-            <Position x="967" y="1274" />
+            <Position x="966" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -821,7 +843,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="85">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-            <Position x="1315" y="1274" />
+            <Position x="1446" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -846,7 +868,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="86">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Distance.Distance">
-            <Position x="1411" y="1274" />
+            <Position x="1542" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -875,7 +897,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="87">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1495" y="1274" />
+            <Position x="1638" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -893,7 +915,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="88">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="1591" y="1274" />
+            <Position x="1734" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -911,7 +933,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="89">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1723" y="1226" />
+            <Position x="1926" y="1230" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -942,7 +964,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="90">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
-            <Position x="1135" y="1274" />
+            <Position x="1254" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -961,7 +983,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1207" y="1274" />
+            <Position x="1350" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -982,7 +1004,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="92">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1075" y="1274" />
+            <Position x="1158" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1003,7 +1025,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="94">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1051" y="1298" />
+            <Position x="1110" y="1338" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1034,7 +1056,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="95">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
-            <Position x="1687" y="1274" />
+            <Position x="1830" y="1278" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1093,7 +1115,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       <ChildNodes>
         <Node ToolID="74">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.MakeGrid.MakeGrid">
-            <Position x="894" y="965.9998" />
+            <Position x="894" y="966" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1185,7 +1207,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="78">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-            <Position x="1242" y="990" />
+            <Position x="1254" y="990" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1340,7 +1362,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
     </Node>
     <Node ToolID="96">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="234" y="930" width="308.422" height="144" />
+        <Position x="245" y="934" width="308.422" height="144" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1358,7 +1380,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       <ChildNodes>
         <Node ToolID="69">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.PolySplit.PolySplit">
-            <Position x="259" y="974" />
+            <Position x="270" y="978" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1375,7 +1397,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
         </Node>
         <Node ToolID="70">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="343" y="974" />
+            <Position x="354" y="978" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1467,11 +1489,11 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
     </Connection>
     <Connection>
       <Origin ToolID="104" Connection="Output" />
-      <Destination ToolID="112" Connection="Input" />
+      <Destination ToolID="113" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="104" Connection="Output" />
-      <Destination ToolID="113" Connection="Input" />
+      <Destination ToolID="112" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="105" Connection="Output" />
@@ -1502,16 +1524,20 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       <Destination ToolID="109" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="114" Connection="Output" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="83" Connection="Output" />
       <Destination ToolID="84" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="84" Connection="Output" />
-      <Destination ToolID="92" Connection="Input" />
+      <Destination ToolID="94" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="84" Connection="Output" />
-      <Destination ToolID="94" Connection="Input" />
+      <Destination ToolID="92" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="85" Connection="Output" />
@@ -1547,11 +1573,11 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
     </Connection>
     <Connection>
       <Origin ToolID="74" Connection="Output" />
-      <Destination ToolID="75" Connection="Input" />
+      <Destination ToolID="93" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="74" Connection="Output" />
-      <Destination ToolID="93" Connection="Input" />
+      <Destination ToolID="75" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="75" Connection="Output" />
@@ -1598,7 +1624,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
     <ConvErrorLimit value="10" />
     <ConvErrorLimit_Stop value="False" />
     <CancelOnError value="False" />
-    <DisableBrowse value="False" />
+    <DisableBrowse value="True" />
     <EnablePerformanceProfiling value="False" />
     <DisableAllOutput value="False" />
     <ShowAllMacroMessages value="False" />

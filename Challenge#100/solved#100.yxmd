@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.7">
+<AlteryxDocument yxmdVer="2018.3">
   <Nodes>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -192,7 +192,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#100\challenge_100_start_file\Challenge_100_data\TIGER_ColoradoRoads.yxdb</File>
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">.\challenge_100_start_file\Challenge_100_data\TIGER_ColoradoRoads.yxdb</File>
           <FormatSpecificOptions />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -359,7 +359,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File FileFormat="19" MaxRecords="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#100\challenge_100_start_file\combined_region.yxdb</File>
+          <File FileFormat="19" MaxRecords="">.\challenge_100_start_file\combined_region.yxdb</File>
           <Passwords />
           <FormatSpecificOptions>
             <NoSpatialIndex>False</NoSpatialIndex>
@@ -763,7 +763,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           </GuiSettings>
           <Properties>
             <Configuration>
-              <File FileFormat="19" MaxRecords="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#100\challenge_100_start_file\test.yxdb</File>
+              <File FileFormat="19" MaxRecords="">.\challenge_100_start_file\test.yxdb</File>
               <Passwords />
               <FormatSpecificOptions>
                 <NoSpatialIndex>False</NoSpatialIndex>
@@ -776,9 +776,6 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
               <DefaultAnnotationText>test.yxdb</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
@@ -1362,7 +1359,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
     </Node>
     <Node ToolID="96">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="245" y="934" width="308.422" height="144" />
+        <Position x="245" y="934" width="338.422" height="144" />
       </GuiSettings>
       <Properties>
         <Configuration>

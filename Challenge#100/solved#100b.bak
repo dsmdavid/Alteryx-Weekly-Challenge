@@ -113,7 +113,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_6416_c94d91e253374a66ad989eda45b78fad_\Engine_1484_f16d4de5cba34887a733d1727de697be_.yxdb</TempFile>
+          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_3e83354b6bd844548b467d9c4d99500d_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -168,7 +168,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       <Properties>
         <Configuration>
           <Passwords />
-          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Challenge_100_data\Colorado.yxdb</File>
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx Weekly Challenge\Challenge#100\challenge_100_start_file\Challenge_100_data\Colorado.yxdb</File>
           <FormatSpecificOptions />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -176,6 +176,9 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           <DefaultAnnotationText>Colorado.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="NAME" size="100" source="File: C:\temp\FindNed\JamesD\States\tl_2017_us_state.shp" type="V_String" />
@@ -221,7 +224,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_6416_c94d91e253374a66ad989eda45b78fad_\Engine_1484_c03a1bfd0ad3499b811ef22db67dd320_.yxdb</TempFile>
+          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_304b270f257e487a8414fd8159641e4a_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -337,7 +340,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
     </Node>
     <Node ToolID="66">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Buffer.Buffer">
-        <Position x="222" y="450" />
+        <Position x="90" y="750" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -624,7 +627,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_6416_c94d91e253374a66ad989eda45b78fad_\Engine_1484_95d28407f3314fa0a36867528b975f03_.yxdb</TempFile>
+              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_9f04f2cb9e8b48c0b37c519f7e5abe8a_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -716,7 +719,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_6416_c94d91e253374a66ad989eda45b78fad_\Engine_1484_51e0f17e803e4289a6a83092f1518ac3_.yxdb</TempFile>
+              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_c72ba8833c5a44e1893e594a517c584a_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -761,6 +764,97 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialInfo" />
         </Node>
       </ChildNodes>
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="198" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="SpatialObj" action="SpatialObjCombine" rename="SpatialObjCombine_SpatialObj" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="117">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="282" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="118">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialProcess.SpatialProcess">
+        <Position x="858" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObjFields field1="SpatialObjCombine_SpatialObj" field2="SpatialObj" />
+          <Action action="Intersection" noEmpty="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Intersection</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialProcess" />
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="954" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_bfee3d9a406f469d9d5c519027851186_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -915,7 +1009,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_6416_c94d91e253374a66ad989eda45b78fad_\Engine_1484_ac81e768a93744848f0e54a3d704b3b7_.yxdb</TempFile>
+              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_d8b57ced9b09432d9e53c9022ee56b0a_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1007,7 +1101,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_6416_c94d91e253374a66ad989eda45b78fad_\Engine_1484_c74e53350cc244198e5f17e078960be3_.yxdb</TempFile>
+              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_c2c886f8b4c74841a4e1ac744c277205_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1288,7 +1382,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_6416_c94d91e253374a66ad989eda45b78fad_\Engine_1484_d28b70780b8c47cd84e1fac8032e9059_.yxdb</TempFile>
+              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_0fa04931a4174d52894228df96b95364_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1319,7 +1413,7 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_6416_c94d91e253374a66ad989eda45b78fad_\Engine_1484_48b1939373a5468ebe1e90905be225ab_.yxdb</TempFile>
+              <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_11364_7c1528ea138b4211be7be5bc3c3c45d6_\Engine_1484_fa43f9909fe44b9faef17951dee8c072_.yxdb</TempFile>
               <Layout>
                 <View1>
                   <Hints>
@@ -1402,8 +1496,16 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
       <Destination ToolID="43" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="117" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="117" Connection="Targets" />
+    </Connection>
+    <Connection>
       <Origin ToolID="48" Connection="Output" />
-      <Destination ToolID="66" Connection="Input" />
+      <Destination ToolID="116" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="53" Connection="Output" />
@@ -1500,6 +1602,14 @@ You are provided with two Input datasets: ColoradoRoads.yxdb, which contains spa
     <Connection>
       <Origin ToolID="114" Connection="Output" />
       <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="117" Connection="Output" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="118" Connection="Output" />
+      <Destination ToolID="119" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="83" Connection="Output" />

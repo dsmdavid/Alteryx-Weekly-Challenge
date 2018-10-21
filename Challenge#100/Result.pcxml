@@ -5,5 +5,12 @@
 		.DefaultText { color:#000000; font-family:Arial; font-size:14; text-align:left; }
 	</style>
 	<pagesettings pageheight="792" pagewidth="612" topmargin="36" leftmargin="36" rightmargin="36" bottommargin="36" pagelayout="portrait"/>
-	<div class="DefaultText" style="width:100%;"><span style="font-weight:bold;color:#ff0000;font-family:Arial;font-size:24.0pt;">Try again, you are still <span class="DefaultNumericText" style="decimal-places:1;">421.671462836622</span> meters away from Ned.<nbsp/><nbsp/></span></div>
+	<htmlpassthrough>
+		&lt;script src='https://whitelist.alteryx.com/v1/downloads/v1/lib/plotly/ayx-plotly.min.1.0.0.js'&gt;&lt;/script&gt;&lt;script src='https://whitelist.alteryx.com/v1/downloads/v1/lib/plotly/md5.min.js'&gt;&lt;/script&gt;
+	</htmlpassthrough>
+	<htmlpassthrough>&lt;script&gt;window.ayxChartQueue = [];&lt;/script&gt;</htmlpassthrough>
+	<div class="DefaultText" style="width:100%;"><span style="font-weight:bold;color:#0000ff;font-family:Arial;font-size:24.0pt;">Congrats, you got within <span class="DefaultNumericText" style="decimal-places:1;">103.030082838812</span> meters of Ned.<nbsp/> Look to the E</span></div>
+	<htmlpassthrough>
+		&lt;script&gt;var ayxWaitAndRender = function () {if (!window.ayxChartQueue) return; if (window.Plotly) {clearTimeout(window.ayxChartTimer);window.ayxChartQueue.forEach(function(cb){cb();})} else {clearTimeout(window.ayxChartTimer);window.ayxChartTimer = setTimeout(ayxWaitAndRender, 500);}};ayxWaitAndRender();&lt;/script&gt;
+	</htmlpassthrough>
 </srcreport>
