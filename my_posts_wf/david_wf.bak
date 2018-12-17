@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.7">
+<AlteryxDocument yxmdVer="2018.3">
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
@@ -10,10 +10,12 @@
           <NumRows value="1" />
           <Fields>
             <Field name="url" />
+            <Field name="last" />
           </Fields>
           <Data>
             <r>
               <c>https://community.alteryx.com/t5/forums/recentpostspage/post-type/message/user-id/18848/page/CURRENT_PAGE</c>
+              <c />
             </r>
           </Data>
         </Configuration>
@@ -25,7 +27,7 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="17">
+    <Node ToolID="25">
       <GuiSettings>
         <Position x="222" y="54" />
       </GuiSettings>
@@ -33,6 +35,7 @@
         <Configuration />
         <Annotation DisplayMode="0">
           <Name>download_david_post (5)</Name>
+          <AnnotationText>Download id posts &amp; challenge</AnnotationText>
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
@@ -41,17 +44,22 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="318" y="90" />
+        <Position x="438" y="6" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\DavidSM\AppData\Local\Temp\Engine_13856_bbb93a6b4b2d4454b37275ae9fbaa7fc_\Engine_13212_0cd9e6267ba94b549c66d2642bc90666_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_2856_3e3fb1996b574b54bdd82363b26c9abf_\Engine_10940_635b07bf8a5b492b88d1942978997190_.yxdb</TempFile>
+          <TempFileDataProfiling />
           <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
             <View1>
+              <DefaultTab>Profile</DefaultTab>
               <Hints>
                 <Table />
               </Hints>
             </View1>
+            <View2 />
           </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -64,7 +72,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="282" y="126" />
+        <Position x="390" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -85,7 +93,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="402" y="126" />
+        <Position x="510" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -103,7 +111,7 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="510" y="114" />
+        <Position x="618" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -121,7 +129,7 @@
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="702" y="66" />
+        <Position x="54" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -145,7 +153,7 @@
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="822" y="66" />
+        <Position x="222" y="234" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -155,7 +163,7 @@
           <CreateField_Type>Int32</CreateField_Type>
           <CreateField_Size>4</CreateField_Size>
           <Expression_Init>1</Expression_Init>
-          <Expression_Cond>RowCount &lt;= 100</Expression_Cond>
+          <Expression_Cond>RowCount &lt;= 150</Expression_Cond>
           <Expression_Loop>RowCount + 1</Expression_Loop>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -168,7 +176,7 @@
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="630" y="138" />
+        <Position x="738" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -200,7 +208,7 @@
     </Node>
     <Node ToolID="21">
       <GuiSettings>
-        <Position x="714" y="138" />
+        <Position x="834" y="66" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -209,24 +217,62 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="42" y="6" width="324" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Iterate through pages of comments until one with fewer than 20 appears (last) --or latest post is the same</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="834" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Pending</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
   </Nodes>
   <Connections>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="17" Connection="Input21" />
+      <Destination ToolID="25" Connection="Input21" />
     </Connection>
     <Connection>
-      <Origin ToolID="17" Connection="Output27" />
+      <Origin ToolID="25" Connection="Output27" />
       <Destination ToolID="7" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="17" Connection="Output27" />
+      <Origin ToolID="25" Connection="Output27" />
       <Destination ToolID="13" Connection="Input" />
     </Connection>
     <Connection>
@@ -252,6 +298,10 @@
     <Connection>
       <Origin ToolID="20" Connection="Join" />
       <Destination ToolID="21" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Right" />
+      <Destination ToolID="26" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

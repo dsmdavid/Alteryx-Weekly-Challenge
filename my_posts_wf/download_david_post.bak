@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<AlteryxDocument yxmdVer="11.7">
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
   <Nodes>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
@@ -42,6 +42,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
             <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
             <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
@@ -66,10 +67,12 @@
               <NumRows value="1" />
               <Fields>
                 <Field name="url" />
+                <Field name="last" />
               </Fields>
               <Data>
                 <r>
                   <c>https://community.alteryx.com/t5/forums/recentpostspage/post-type/message/user-id/18848/page/CURRENT_PAGE</c>
+                  <c />
                 </r>
               </Data>
             </Configuration>
@@ -83,6 +86,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -121,6 +125,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
             <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
             <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
@@ -165,6 +170,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
             <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
             <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
@@ -185,9 +191,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output9">
           <RecordInfo>
             <Field name="Count" source="(Multiple Sources)" type="Int64" />
@@ -243,6 +246,7 @@
               <CommaDecimal value="False" />
               <SelectFields>
                 <SelectField field="Left_Field1" selected="False" />
+                <SelectField field="Left_last" selected="True" rename="previous_last" type="V_WString" size="1" />
                 <SelectField field="Right_Count" selected="False" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
@@ -258,6 +262,7 @@
           <RecordInfo>
             <Field name="Field1" source="TextInput:" type="Byte" />
             <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
           </RecordInfo>
           <SortInfo noProgress="True">
             <Field field="Field1" />
@@ -266,6 +271,7 @@
         <MetaInfo connection="Join">
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Right">
@@ -311,6 +317,7 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
             <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
           </RecordInfo>
         </MetaInfo>
@@ -343,6 +350,7 @@
           <RecordInfo>
             <Field name="Field1" source="TextInput:" type="Byte" />
             <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -350,7 +358,7 @@
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="858" y="194" />
+        <Position x="1122" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -367,7 +375,7 @@
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="774" y="446" />
+        <Position x="774" y="422" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -375,6 +383,7 @@
           <CommaDecimal value="False" />
           <SelectFields>
             <SelectField field="url" selected="False" />
+            <SelectField field="last" selected="True" rename="previous_last" type="V_WString" size="1" />
             <SelectField field="download_URL" selected="False" />
             <SelectField field="DownloadData" selected="False" />
             <SelectField field="DownloadHeaders" selected="False" />
@@ -388,6 +397,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
+            <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
             <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
@@ -396,7 +406,7 @@
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="858" y="446" />
+        <Position x="858" y="422" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -412,6 +422,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
+            <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
             <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
             <Field name="ITER" source="Formula: [Engine.IterationNumber]" type="Int16" />
           </RecordInfo>
@@ -421,7 +432,7 @@
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="966" y="446" />
+        <Position x="1242" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -436,9 +447,239 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
     </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="570" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
+            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="642" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
+            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="726" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
+            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="798" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Ch" selected="True" rename="last" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="822" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="918" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[previous_last] != [last]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>IsTrue</Operator>
+            <Field>previous_last</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-10-22 08:54:23</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-10-22 08:54:23</StartDate>
+              <EndDate>2018-10-22 08:54:23</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[previous_last] != [last]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="previous_last" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="65" y="54" width="106.4582" height="19" />
+        <Position x="65" y="54" width="136.4582" height="19" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -682,6 +923,10 @@
       <Destination ToolID="25" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="17" Connection="Output9" />
       <Destination ToolID="19" Connection="Right" />
     </Connection>
@@ -691,7 +936,11 @@
     </Connection>
     <Connection>
       <Origin ToolID="19" Connection="Join" />
-      <Destination ToolID="24" Connection="Input" />
+      <Destination ToolID="32" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Source" />
     </Connection>
     <Connection>
       <Origin ToolID="22" Connection="Output" />
@@ -704,6 +953,30 @@
     <Connection>
       <Origin ToolID="26" Connection="Output" />
       <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
@@ -812,14 +1085,20 @@
       <IterativeMacro>
         <Input>Input21</Input>
         <Output>itOutput</Output>
-        <IterationLimit value="4" />
+        <IterationLimit value="100" />
         <LimitBehavior>Warn</LimitBehavior>
         <OutputMode>AllSame</OutputMode>
       </IterativeMacro>
       <Wiz_CustomHelp value="False" />
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
-      <Wiz_OpenOutputTools />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="21" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+        <Tool ToolId="24" Selected="True" />
+        <Tool ToolId="27" Selected="True" />
+        <Tool ToolId="3" Selected="False" />
+      </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
       <Wiz_ChainRunWizard />

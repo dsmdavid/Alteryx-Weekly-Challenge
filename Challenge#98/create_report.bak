@@ -1,0 +1,1658 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.3">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="78" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input7</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="168" />
+              <Fields>
+                <Field name="Tool Rank" />
+                <Field name="Tool Name" />
+                <Field name="Tool Category" />
+                <Field name="Image" />
+                <Field name="CategoryRank" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>20</c>
+                  <c>Text To Columns</c>
+                  <c>Parse</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>DateTime</c>
+                  <c>Parse</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>RegEx</c>
+                  <c>Parse</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>51</c>
+                  <c>XML Parse</c>
+                  <c>Parse</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>Join</c>
+                  <c>Join</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>Union</c>
+                  <c>Join</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>Append Fields</c>
+                  <c>Join</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>Find Replace</c>
+                  <c>Join</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>Join Multiple</c>
+                  <c>Join</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>59</c>
+                  <c>Fuzzy Match</c>
+                  <c>Join</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>102</c>
+                  <c>Make Group</c>
+                  <c>Join</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>Browse</c>
+                  <c>In/Out</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition=...</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>Input Data</c>
+                  <c>In/Out</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>Output Data</c>
+                  <c>In/Out</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>Text Input</c>
+                  <c>In/Out</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>Directory</c>
+                  <c>In/Out</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>71</c>
+                  <c>Date Time Now</c>
+                  <c>In/Out</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>119</c>
+                  <c>Map Input</c>
+                  <c>In/Out</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Select</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>Formula</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Filter</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>Sort</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>Unique</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>Data Cleansing</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>Multi-Row Formula</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>Multi-Field Formula</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>Sample</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>Record ID</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>Auto Field</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>Select Records</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>52</c>
+                  <c>Generate Rows</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>54</c>
+                  <c>Tile</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>55</c>
+                  <c>Date Filter</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>76</c>
+                  <c>Imputation</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>84</c>
+                  <c>Random % Sample</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>93</c>
+                  <c>Create Samples</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>118</c>
+                  <c>Oversample Field</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>124</c>
+                  <c>Multi-Field Binning</c>
+                  <c>Preparation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>Comment</c>
+                  <c>Documentation</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>Tool Container</c>
+                  <c>Documentation</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>112</c>
+                  <c>Explorer Box</c>
+                  <c>Documentation</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>Summarize</c>
+                  <c>Transform</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>Cross Tab</c>
+                  <c>Transform</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>Transpose</c>
+                  <c>Transform</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>Count Records</c>
+                  <c>Transform</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>53</c>
+                  <c>Running Total</c>
+                  <c>Transform</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>88</c>
+                  <c>Weighted Average</c>
+                  <c>Transform</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>92</c>
+                  <c>Arrange</c>
+                  <c>Transform</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>Layout</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>Table</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>Report Text</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>Render</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>57</c>
+                  <c>Charting</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>65</c>
+                  <c>Email</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>73</c>
+                  <c>Report Map</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>81</c>
+                  <c>Image</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>96</c>
+                  <c>Report Header</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>101</c>
+                  <c>Overlay</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>113</c>
+                  <c>Report Footer</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>138</c>
+                  <c>Map Legend Builder</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>139</c>
+                  <c>Map Legend Splitter</c>
+                  <c>Reporting</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>Connect In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>Select In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>Filter In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>Join In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>Data Stream Out</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>Browse In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>Formula In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>Summarize In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>78</c>
+                  <c>Data Stream In</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>82</c>
+                  <c>Write Data In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>94</c>
+                  <c>Union In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>114</c>
+                  <c>Sample In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>115</c>
+                  <c>Dynamic Input In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>140</c>
+                  <c>Dynamic Output In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>158</c>
+                  <c>Macro Input In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>159</c>
+                  <c>Macro Output In-DB</c>
+                  <c>In-Database</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>Dynamic Rename</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>Block Until Done</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>Dynamic Input</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>56</c>
+                  <c>Dynamic Select</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>62</c>
+                  <c>R</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>64</c>
+                  <c>Test</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>66</c>
+                  <c>Message</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>67</c>
+                  <c>Field Info</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>69</c>
+                  <c>JSON Parse</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>85</c>
+                  <c>Detour</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>86</c>
+                  <c>Run Command</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>97</c>
+                  <c>Detour End</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>123</c>
+                  <c>Throttle</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>127</c>
+                  <c>Dynamic Replace</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>137</c>
+                  <c>Blob Convert</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>141</c>
+                  <c>Base 64 Encoder</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>142</c>
+                  <c>Blob Input</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>151</c>
+                  <c>Blob Output</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>156</c>
+                  <c>API Output</c>
+                  <c>Developer</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>Action</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>58</c>
+                  <c>Macro Output</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>61</c>
+                  <c>Text Box</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>63</c>
+                  <c>Macro Input</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>72</c>
+                  <c>Control Parameter</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>79</c>
+                  <c>Drop Down</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>83</c>
+                  <c>File Browse</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>91</c>
+                  <c>Check Box</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>98</c>
+                  <c>Numeric Up Down</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>100</c>
+                  <c>Radio Button</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>103</c>
+                  <c>Condition</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>108</c>
+                  <c>Date</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>110</c>
+                  <c>List Box</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>116</c>
+                  <c>Error Message</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>126</c>
+                  <c>Folder Browse</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>147</c>
+                  <c>Tree</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMargin="72px" ou...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>152</c>
+                  <c>Map</c>
+                  <c>Interface</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\purple.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>Create Points</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>Spatial Match</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>60</c>
+                  <c>Trade Area</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPositio...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>68</c>
+                  <c>Spatial Info</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>70</c>
+                  <c>Find Nearest</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPositio...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>77</c>
+                  <c>Distance</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPositio...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>105</c>
+                  <c>Buffer</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>106</c>
+                  <c>Poly-Build</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>107</c>
+                  <c>Spatial Process</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>111</c>
+                  <c>Poly-Split</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>125</c>
+                  <c>Make Grid</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>132</c>
+                  <c>Generalize</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>136</c>
+                  <c>Heat Map</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>144</c>
+                  <c>Smooth</c>
+                  <c>Spatial</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>75</c>
+                  <c>Allocate Input</c>
+                  <c>Demographic Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>87</c>
+                  <c>Allocate Append</c>
+                  <c>Demographic Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>121</c>
+                  <c>Allocate Metainfo</c>
+                  <c>Demographic Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>146</c>
+                  <c>Allocate Report</c>
+                  <c>Demographic Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>80</c>
+                  <c>Field Summary</c>
+                  <c>Data Investigation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>104</c>
+                  <c>Pearson Correlation</c>
+                  <c>Data Investigation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>122</c>
+                  <c>Basic Data Profile</c>
+                  <c>Data Investigation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>131</c>
+                  <c>Spearman Correlation</c>
+                  <c>Data Investigation</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\red.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMarg...</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>90</c>
+                  <c>Street Geocoder</c>
+                  <c>Address</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>95</c>
+                  <c>CASS</c>
+                  <c>Address</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>143</c>
+                  <c>Parse Address</c>
+                  <c>Address</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>148</c>
+                  <c>US ZIP9 Coder</c>
+                  <c>Address</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>74</c>
+                  <c>Calgary Input</c>
+                  <c>Calgary</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition=...</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>99</c>
+                  <c>Calgary Join</c>
+                  <c>Calgary</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPositio...</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>120</c>
+                  <c>Calgary Loader</c>
+                  <c>Calgary</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition=...</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>149</c>
+                  <c>Calgary Cross Count</c>
+                  <c>Calgary</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition=...</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>157</c>
+                  <c>Calgary Cross Count Append</c>
+                  <c>Calgary</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPositio...</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>Download</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>89</c>
+                  <c>SharePoint List Input</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>109</c>
+                  <c>Salesforce Input</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>117</c>
+                  <c>MongoDB Input</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>128</c>
+                  <c>Amazon S3 Download</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>129</c>
+                  <c>SharePoint List Output</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>130</c>
+                  <c>Amazon S3 Upload</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>135</c>
+                  <c>Google Analytics</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>150</c>
+                  <c>Salesforce Output</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>154</c>
+                  <c>MongoDB Output</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>163</c>
+                  <c>Marketo Append</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>164</c>
+                  <c>Marketo Input</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>167</c>
+                  <c>Marketo Output</c>
+                  <c>Connectors</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>133</c>
+                  <c>Make Columns</c>
+                  <c>Laboratory</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\orange.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizM...</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>134</c>
+                  <c>JSON Build</c>
+                  <c>Laboratory</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>145</c>
+                  <c>Visual Layout</c>
+                  <c>Laboratory</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>155</c>
+                  <c>Transpose In-DB</c>
+                  <c>Laboratory</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\blue.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMar...</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>153</c>
+                  <c>Create Profile</c>
+                  <c>Behavior Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>160</c>
+                  <c>Cluster Code</c>
+                  <c>Behavior Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>161</c>
+                  <c>Behavior Metainfo</c>
+                  <c>Behavior Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>162</c>
+                  <c>Profile Input</c>
+                  <c>Behavior Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>165</c>
+                  <c>Detail Fields</c>
+                  <c>Behavior Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>166</c>
+                  <c>Compare Behavior</c>
+                  <c>Behavior Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>168</c>
+                  <c>Profile Output</c>
+                  <c>Behavior Analysis</c>
+                  <c>&lt;positionBlock&gt;&lt;positionBlock&gt;&lt;img src="C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#97\challenge_97_start_file\Image Assets\green.png" /&gt;&lt;positionBlock vertPosition="top" vertMargin="72px" horizPosition="left" horizMa...</c>
+                  <c>18</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tool Rank" source="TextInput:" type="Byte" />
+            <Field name="Tool Name" size="26" source="TextInput:" type="V_String" />
+            <Field name="Tool Category" size="20" source="TextInput:" type="V_String" />
+            <Field name="Image" size="256" source="TextInput:" type="String" />
+            <Field name="CategoryRank" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="666" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output6</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="186" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Tool Category] = 'Parse'</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-11-08 14:10:36</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2018-11-08 14:10:36</StartDate>
+              <EndDate>2018-11-08 14:10:36</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Tool Category] = 'Parse'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Tool Rank" source="TextInput:" type="Byte" />
+            <Field name="Tool Name" size="26" source="TextInput:" type="V_String" />
+            <Field name="Tool Category" size="20" source="TextInput:" type="V_String" />
+            <Field name="Image" size="256" source="TextInput:" type="String" />
+            <Field name="CategoryRank" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Tool Rank" source="TextInput:" type="Byte" />
+            <Field name="Tool Name" size="26" source="TextInput:" type="V_String" />
+            <Field name="Tool Category" size="20" source="TextInput:" type="V_String" />
+            <Field name="Image" size="256" source="TextInput:" type="String" />
+            <Field name="CategoryRank" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="570" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Tool Category" action="GroupBy" rename="Tool Category" />
+            <SummarizeField field="Image" action="RptHorizontal" rename="RptHorizontal_Image" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tool Category" size="20" source="Summarize: GroupBy - Tool Category" type="V_String" />
+            <Field name="RptHorizontal_Image" size="1073741823" source="Report:Layout:Summarize:RptHorizontal" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Tool Category" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="282" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 [Tool Rank:0]\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Tool Rank:0]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tool Rank" source="TextInput:" type="Byte" />
+            <Field name="Tool Name" size="26" source="TextInput:" type="V_String" />
+            <Field name="Tool Category" size="20" source="TextInput:" type="V_String" />
+            <Field name="Image" size="256" source="TextInput:" type="String" />
+            <Field name="CategoryRank" source="TextInput:" type="Byte" />
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerOverlay.Overlay">
+        <Position x="378" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field_Base>Image</Field_Base>
+          <Field_TL>Text</Field_TL>
+          <Field_TC />
+          <Field_TR />
+          <Field_ML />
+          <Field_MC />
+          <Field_MR />
+          <Field_LL />
+          <Field_LC />
+          <Field_LR />
+          <Padding Left="36" Right="36" Top="36" Bottom="36" />
+          <PreserveSourceFields value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tool Rank" source="TextInput:" type="Byte" />
+            <Field name="Tool Name" size="26" source="TextInput:" type="V_String" />
+            <Field name="Tool Category" size="20" source="TextInput:" type="V_String" />
+            <Field name="CategoryRank" source="TextInput:" type="Byte" />
+            <Field name="Overlay" size="2147483647" source="Report:Overlay:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxComposerOverlayPlugin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="474" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Overlay" selected="True" rename="Image" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tool Rank" source="TextInput:" type="Byte" />
+            <Field name="Tool Name" size="26" source="TextInput:" type="V_String" />
+            <Field name="Tool Category" size="20" source="TextInput:" type="V_String" />
+            <Field name="CategoryRank" source="TextInput:" type="Byte" />
+            <Field name="Image" size="2147483647" source="Report:Overlay:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="6" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="96" y="48" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="666" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType />
+          <OutputFile>C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#98\template.png</OutputFile>
+          <BatchMode value="True" />
+          <DataField>RptHorizontal_Image</DataField>
+          <Separator>Continuous</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="16" Connection="Action" />
+      <Destination ToolID="10" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="16" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>create_report</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="16" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>Parse</ReplaceText>
+              <Destination>10/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (5)</Name>
+          <ToolId value="5" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (6)</Description>
+              <Name>Macro Output (6)</Name>
+              <ToolId value="6" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (7)</Description>
+              <Name>Macro Input (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (15)</Description>
+              <Name>Control Parameter (15)</Name>
+              <ToolId value="15" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (15)</Name>
+            <Description>Control Parameter (15)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="6" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
