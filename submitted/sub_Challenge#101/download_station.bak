@@ -1,0 +1,781 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URL" />
+          </Fields>
+          <Data>
+            <r>
+              <c>https://wcc.sc.egov.usda.gov/reportGenerator/view_csv/customSingleStationReport/daily/303:CO:SNTL%7Cid=%22%22%7Cname/POR_BEGIN,POR_END/WTEQ::value,PREC::value,TMAX::value,TMIN::value,TAVG::value,PRCP::value</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>URL for Data from SNOTEL Sensor 303</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="174" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>URL</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="URL" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="URL" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="246" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <RegExExpression value="(.*?)\n" />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>URL_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Tokenize:
+(.*?)\n</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="342" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>URL</UpdateField_Name>
+          <CreateField_Name>Keep</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>if left([DownloadData],4) = "Date" then 1 else [Row-1:Keep] endif</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>if left([DownloadData],4) = "Date" then 1 else [Row-1:Keep] e...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" name="Keep" source="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="462" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Keep] = 1</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Keep</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2018-12-17 22:12:16</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2018-12-17 22:12:16</StartDate>
+              <EndDate>2018-12-17 22:12:16</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Keep] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" name="Keep" source="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" name="Keep" source="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="582" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" name="Keep" source="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="678" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <Delimeters value="," />
+          <NumFields value="1" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="DownloadData" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" name="Keep" source="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="870" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="RecordID" />
+          </GroupFields>
+          <HeaderField field="item" />
+          <DataField field="DownloadData" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:First:" type="Int32" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="1" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="2" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="4" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="5" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="6" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="774" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>RecordID</UpdateField_Name>
+          <CreateField_Name>item</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>[Row-1:item]+1</Expression>
+          <GroupByFields>
+            <Field field="RecordID" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Row-1:item]+1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="URL" size="206" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="DownloadData" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" name="Keep" source="Formula: if left([DownloadData],4) = &quot;Date&quot; then 1 else [Row-1:Keep] endif" type="Int32" />
+            <Field description="Formula: [Row-1:item]+1" name="item" source="Formula: [Row-1:item]+1" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="966" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>FirstRow</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="*Unknown" />
+            <Field name="RecordID" selected="False" />
+          </Fields>
+          <Expression />
+          <FirstRow>
+            <OnError>Warn</OnError>
+          </FirstRow>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:First:" type="Int32" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Date" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Snow Water Equivalent (in) Start of Day Values" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Precipitation Accumulation (in) Start of Day Values" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Maximum (degF)" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Minimum (degF)" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Average (degF)" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Precipitation Increment (in)" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1062" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="Date" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Snow Water Equivalent (in) Start of Day Values" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Precipitation Accumulation (in) Start of Day Values" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Maximum (degF)" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Minimum (degF)" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Average (degF)" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Precipitation Increment (in)" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="1158" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Date" selected="True" />
+            <Field field="Snow Water Equivalent (in) Start of Day Values" selected="True" />
+            <Field field="Precipitation Accumulation (in) Start of Day Values" selected="True" />
+            <Field field="Air Temperature Maximum (degF)" selected="True" />
+            <Field field="Air Temperature Minimum (degF)" selected="True" />
+            <Field field="Air Temperature Average (degF)" selected="True" />
+            <Field field="Precipitation Increment (in)" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="Date" source="TextToColumns: Parsed from DownloadData" type="Date" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Snow Water Equivalent (in) Start of Day Values" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Precipitation Accumulation (in) Start of Day Values" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Maximum (degF)" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Minimum (degF)" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Average (degF)" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Precipitation Increment (in)" source="TextToColumns: Parsed from DownloadData" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1350" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output14</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="54" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="54" y="126" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Code" />
+          </Fields>
+          <Data>
+            <r>
+              <c>303</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Code" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1254" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="Date" source="TextToColumns: Parsed from DownloadData" type="Date" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Snow Water Equivalent (in) Start of Day Values" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Precipitation Accumulation (in) Start of Day Values" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Maximum (degF)" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Minimum (degF)" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Air Temperature Average (degF)" size="4" source="TextToColumns: Parsed from DownloadData" type="String" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Precipitation Increment (in)" source="TextToColumns: Parsed from DownloadData" type="Double" />
+            <Field name="Code" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="66" y="306" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="18" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Source" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="16" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="19" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="16" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="19" Connection="Action" />
+      <Destination ToolID="17" Connection="Action" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>download_station</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="16" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>303</ReplaceText>
+              <Destination>1/Data/r/c</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="19" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>303</ReplaceText>
+              <Destination>17/Data/r/c</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (13)</Name>
+          <ToolId value="13" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (14)</Description>
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Update Code Station</Description>
+              <Name>Control Parameter (15)</Name>
+              <ToolId value="15" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AutoByName</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (15)</Name>
+            <Description>Update Code Station</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="14" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
