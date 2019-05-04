@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.3">
+<AlteryxDocument yxmdVer="2018.4">
   <Nodes>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="54" y="54" />
+        <Position x="66" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -27,9 +27,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
-    <Node ToolID="25">
+    <Node ToolID="39">
       <GuiSettings>
-        <Position x="222" y="54" />
+        <Position x="234" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -44,11 +44,11 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="438" y="6" />
+        <Position x="450" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_12428_0f531894c5de4c5fa400ad75acb27882_\Engine_10940_0ba40eabde3e42a98d3e93410f773f8d_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_27164_93f9f61f4251440f84283869f3431ea6_\Engine_12604_4c57fc849c0f4b7baac87f7ee54f9141_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -72,14 +72,13 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="390" y="66" />
+        <Position x="402" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Ch" selected="True" type="Int32" size="4" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -93,7 +92,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="510" y="66" />
+        <Position x="594" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -111,7 +110,7 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="618" y="54" />
+        <Position x="690" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -129,7 +128,7 @@
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="54" y="234" />
+        <Position x="66" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -153,7 +152,7 @@
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="222" y="234" />
+        <Position x="234" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -163,7 +162,7 @@
           <CreateField_Type>Int32</CreateField_Type>
           <CreateField_Size>4</CreateField_Size>
           <Expression_Init>1</Expression_Init>
-          <Expression_Cond>RowCount &lt;= 150</Expression_Cond>
+          <Expression_Cond>RowCount &lt;= 300</Expression_Cond>
           <Expression_Loop>RowCount + 1</Expression_Loop>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -176,7 +175,7 @@
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="738" y="66" />
+        <Position x="786" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -208,7 +207,7 @@
     </Node>
     <Node ToolID="21">
       <GuiSettings>
-        <Position x="834" y="66" />
+        <Position x="978" y="114" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -223,7 +222,7 @@
     </Node>
     <Node ToolID="23">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="42" y="6" width="324" height="40" />
+        <Position x="54" y="54" width="324" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -243,7 +242,7 @@
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="834" y="150" />
+        <Position x="882" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -263,23 +262,83 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="498" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Ch</Field>
+          <RegExExpression value="^.*?(\d{1,3})\:" />
+          <CaseInsensitve value="True" />
+          <Method>Replace</Method>
+          <Replace expression="&quot;HASTA&quot;">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>Ch_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Replace:
+^.*?(\d{1,3})\:
+"HASTA"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="882" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="url" selected="False" />
+            <SelectField field="previous_last" selected="False" />
+            <SelectField field="last" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="25" Connection="Input21" />
+      <Destination ToolID="39" Connection="Input21" />
     </Connection>
     <Connection>
-      <Origin ToolID="25" Connection="Output27" />
+      <Origin ToolID="39" Connection="Output27" />
       <Destination ToolID="7" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="25" Connection="Output27" />
+      <Origin ToolID="39" Connection="Output27" />
       <Destination ToolID="13" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="13" Connection="Output" />
-      <Destination ToolID="14" Connection="Input" />
+      <Destination ToolID="31" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="14" Connection="Unique" />
@@ -298,12 +357,20 @@
       <Destination ToolID="19" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="20" Connection="Join" />
-      <Destination ToolID="21" Connection="Input8" />
-    </Connection>
-    <Connection>
       <Origin ToolID="20" Connection="Right" />
       <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="21" Connection="Input8" />
     </Connection>
   </Connections>
   <Properties>

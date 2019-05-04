@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.3">
+<AlteryxDocument yxmdVer="2018.4">
   <Nodes>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
@@ -15,6 +15,7 @@
             <NameValues />
             <Fields orderChanged="False">
               <Field name="url" selected="False" />
+              <Field name="last" selected="False" />
               <Field name="download_URL" selected="False" />
               <Field name="*Unknown" selected="False" />
             </Fields>
@@ -25,6 +26,7 @@
             <ComposeNameValues />
             <ComposeFields orderChanged="False">
               <Field name="url" selected="False" />
+              <Field name="last" selected="False" />
               <Field name="download_URL" selected="False" />
               <Field name="*Unknown" selected="False" />
             </ComposeFields>
@@ -94,12 +96,12 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="390" y="422" />
+        <Position x="246" y="546" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Field>DownloadData</Field>
-          <RegExExpression value=" &lt;h2 class=\&quot;message\-subject\&quot;&gt;(.*?)&lt;\/h2&gt;" />
+          <RegExExpression value="&quot;message-subject&quot;&gt;(.*?)&lt;\/h2&gt;" />
           <CaseInsensitve value="True" />
           <Method>ParseSimple</Method>
           <Replace expression="">
@@ -119,7 +121,7 @@
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText>Tokenize:
- &lt;h2 class=\"message\-subje...</DefaultAnnotationText>
+"message-subject"&gt;(.*?)&lt;\/h2&gt;</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
@@ -129,52 +131,6 @@
             <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
             <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
-    </Node>
-    <Node ToolID="15">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="486" y="422" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Field>DownloadData</Field>
-          <RegExExpression value="^.*?(\d{1,3})\:" />
-          <CaseInsensitve value="True" />
-          <Method>ParseComplex</Method>
-          <Replace expression="">
-            <CopyUnmatched value="True" />
-          </Replace>
-          <ParseSimple>
-            <SplitToRows value="False" />
-            <RootName />
-            <NumFields value="3" />
-            <ErrorHandling>Warn</ErrorHandling>
-          </ParseSimple>
-          <ParseComplex>
-            <Field field="Ch" type="V_WString" size="254" />
-          </ParseComplex>
-          <Match>
-            <Field>url_Matched</Field>
-            <ErrorUnmatched value="False" />
-          </Match>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>Parse:
-^.*?(\d{1,3})\:</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="url" size="105" source="TextInput:" type="String" />
-            <Field name="last" source="TextInput:" type="Bool" />
-            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
-            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -358,7 +314,7 @@
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1122" y="198" />
+        <Position x="1410" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -375,7 +331,7 @@
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="774" y="422" />
+        <Position x="762" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -397,7 +353,8 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -405,7 +362,7 @@
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="858" y="422" />
+        <Position x="858" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -421,7 +378,8 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
             <Field name="ITER" source="Formula: [Engine.IterationNumber]" type="Int16" />
           </RecordInfo>
         </MetaInfo>
@@ -430,7 +388,7 @@
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1242" y="426" />
+        <Position x="1326" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -447,7 +405,7 @@
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="570" y="582" />
+        <Position x="642" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -465,12 +423,13 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="url" size="105" source="Formula: [_CurrentField_]" type="String" />
             <Field name="last" source="TextInput:" type="Bool" />
-            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
-            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field name="download_URL" size="500" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
           <SortInfo>
             <Field field="RecordID" order="Asc" />
@@ -481,7 +440,7 @@
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="642" y="582" />
+        <Position x="738" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -497,12 +456,13 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="url" size="105" source="Formula: [_CurrentField_]" type="String" />
             <Field name="last" source="TextInput:" type="Bool" />
-            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
-            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field name="download_URL" size="500" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
           <SortInfo locale="0">
             <Field field="RecordID" order="Descending" />
@@ -513,7 +473,7 @@
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-        <Position x="726" y="582" />
+        <Position x="930" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -529,12 +489,13 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="url" size="105" source="Formula: [_CurrentField_]" type="String" />
             <Field name="last" source="TextInput:" type="Bool" />
-            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
-            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-            <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field name="download_URL" size="500" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
           <SortInfo locale="0">
             <Field field="RecordID" order="Descending" />
@@ -545,14 +506,15 @@
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="798" y="582" />
+        <Position x="1026" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Ch" selected="True" rename="last" />
+            <SelectField field="Ch" selected="False" rename="last" />
+            <SelectField field="messageID" selected="True" rename="last" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
         </Configuration>
@@ -563,7 +525,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -571,7 +533,7 @@
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
-        <Position x="822" y="210" />
+        <Position x="1122" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -595,7 +557,7 @@
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
             <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
-            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -603,7 +565,7 @@
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="918" y="210" />
+        <Position x="1218" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -635,14 +597,14 @@
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
             <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
-            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
             <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
-            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -650,7 +612,7 @@
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1014" y="198" />
+        <Position x="1314" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -669,11 +631,446 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="url" size="105" source="TextInput:" type="String" />
-            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_10496_261b467f3c0e4c7d9063b32ca74e19b7_\Engine_12604_73b7b6a068354085bcc80e3f5f15d12b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="354" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <RegExExpression value="&lt;a.*?&gt;(.*?)&lt;\/a&gt;" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Subject" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>url_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+&lt;a.*?&gt;(.*?)&lt;\/a&gt;</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
+            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_10496_261b467f3c0e4c7d9063b32ca74e19b7_\Engine_12604_dde9b47106f3447a97152145d90bc067_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="834" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([Subject])</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Subject</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-05-04 19:19:30</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2019-05-04 19:19:30</StartDate>
+              <EndDate>2019-05-04 19:19:30</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Subject])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="url" size="105" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
+            <Field name="download_URL" size="500" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="url" size="105" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
+            <Field name="download_URL" size="500" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings>
+        <Position x="546" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">""</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="url" size="105" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
+            <Field name="download_URL" size="500" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="450" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <RegExExpression value="&lt;a.*?(\d*#.*?)&quot;&gt;" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="messageID" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>url_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+&lt;a.*?(\d*#.*?)"&gt;</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="last" source="TextInput:" type="Bool" />
+            <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
+            <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="954" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Subject</Field>
+          <RegExExpression value="Challenge.*?#(\d+):" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Ch" type="Int64" size="8" />
+          </ParseComplex>
+          <Match>
+            <Field>Subject_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+Challenge.*?#(\d+):</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="ITER" source="Formula: [Engine.IterationNumber]" type="Int16" />
+            <Field description="RegEx: Parsed from Subject" name="Ch" source="RegEx: Parsed from Subject" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings>
+        <Position x="1050" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Subject"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="ITER" source="Formula: IF [_CurrentFieldName_] IN(&quot;Subject&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int16" />
+            <Field description="RegEx: Parsed from Subject" name="Ch" source="Formula: IF [_CurrentFieldName_] IN(&quot;Subject&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="485" y="310" width="136.4582" height="19" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 46</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="510" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>DownloadData</Field>
+              <RegExExpression value="^.*?(\d{1,3})\:" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName />
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="Ch" type="V_WString" size="254" />
+              </ParseComplex>
+              <Match>
+                <Field>url_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Parse:
+^.*?(\d{1,3})\:</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="105" source="TextInput:" type="String" />
+                <Field name="last" source="TextInput:" type="Bool" />
+                <Field name="download_URL" size="500" source="Formula: Replace([url],&#xA;'CURRENT_PAGE', ToString([Engine.IterationNumber]+1,0))" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field description="RegEx: Parsed from DownloadData" name="Ch" size="254" source="RegEx: Parsed from DownloadData" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1206" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from DownloadData" name="Subject" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="messageID" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+            <Field name="ITER" source="Formula: IF [_CurrentFieldName_] IN(&quot;Subject&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int16" />
+            <Field description="RegEx: Parsed from Subject" name="Ch" source="Formula: IF [_CurrentFieldName_] IN(&quot;Subject&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
+            <Field name="url" size="105" source="TextInput:" type="String" />
+            <Field name="previous_last" size="1" source="TextInput:" type="V_WString" />
+            <Field description="RegEx: Parsed from DownloadData" name="last" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -897,6 +1294,10 @@
       <Destination ToolID="14" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="21" Connection="Output" />
       <Destination ToolID="22" Connection="Input" />
     </Connection>
@@ -913,16 +1314,8 @@
       <Destination ToolID="15" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="17" Connection="Input8" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="25" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="28" Connection="Input" />
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="17" Connection="Output9" />
@@ -950,7 +1343,7 @@
     </Connection>
     <Connection>
       <Origin ToolID="26" Connection="Output" />
-      <Destination ToolID="27" Connection="Input" />
+      <Destination ToolID="44" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="28" Connection="Output" />
@@ -958,7 +1351,7 @@
     </Connection>
     <Connection>
       <Origin ToolID="29" Connection="Output" />
-      <Destination ToolID="30" Connection="Input" />
+      <Destination ToolID="40" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="30" Connection="Output" />
@@ -969,12 +1362,56 @@
       <Destination ToolID="33" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="47" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output26" />
+      <Destination ToolID="47" Connection="Targets" />
+    </Connection>
+    <Connection>
       <Origin ToolID="33" Connection="True" />
       <Destination ToolID="34" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="34" Connection="Output" />
       <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output26" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output26" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output26" />
+      <Destination ToolID="17" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output26" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="41" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
@@ -1095,7 +1532,11 @@
         <Tool ToolId="17" Selected="True" />
         <Tool ToolId="24" Selected="True" />
         <Tool ToolId="27" Selected="True" />
+        <Tool ToolId="36" Selected="False" />
+        <Tool ToolId="38" Selected="False" />
         <Tool ToolId="3" Selected="False" />
+        <Tool ToolId="41" Selected="True" />
+        <Tool ToolId="45" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
