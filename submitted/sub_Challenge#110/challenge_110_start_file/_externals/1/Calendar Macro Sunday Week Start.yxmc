@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2018.1">
+  <Nodes>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="StartDate" />
+            <Field name="EndDate" />
+          </Fields>
+          <Data>
+            <r>
+              <c>01-01-2000</c>
+              <c>31-12-2099</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StartDate" size="10" source="TextInput:" type="String" />
+            <Field name="EndDate" size="10" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>StartDate</InputFieldName>
+          <Format>dd-MM-yyyy</Format>
+          <OutputFieldName>Start Date</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert StartDate From:
+dd-MM-yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StartDate" size="10" source="TextInput:" type="String" />
+            <Field name="EndDate" size="10" source="TextInput:" type="String" />
+            <Field name="Start Date" source="DateTime: To dd-MM-yyyy" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="282" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>EndDate</InputFieldName>
+          <Format>dd-MM-yyyy</Format>
+          <OutputFieldName>End Date</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert EndDate From:
+dd-MM-yyyy</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StartDate" size="10" source="TextInput:" type="String" />
+            <Field name="EndDate" size="10" source="TextInput:" type="String" />
+            <Field name="Start Date" source="DateTime: To dd-MM-yyyy" type="Date" />
+            <Field name="End Date" source="DateTime: To dd-MM-yyyy" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="StartDate" selected="False" />
+            <SelectField field="EndDate" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Start Date" source="DateTime: To dd-MM-yyyy" type="Date" />
+            <Field name="End Date" source="DateTime: To dd-MM-yyyy" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="498" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Start Date</UpdateField_Name>
+          <CreateField_Name>Date</CreateField_Name>
+          <CreateField_Type>Date</CreateField_Type>
+          <CreateField_Size>10</CreateField_Size>
+          <Expression_Init>[Start Date]</Expression_Init>
+          <Expression_Cond>[Date] &lt;=[End Date]</Expression_Cond>
+          <Expression_Loop>DateTimeAdd([Date], +1, "days")</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Start Date" source="DateTime: To dd-MM-yyyy" type="Date" />
+            <Field name="End Date" source="DateTime: To dd-MM-yyyy" type="Date" />
+            <Field name="Date" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="606" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Start Date" selected="False" />
+            <SelectField field="End Date" selected="False" />
+            <SelectField field="Date" selected="True" type="String" size="10" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" size="10" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="726" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Date</Field>
+          <NumFields value="3" />
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Date</RootName>
+          <Delimeters value="-" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" size="10" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Date1" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Date2" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Date3" size="10" source="TextToColumns: Parsed from Date" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="846" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="DateKey" type="String" size="10" expression="[Date1]+''+[Date2]+''+[Date3]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DateKey=[Date1]+''+[Date2]+''+[Date3]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" size="10" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Date1" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Date2" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Date3" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field name="DateKey" size="10" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="966" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <SelectFields>
+            <SelectField field="DateKey" selected="True" />
+            <SelectField field="Date" selected="True" type="Date" size="10" />
+            <SelectField field="Date1" selected="True" rename="Year" />
+            <SelectField field="Date2" selected="True" rename="Month" type="Int16" size="2" />
+            <SelectField field="Date3" selected="True" rename="Day" type="Byte" size="1" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateKey" size="10" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="String" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1086" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="Month StartDate" type="Date" size="10" expression="DateTimeTrim([Date],'firstofmonth')" />
+            <FormulaField field="Month EndDate" type="Date" size="10" expression="DateTimeTrim([Date],'lastofmonth')" />
+            <FormulaField field="MonthName" type="String" size="64" expression="DateTimeFormat([Date],'%B')" />
+            <FormulaField field="Quarter" type="Byte" size="1" expression="IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" />
+            <FormulaField field="DayName" type="String" size="64" expression="DateTimeFormat([Date],'%A')" />
+            <FormulaField field="DayWeek" type="Byte" size="1" expression="IF [DayName] = 'Sunday' THEN 1&#xA;ELSEIF [DayName] = 'Monday' THEN 2&#xA;ELSEIF [DayName] = 'Tuesday' THEN 3&#xA;ELSEIF [DayName] = 'Wednesday' THEN 4&#xA;ELSEIF [DayName] = 'Thursday' THEN 5&#xA;ELSEIF [DayName] = 'Friday' THEN 6&#xA;ELSE 7&#xA;ENDIF" />
+            <FormulaField field="WeekNumber" type="Int16" size="2" expression="ToNumber(DateTimeFormat([Date],'%U'))+1" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Time</AnnotationText>
+          <DefaultAnnotationText>Month StartDate=DateTimeTrim([Date],'firstofmonth')
+Month EndDate=DateTimeTrim([Date],'lastofmonth')
+MonthName=DateTimeFormat([Date],'%B')
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateKey" size="10" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="String" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="MonthName" size="64" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field name="DayName" size="64" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Sunday' THEN 1&#xA;ELSEIF [DayName] = 'Monday' THEN 2&#xA;ELSEIF [DayName] = 'Tuesday' THEN 3&#xA;ELSEIF [DayName] = 'Wednesday' THEN 4&#xA;ELSEIF [DayName] = 'Thursday' THEN 5&#xA;ELSEIF [DayName] = 'Friday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+            <Field name="WeekNumber" source="Formula: ToNumber(DateTimeFormat([Date],'%U'))+1" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2130" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <SelectFields>
+            <SelectField field="DateKey" selected="False" />
+            <SelectField field="Date" selected="True" />
+            <SelectField field="Year" selected="True" />
+            <SelectField field="Quarter" selected="True" />
+            <SelectField field="Month" selected="True" type="Byte" size="1" />
+            <SelectField field="MonthName" selected="True" />
+            <SelectField field="WeekNumber" selected="True" type="Byte" size="1" />
+            <SelectField field="Day" selected="True" />
+            <SelectField field="DayName" selected="True" />
+            <SelectField field="DayYear" selected="True" />
+            <SelectField field="DayQuarter" selected="True" />
+            <SelectField field="DayWeek" selected="True" />
+            <SelectField field="Week StartDate" selected="True" />
+            <SelectField field="Week EndDate" selected="True" />
+            <SelectField field="Month StartDate" selected="True" />
+            <SelectField field="Month EndDate" selected="True" />
+            <SelectField field="Quarter StartDate" selected="True" />
+            <SelectField field="Quarter EndDate" selected="True" />
+            <SelectField field="Right_Year" selected="True" />
+            <SelectField field="Right_Quarter" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="MonthName" size="9" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="WeekNumber" source="Formula: IF DayName = 'Sunday'&#xA;THEN ToNumber(DateTimeFormat([Date],'%U'))&#xA;ELSE ToNumber(DateTimeFormat([Date],'%U'))+1&#xA;ENDIF" type="Byte" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="DayName" size="9" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field description="Formula: IF [Row-1:Year] = [Year]&#xA;THEN [Row-1:DayYear] + 1&#xA;ELSE 1&#xA;ENDIF" name="DayYear" source="Formula: IF [Row-1:Year] = [Year]&#xA;THEN [Row-1:DayYear] + 1&#xA;ELSE 1&#xA;ENDIF" type="Int16" />
+            <Field description="Formula: IF [Row-1:Quarter] = [Quarter]&#xA;THEN [Row-1:DayQuarter] + 1&#xA;ELSE 1&#xA;ENDIF" name="DayQuarter" source="Formula: IF [Row-1:Quarter] = [Quarter]&#xA;THEN [Row-1:DayQuarter] + 1&#xA;ELSE 1&#xA;ENDIF" type="Byte" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Monday' THEN 1&#xA;ELSEIF [DayName] = 'Tuesday' THEN 2&#xA;ELSEIF [DayName] = 'Wednesday' THEN 3&#xA;ELSEIF [DayName] = 'Thursday' THEN 4&#xA;ELSEIF [DayName] = 'Friday' THEN 5&#xA;ELSEIF [DayName] = 'Saturday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="Quarter StartDate" type="Date" />
+            <Field name="Quarter EndDate" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1218" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="WeekNumber" action="GroupBy" rename="WeekNumber" />
+            <SummarizeField field="Date" action="Min" rename="Week StartDate" />
+            <SummarizeField field="Date" action="Max" rename="Week EndDate" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="Summarize: GroupBy - Year" type="String" />
+            <Field name="WeekNumber" source="Summarize: GroupBy - WeekNumber" type="Int16" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Year" order="Asc" />
+            <Field field="WeekNumber" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1326" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Year" />
+            <Field field="WeekNumber" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Year" />
+            <Field field="WeekNumber" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <SelectFields>
+                <SelectField field="Left_DateKey" selected="True" />
+                <SelectField field="Left_Date" selected="True" />
+                <SelectField field="Left_Year" selected="True" />
+                <SelectField field="Left_Quarter" selected="True" />
+                <SelectField field="Left_Month" selected="True" />
+                <SelectField field="Left_WeekNumber" selected="True" />
+                <SelectField field="Right_Year" selected="False" rename="Right_Year" />
+                <SelectField field="Right_WeekNumber" selected="False" rename="Right_WeekNumber" />
+                <SelectField field="Left_Month StartDate" selected="True" />
+                <SelectField field="Left_Month EndDate" selected="True" />
+                <SelectField field="Right_Week StartDate" selected="True" />
+                <SelectField field="Right_Week EndDate" selected="True" />
+                <SelectField field="Left_MonthName" selected="True" />
+                <SelectField field="Left_DayName" selected="True" />
+                <SelectField field="Left_Day" selected="True" />
+                <SelectField field="Left_DayWeek" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="DateKey" size="10" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="String" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="MonthName" size="64" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field name="DayName" size="64" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Sunday' THEN 1&#xA;ELSEIF [DayName] = 'Monday' THEN 2&#xA;ELSEIF [DayName] = 'Tuesday' THEN 3&#xA;ELSEIF [DayName] = 'Wednesday' THEN 4&#xA;ELSEIF [DayName] = 'Thursday' THEN 5&#xA;ELSEIF [DayName] = 'Friday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+            <Field name="WeekNumber" source="Formula: ToNumber(DateTimeFormat([Date],'%U'))+1" type="Int16" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Year" />
+            <Field field="WeekNumber" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="DateKey" size="10" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="String" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="WeekNumber" source="Formula: ToNumber(DateTimeFormat([Date],'%U'))+1" type="Int16" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+            <Field name="MonthName" size="64" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="DayName" size="64" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Sunday' THEN 1&#xA;ELSEIF [DayName] = 'Monday' THEN 2&#xA;ELSEIF [DayName] = 'Tuesday' THEN 3&#xA;ELSEIF [DayName] = 'Wednesday' THEN 4&#xA;ELSEIF [DayName] = 'Thursday' THEN 5&#xA;ELSEIF [DayName] = 'Friday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Year" order="" />
+            <Field field="WeekNumber" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="Summarize: GroupBy - Year" type="String" />
+            <Field name="WeekNumber" source="Summarize: GroupBy - WeekNumber" type="Int16" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Year" />
+            <Field field="WeekNumber" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="1746" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="DateKey" selected="True" />
+            <Field field="Year" selected="True" />
+            <Field field="MonthName" selected="True" />
+            <Field field="DayName" selected="True" />
+            <Field field="Day" selected="True" />
+            <Field field="Right_Year" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateKey" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="Int32" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="WeekNumber" source="Formula: IF DayName = 'Sunday'&#xA;THEN ToNumber(DateTimeFormat([Date],'%U'))&#xA;ELSE ToNumber(DateTimeFormat([Date],'%U'))+1&#xA;ENDIF" type="Int16" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+            <Field name="MonthName" size="9" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="DayName" size="9" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Monday' THEN 1&#xA;ELSEIF [DayName] = 'Tuesday' THEN 2&#xA;ELSEIF [DayName] = 'Wednesday' THEN 3&#xA;ELSEIF [DayName] = 'Thursday' THEN 4&#xA;ELSEIF [DayName] = 'Friday' THEN 5&#xA;ELSEIF [DayName] = 'Saturday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+            <Field name="Quarter StartDate" type="Date" />
+            <Field name="Quarter EndDate" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2250" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output42</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1854" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>DateKey</UpdateField_Name>
+          <CreateField_Name>DayYear</CreateField_Name>
+          <CreateField_Type>Int16</CreateField_Type>
+          <CreateField_Size>2</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [Row-1:Year] = [Year]
+THEN [Row-1:DayYear] + 1
+ELSE 1
+ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Row-1:Year] = [Year]
+THEN [Row-1:DayYear] + 1
+ELSE 1
+ENDIF</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateKey" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="Int32" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="WeekNumber" source="Formula: IF DayName = 'Sunday'&#xA;THEN ToNumber(DateTimeFormat([Date],'%U'))&#xA;ELSE ToNumber(DateTimeFormat([Date],'%U'))+1&#xA;ENDIF" type="Int16" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+            <Field name="MonthName" size="9" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="DayName" size="9" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Monday' THEN 1&#xA;ELSEIF [DayName] = 'Tuesday' THEN 2&#xA;ELSEIF [DayName] = 'Wednesday' THEN 3&#xA;ELSEIF [DayName] = 'Thursday' THEN 4&#xA;ELSEIF [DayName] = 'Friday' THEN 5&#xA;ELSEIF [DayName] = 'Saturday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+            <Field name="Quarter StartDate" type="Date" />
+            <Field name="Quarter EndDate" type="Date" />
+            <Field description="Formula: IF [Row-1:Year] = [Year]&#xA;THEN [Row-1:DayYear] + 1&#xA;ELSE 1&#xA;ENDIF" name="DayYear" source="Formula: IF [Row-1:Year] = [Year]&#xA;THEN [Row-1:DayYear] + 1&#xA;ELSE 1&#xA;ENDIF" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1998" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>DateKey</UpdateField_Name>
+          <CreateField_Name>DayQuarter</CreateField_Name>
+          <CreateField_Type>Byte</CreateField_Type>
+          <CreateField_Size>1</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [Row-1:Quarter] = [Quarter]
+THEN [Row-1:DayQuarter] + 1
+ELSE 1
+ENDIF</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [Row-1:Quarter] = [Quarter]
+THEN [Row-1:DayQuarter] + 1
+EL...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="DateKey" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="Int32" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="WeekNumber" source="Formula: IF DayName = 'Sunday'&#xA;THEN ToNumber(DateTimeFormat([Date],'%U'))&#xA;ELSE ToNumber(DateTimeFormat([Date],'%U'))+1&#xA;ENDIF" type="Int16" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+            <Field name="MonthName" size="9" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="DayName" size="9" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Monday' THEN 1&#xA;ELSEIF [DayName] = 'Tuesday' THEN 2&#xA;ELSEIF [DayName] = 'Wednesday' THEN 3&#xA;ELSEIF [DayName] = 'Thursday' THEN 4&#xA;ELSEIF [DayName] = 'Friday' THEN 5&#xA;ELSEIF [DayName] = 'Saturday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+            <Field name="Quarter StartDate" type="Date" />
+            <Field name="Quarter EndDate" type="Date" />
+            <Field description="Formula: IF [Row-1:Year] = [Year]&#xA;THEN [Row-1:DayYear] + 1&#xA;ELSE 1&#xA;ENDIF" name="DayYear" source="Formula: IF [Row-1:Year] = [Year]&#xA;THEN [Row-1:DayYear] + 1&#xA;ELSE 1&#xA;ENDIF" type="Int16" />
+            <Field description="Formula: IF [Row-1:Quarter] = [Quarter]&#xA;THEN [Row-1:DayQuarter] + 1&#xA;ELSE 1&#xA;ENDIF" name="DayQuarter" source="Formula: IF [Row-1:Quarter] = [Quarter]&#xA;THEN [Row-1:DayQuarter] + 1&#xA;ELSE 1&#xA;ENDIF" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1470" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Quarter" action="GroupBy" rename="Quarter" />
+            <SummarizeField field="Date" action="Min" rename="Quarter StartDate" />
+            <SummarizeField field="Date" action="Max" rename="Quarter EndDate" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="Summarize: GroupBy - Year" type="String" />
+            <Field name="Quarter" source="Summarize: GroupBy - Quarter" type="Byte" />
+            <Field name="Quarter StartDate" type="Date" />
+            <Field name="Quarter EndDate" type="Date" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Year" order="Asc" />
+            <Field field="Quarter" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1626" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Year" />
+            <Field field="Quarter" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Year" />
+            <Field field="Quarter" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_Year" selected="False" rename="Right_Year" />
+                <SelectField field="Right_Quarter" selected="False" rename="Right_Quarter" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="DateKey" size="10" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="String" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="WeekNumber" source="Formula: ToNumber(DateTimeFormat([Date],'%U'))+1" type="Int16" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+            <Field name="MonthName" size="64" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="DayName" size="64" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Sunday' THEN 1&#xA;ELSEIF [DayName] = 'Monday' THEN 2&#xA;ELSEIF [DayName] = 'Tuesday' THEN 3&#xA;ELSEIF [DayName] = 'Wednesday' THEN 4&#xA;ELSEIF [DayName] = 'Thursday' THEN 5&#xA;ELSEIF [DayName] = 'Friday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Year" />
+            <Field field="Quarter" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="DateKey" size="10" source="Formula: [Date1]+''+[Date2]+''+[Date3]" type="String" />
+            <Field name="Date" type="Date" />
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="TextToColumns: Parsed from Date" type="String" />
+            <Field name="Quarter" source="Formula: IF [Month] IN (1,2,3) THEN 1&#xA;ELSEIF [Month] IN (4,5,6) THEN 2&#xA;ELSEIF [Month] IN (7,8,9) THEN 3&#xA;ELSE 4&#xA;ENDIF" type="Byte" />
+            <Field description="TextToColumns: Parsed from Date" name="Month" source="TextToColumns: Parsed from Date" type="Int16" />
+            <Field name="WeekNumber" source="Formula: ToNumber(DateTimeFormat([Date],'%U'))+1" type="Int16" />
+            <Field name="Month StartDate" source="Formula: DateTimeTrim([Date],'firstofmonth')" type="Date" />
+            <Field name="Month EndDate" source="Formula: DateTimeTrim([Date],'lastofmonth')" type="Date" />
+            <Field name="Week StartDate" type="Date" />
+            <Field name="Week EndDate" type="Date" />
+            <Field name="MonthName" size="64" source="Formula: DateTimeFormat([Date],'%B')" type="String" />
+            <Field name="DayName" size="64" source="Formula: DateTimeFormat([Date],'%A')" type="String" />
+            <Field description="TextToColumns: Parsed from Date" name="Day" source="TextToColumns: Parsed from Date" type="Byte" />
+            <Field name="DayWeek" source="Formula: IF [DayName] = 'Sunday' THEN 1&#xA;ELSEIF [DayName] = 'Monday' THEN 2&#xA;ELSEIF [DayName] = 'Tuesday' THEN 3&#xA;ELSEIF [DayName] = 'Wednesday' THEN 4&#xA;ELSEIF [DayName] = 'Thursday' THEN 5&#xA;ELSEIF [DayName] = 'Friday' THEN 6&#xA;ELSE 7&#xA;ENDIF" type="Byte" />
+            <Field name="Quarter StartDate" type="Date" />
+            <Field name="Quarter EndDate" type="Date" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Year" order="" />
+            <Field field="Quarter" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Date" name="Year" size="10" source="Summarize: GroupBy - Year" type="String" />
+            <Field name="Quarter" source="Summarize: GroupBy - Quarter" type="Byte" />
+            <Field name="Quarter StartDate" type="Date" />
+            <Field name="Quarter EndDate" type="Date" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Year" />
+            <Field field="Quarter" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="39" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Join" />
+      <Destination ToolID="47" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Join" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Join" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (42)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Calendar Macro Sunday Week Start</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (41)</Name>
+          <ToolId value="41" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (42)</Description>
+              <Name>Macro Output (42)</Name>
+              <ToolId value="42" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
