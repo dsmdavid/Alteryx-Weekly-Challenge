@@ -1,0 +1,603 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="150" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#104\challenge_104_start_file\air_pollution_data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>air_pollution_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="258" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="County" action="GroupBy" rename="County" />
+            <SummarizeField field="City" action="GroupBy" rename="City" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="Asc" />
+            <Field field="County" order="Asc" />
+            <Field field="City" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1254" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#104\challenge_104_start_file\tree.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>tree.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="366" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False" />
+          <Method>UniqueValue</Method>
+          <UniqueValue>
+            <UniqueFields>
+              <Field field="State" />
+            </UniqueFields>
+            <DontSort value="False" />
+          </UniqueValue>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Tile_Num" type="Int32" />
+            <Field name="Tile_SequenceNum" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="Asc" />
+            <Field field="County" order="Asc" />
+            <Field field="City" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="474" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False">
+            <Field name="State" />
+          </GroupFields>
+          <Method>UniqueValue</Method>
+          <UniqueValue>
+            <UniqueFields>
+              <Field field="State" />
+              <Field field="County" />
+            </UniqueFields>
+            <DontSort value="False" />
+          </UniqueValue>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Tile_Num" type="Int32" />
+            <Field name="Tile_SequenceNum" type="Int32" />
+            <Field name="Tile_Num2" type="Int32" />
+            <Field name="Tile_SequenceNum2" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="Asc" />
+            <Field field="State" order="Asc" />
+            <Field field="County" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="666" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Tile_Num" selected="True" rename="StateKey" />
+            <SelectField field="Tile_SequenceNum" selected="False" />
+            <SelectField field="Tile_Num2" selected="True" rename="CountyKey" />
+            <SelectField field="Tile_SequenceNum2" selected="True" rename="CityKey" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="StateKey" size="6" source="Formula: padleft(tostring([_CurrentField_],0),2,&quot;0&quot;)" type="String" />
+            <Field name="CountyKey" size="6" source="Formula: padleft(tostring([_CurrentField_],0),2,&quot;0&quot;)" type="String" />
+            <Field name="CityKey" size="6" source="Formula: padleft(tostring([_CurrentField_],0),2,&quot;0&quot;)" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="Asc" />
+            <Field field="State" order="Asc" />
+            <Field field="County" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="570" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Numeric</FieldType>
+          <Fields orderChanged="False">
+            <Field name="Tile_Num" />
+            <Field name="Tile_SequenceNum" />
+            <Field name="Tile_Num2" />
+            <Field name="Tile_SequenceNum2" />
+            <Field name="*Unknown" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>padleft(tostring([_CurrentField_],0),2,"0")</Expression>
+          <ChangeFieldType value="True" />
+          <OutputFieldType type="String" size="6" scale="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>padleft(tostring([_CurrentField_],0),2,"0")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Tile_Num" size="6" source="Formula: padleft(tostring([_CurrentField_],0),2,&quot;0&quot;)" type="String" />
+            <Field name="Tile_SequenceNum" size="6" source="Formula: padleft(tostring([_CurrentField_],0),2,&quot;0&quot;)" type="String" />
+            <Field name="Tile_Num2" size="6" source="Formula: padleft(tostring([_CurrentField_],0),2,&quot;0&quot;)" type="String" />
+            <Field name="Tile_SequenceNum2" size="6" source="Formula: padleft(tostring([_CurrentField_],0),2,&quot;0&quot;)" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="Asc" />
+            <Field field="State" order="Asc" />
+            <Field field="County" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[StateKey]+[CountyKey]" field="CountyKey" size="6" type="String" />
+            <FormulaField expression="[CountyKey]+[CityKey]" field="CityKey" size="6" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[CountyKey = [StateKey]+[CountyKey]
+CityKey = [CountyKey]+[CityKey]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="StateKey" size="6" source="Formula: padleft(tostring([_CurrentField_],0),2,&quot;0&quot;)" type="String" />
+            <Field name="CountyKey" size="6" source="Formula: [StateKey]+[CountyKey]" type="String" />
+            <Field name="CityKey" size="6" source="Formula: [CountyKey]+[CityKey]" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="Asc" />
+            <Field field="State" order="Asc" />
+            <Field field="County" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="846" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StateKey" action="GroupBy" rename="Key" />
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="State" action="GroupBy" rename="Description" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Key" size="6" source="Summarize: GroupBy - StateKey" type="String" />
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="Description" size="254" source="Summarize: GroupBy - State" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="StateKey" order="Asc" />
+            <Field field="State" order="Asc" />
+            <Field field="State" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="846" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="County" action="GroupBy" rename="County" />
+            <SummarizeField field="CountyKey" action="GroupBy" rename="Key" />
+            <SummarizeField field="County" action="GroupBy" rename="Description" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="Key" size="6" source="Summarize: GroupBy - CountyKey" type="String" />
+            <Field name="Description" size="254" source="Summarize: GroupBy - County" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="Asc" />
+            <Field field="County" order="Asc" />
+            <Field field="CountyKey" order="Asc" />
+            <Field field="County" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="846" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="County" action="GroupBy" rename="County" />
+            <SummarizeField field="City" action="GroupBy" rename="City" />
+            <SummarizeField field="CityKey" action="GroupBy" rename="Key" />
+            <SummarizeField field="City" action="GroupBy" rename="Description" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Key" size="6" source="Summarize: GroupBy - CityKey" type="String" />
+            <Field name="Description" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="Asc" />
+            <Field field="County" order="Asc" />
+            <Field field="City" order="Asc" />
+            <Field field="CityKey" order="Asc" />
+            <Field field="City" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="978" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="Key" size="6" source="Summarize: (Multiple Sources)" type="String" />
+            <Field name="Description" size="254" source="Summarize: (Multiple Sources)" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1146" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Key" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Key - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="Key" size="6" source="Summarize: (Multiple Sources)" type="String" />
+            <Field name="Description" size="254" source="Summarize: (Multiple Sources)" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Key" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="True" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david#104_generateTree</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions />
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="28" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

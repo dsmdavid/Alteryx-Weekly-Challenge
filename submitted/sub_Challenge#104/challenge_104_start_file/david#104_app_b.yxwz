@@ -1,0 +1,3183 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="294" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>iVBORw0KGgoAAAANSUhEUgAAAXoAAAA0CAIAAAAL52RvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnEAABJxAfPceo4AAAASdEVYdFNvZnR3YXJlAEdyZWVuc2hvdF5VCAUAAA0cSURBVHhe7Z3fjhXHEYf9Bs4bxG+A38B+A/sN7DdI3sBccYcSKXBhCQkuLPliibGEfcNeJGKvFiFhNgoKijFai+BVEPJCIrAlS+TbU72V2uo/02dn5uyedX1qjU7XVPd0D1O/qZ4zZ3nrTRAEwUoIuQmCYEWE3ARBsCJORm7+8uQ/Nx7tp0qwDjx58uTu3bu7u7upHgTLs2q5efzi5/e/+PatP31DSaZgHQi5CcazUrm59+zVbz79m2jNsnLz40+/nN/eQ6oQrGQKVkjITTCelcrNJ9s/qNYsJTdWp1iIJWuwQkJugvGsh9y8/emOtgq5ORFCboLxrIfc2FYhNydCyE0wnpCboIuQm2A8ITdBFyE3wXhCboIuQm6C8YTcBF2E3ATjGZCbH3/65Y/fPPt48/v3v/jWvjJDeffzh9jZe+/Zq+Q9xMnKDeM8v733+9v/Yi5s+fzloxdpXzBEyE0wngG5+eCr72yo18o71x4QwIMv4C0lN3+49290gYKu2VZoHEphy6AAXX3w3GmlFuz0gKom1xLs/euT/0pJpsXvMES5RLySdQG71L/ds6JNrHbzWftJpgp2hDO9BhlyE4xnQG4+2tx18dkohG5qVmEpubGe7fLen/+Z2mQQh06tigWfhi5YzUUE8URi1CIluS6wdk5gstZBDdX/t9f+nqxH3zb63e0nyZrh5thzxGMQchOMZ0BuuOty0RPPhBxiYQsWGw9S2okGraxzslawnu3SkJtzn/8jd5bi7ERsapNhnZl1nii5AVh5GpRgsIPkFCXrIr9TO6V2blEi67bW2c3+/j6HAD4kU5PXr1+LPyRTnU43RQbDIVJ9wbKd7O3tuU7EwjbVSxR9BluBjNmdPSzWKNUexH9Cxj4qdgoyodzkSlErNkQt7nBUbQrDZxeotX5ybXLFJRQ3Hu3bve3fvqMO1tmJhT0JrFjzFIwTrg6U2hTGM6vcEAk3b968fPnyBQPVzc1NF+0Cxq2trStXriTXQ7Ds7OwkpwzxuXXrVqo3efjwofi7KYuR0aZ6k9u3b4u/7eSzzz7DwjbVSxR9Fj1duH//fqqXkCOyTfUF0lCNUu1BTsLFixcbMscucb5z504y1RkrN+5yn1BulKUOobgwJlNIO45iFYd4Ttaj5HJDWofEMJJ7z16xzVWANZE6t1c3NoVxWRLQv+6luCUVx2XMuhdtSjtmYD65IX7kei3Ctc5Fn1wXcH1jTLsXEJbWgugUwyPtvnBhMEeAS5cuiXNRbmDwVKCJOqoJ5aYd/NPKDc6Dox10sJxZubE6Yh+IOIhYdaMUO3dyQ1TbB7pFXN6U65Fihenqg+fJanAnzY7QHWVwVGOYSW64JS4u7AOIBxtIHIskAvvGxkYyHdUa9lp/UiR6kL3FmJRWMBgbVgFrcjPYiUS+MKHcAHpaTPpADqrKIkgrZ1QYmzgU/3E5q7K3mFXpiWoooOXMyo19rlRLbQSrJowwWQ3WgW57otrlVkUdAZu80HNNlYpLKndaiiOfkDnkhmtULtbGHRu7DS1dQLmUR8FfFAfPZDoEo0pVYyKalUiC4zwXrVM/jXVNo5ORciPd1lZzk8sNSJ+sbZ3G6Rw716dwNuXm2KP64KvvktVg5SZf79SwGlHsFmx60lhzuenIksr2T4rUSKAmYQ65kaCCznuj3ktrkSNo/Dg5ECOxwZbgSdYMiS7cZHhuygddLAbAttGJ5GVs806KUuIo+mABPQlFsZOBufMj/rWTpqer8Y8roul6kGOhOE6GGpxNuXHf6SRrBTuqopocT27s19uUohzYFKw9L7du+vDrx7bac05GMrncaJZeu1HnSGrTc303wlXvycVwlb1yCOmkKDfaSTGGZWo48CHvpDg2R9EHC/BBtAxymRYJcKMS5+JQoUdu1IcZiUX/+WppZpGzKTdkCrZJslaYSW7QF21FyddT9gusxtMlgd7sUx5bJNmZm8nlRu/SndcrES7+PfKkj4RSfYFaGrdliWSJzFwp4KCLRScy/mN0UpQSR9EHC/CBI4ry5gscmZpTlkW7UXIDGxsb+Fy/fl2qPbPI6ZIbrvUvH704v73HTVXeo9XiXqI7JXJjBYLixuyK/XJnQrkBq3ocKFkPsXt7JMOdBykrWEYJk8uNBAZ0rqQ0KmphYymGkFjkc3F1IHdsdkkMS0S5KR90cbQT9+RCU5taJz2BWvTBAvJZH1Fp/AtyVt28Fu3Gyg3zkiPipk002elkQG4ev/j5483v3SXeKKdTbvrLtHLjXsCx79S43Me9blPDLakoK/sPLeaTm1QfQi/xWthY1NkOWCzyWXMTGzByA9dFVq4UcNDFYSd6FNuJtNKXUPJOilLiKPpggVSpPMmSs+pOUe5mKZ6rIpIzMioZXs8/hKMlN+T/tZ8a1coccuMegswqN8XntceWG7ArIPsFmZ3Uue73ZZzy9ryyPBXzyU3nHVKjoucqL4aQWFLlMKR1aSZNSFikCuLgpnzQRdaJphg9nYiFbaqXKPpggVRZII+9QfuXs+pOkfjUzpuMGdxMi+g3g5oDLkVVbrjfOq0hKtALCndUrnst1odqal/ieHLjWrUPIViBYNg61MGS2h9ljNzYwdvfSdg+88c6NZiLtpJC/2nfzMwnN519snwQ/x65kddhwWqZWFLFhJms5mq64Ia3aPH/TnRU4iZNND+CWrdsU71E0QcLpMoh7vH53HKjJ3apJ8RKVW7sD3/aL5uoG6UWscKJyM34FGCM3LgXcGTR5IydD1/cedAy69t9yuRyoxduj3wI8qwkf6EmR277NsuAxdGOhKusnohqWZi48JaYd1M+6OJoJ/JgGGeJ28FO9KCpXkJaOR8skCqHoKfySEVOy9xys5RzTlVu7AXdfk3Oep5CuaEk63EZIzdgm8uZtN/TN163sdgXAl1p/Lh0QiaXG5A4aby94pDAHrzWuc9Lz7pQEqRtqiwgVsUo/u6hda4UsHD3nehE2Dr/vBNRBJqkegkR1qJqpIpBhRuRXUu5IaTtBd2O8H7PlcmNazLyu5uRcmMf08jPsuyaqPNZr21CsuleLGK+yW825pAbiQ2oRYJD1YE7eePBgaqSXUmBGFPlEH384bQJOuUGdCIuH4G8E11/2TWXRUPayZ8YU+UoOgtZW6233CRrBeu5lNwcbxHRIzdu/P0PR4qMlBumaV/ns+oz+LqN4MRFUiQ7KsrcS6o55EbTEKj9nphAskKggU1cOTUBOrx+/bo45B2KPVUOkTFA3lu/3CzbiRjxz88nEoOdvblyHRy4IjcgfQrrLTftCO/3PIZwgAu2nnTAfc2cv/OyFCPlBtxrh1p6Xrdxz+x1ANitis29pJpDbkCjC1iMoBEcQuCzLE9cGGvyAojL1tYWqwm22LWrPFUB2ZUqBsQCUsXQLzewVCdMR4fKFHZ2dhYz3t3c3BQje11qA7IrVTI4uva5ZnLjnhQ0sgP31LOtIPbGTul8bOG0r7OVi/AxCc54uXFT0CJPjtvYo6Mvtkkx65mJmeQGiCtZAhQhXPPAYxkiTzdysNcWKeKQKh0sJTc1ip1AY9ZMIZ8yyN5UKaFasGZyA/bO+c61B3lgIEn5G4DcY+XvB5NQ5BGeP+/EU3omH5EXl/NFgVM0iv5dZLb9rXArLt8ahxbGyw3kP0E41/G6jROU/BmNHRtJkJyWOZhPbgQyFFISgpNbNPHGB5ZR7cPRhBDa2NjAmS2fsaR9JXCDVOmAAeDvIn+SThSUkZGL7jBrPte0EnoOzRnIO5GGtZ4ZmzjUBmlZyjmnKjf5C6woiPwHBh9+/di++F8rxW+gaz/80TL4m+xiKS4l3NpNCp4yEflBhp1IbT0yidzkgxlMuNAOu4wqypNT1ZHLxgZzy03wa6AqN9zzB6WBgk9DC/J8obas0FIUqTwtyktyPUrtoUmtFNOfSeQmz7aKx7K4E1tLvpyQzbSkCrkJxlOVG+D6zl9jtYUMiJghkOzKS4t70KBwVy/6S6n9aZgbj/YbrRoLkzxNa5TigCeRG7D9DD6Bcs+50JS0o4T9Z5ppSRVyE4ynJTcC1z0SoJkOMU/YcAu1N2c+Ez/qw9VPkDcuevzpgW7pSjqkEFG1G7hQbMWBBr+rYiQMr6FWjLwxYAYmbdkOroAaMHI94uCYmalMUOaYrBU4b+pMaZ/G4xFyE4xnWG7OEsQhcY58SCGkWdzNkQvkcBTVGmQrWdeHkJtgPL8uuTlB7JpuMFs5hYTcBOMJuVkFLAPtd0yryaemJeQmGE/IzSpg4aZa896Ih80nSMhNMJ6Qm9m59+yVTW3aL16fWkJugvGE3MwIa6jz23tWa9Y0tYGQm2A8ITcTg6AgK+8e/YvxUt6u/8d1p5+Qm2A8ITcT4yRGC1ozx+swKyPkJhhPyM3EOJWR8tHm7vrmNULITTCekJuJ0fee2X6y/cPVB8/X8WvvnJcvXz59+jT/81FB0E/ITRAEKyLkJgiCFRFyEwTBSnjz5n+Bsg0wC+hiuAAAAABJRU5ErkJggg==</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="690" y="66" width="300" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #104</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="294" y="114" width="672" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Love isn't the only thing in the air this week!  We have a dataset with information about the concentrations of air pollutants (Nitrogen Dioxide, Sulfur Dioxide, Carbon Monoxide and Ozone)  and Air Quality Index (AQI) for each pollutant measured on a particular day.  Choose a site from the provided dataset (I chose Denver, Colorado).  Then, create a  color-coded table with the count of the number of days for each AQI category for the same month as today's date (at time of publication, this value is February).   
+
+For information on the AQI values associated with air quality categories, see this site: https://airnow.gov/index.cfm?action=aqibasics.aqi
+
+Make the workflow as dynamic as possible; someone should be able to run this workflow at the beginning of every month without having to change anything in the workflow!
+
+ 
+
+  ]]></Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="306" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">air_pollution_data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>air_pollution_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+        <Position x="1080" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Formula</Mode>
+          <Expression>contains([Name], "date") || contains([Name],"AQI")</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" source="DateTime: To yyyy-MM-dd" type="Date" />
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1298" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Date Local" action="GroupBy" rename="Date Local" />
+            <SummarizeField field="NO2 AQI" action="Avg" rename="Avg_NO2 AQI" />
+            <SummarizeField field="O3 AQI" action="Avg" rename="Avg_O3 AQI" />
+            <SummarizeField field="SO2 AQI" action="Avg" rename="Avg_SO2 AQI" />
+            <SummarizeField field="CO AQI" action="Avg" rename="Avg_CO AQI" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date Local" source="Summarize: GroupBy - Date Local" type="Date" />
+            <Field name="Avg_NO2 AQI" source="Summarize: Avg - NO2 AQI" type="Double" />
+            <Field name="Avg_O3 AQI" source="Summarize: Avg - O3 AQI" type="Double" />
+            <Field name="Avg_SO2 AQI" source="Summarize: Avg - SO2 AQI" type="Double" />
+            <Field name="Avg_CO AQI" source="Summarize: Avg - CO AQI" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Date Local" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="123">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+        <Position x="1189" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldType>Text</FieldType>
+          <Fields orderChanged="False">
+            <Field name="NO2 AQI" />
+            <Field name="O3 AQI" />
+            <Field name="SO2 AQI" />
+            <Field name="CO AQI" />
+            <Field name="Date Local" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </Fields>
+          <CopyOutput value="False" />
+          <Expression>ToNumber([_CurrentField_],0)</Expression>
+          <ChangeFieldType value="True" />
+          <OutputFieldType type="Int64" size="8" scale="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ToNumber([_CurrentField_],0)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NO2 AQI" source="Formula: ToNumber([_CurrentField_],0)" type="Int64" />
+            <Field name="O3 AQI" source="Formula: ToNumber([_CurrentField_],0)" type="Int64" />
+            <Field name="SO2 AQI" source="Formula: ToNumber([_CurrentField_],0)" type="Int64" />
+            <Field name="CO AQI" source="Formula: ToNumber([_CurrentField_],0)" type="Int64" />
+            <Field name="Date Local" source="DateTime: To yyyy-MM-dd" type="Date" />
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="971" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[DateTimeFormat([Date Local],"%B") = [Selected Month]
+]]></Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-05-05 22:56:34</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-05-05 22:56:34</StartDate>
+              <EndDate>2019-05-05 22:56:34</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[DateTimeFormat([Date Local],"%B") = [Selected Month]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" source="DateTime: To yyyy-MM-dd" type="Date" />
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Selected Month" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" source="DateTime: To yyyy-MM-dd" type="Date" />
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Selected Month" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+        <Position x="643" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <IsFrom value="False" />
+          <InputFieldName>Date Local</InputFieldName>
+          <Format>yyyy-MM-dd</Format>
+          <OutputFieldName>DateTime_Out</OutputFieldName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Convert Date Local From:
+yyyy-MM-dd</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="DateTime_Out" source="DateTime: To yyyy-MM-dd" type="Date" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="" />
+            <Field field="County" order="" />
+            <Field field="City" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="752" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Date Local" selected="False" />
+            <SelectField field="DateTime_Out" selected="True" rename="Date Local" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Keep New Date</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" source="DateTime: To yyyy-MM-dd" type="Date" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="" />
+            <Field field="County" order="" />
+            <Field field="City" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="127">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1408" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeYear([Date Local])" field="Year" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Year = DateTimeYear([Date Local])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date Local" source="Summarize: GroupBy - Date Local" type="Date" />
+            <Field name="Avg_NO2 AQI" source="Summarize: Avg - NO2 AQI" type="Double" />
+            <Field name="Avg_O3 AQI" source="Summarize: Avg - O3 AQI" type="Double" />
+            <Field name="Avg_SO2 AQI" source="Summarize: Avg - SO2 AQI" type="Double" />
+            <Field name="Avg_CO AQI" source="Summarize: Avg - CO AQI" type="Double" />
+            <Field name="Year" source="Formula: DateTimeYear([Date Local])" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Date Local" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="148">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1735" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>AQI colours and description</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date Local" source="Summarize: GroupBy - Date Local" type="Date" />
+            <Field name="Year" source="Formula: DateTimeYear([Date Local])" type="Int64" />
+            <Field name="Name" size="11" source="Formula: Replace([Name],' AQI', &quot;&quot;)" type="String" />
+            <Field name="Value" source="Summarize: (Multiple Sources)" type="Double" />
+            <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+            <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+            <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+            <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="149">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1517" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Date Local" />
+            <Field field="Year" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Date Local" selected="False" />
+            <Field field="Avg_NO2 AQI" selected="True" />
+            <Field field="Avg_O3 AQI" selected="True" />
+            <Field field="Avg_SO2 AQI" selected="True" />
+            <Field field="Avg_CO AQI" selected="True" />
+            <Field field="Year" selected="False" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date Local" source="Summarize: GroupBy - Date Local" type="Date" />
+            <Field name="Year" source="Formula: DateTimeYear([Date Local])" type="Int64" />
+            <Field name="Name" size="11" source="Transpose:" type="String" />
+            <Field name="Value" source="Summarize: (Multiple Sources)" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Date Local" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="150">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1626" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace([Name], &quot;Avg_&quot;, &quot;&quot;)" field="Name" size="11" type="String" />
+            <FormulaField expression="Replace([Name],' AQI', &quot;&quot;)" field="Name" size="11" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Name = Replace([Name], "Avg_", "")
+Name = Replace([Name],' AQI', "")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date Local" source="Summarize: GroupBy - Date Local" type="Date" />
+            <Field name="Year" source="Formula: DateTimeYear([Date Local])" type="Int64" />
+            <Field name="Name" size="11" source="Formula: Replace([Name],' AQI', &quot;&quot;)" type="String" />
+            <Field name="Value" source="Summarize: (Multiple Sources)" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Date Local" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="151">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1844" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[From]&lt;= [Value] &amp;&amp;
+[Value] &lt;= [To]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-05-05 23:01:00</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-05-05 23:01:00</StartDate>
+              <EndDate>2019-05-05 23:01:00</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[From]&lt;= [Value] &amp;&amp;
+[Value] &lt;= [To]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Date Local" source="Summarize: GroupBy - Date Local" type="Date" />
+            <Field name="Year" source="Formula: DateTimeYear([Date Local])" type="Int64" />
+            <Field name="Name" size="11" source="Formula: Replace([Name],' AQI', &quot;&quot;)" type="String" />
+            <Field name="Value" source="Summarize: (Multiple Sources)" type="Double" />
+            <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+            <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+            <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+            <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Date Local" source="Summarize: GroupBy - Date Local" type="Date" />
+            <Field name="Year" source="Formula: DateTimeYear([Date Local])" type="Int64" />
+            <Field name="Name" size="11" source="Formula: Replace([Name],' AQI', &quot;&quot;)" type="String" />
+            <Field name="Value" source="Summarize: (Multiple Sources)" type="Double" />
+            <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+            <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+            <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+            <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="152">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2063" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Name" action="GroupBy" rename="Name" />
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Colour" action="GroupBy" rename="Colour" />
+            <SummarizeField field="Description" action="GroupBy" rename="Description" />
+            <SummarizeField field="Date Local" action="CountDistinct" rename="Numbre of Days" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" source="Summarize: GroupBy - Year" type="Int64" />
+            <Field name="Name" size="11" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Category" size="2048" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="Colour" size="2048" source="Summarize: GroupBy - Colour" type="V_String" />
+            <Field name="Description" size="2048" source="Summarize: GroupBy - Description" type="V_String" />
+            <Field name="Numbre of Days" source="Summarize: CountDistinct - Date Local" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Year" order="Asc" />
+            <Field field="Name" order="Asc" />
+            <Field field="Category" order="Asc" />
+            <Field field="Colour" order="Asc" />
+            <Field field="Description" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="153">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="2172" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Name" />
+            <Field field="Category" />
+            <Field field="Colour" />
+            <Field field="Description" />
+          </GroupFields>
+          <HeaderField field="Year" />
+          <DataField field="Numbre of Days" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="11" source="CrossTab:Group:Sum:" type="String" />
+            <Field name="Category" size="2048" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Colour" size="2048" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Description" size="2048" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="2014" source="CrossTab:Header:Year:2014:Sum:" type="Int64" />
+            <Field name="2015" source="CrossTab:Header:Year:2015:Sum:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Name" order="Asc" />
+            <Field field="Category" order="Asc" />
+            <Field field="Colour" order="Asc" />
+            <Field field="Description" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="154">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="2442" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Name" selected="True" Alignment="Left" Width="" Borders="None" />
+            <Field name="Category" selected="True" Alignment="Left" Width="" />
+            <Field name="2014" selected="True" Alignment="Right" Width="" Places="0" />
+            <Field name="2015" selected="True" Alignment="Right" Width="" Places="0" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+            <Field name="Colour" selected="False" />
+            <Field name="Description" selected="False" />
+            <Field name="Tile_Num" selected="False" />
+            <Field name="Tile_SequenceNum" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="--Cambria" Size="10" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="a8763e2a-ce05-4b5f-a181-716e862da75e">
+              <RowRule value="True" />
+              <HighPrecedence value="False" />
+              <Field />
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar>Colour</SimpleVar>
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>Green</SimpleConst>
+              <Formula>1</Formula>
+              <Style Formula="&quot;background-color: &quot;+[Colour]+&quot;;&quot;" />
+              <PrettyName>Colour</PrettyName>
+            </Rule>
+            <Rule Name="5886887b-ea31-4ff2-b7d3-257dc56bd708">
+              <RowRule value="False" />
+              <HighPrecedence value="False" />
+              <Field>Name</Field>
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar />
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style Formula="&quot;background-color: white;&quot;" />
+              <PrettyName>Name Rule 1</PrettyName>
+            </Rule>
+            <Rule Name="d9fbbfb3-8926-48b8-9a11-b90951eb6c14">
+              <RowRule value="False" />
+              <HighPrecedence value="False" />
+              <Field>Category</Field>
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar />
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style Formula="&quot;background-color: white;&quot;" />
+              <PrettyName>Category Rule 1</PrettyName>
+            </Rule>
+            <Rule Name="900269de-e7cc-45b2-91ad-373f19128e11">
+              <RowRule value="False" />
+              <HighPrecedence value="False" />
+              <Field>Name</Field>
+              <Test>Simple</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar>Tile_SequenceNum</SimpleVar>
+              <SimpleOp>!=</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style TextColor="#ffffff" />
+              <PrettyName>Name Rule 2</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Name" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="155">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2442" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11720_6672cddda4cf4bdcb7e784aad9ff07ab_\Engine_15264_a46f0c5d54f74dc189761f0917ab4d9b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="156">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1954" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date Local" source="Summarize: GroupBy - Date Local" type="Date" />
+            <Field name="Year" source="Formula: DateTimeYear([Date Local])" type="Int64" />
+            <Field name="Name" size="11" source="Formula: Replace([Name],' AQI', &quot;&quot;)" type="String" />
+            <Field name="Value" source="Summarize: (Multiple Sources)" type="Double" />
+            <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+            <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+            <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+            <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="163">
+      <GuiSettings>
+        <Position x="2250" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Name","Category","Colour","Description","2014","2015"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="Name" size="11" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Category" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Colour" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Description" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="2014" source="Formula: IF [_CurrentFieldName_] IN(&quot;Name&quot;,&quot;Category&quot;,&quot;Colour&quot;,&quot;Description&quot;,&quot;2014&quot;,&quot;2015&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
+            <Field name="2015" source="Formula: IF [_CurrentFieldName_] IN(&quot;Name&quot;,&quot;Category&quot;,&quot;Colour&quot;,&quot;Description&quot;,&quot;2014&quot;,&quot;2015&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="165">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="169">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="3030" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType>pdf</TempFileType>
+          <BatchMode value="False" />
+          <DataField>Layout</DataField>
+          <Separator>Continuous</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+    <Node ToolID="174">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="2634" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Text" selected="True" Width="" Alignment="Center" />
+            <Field name="Table" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Month Name" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="175">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2634" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11720_6672cddda4cf4bdcb7e784aad9ff07ab_\Engine_15264_ded3da6b2cab450caf7f74580c965b36_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="176">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Date.Date">
+        <Position x="630" y="246" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="182">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="2394" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Britannic Bold;}}
+{\colortbl ;\red255\green0\blue255;}
+\viewkind4\uc1\pard\qc\f0\fs41 [Month Name:A]'s AQI summary for\par
+\cf1 [City:A]\par
+([County:A], [State:A])\par
+\cf0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Month Name:A]'s AQI summary f...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Month Name" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="183">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2538" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Month Name" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Month Name" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="185">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="306" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="PlaceholderDate" />
+          </Fields>
+          <Data>
+            <r>
+              <c>2009-10-12</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="186">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="862" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" source="DateTime: To yyyy-MM-dd" type="Date" />
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Selected Month" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="187">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" field="Selected Month" size="25" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Selected Month = DateTimeFormat([PlaceholderDate], "%B")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Selected Month" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="189">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="630" y="354" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update When</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="193">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="306" y="684" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#104\challenge_104_start_file\tree.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>tree.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="Key" size="6" source="Summarize: (Multiple Sources)" type="String" />
+            <Field name="Description" size="254" source="Summarize: (Multiple Sources)" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="194">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="534" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="State" />
+            <Field field="County" />
+            <Field field="City" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="State" />
+            <Field field="County" />
+            <Field field="City" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_State" selected="False" rename="Right_State" input="Right_" />
+                <SelectField field="Right_County" selected="False" rename="Right_County" input="Right_" />
+                <SelectField field="Right_Key" selected="False" input="Right_" />
+                <SelectField field="Right_Description" selected="False" input="Right_" />
+                <SelectField field="Right_City" selected="False" rename="Right_City" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="State" />
+            <Field field="County" />
+            <Field field="City" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County Code" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Site Num" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="County" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="Date Local" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="NO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="O3 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="SO2 AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Units" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO Mean" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+            <Field name="CO AQI" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="State" order="" />
+            <Field field="County" order="" />
+            <Field field="City" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="State" />
+            <Field field="County" />
+            <Field field="City" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="196">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="414" y="684" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Key] = "010101"</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Key</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-05-06 10:54:30</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>010101</Operand>
+              <StartDate>2019-05-06 10:54:30</StartDate>
+              <EndDate>2019-05-06 10:54:30</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Key] = "010101"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="Key" size="6" source="Summarize: (Multiple Sources)" type="String" />
+            <Field name="Description" size="254" source="Summarize: (Multiple Sources)" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="Key" size="6" source="Summarize: (Multiple Sources)" type="String" />
+            <Field name="Description" size="254" source="Summarize: (Multiple Sources)" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="197">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tree.Tree">
+        <Position x="426" y="246" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+    </Node>
+    <Node ToolID="198">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="426" y="354" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update Location</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="199">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="2286" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Key" selected="False" input="Source_" />
+                <SelectField field="Source_Description" selected="False" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Combine When and Where for Header</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Month Name" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="201">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="102" y="594" width="192" height="64" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>INPUT</Text>
+          <Font name="Arial" size="15.75" style="3" />
+          <TextColor name="White" />
+          <FillColor name="Green" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="202">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="102" y="682" width="192" height="64" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Where?</Text>
+          <Font name="Arial" size="15.75" style="3" />
+          <TextColor name="White" />
+          <FillColor name="Green" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="203">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="102" y="774" width="192" height="64" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>When?</Text>
+          <Font name="Arial" size="15.75" style="3" />
+          <TextColor name="White" />
+          <FillColor name="Green" />
+          <Shape shape="0" />
+          <Justification Justification="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="204">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2178" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Selected Month" selected="True" rename="Month Name" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Month Name" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="205">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1782" y="546" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This should have been a dynamic replace?</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="207">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="2334" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields orderChanged="False" />
+          <Method>UniqueValue</Method>
+          <UniqueValue>
+            <UniqueFields>
+              <Field field="Name" />
+            </UniqueFields>
+            <DontSort value="False" />
+          </UniqueValue>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="11" source="Formula: [_CurrentField_]" type="String" />
+            <Field name="Category" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Colour" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="Description" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="2014" source="Formula: IF [_CurrentFieldName_] IN(&quot;Name&quot;,&quot;Category&quot;,&quot;Colour&quot;,&quot;Description&quot;,&quot;2014&quot;,&quot;2015&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
+            <Field name="2015" source="Formula: IF [_CurrentFieldName_] IN(&quot;Name&quot;,&quot;Category&quot;,&quot;Colour&quot;,&quot;Description&quot;,&quot;2014&quot;,&quot;2015&quot;) THEN   &#xA;       IF IsNull([_CurrentField_]) THEN &#xA;	    IF ( [_CurrentFieldType_] IN ('Byte', 'Int16', 'Int32', 'Int64', 'Float', 'Double', 'FixedDecimal')) THEN&#xA;       	0&#xA;    	    ELSE [_CurrentField_]&#xA;	    ENDIF&#xA;	ELSE [_CurrentField_]&#xA;	ENDIF&#xA;    ELSE [_CurrentField_]&#xA;    ENDIF" type="Int64" />
+            <Field name="Tile_Num" type="Int32" />
+            <Field name="Tile_SequenceNum" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Name" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="208">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2442" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Colour" action="GroupBy" rename="Colour" />
+            <SummarizeField field="Description" action="GroupBy" rename="Description" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="2048" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="Colour" size="2048" source="Summarize: GroupBy - Colour" type="V_String" />
+            <Field name="Description" size="2048" source="Summarize: GroupBy - Description" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Category" order="Asc" />
+            <Field field="Colour" order="Asc" />
+            <Field field="Description" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="209">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="2514" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Category" selected="True" Alignment="Left" />
+            <Field name="Description" selected="True" Alignment="Left" Width="" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+            <Field name="Colour" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="9166b530-0385-4a0d-80ff-fbe06fa46313">
+              <RowRule value="True" />
+              <HighPrecedence value="False" />
+              <Field />
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar />
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style Formula="&quot;background-color: &quot;+[Colour]+&quot;;&quot;" />
+              <PrettyName>Row Rule 1</PrettyName>
+            </Rule>
+            <Rule Name="f5a64b09-56d4-4fd9-9c55-9828dd56381a">
+              <RowRule value="False" />
+              <HighPrecedence value="False" />
+              <Field>Description</Field>
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar />
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style Formula="&quot;background-color: floralwhite;&quot;" />
+              <PrettyName>Description Rule 1</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Category" order="Asc" />
+            <Field field="Colour" order="Asc" />
+            <Field field="Description" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="210">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="2598" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Category Legend:\par
+\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Category Legend:
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Category" order="Asc" />
+            <Field field="Colour" order="Asc" />
+            <Field field="Description" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="211">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="2682" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Text" selected="True" Alignment="Center" Width="" />
+            <Field name="Table" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="212">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="2766" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Month Name" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="213">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="2850" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRun</GroupingMode>
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="Layout" selected="True" Alignment="Center" Width="" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+All Records Combined</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="214">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2946" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11720_6672cddda4cf4bdcb7e784aad9ff07ab_\Engine_15264_019e169d66bf46dda1df426ac89c7abb_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="220">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2322" y="366" width="600" height="47.99994" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create Colour Legend</Text>
+          <Font name="Arial" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="221">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2322" y="522" width="600" height="47.99994" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create Results Table</Text>
+          <Font name="Arial" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="222">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2334" y="702" width="600" height="47.99994" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Header</Text>
+          <Font name="Arial" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="200">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="318" y="906" width="1034" height="364" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Parse</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="128">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1219" y="1130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="From" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>From - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+                <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+                <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="From" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="343" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="url" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>https://airnow.gov/index.cfm?action=aqibasics.aqi</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="130">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="463" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>url</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="url" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="url" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="131">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="547.0001" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>DownloadData</Field>
+              <RegExExpression value="(&lt;table.*?table&gt;)" />
+              <CaseInsensitve value="True" />
+              <Method>ParseSimple</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="True" />
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="RegExOut1" type="V_WString" size="254" />
+              </ParseComplex>
+              <Match>
+                <Field>url_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Tokenize:
+(&lt;table.*?table&gt;)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+            <Position x="727" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <XMLField>DownloadData</XMLField>
+              <XMLElement>tr</XMLElement>
+              <ChildValues value="True" />
+              <OuterXML value="True" />
+              <ParseRoot value="False" />
+              <IgnoreErrors value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Formula: Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="tr" size="58" type="V_String" />
+                <Field name="th" size="58" type="V_String" />
+                <Field name="th_OuterXML" size="73" type="V_String" />
+                <Field name="th_2" size="32" type="V_String" />
+                <Field name="th_2_OuterXML" size="64" type="V_String" />
+                <Field name="th_3" size="7" type="V_String" />
+                <Field name="th_3_OuterXML" size="66" type="V_String" />
+                <Field name="tr_OuterXML" size="388" type="V_String" />
+                <Field name="class" size="10" type="V_String" />
+                <Field name="style" size="16" type="V_String" />
+                <Field name="td" size="30" type="V_String" />
+                <Field name="td_OuterXML" size="351" type="V_String" />
+                <Field name="td_2" size="31" type="V_String" />
+                <Field name="td_2_OuterXML" size="40" type="V_String" />
+                <Field name="td_3" size="174" type="V_String" />
+                <Field name="td_3_OuterXML" size="207" type="V_String" />
+                <Field name="td_height" size="2" type="V_String" />
+                <Field name="td_colspan" size="1" type="V_String" />
+                <Field name="td_3_style" size="15" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="643" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" field="DownloadData" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DownloadData = Replace([DownloadData],"<br>"," ")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Formula: Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="799" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="class" />
+              </KeyFields>
+              <DataFields>
+                <Field field="url" selected="False" />
+                <Field field="DownloadData" selected="False" />
+                <Field field="DownloadHeaders" selected="False" />
+                <Field field="tr" selected="False" />
+                <Field field="th" selected="False" />
+                <Field field="th_OuterXML" selected="False" />
+                <Field field="th_2" selected="False" />
+                <Field field="th_2_OuterXML" selected="False" />
+                <Field field="th_3" selected="False" />
+                <Field field="th_3_OuterXML" selected="False" />
+                <Field field="tr_OuterXML" selected="False" />
+                <Field field="class" selected="False" />
+                <Field field="style" selected="True" />
+                <Field field="td" selected="True" />
+                <Field field="td_OuterXML" selected="True" />
+                <Field field="td_2" selected="True" />
+                <Field field="td_2_OuterXML" selected="True" />
+                <Field field="td_3" selected="True" />
+                <Field field="td_3_OuterXML" selected="True" />
+                <Field field="td_height" selected="True" />
+                <Field field="td_colspan" selected="True" />
+                <Field field="td_3_style" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="871" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!Contains([Name],"outer")</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>NotContains</Operator>
+                <Field>Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-05 22:34:21</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>outer</Operand>
+                  <StartDate>2019-05-05 22:34:21</StartDate>
+                  <EndDate>2019-05-05 22:34:21</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!Contains([Name],"outer")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="943" y="1010" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([class])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>class</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-05 22:34:50</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-05-05 22:34:50</StartDate>
+                  <EndDate>2019-05-05 22:34:50</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([class])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1015" y="998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="class" />
+              </GroupFields>
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>|</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="style" size="2048" source="CrossTab:Header:Name:style:Concat:" type="V_String" />
+                <Field name="td" size="2048" source="CrossTab:Header:Name:td:Concat:" type="V_String" />
+                <Field name="td_2" size="2048" source="CrossTab:Header:Name:td_2:Concat:" type="V_String" />
+                <Field name="td_3" size="2048" source="CrossTab:Header:Name:td_3:Concat:" type="V_String" />
+                <Field name="td_height" size="2048" source="CrossTab:Header:Name:td_height:Concat:" type="V_String" />
+                <Field name="td_colspan" size="2048" source="CrossTab:Header:Name:td_colspan:Concat:" type="V_String" />
+                <Field name="td_3_style" size="2048" source="CrossTab:Header:Name:td_3_style:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="138">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="1075" y="998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="class" />
+              </KeyFields>
+              <DataFields>
+                <Field field="class" selected="False" />
+                <Field field="style" selected="False" />
+                <Field field="td" selected="True" />
+                <Field field="td_2" selected="True" />
+                <Field field="td_3" selected="True" />
+                <Field field="td_height" selected="False" />
+                <Field field="td_colspan" selected="False" />
+                <Field field="td_3_style" selected="False" />
+                <Field field="*Unknown" selected="False" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="Name" size="4" source="Transpose:" type="String" />
+                <Field name="Value" size="2048" source="CrossTab: (Multiple Sources)" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="367" y="1154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Value</Field>
+              <Delimeters value="|" />
+              <NumFields value="1" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="Name" size="4" source="Transpose:" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="TextToColumns: Parsed from Value" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="140">
+          <GuiSettings>
+            <Position x="463" y="1154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"Value"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output26">
+              <RecordInfo>
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="141">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="643" y="1154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="class" />
+                <Field field="Value" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Unique: class, Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Unique">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+                <Field field="Value" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Duplicates">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+                <Field field="Value" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="142">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="823" y="1142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>class</UpdateField_Name>
+              <CreateField_Name>New Header</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="1" />
+              <Expression>[Row-1:New Header]+1</Expression>
+              <GroupByFields>
+                <Field field="class" />
+              </GroupByFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Row-1:New Header]+1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field description="Formula: [Row-1:New Header]+1" name="New Header" source="Formula: [Row-1:New Header]+1" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="143">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="919" y="1130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="class" />
+              </GroupFields>
+              <HeaderField field="New Header" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="1" size="2048" source="CrossTab:Header:New Header:1:Concat:" type="V_String" />
+                <Field name="2" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+                <Field name="3" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+                <Field name="4" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="144">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="547" y="1154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="145">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="727" y="1142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="RecordID" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>RecordID - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="RecordID" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="146">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="1027" y="1130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>1</Field>
+              <RegExExpression value="(\d+)\sto\s(\d+)" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName />
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="From" type="Int64" size="8" />
+                <Field field="To" type="Int64" size="8" />
+              </ParseComplex>
+              <Match>
+                <Field>class_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Parse:
+(\d+)\sto\s(\d+)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="1" size="2048" source="CrossTab:Header:New Header:1:Concat:" type="V_String" />
+                <Field name="2" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+                <Field name="3" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+                <Field name="4" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="147">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1123" y="1130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="class" selected="False" />
+                <SelectField field="1" selected="False" />
+                <SelectField field="2" selected="True" rename="Category" />
+                <SelectField field="3" selected="True" rename="Colour" />
+                <SelectField field="4" selected="True" rename="Description" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+                <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+                <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="192">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="343" y="950" width="984" height="47.99994" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Parse webpage to obtain descriptions, values and colours</Text>
+              <Font name="Arial" size="24" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="194" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="196" Connection="True" />
+      <Destination ToolID="194" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="127" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="123" Connection="Output" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="124" Connection="True" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="125" Connection="Output" />
+      <Destination ToolID="126" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="126" Connection="Output" />
+      <Destination ToolID="186" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="187" Connection="Output" />
+      <Destination ToolID="186" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Output" />
+      <Destination ToolID="149" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="148" Connection="Output" />
+      <Destination ToolID="151" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="149" Connection="Output" />
+      <Destination ToolID="150" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="150" Connection="Output" />
+      <Destination ToolID="148" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="128" Connection="Output" />
+      <Destination ToolID="148" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="151" Connection="True" />
+      <Destination ToolID="156" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Output" />
+      <Destination ToolID="153" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="153" Connection="Output" />
+      <Destination ToolID="163" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="154" Connection="Output" />
+      <Destination ToolID="155" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="154" Connection="Output" />
+      <Destination ToolID="183" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="182" Connection="Output" />
+      <Destination ToolID="183" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="156" Connection="Output" />
+      <Destination ToolID="152" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="163" Connection="Output26" />
+      <Destination ToolID="207" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="174" Connection="Output" />
+      <Destination ToolID="175" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="174" Connection="Output" />
+      <Destination ToolID="212" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="211" Connection="Output" />
+      <Destination ToolID="212" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="176" Connection="Question" />
+      <Destination ToolID="189" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="183" Connection="Join" />
+      <Destination ToolID="174" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="185" Connection="Output" />
+      <Destination ToolID="187" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="186" Connection="Output" />
+      <Destination ToolID="124" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="187" Connection="Output" />
+      <Destination ToolID="204" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="189" Connection="Action" />
+      <Destination ToolID="185" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="193" Connection="Output" />
+      <Destination ToolID="196" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="198" Connection="Action" />
+      <Destination ToolID="196" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="194" Connection="Join" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="196" Connection="True" />
+      <Destination ToolID="199" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="204" Connection="Output" />
+      <Destination ToolID="199" Connection="Targets" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="197" Connection="Question" />
+      <Destination ToolID="198" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="199" Connection="Output" />
+      <Destination ToolID="182" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="207" Connection="Output" />
+      <Destination ToolID="154" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="207" Connection="Output" />
+      <Destination ToolID="208" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="208" Connection="Output" />
+      <Destination ToolID="209" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="209" Connection="Output" />
+      <Destination ToolID="210" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="210" Connection="Output" />
+      <Destination ToolID="211" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="212" Connection="Output" />
+      <Destination ToolID="213" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="213" Connection="Output" />
+      <Destination ToolID="214" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="213" Connection="Output" />
+      <Destination ToolID="169" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="129" Connection="Output" />
+      <Destination ToolID="130" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="130" Connection="Output" />
+      <Destination ToolID="131" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="131" Connection="Output" />
+      <Destination ToolID="133" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="132" Connection="Output" />
+      <Destination ToolID="134" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="133" Connection="Output" />
+      <Destination ToolID="132" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="134" Connection="Output" />
+      <Destination ToolID="135" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="135" Connection="True" />
+      <Destination ToolID="136" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="136" Connection="True" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="138" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="138" Connection="Output" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="Output" />
+      <Destination ToolID="140" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="140" Connection="Output26" />
+      <Destination ToolID="144" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="141" Connection="Unique" />
+      <Destination ToolID="145" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="142" Connection="Output" />
+      <Destination ToolID="143" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="143" Connection="Output" />
+      <Destination ToolID="146" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="144" Connection="Output" />
+      <Destination ToolID="141" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Output" />
+      <Destination ToolID="142" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="146" Connection="Output" />
+      <Destination ToolID="147" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="147" Connection="Output" />
+      <Destination ToolID="128" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Date (176)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Tree (197)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david#104_app_b</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="189" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>185/Data/r[1]/c[1]</Destination>
+              <Mapping>Update Cell</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration>row	1
+column	1</DynamicConfiguration>
+              <DefaultConfiguration value="True" />
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="198" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>196/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (165)</Name>
+          <ToolId value="165" />
+          <Questions>
+            <Question>
+              <Type>Date</Type>
+              <Description>Select Day</Description>
+              <Name>Date (176)</Name>
+              <ToolId value="176" />
+            </Question>
+            <Question>
+              <Type>Tree</Type>
+              <Description>Select Area of Interest</Description>
+              <Name>Tree (197)</Name>
+              <ToolId value="197" />
+              <Mode>CustomDW2</Mode>
+              <DW2_Path>C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#104\challenge_104_start_file\tree.yxdb</DW2_Path>
+              <DW2_Password />
+              <DW2_CachedCosmeticName />
+              <DW2_KeyField>Key</DW2_KeyField>
+              <DW2_NameField>Description</DW2_NameField>
+              <Filter />
+              <Filter_ShowFullParentage value="False" />
+              <SingleSelect value="True" />
+              <Height_NumLines value="10" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="140" Selected="True" />
+        <Tool ToolId="155" Selected="False" />
+        <Tool ToolId="163" Selected="True" />
+        <Tool ToolId="169" Selected="True" />
+        <Tool ToolId="175" Selected="False" />
+        <Tool ToolId="214" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
