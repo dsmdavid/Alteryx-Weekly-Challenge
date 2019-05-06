@@ -85,6 +85,9 @@ Make the workflow as dynamic as possible; someone should be able to run this wor
           <DefaultAnnotationText>air_pollution_data.yxdb</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Field_1" size="254" source="File: C:\Users\cbonthius\Desktop\Weekly_Challenge\challenge_104\pollution_us_2000_2016.csv" type="V_String" />
@@ -706,12 +709,12 @@ Name = Replace([Name],' AQI', "")
           <ShowBarGraph value="False" />
           <TableFields orderChanged="False">
             <Field name="Name" selected="True" Alignment="Left" Width="" Borders="None" />
-            <Field name="Category" selected="True" Alignment="Left" />
-            <Field name="Description" selected="True" Alignment="Left" Width="288" />
+            <Field name="Category" selected="True" Alignment="Left" Width="" />
             <Field name="2014" selected="True" Alignment="Right" Width="" Places="0" />
             <Field name="2015" selected="True" Alignment="Right" Width="" Places="0" />
             <Field name="*Unknown" selected="True" Alignment="Right" />
             <Field name="Colour" selected="False" />
+            <Field name="Description" selected="False" />
             <Field name="Tile_Num" selected="False" />
             <Field name="Tile_SequenceNum" selected="False" />
           </TableFields>
@@ -761,19 +764,6 @@ Name = Replace([Name],' AQI', "")
               <Style Formula="&quot;background-color: white;&quot;" />
               <PrettyName>Category Rule 1</PrettyName>
             </Rule>
-            <Rule Name="35b14f40-796a-4edb-a237-610b7d69d3c0">
-              <RowRule value="False" />
-              <HighPrecedence value="False" />
-              <Field>Description</Field>
-              <Test>Always</Test>
-              <ApplyTo>Data</ApplyTo>
-              <SimpleVar />
-              <SimpleOp>==</SimpleOp>
-              <SimpleConst>1</SimpleConst>
-              <Formula>1</Formula>
-              <Style Formula="&quot;background-color: white;&quot;" />
-              <PrettyName>Description Rule 1</PrettyName>
-            </Rule>
             <Rule Name="900269de-e7cc-45b2-91ad-373f19128e11">
               <RowRule value="False" />
               <HighPrecedence value="False" />
@@ -811,7 +801,7 @@ Name = Replace([Name],' AQI', "")
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5060_79c4a6e5a42c4b15b1463a6720d83c73_\Engine_15264_1eda6642add14e0eaba9092b68bb56b7_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11720_6672cddda4cf4bdcb7e784aad9ff07ab_\Engine_15264_a46f0c5d54f74dc189761f0917ab4d9b_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -920,7 +910,7 @@ Name = Replace([Name],' AQI', "")
     </Node>
     <Node ToolID="169">
       <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
-        <Position x="2718" y="594" />
+        <Position x="3030" y="582" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -931,7 +921,7 @@ Name = Replace([Name],' AQI', "")
           <EmbedDependencies value="False" />
           <ShowHeader value="False" />
           <ShowFooter value="False" />
-          <PortraitMode value="False" />
+          <PortraitMode value="True" />
           <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
           <DefaultStyles>
             <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
@@ -998,7 +988,7 @@ Each Individual Record</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_5060_79c4a6e5a42c4b15b1463a6720d83c73_\Engine_15264_6c9ce947b72343f5b30997502e099160_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11720_6672cddda4cf4bdcb7e784aad9ff07ab_\Engine_15264_ded3da6b2cab450caf7f74580c965b36_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1048,7 +1038,9 @@ Each Individual Record</DefaultAnnotationText>
           <RichTextMode value="True" />
           <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Britannic Bold;}}
 {\colortbl ;\red255\green0\blue255;}
-\viewkind4\uc1\pard\qc\f0\fs41 [Month Name:A]'s AQI summary for \cf1 [City:A] ([County:A], [State:A])\par
+\viewkind4\uc1\pard\qc\f0\fs41 [Month Name:A]'s AQI summary for\par
+\cf1 [City:A]\par
+([County:A], [State:A])\par
 \cf0\par
 }
 ]]></RichTextString>
@@ -1502,813 +1494,6 @@ Each Individual Record</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
     </Node>
-    <Node ToolID="200">
-      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="306" y="894" width="1034" height="364" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Caption>Parse</Caption>
-          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
-          <Disabled value="False" />
-          <Folded value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <ChildNodes>
-        <Node ToolID="128">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1207" y="1118" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <SortInfo locale="0">
-                <Field field="From" order="Ascending" />
-              </SortInfo>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>From - Ascending</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
-                <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
-                <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
-                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
-                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
-              </RecordInfo>
-              <SortInfo locale="0">
-                <Field field="From" order="Ascending" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
-        </Node>
-        <Node ToolID="129">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-            <Position x="331" y="1010" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <NumRows value="1" />
-              <Fields>
-                <Field name="url" />
-              </Fields>
-              <Data>
-                <r>
-                  <c>https://airnow.gov/index.cfm?action=aqibasics.aqi</c>
-                </r>
-              </Data>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="url" size="49" source="TextInput:" type="String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
-        </Node>
-        <Node ToolID="130">
-          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
-            <Position x="451" y="1010" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <URLField>url</URLField>
-              <OutputMode>String</OutputMode>
-              <CodePage>65001</CodePage>
-              <EncodeURLs value="True" />
-              <Headers>
-                <NameValues />
-                <Fields orderChanged="False">
-                  <Field name="url" selected="False" />
-                  <Field name="*Unknown" selected="False" />
-                </Fields>
-              </Headers>
-              <Payload>
-                <HTTPAction>GET</HTTPAction>
-                <QueryStringBodyMode>Compose</QueryStringBodyMode>
-                <ComposeNameValues />
-                <ComposeFields orderChanged="False">
-                  <Field name="url" selected="False" />
-                  <Field name="*Unknown" selected="False" />
-                </ComposeFields>
-              </Payload>
-              <UserName />
-              <Password />
-              <numConnections>2</numConnections>
-              <Timeout>600</Timeout>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="url" size="49" source="TextInput:" type="String" />
-                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
-        </Node>
-        <Node ToolID="131">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-            <Position x="535.0001" y="1010" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>DownloadData</Field>
-              <RegExExpression value="(&lt;table.*?table&gt;)" />
-              <CaseInsensitve value="True" />
-              <Method>ParseSimple</Method>
-              <Replace expression="">
-                <CopyUnmatched value="True" />
-              </Replace>
-              <ParseSimple>
-                <SplitToRows value="True" />
-              </ParseSimple>
-              <ParseComplex>
-                <Field field="RegExOut1" type="V_WString" size="254" />
-              </ParseComplex>
-              <Match>
-                <Field>url_Matched</Field>
-                <ErrorUnmatched value="False" />
-              </Match>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Tokenize:
-(&lt;table.*?table&gt;)</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="url" size="49" source="TextInput:" type="String" />
-                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
-                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
-        </Node>
-        <Node ToolID="132">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
-            <Position x="715" y="1010" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <XMLField>DownloadData</XMLField>
-              <XMLElement>tr</XMLElement>
-              <ChildValues value="True" />
-              <OuterXML value="True" />
-              <ParseRoot value="False" />
-              <IgnoreErrors value="True" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="url" size="49" source="TextInput:" type="String" />
-                <Field name="DownloadData" size="1073741823" source="Formula: Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" type="V_WString" />
-                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-                <Field name="tr" size="58" type="V_String" />
-                <Field name="th" size="58" type="V_String" />
-                <Field name="th_OuterXML" size="73" type="V_String" />
-                <Field name="th_2" size="32" type="V_String" />
-                <Field name="th_2_OuterXML" size="64" type="V_String" />
-                <Field name="th_3" size="7" type="V_String" />
-                <Field name="th_3_OuterXML" size="66" type="V_String" />
-                <Field name="tr_OuterXML" size="388" type="V_String" />
-                <Field name="class" size="10" type="V_String" />
-                <Field name="style" size="16" type="V_String" />
-                <Field name="td" size="30" type="V_String" />
-                <Field name="td_OuterXML" size="351" type="V_String" />
-                <Field name="td_2" size="31" type="V_String" />
-                <Field name="td_2_OuterXML" size="40" type="V_String" />
-                <Field name="td_3" size="174" type="V_String" />
-                <Field name="td_3_OuterXML" size="207" type="V_String" />
-                <Field name="td_height" size="2" type="V_String" />
-                <Field name="td_colspan" size="1" type="V_String" />
-                <Field name="td_3_style" size="15" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
-        </Node>
-        <Node ToolID="133">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="631" y="1010" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FormulaFields>
-                <FormulaField expression="Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" field="DownloadData" size="1073741823" type="V_WString" />
-              </FormulaFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText><![CDATA[DownloadData = Replace([DownloadData],"<br>"," ")
-]]></DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="url" size="49" source="TextInput:" type="String" />
-                <Field name="DownloadData" size="1073741823" source="Formula: Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" type="V_WString" />
-                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-        </Node>
-        <Node ToolID="134">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
-            <Position x="787" y="1010" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <ErrorWarn>Warn</ErrorWarn>
-              <KeyFields>
-                <Field field="class" />
-              </KeyFields>
-              <DataFields>
-                <Field field="url" selected="False" />
-                <Field field="DownloadData" selected="False" />
-                <Field field="DownloadHeaders" selected="False" />
-                <Field field="tr" selected="False" />
-                <Field field="th" selected="False" />
-                <Field field="th_OuterXML" selected="False" />
-                <Field field="th_2" selected="False" />
-                <Field field="th_2_OuterXML" selected="False" />
-                <Field field="th_3" selected="False" />
-                <Field field="th_3_OuterXML" selected="False" />
-                <Field field="tr_OuterXML" selected="False" />
-                <Field field="class" selected="False" />
-                <Field field="style" selected="True" />
-                <Field field="td" selected="True" />
-                <Field field="td_OuterXML" selected="True" />
-                <Field field="td_2" selected="True" />
-                <Field field="td_2_OuterXML" selected="True" />
-                <Field field="td_3" selected="True" />
-                <Field field="td_3_OuterXML" selected="True" />
-                <Field field="td_height" selected="True" />
-                <Field field="td_colspan" selected="True" />
-                <Field field="td_3_style" selected="True" />
-                <Field field="*Unknown" selected="True" />
-              </DataFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="class" size="10" type="V_String" />
-                <Field name="Name" size="13" source="Transpose:" type="String" />
-                <Field name="Value" size="351" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
-        </Node>
-        <Node ToolID="135">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="859" y="1010" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>!Contains([Name],"outer")</Expression>
-              <Mode>Simple</Mode>
-              <Simple>
-                <Operator>NotContains</Operator>
-                <Field>Name</Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2019-05-05 22:34:21</PeriodDate>
-                  <PeriodType>
-                  </PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>outer</Operand>
-                  <StartDate>2019-05-05 22:34:21</StartDate>
-                  <EndDate>2019-05-05 22:34:21</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>!Contains([Name],"outer")</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="True">
-              <RecordInfo>
-                <Field name="class" size="10" type="V_String" />
-                <Field name="Name" size="13" source="Transpose:" type="String" />
-                <Field name="Value" size="351" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-            <MetaInfo connection="False">
-              <RecordInfo>
-                <Field name="class" size="10" type="V_String" />
-                <Field name="Name" size="13" source="Transpose:" type="String" />
-                <Field name="Value" size="351" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="136">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="931" y="998" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Expression>!IsNull([class])</Expression>
-              <Mode>Simple</Mode>
-              <Simple>
-                <Operator>IsNotNull</Operator>
-                <Field>class</Field>
-                <Operands>
-                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-                  <DateType>fixed</DateType>
-                  <PeriodDate>2019-05-05 22:34:50</PeriodDate>
-                  <PeriodType>
-                  </PeriodType>
-                  <PeriodCount>0</PeriodCount>
-                  <Operand>
-                  </Operand>
-                  <StartDate>2019-05-05 22:34:50</StartDate>
-                  <EndDate>2019-05-05 22:34:50</EndDate>
-                </Operands>
-              </Simple>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>!IsNull([class])</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="True">
-              <RecordInfo>
-                <Field name="class" size="10" type="V_String" />
-                <Field name="Name" size="13" source="Transpose:" type="String" />
-                <Field name="Value" size="351" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-            <MetaInfo connection="False">
-              <RecordInfo>
-                <Field name="class" size="10" type="V_String" />
-                <Field name="Name" size="13" source="Transpose:" type="String" />
-                <Field name="Value" size="351" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-        </Node>
-        <Node ToolID="137">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="1003" y="986" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <GroupFields>
-                <Field field="class" />
-              </GroupFields>
-              <HeaderField field="Name" />
-              <DataField field="Value" />
-              <Methods>
-                <Method method="Concat" />
-                <Separator>|</Separator>
-                <FieldSize value="2048" />
-              </Methods>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
-                <Field name="style" size="2048" source="CrossTab:Header:Name:style:Concat:" type="V_String" />
-                <Field name="td" size="2048" source="CrossTab:Header:Name:td:Concat:" type="V_String" />
-                <Field name="td_2" size="2048" source="CrossTab:Header:Name:td_2:Concat:" type="V_String" />
-                <Field name="td_3" size="2048" source="CrossTab:Header:Name:td_3:Concat:" type="V_String" />
-                <Field name="td_height" size="2048" source="CrossTab:Header:Name:td_height:Concat:" type="V_String" />
-                <Field name="td_colspan" size="2048" source="CrossTab:Header:Name:td_colspan:Concat:" type="V_String" />
-                <Field name="td_3_style" size="2048" source="CrossTab:Header:Name:td_3_style:Concat:" type="V_String" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="class" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
-        </Node>
-        <Node ToolID="138">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
-            <Position x="1063" y="986" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <ErrorWarn>Warn</ErrorWarn>
-              <KeyFields>
-                <Field field="class" />
-              </KeyFields>
-              <DataFields>
-                <Field field="class" selected="False" />
-                <Field field="style" selected="False" />
-                <Field field="td" selected="True" />
-                <Field field="td_2" selected="True" />
-                <Field field="td_3" selected="True" />
-                <Field field="td_height" selected="False" />
-                <Field field="td_colspan" selected="False" />
-                <Field field="td_3_style" selected="False" />
-                <Field field="*Unknown" selected="False" />
-              </DataFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
-                <Field name="Name" size="4" source="Transpose:" type="String" />
-                <Field name="Value" size="2048" source="CrossTab: (Multiple Sources)" type="V_String" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="class" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
-        </Node>
-        <Node ToolID="139">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-            <Position x="355" y="1142" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>Value</Field>
-              <Delimeters value="|" />
-              <NumFields value="1" />
-              <Flags value="0" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
-                <Field name="Name" size="4" source="Transpose:" type="String" />
-                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="TextToColumns: Parsed from Value" type="V_String" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="class" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
-        </Node>
-        <Node ToolID="140">
-          <GuiSettings>
-            <Position x="451" y="1142" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Value name="List Box (11)">"Value"</Value>
-              <Value name="Check Box (84)">True</Value>
-              <Value name="Check Box (117)">True</Value>
-              <Value name="Check Box (15)">True</Value>
-              <Value name="Check Box (109)">False</Value>
-              <Value name="Check Box (122)">False</Value>
-              <Value name="Check Box (53)">False</Value>
-              <Value name="Check Box (58)">False</Value>
-              <Value name="Check Box (70)">False</Value>
-              <Value name="Check Box (77)">False</Value>
-              <Value name="Drop Down (81)">upper</Value>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output26">
-              <RecordInfo>
-                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
-                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
-                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings Macro="Cleanse.yxmc" />
-        </Node>
-        <Node ToolID="141">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-            <Position x="631" y="1142" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <UniqueFields>
-                <Field field="class" />
-                <Field field="Value" />
-              </UniqueFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Unique: class, Value</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Unique">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
-                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
-                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="class" order="Asc" />
-                <Field field="Value" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-            <MetaInfo connection="Duplicates">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
-                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
-                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="class" order="Asc" />
-                <Field field="Value" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
-        </Node>
-        <Node ToolID="142">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="811" y="1130" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <UpdateField value="False" />
-              <UpdateField_Name>class</UpdateField_Name>
-              <CreateField_Name>New Header</CreateField_Name>
-              <CreateField_Type>Int32</CreateField_Type>
-              <CreateField_Size>4</CreateField_Size>
-              <OtherRows>Empty</OtherRows>
-              <NumRows value="1" />
-              <Expression>[Row-1:New Header]+1</Expression>
-              <GroupByFields>
-                <Field field="class" />
-              </GroupByFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>[Row-1:New Header]+1</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
-                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
-                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
-                <Field description="Formula: [Row-1:New Header]+1" name="New Header" source="Formula: [Row-1:New Header]+1" type="Int32" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="class" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
-        </Node>
-        <Node ToolID="143">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="907" y="1118" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <GroupFields>
-                <Field field="class" />
-              </GroupFields>
-              <HeaderField field="New Header" />
-              <DataField field="Value" />
-              <Methods>
-                <Method method="Concat" />
-                <Separator>,</Separator>
-                <FieldSize value="2048" />
-              </Methods>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
-                <Field name="1" size="2048" source="CrossTab:Header:New Header:1:Concat:" type="V_String" />
-                <Field name="2" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
-                <Field name="3" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
-                <Field name="4" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="class" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
-        </Node>
-        <Node ToolID="144">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="535" y="1142" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <FieldName>RecordID</FieldName>
-              <StartValue>1</StartValue>
-              <FieldType>Int32</FieldType>
-              <FieldSize>6</FieldSize>
-              <Position>0</Position>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
-                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
-                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="RecordID" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
-        </Node>
-        <Node ToolID="145">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="715" y="1130" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <SortInfo locale="0">
-                <Field field="RecordID" order="Ascending" />
-              </SortInfo>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>RecordID - Ascending</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
-                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
-                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
-              </RecordInfo>
-              <SortInfo locale="0">
-                <Field field="RecordID" order="Ascending" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
-        </Node>
-        <Node ToolID="146">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-            <Position x="1015" y="1118" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Field>1</Field>
-              <RegExExpression value="(\d+)\sto\s(\d+)" />
-              <CaseInsensitve value="True" />
-              <Method>ParseComplex</Method>
-              <Replace expression="">
-                <CopyUnmatched value="True" />
-              </Replace>
-              <ParseSimple>
-                <SplitToRows value="False" />
-                <RootName />
-                <NumFields value="3" />
-                <ErrorHandling>Warn</ErrorHandling>
-              </ParseSimple>
-              <ParseComplex>
-                <Field field="From" type="Int64" size="8" />
-                <Field field="To" type="Int64" size="8" />
-              </ParseComplex>
-              <Match>
-                <Field>class_Matched</Field>
-                <ErrorUnmatched value="False" />
-              </Match>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText>Parse:
-(\d+)\sto\s(\d+)</DefaultAnnotationText>
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
-                <Field name="1" size="2048" source="CrossTab:Header:New Header:1:Concat:" type="V_String" />
-                <Field name="2" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
-                <Field name="3" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
-                <Field name="4" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
-                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
-                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
-              </RecordInfo>
-              <SortInfo>
-                <Field field="class" order="Asc" />
-              </SortInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
-        </Node>
-        <Node ToolID="147">
-          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1111" y="1118" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <OrderChanged value="False" />
-              <CommaDecimal value="False" />
-              <SelectFields>
-                <SelectField field="class" selected="False" />
-                <SelectField field="1" selected="False" />
-                <SelectField field="2" selected="True" rename="Category" />
-                <SelectField field="3" selected="True" rename="Colour" />
-                <SelectField field="4" selected="True" rename="Description" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-            <MetaInfo connection="Output">
-              <RecordInfo>
-                <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
-                <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
-                <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
-                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
-                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
-              </RecordInfo>
-            </MetaInfo>
-          </Properties>
-          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-        </Node>
-        <Node ToolID="192">
-          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-            <Position x="331" y="938" width="984" height="47.99994" />
-          </GuiSettings>
-          <Properties>
-            <Configuration>
-              <Text>Parse webpage to obtain descriptions, values and colours</Text>
-              <Font name="Arial" size="24" style="0" />
-              <TextColor name="Black" />
-              <FillColor name="White" />
-              <Shape shape="0" />
-              <Justification Justification="4" />
-            </Configuration>
-            <Annotation DisplayMode="0">
-              <Name />
-              <DefaultAnnotationText />
-              <Left value="False" />
-            </Annotation>
-          </Properties>
-        </Node>
-      </ChildNodes>
-    </Node>
     <Node ToolID="201">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
         <Position x="102" y="594" width="192" height="64" />
@@ -2454,6 +1639,1149 @@ Each Individual Record</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
     </Node>
+    <Node ToolID="208">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2442" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Colour" action="GroupBy" rename="Colour" />
+            <SummarizeField field="Description" action="GroupBy" rename="Description" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Category" size="2048" source="Summarize: GroupBy - Category" type="V_String" />
+            <Field name="Colour" size="2048" source="Summarize: GroupBy - Colour" type="V_String" />
+            <Field name="Description" size="2048" source="Summarize: GroupBy - Description" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Category" order="Asc" />
+            <Field field="Colour" order="Asc" />
+            <Field field="Description" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="209">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="2514" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Category" selected="True" Alignment="Left" />
+            <Field name="Description" selected="True" Alignment="Left" Width="" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+            <Field name="Colour" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules>
+            <Rule Name="9166b530-0385-4a0d-80ff-fbe06fa46313">
+              <RowRule value="True" />
+              <HighPrecedence value="False" />
+              <Field />
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar />
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style Formula="&quot;background-color: &quot;+[Colour]+&quot;;&quot;" />
+              <PrettyName>Row Rule 1</PrettyName>
+            </Rule>
+            <Rule Name="f5a64b09-56d4-4fd9-9c55-9828dd56381a">
+              <RowRule value="False" />
+              <HighPrecedence value="False" />
+              <Field>Description</Field>
+              <Test>Always</Test>
+              <ApplyTo>Data</ApplyTo>
+              <SimpleVar />
+              <SimpleOp>==</SimpleOp>
+              <SimpleConst>1</SimpleConst>
+              <Formula>1</Formula>
+              <Style Formula="&quot;background-color: floralwhite;&quot;" />
+              <PrettyName>Description Rule 1</PrettyName>
+            </Rule>
+          </StyleRules>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Category" order="Asc" />
+            <Field field="Colour" order="Asc" />
+            <Field field="Description" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="210">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="2598" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang2057{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Category Legend:\par
+\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Category Legend:
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Category" order="Asc" />
+            <Field field="Colour" order="Asc" />
+            <Field field="Description" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="211">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="2682" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Text" selected="True" Alignment="Center" Width="" />
+            <Field name="Table" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="212">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="2766" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PlaceholderDate" source="TextInput:" type="Date" />
+            <Field name="Month Name" size="25" source="Formula: DateTimeFormat([PlaceholderDate], &quot;%B&quot;)" type="V_WString" />
+            <Field name="State" size="254" source="Summarize: GroupBy - State" type="V_String" />
+            <Field name="County" size="254" source="Summarize: GroupBy - County" type="V_String" />
+            <Field name="City" size="254" source="Summarize: GroupBy - City" type="V_String" />
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="213">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="2850" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRun</GroupingMode>
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="False">
+            <Field name="Layout" selected="True" Alignment="Center" Width="" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+All Records Combined</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Layout" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="214">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2946" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_11720_6672cddda4cf4bdcb7e784aad9ff07ab_\Engine_15264_019e169d66bf46dda1df426ac89c7abb_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="220">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2322" y="366" width="600" height="47.99994" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create Colour Legend</Text>
+          <Font name="Arial" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="221">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2322" y="522" width="600" height="47.99994" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create Results Table</Text>
+          <Font name="Arial" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="222">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2334" y="702" width="600" height="47.99994" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Header</Text>
+          <Font name="Arial" size="24" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="200">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="318" y="906" width="1034" height="364" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Parse</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="128">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="1219" y="1130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="From" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>From - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+                <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+                <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="From" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="343" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="url" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>https://airnow.gov/index.cfm?action=aqibasics.aqi</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="130">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="463" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>url</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="url" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="url" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="131">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="547.0001" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>DownloadData</Field>
+              <RegExExpression value="(&lt;table.*?table&gt;)" />
+              <CaseInsensitve value="True" />
+              <Method>ParseSimple</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="True" />
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="RegExOut1" type="V_WString" size="254" />
+              </ParseComplex>
+              <Match>
+                <Field>url_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Tokenize:
+(&lt;table.*?table&gt;)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="132">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+            <Position x="727" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <XMLField>DownloadData</XMLField>
+              <XMLElement>tr</XMLElement>
+              <ChildValues value="True" />
+              <OuterXML value="True" />
+              <ParseRoot value="False" />
+              <IgnoreErrors value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Formula: Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="tr" size="58" type="V_String" />
+                <Field name="th" size="58" type="V_String" />
+                <Field name="th_OuterXML" size="73" type="V_String" />
+                <Field name="th_2" size="32" type="V_String" />
+                <Field name="th_2_OuterXML" size="64" type="V_String" />
+                <Field name="th_3" size="7" type="V_String" />
+                <Field name="th_3_OuterXML" size="66" type="V_String" />
+                <Field name="tr_OuterXML" size="388" type="V_String" />
+                <Field name="class" size="10" type="V_String" />
+                <Field name="style" size="16" type="V_String" />
+                <Field name="td" size="30" type="V_String" />
+                <Field name="td_OuterXML" size="351" type="V_String" />
+                <Field name="td_2" size="31" type="V_String" />
+                <Field name="td_2_OuterXML" size="40" type="V_String" />
+                <Field name="td_3" size="174" type="V_String" />
+                <Field name="td_3_OuterXML" size="207" type="V_String" />
+                <Field name="td_height" size="2" type="V_String" />
+                <Field name="td_colspan" size="1" type="V_String" />
+                <Field name="td_3_style" size="15" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+        </Node>
+        <Node ToolID="133">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="643" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" field="DownloadData" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DownloadData = Replace([DownloadData],"<br>"," ")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="url" size="49" source="TextInput:" type="String" />
+                <Field name="DownloadData" size="1073741823" source="Formula: Replace([DownloadData],&quot;&lt;br&gt;&quot;,&quot; &quot;)" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="134">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="799" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="class" />
+              </KeyFields>
+              <DataFields>
+                <Field field="url" selected="False" />
+                <Field field="DownloadData" selected="False" />
+                <Field field="DownloadHeaders" selected="False" />
+                <Field field="tr" selected="False" />
+                <Field field="th" selected="False" />
+                <Field field="th_OuterXML" selected="False" />
+                <Field field="th_2" selected="False" />
+                <Field field="th_2_OuterXML" selected="False" />
+                <Field field="th_3" selected="False" />
+                <Field field="th_3_OuterXML" selected="False" />
+                <Field field="tr_OuterXML" selected="False" />
+                <Field field="class" selected="False" />
+                <Field field="style" selected="True" />
+                <Field field="td" selected="True" />
+                <Field field="td_OuterXML" selected="True" />
+                <Field field="td_2" selected="True" />
+                <Field field="td_2_OuterXML" selected="True" />
+                <Field field="td_3" selected="True" />
+                <Field field="td_3_OuterXML" selected="True" />
+                <Field field="td_height" selected="True" />
+                <Field field="td_colspan" selected="True" />
+                <Field field="td_3_style" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="135">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="871" y="1022" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!Contains([Name],"outer")</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>NotContains</Operator>
+                <Field>Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-05 22:34:21</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>outer</Operand>
+                  <StartDate>2019-05-05 22:34:21</StartDate>
+                  <EndDate>2019-05-05 22:34:21</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!Contains([Name],"outer")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="136">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="943" y="1010" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([class])</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>class</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-05-05 22:34:50</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-05-05 22:34:50</StartDate>
+                  <EndDate>2019-05-05 22:34:50</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([class])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="class" size="10" type="V_String" />
+                <Field name="Name" size="13" source="Transpose:" type="String" />
+                <Field name="Value" size="351" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="137">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1015" y="998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="class" />
+              </GroupFields>
+              <HeaderField field="Name" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>|</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="style" size="2048" source="CrossTab:Header:Name:style:Concat:" type="V_String" />
+                <Field name="td" size="2048" source="CrossTab:Header:Name:td:Concat:" type="V_String" />
+                <Field name="td_2" size="2048" source="CrossTab:Header:Name:td_2:Concat:" type="V_String" />
+                <Field name="td_3" size="2048" source="CrossTab:Header:Name:td_3:Concat:" type="V_String" />
+                <Field name="td_height" size="2048" source="CrossTab:Header:Name:td_height:Concat:" type="V_String" />
+                <Field name="td_colspan" size="2048" source="CrossTab:Header:Name:td_colspan:Concat:" type="V_String" />
+                <Field name="td_3_style" size="2048" source="CrossTab:Header:Name:td_3_style:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="138">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="1075" y="998" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="class" />
+              </KeyFields>
+              <DataFields>
+                <Field field="class" selected="False" />
+                <Field field="style" selected="False" />
+                <Field field="td" selected="True" />
+                <Field field="td_2" selected="True" />
+                <Field field="td_3" selected="True" />
+                <Field field="td_height" selected="False" />
+                <Field field="td_colspan" selected="False" />
+                <Field field="td_3_style" selected="False" />
+                <Field field="*Unknown" selected="False" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="Name" size="4" source="Transpose:" type="String" />
+                <Field name="Value" size="2048" source="CrossTab: (Multiple Sources)" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="139">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="367" y="1154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>Value</Field>
+              <Delimeters value="|" />
+              <NumFields value="1" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="Name" size="4" source="Transpose:" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="TextToColumns: Parsed from Value" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="140">
+          <GuiSettings>
+            <Position x="463" y="1154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"Value"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+            <MetaInfo connection="Output26">
+              <RecordInfo>
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="141">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="643" y="1154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="class" />
+                <Field field="Value" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Unique: class, Value</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Unique">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+                <Field field="Value" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Duplicates">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+                <Field field="Value" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="142">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="823" y="1142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>class</UpdateField_Name>
+              <CreateField_Name>New Header</CreateField_Name>
+              <CreateField_Type>Int32</CreateField_Type>
+              <CreateField_Size>4</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="1" />
+              <Expression>[Row-1:New Header]+1</Expression>
+              <GroupByFields>
+                <Field field="class" />
+              </GroupByFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Row-1:New Header]+1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field description="Formula: [Row-1:New Header]+1" name="New Header" source="Formula: [Row-1:New Header]+1" type="Int32" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
+        <Node ToolID="143">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="919" y="1130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="class" />
+              </GroupFields>
+              <HeaderField field="New Header" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="1" size="2048" source="CrossTab:Header:New Header:1:Concat:" type="V_String" />
+                <Field name="2" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+                <Field name="3" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+                <Field name="4" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="144">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="547" y="1154" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="RecordID" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="145">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="727" y="1142" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="RecordID" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>RecordID - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="class" size="10" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Name" size="4" source="Formula: [_CurrentField_]" type="String" />
+                <Field description="TextToColumns: Parsed from Value" name="Value" size="2048" source="Formula: [_CurrentField_]" type="V_String" />
+              </RecordInfo>
+              <SortInfo locale="0">
+                <Field field="RecordID" order="Ascending" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="146">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="1027" y="1130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>1</Field>
+              <RegExExpression value="(\d+)\sto\s(\d+)" />
+              <CaseInsensitve value="True" />
+              <Method>ParseComplex</Method>
+              <Replace expression="">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName />
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="From" type="Int64" size="8" />
+                <Field field="To" type="Int64" size="8" />
+              </ParseComplex>
+              <Match>
+                <Field>class_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Parse:
+(\d+)\sto\s(\d+)</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="class" size="10" source="CrossTab:Group:Concat:" type="V_String" />
+                <Field name="1" size="2048" source="CrossTab:Header:New Header:1:Concat:" type="V_String" />
+                <Field name="2" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+                <Field name="3" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+                <Field name="4" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="class" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="147">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1123" y="1130" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="class" selected="False" />
+                <SelectField field="1" selected="False" />
+                <SelectField field="2" selected="True" rename="Category" />
+                <SelectField field="3" selected="True" rename="Colour" />
+                <SelectField field="4" selected="True" rename="Description" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Category" size="2048" source="CrossTab:Header:New Header:2:Concat:" type="V_String" />
+                <Field name="Colour" size="2048" source="CrossTab:Header:New Header:3:Concat:" type="V_String" />
+                <Field name="Description" size="2048" source="CrossTab:Header:New Header:4:Concat:" type="V_String" />
+                <Field description="RegEx: Parsed from 1" name="From" source="RegEx: Parsed from 1" type="Int64" />
+                <Field description="RegEx: Parsed from 1" name="To" source="RegEx: Parsed from 1" type="Int64" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="192">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="343" y="950" width="984" height="47.99994" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Parse webpage to obtain descriptions, values and colours</Text>
+              <Font name="Arial" size="24" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -2546,11 +2874,15 @@ Each Individual Record</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="174" Connection="Output" />
-      <Destination ToolID="169" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="174" Connection="Output" />
       <Destination ToolID="175" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="174" Connection="Output" />
+      <Destination ToolID="212" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="211" Connection="Output" />
+      <Destination ToolID="212" Connection="Input" />
     </Connection>
     <Connection name="#1">
       <Origin ToolID="176" Connection="Question" />
@@ -2603,6 +2935,38 @@ Each Individual Record</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="199" Connection="Output" />
       <Destination ToolID="182" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="207" Connection="Output" />
+      <Destination ToolID="154" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="207" Connection="Output" />
+      <Destination ToolID="208" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="208" Connection="Output" />
+      <Destination ToolID="209" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="209" Connection="Output" />
+      <Destination ToolID="210" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="210" Connection="Output" />
+      <Destination ToolID="211" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="212" Connection="Output" />
+      <Destination ToolID="213" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="213" Connection="Output" />
+      <Destination ToolID="214" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="213" Connection="Output" />
+      <Destination ToolID="169" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="129" Connection="Output" />
@@ -2680,10 +3044,6 @@ Each Individual Record</DefaultAnnotationText>
       <Origin ToolID="147" Connection="Output" />
       <Destination ToolID="128" Connection="Input" />
     </Connection>
-    <Connection>
-      <Origin ToolID="207" Connection="Output" />
-      <Destination ToolID="154" Connection="Input" />
-    </Connection>
   </Connections>
   <Properties>
     <Memory default="True" />
@@ -2760,9 +3120,8 @@ column	1</DynamicConfiguration>
               <ToolId value="198" />
               <Mode>Simple</Mode>
               <Variable />
-              <Replace value="True" />
-              <ReplaceText>010101</ReplaceText>
-              <Destination>196/Expression</Destination>
+              <Replace value="False" />
+              <Destination>196/Simple/Operands/Operand</Destination>
             </Action>
           </True>
         </NoCondition>
@@ -2814,6 +3173,7 @@ column	1</DynamicConfiguration>
         <Tool ToolId="163" Selected="True" />
         <Tool ToolId="169" Selected="True" />
         <Tool ToolId="175" Selected="False" />
+        <Tool ToolId="214" Selected="False" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
