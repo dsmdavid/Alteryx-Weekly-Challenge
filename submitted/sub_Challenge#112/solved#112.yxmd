@@ -1,9 +1,49 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="2018.4">
   <Nodes>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="138" y="750" width="1668" height="900" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>B. Transpose + Crosstab + getting the names</Text>
+          <Font name="Century Gothic" size="27.75" style="1" />
+          <TextColor name="White" />
+          <FillColor name="Maroon" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="138" y="366" width="1200" height="372" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>A. Macro</Text>
+          <Font name="Century Gothic" size="27.75" style="1" />
+          <TextColor name="White" />
+          <FillColor name="Green" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
     <Node ToolID="42">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="186" y="234" width="84" height="180" />
+        <Position x="198" y="138" width="84" height="180" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -84,11 +124,11 @@
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="186" y="294" />
+        <Position x="198" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\957789\AppData\Local\Temp\Engine_8412_47ed4100e8034636a6e3f8fcb4da0a0c_\Engine_5428_ba926b738aa640afb797a4a1ff525415_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_17048_3063b7a6b5fb4837b9861af5fcab0f2b_\Engine_10468_7052f944d2cd4b298c07aa487f9a8638_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -112,7 +152,7 @@
     </Node>
     <Node ToolID="43">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="78" y="294" />
+        <Position x="90" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1779,7 +1819,7 @@
     </Node>
     <Node ToolID="44">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="462" y="234" width="216" height="180" />
+        <Position x="474" y="138" width="216" height="180" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1799,7 +1839,7 @@
     </Node>
     <Node ToolID="45">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="498" y="294" />
+        <Position x="510" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2087,11 +2127,11 @@
     </Node>
     <Node ToolID="46">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="606" y="294" />
+        <Position x="618" y="198" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\957789\AppData\Local\Temp\Engine_8412_47ed4100e8034636a6e3f8fcb4da0a0c_\Engine_5428_6e0968afc6944d65bb23b32846c21e02_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_17048_3063b7a6b5fb4837b9861af5fcab0f2b_\Engine_10468_958971e266934e7f950fb4e876d16c17_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -2113,246 +2153,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="55">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
-        <Position x="174" y="450" />
-      </GuiSettings>
-      <Properties>
-        <Configuration />
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFieldInfo" />
-    </Node>
-    <Node ToolID="56">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="282" y="450" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Expression>[Type] != "Bool"</Expression>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Operator>!=</Operator>
-            <Field>Type</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2019-06-18 14:47:53</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <Operand>Bool</Operand>
-              <StartDate>2019-06-18 14:47:53</StartDate>
-              <EndDate>2019-06-18 14:47:53</EndDate>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[Type] != "Bool"</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="57">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="126" y="606" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="Name" selected="True" />
-            <SelectField field="*Unknown" selected="False" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="64">
-      <GuiSettings>
-        <Position x="234" y="606" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="ControlParams"><![CDATA[Control Parameter (7)=Name
-]]></Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name>process_all_records (54)</Name>
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output14">
-          <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
-            <Field description="TextToColumns: Parsed from F1" name="F11" size="255" source="Formula: [_CurrentField_]" type="V_String" />
-            <Field description="TextToColumns: Parsed from F1" name="F12" size="255" source="Formula: [_CurrentField_]" type="V_String" />
-            <Field name="Respondent" source="RecordID: Starting Value=1" type="Int32" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings Macro="process_all_records.yxmc" />
-    </Node>
-    <Node ToolID="61">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="306" y="666" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <GroupFields>
-            <Field field="Respondent" />
-          </GroupFields>
-          <HeaderField field="RecordID" />
-          <DataField field="F12" />
-          <Methods>
-            <Method method="Concat" />
-            <Separator>,</Separator>
-            <FieldSize value="2048" />
-          </Methods>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Respondent" source="CrossTab:Group:Concat:" type="Int32" />
-            <Field name="1" size="2048" source="CrossTab:Header:RecordID:1:Concat:" type="V_String" />
-            <Field name="2" size="2048" source="CrossTab:Header:RecordID:2:Concat:" type="V_String" />
-            <Field name="3" size="2048" source="CrossTab:Header:RecordID:3:Concat:" type="V_String" />
-            <Field name="4" size="2048" source="CrossTab:Header:RecordID:4:Concat:" type="V_String" />
-            <Field name="5" size="2048" source="CrossTab:Header:RecordID:5:Concat:" type="V_String" />
-            <Field name="6" size="2048" source="CrossTab:Header:RecordID:6:Concat:" type="V_String" />
-            <Field name="7" size="2048" source="CrossTab:Header:RecordID:7:Concat:" type="V_String" />
-            <Field name="8" size="2048" source="CrossTab:Header:RecordID:8:Concat:" type="V_String" />
-          </RecordInfo>
-          <SortInfo>
-            <Field field="Respondent" order="Asc" />
-          </SortInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
-    </Node>
-    <Node ToolID="65">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="318" y="738" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Expression>[Respondent] = 1</Expression>
-          <Mode>Simple</Mode>
-          <Simple>
-            <Operator>=</Operator>
-            <Field>Respondent</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2019-06-18 15:04:23</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <Operand>1</Operand>
-              <StartDate>2019-06-18 15:04:23</StartDate>
-              <EndDate>2019-06-18 15:04:23</EndDate>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[Respondent] = 1</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="66">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="462" y="678" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <RenameMode>RightInputRows</RenameMode>
-          <Fields orderChanged="False">
-            <Field name="Respondent" />
-            <Field name="1" />
-            <Field name="2" />
-            <Field name="3" />
-            <Field name="4" />
-            <Field name="5" />
-            <Field name="6" />
-            <Field name="7" />
-            <Field name="8" />
-            <Field name="*Unknown" />
-          </Fields>
-          <Expression />
-          <NamesFromRows>
-            <OnError>Warn</OnError>
-            <InputMode>Mapped</InputMode>
-            <OldName>RecordID</OldName>
-            <NewName>F11</NewName>
-          </NamesFromRows>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Respondent" source="CrossTab:Group:Concat:" type="Int32" />
-            <Field name="First Name" size="2048" source="CrossTab:Header:RecordID:1:Concat:" type="V_String" />
-            <Field name="Last Name" size="2048" source="CrossTab:Header:RecordID:2:Concat:" type="V_String" />
-            <Field name="Occupation Industry" size="2048" source="CrossTab:Header:RecordID:3:Concat:" type="V_String" />
-            <Field name="Hotel Accomodations" size="2048" source="CrossTab:Header:RecordID:4:Concat:" type="V_String" />
-            <Field name="Dietary Restrictions" size="2048" source="CrossTab:Header:RecordID:5:Concat:" type="V_String" />
-            <Field name="Transportation" size="2048" source="CrossTab:Header:RecordID:6:Concat:" type="V_String" />
-            <Field name="Audio/Visual Accomodations" size="2048" source="CrossTab:Header:RecordID:7:Concat:" type="V_String" />
-            <Field name="First Time Attendee" size="2048" source="CrossTab:Header:RecordID:8:Concat:" type="V_String" />
-          </RecordInfo>
-          <SortInfo>
-            <Field field="Respondent" order="Asc" />
-          </SortInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
-    </Node>
-    <Node ToolID="67">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="522" y="462" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="Respondent" selected="False" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
     <Node ToolID="68">
       <GuiSettings>
-        <Position x="570" y="354" />
+        <Position x="582" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2373,11 +2176,1223 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1638" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="Name" />
+            <Field name="1" />
+            <Field name="2" />
+            <Field name="3" />
+            <Field name="4" />
+            <Field name="5" />
+            <Field name="6" />
+            <Field name="7" />
+            <Field name="8" />
+            <Field name="9" />
+            <Field name="10" />
+            <Field name="11" />
+            <Field name="12" />
+            <Field name="13" />
+            <Field name="14" />
+            <Field name="15" />
+            <Field name="16" />
+            <Field name="New_Name" />
+            <Field name="New_1" />
+            <Field name="New_2" />
+            <Field name="New_3" />
+            <Field name="New_4" />
+            <Field name="New_5" />
+            <Field name="New_6" />
+            <Field name="New_7" />
+            <Field name="New_8" />
+            <Field name="New_9" />
+            <Field name="New_10" />
+            <Field name="New_11" />
+            <Field name="New_12" />
+            <Field name="New_13" />
+            <Field name="New_14" />
+            <Field name="New_15" />
+            <Field name="New_16" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Warn</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>Name</OldName>
+            <NewName>Value</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="3" source="CrossTab:Group:Concat:" type="String" />
+            <Field name="1" size="2048" source="CrossTab:Header:RecordID:1:Concat:" type="V_String" />
+            <Field name="2" size="2048" source="CrossTab:Header:RecordID:2:Concat:" type="V_String" />
+            <Field name="What is your first name?" size="2048" source="CrossTab:Header:RecordID:3:Concat:" type="V_String" />
+            <Field name="4" size="2048" source="CrossTab:Header:RecordID:4:Concat:" type="V_String" />
+            <Field name="5" size="2048" source="CrossTab:Header:RecordID:5:Concat:" type="V_String" />
+            <Field name="What is your last name?" size="2048" source="CrossTab:Header:RecordID:6:Concat:" type="V_String" />
+            <Field name="7" size="2048" source="CrossTab:Header:RecordID:7:Concat:" type="V_String" />
+            <Field name="8" size="2048" source="CrossTab:Header:RecordID:8:Concat:" type="V_String" />
+            <Field name="Occupation Industry" size="2048" source="CrossTab:Header:RecordID:9:Concat:" type="V_String" />
+            <Field name="10" size="2048" source="CrossTab:Header:RecordID:10:Concat:" type="V_String" />
+            <Field name="11" size="2048" source="CrossTab:Header:RecordID:11:Concat:" type="V_String" />
+            <Field name="12" size="2048" source="CrossTab:Header:RecordID:12:Concat:" type="V_String" />
+            <Field name="13" size="2048" source="CrossTab:Header:RecordID:13:Concat:" type="V_String" />
+            <Field name="14" size="2048" source="CrossTab:Header:RecordID:14:Concat:" type="V_String" />
+            <Field name="15" size="2048" source="CrossTab:Header:RecordID:15:Concat:" type="V_String" />
+            <Field name="16" size="2048" source="CrossTab:Header:RecordID:16:Concat:" type="V_String" />
+            <Field name="New_Name" size="3" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="String" />
+            <Field name="New_1" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_2" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_3" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_4" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_5" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_6" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_7" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_8" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_9" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_10" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="Hotel Accomodations" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="Dietary Restrictions" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="Transportation" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="Audio/Visual Accomodations" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="New_15" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+            <Field name="First Time Attendee" size="2048" source="Formula: TRIM(REGEX_Replace([_CurrentField_], &quot;.*?:&quot;, &quot;&quot;))" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+        <Position x="1734" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Formula</Mode>
+          <Expression>!regex_match([Name], "New_.*?") &amp;&amp; [Name] != "Name" &amp;&amp; !regex_match([Name], "\d+")</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="258" y="442" width="780" height="276" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 72</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
+            <Position x="283" y="533.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration />
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFieldInfo" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="399" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Type] != "Bool"</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>!=</Operator>
+                <Field>Type</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-06-18 14:47:53</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>Bool</Operand>
+                  <StartDate>2019-06-18 14:47:53</StartDate>
+                  <EndDate>2019-06-18 14:47:53</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Type] != "Bool"</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="515" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Name" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="64">
+          <GuiSettings>
+            <Position x="630" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="ControlParams"><![CDATA[Control Parameter (7)=Name
+]]></Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name>process_all_records (54)</Name>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output14">
+              <RecordInfo>
+                <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+                <Field description="TextToColumns: Parsed from F1" name="F11" size="255" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field description="TextToColumns: Parsed from F1" name="F12" size="255" source="Formula: [_CurrentField_]" type="V_String" />
+                <Field name="Respondent" source="RecordID: Starting Value=1" type="Int32" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="process_all_records.yxmc" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="746" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="Respondent" />
+              </GroupFields>
+              <HeaderField field="RecordID" />
+              <DataField field="F12" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Respondent" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="1" size="2048" source="CrossTab:Header:RecordID:1:Concat:" type="V_String" />
+                <Field name="2" size="2048" source="CrossTab:Header:RecordID:2:Concat:" type="V_String" />
+                <Field name="3" size="2048" source="CrossTab:Header:RecordID:3:Concat:" type="V_String" />
+                <Field name="4" size="2048" source="CrossTab:Header:RecordID:4:Concat:" type="V_String" />
+                <Field name="5" size="2048" source="CrossTab:Header:RecordID:5:Concat:" type="V_String" />
+                <Field name="6" size="2048" source="CrossTab:Header:RecordID:6:Concat:" type="V_String" />
+                <Field name="7" size="2048" source="CrossTab:Header:RecordID:7:Concat:" type="V_String" />
+                <Field name="8" size="2048" source="CrossTab:Header:RecordID:8:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Respondent" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="65">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="762" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[Respondent] = 1</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>Respondent</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-06-18 15:04:23</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>1</Operand>
+                  <StartDate>2019-06-18 15:04:23</StartDate>
+                  <EndDate>2019-06-18 15:04:23</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[Respondent] = 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="66">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="862" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>RightInputRows</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Respondent" />
+                <Field name="1" />
+                <Field name="2" />
+                <Field name="3" />
+                <Field name="4" />
+                <Field name="5" />
+                <Field name="6" />
+                <Field name="7" />
+                <Field name="8" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression />
+              <NamesFromRows>
+                <OnError>Warn</OnError>
+                <InputMode>Mapped</InputMode>
+                <OldName>RecordID</OldName>
+                <NewName>F11</NewName>
+              </NamesFromRows>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Respondent" source="CrossTab:Group:Concat:" type="Int32" />
+                <Field name="First Name" size="2048" source="CrossTab:Header:RecordID:1:Concat:" type="V_String" />
+                <Field name="Last Name" size="2048" source="CrossTab:Header:RecordID:2:Concat:" type="V_String" />
+                <Field name="Occupation Industry" size="2048" source="CrossTab:Header:RecordID:3:Concat:" type="V_String" />
+                <Field name="Hotel Accomodations" size="2048" source="CrossTab:Header:RecordID:4:Concat:" type="V_String" />
+                <Field name="Dietary Restrictions" size="2048" source="CrossTab:Header:RecordID:5:Concat:" type="V_String" />
+                <Field name="Transportation" size="2048" source="CrossTab:Header:RecordID:6:Concat:" type="V_String" />
+                <Field name="Audio/Visual Accomodations" size="2048" source="CrossTab:Header:RecordID:7:Concat:" type="V_String" />
+                <Field name="First Time Attendee" size="2048" source="CrossTab:Header:RecordID:8:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Respondent" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="330" y="486" width="660" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Batch Macro to process each column separately</Text>
+              <Font name="Arial" size="20.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="67">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="954" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Respondent" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="150.0001" y="822" width="937.9999" height="226" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 103</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="69">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="175.0001" y="902.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="71">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="175.0001" y="902.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_17048_3063b7a6b5fb4837b9861af5fcab0f2b_\Engine_10468_56ad9ef78a904984bd56a63270a6e1e8_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="247.0001" y="902" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="RecordID" />
+              </KeyFields>
+              <DataFields>
+                <Field field="RecordID" selected="False" />
+                <Field field="F1" selected="True" />
+                <Field field="F2" selected="True" />
+                <Field field="F3" selected="True" />
+                <Field field="F4" selected="True" />
+                <Field field="F5" selected="True" />
+                <Field field="F6" selected="True" />
+                <Field field="F7" selected="True" />
+                <Field field="F8" selected="True" />
+                <Field field="F9" selected="True" />
+                <Field field="F10" selected="True" />
+                <Field field="F11" selected="True" />
+                <Field field="F12" selected="True" />
+                <Field field="F13" selected="True" />
+                <Field field="F14" selected="True" />
+                <Field field="F15" selected="True" />
+                <Field field="F16" selected="True" />
+                <Field field="F17" selected="True" />
+                <Field field="F18" selected="True" />
+                <Field field="F19" selected="True" />
+                <Field field="F20" selected="True" />
+                <Field field="F21" selected="True" />
+                <Field field="F22" selected="True" />
+                <Field field="F23" selected="True" />
+                <Field field="F24" selected="True" />
+                <Field field="F25" selected="True" />
+                <Field field="F26" selected="True" />
+                <Field field="F27" selected="True" />
+                <Field field="F28" selected="True" />
+                <Field field="F29" selected="True" />
+                <Field field="F30" selected="True" />
+                <Field field="F31" selected="True" />
+                <Field field="F32" selected="True" />
+                <Field field="F33" selected="True" />
+                <Field field="F34" selected="True" />
+                <Field field="F35" selected="True" />
+                <Field field="F36" selected="True" />
+                <Field field="F37" selected="True" />
+                <Field field="F38" selected="True" />
+                <Field field="F39" selected="True" />
+                <Field field="F40" selected="True" />
+                <Field field="F41" selected="True" />
+                <Field field="F42" selected="True" />
+                <Field field="F43" selected="True" />
+                <Field field="F44" selected="True" />
+                <Field field="F45" selected="True" />
+                <Field field="F46" selected="True" />
+                <Field field="F47" selected="True" />
+                <Field field="F48" selected="True" />
+                <Field field="F49" selected="True" />
+                <Field field="F50" selected="True" />
+                <Field field="F51" selected="True" />
+                <Field field="F52" selected="True" />
+                <Field field="F53" selected="True" />
+                <Field field="F54" selected="True" />
+                <Field field="F55" selected="True" />
+                <Field field="F56" selected="True" />
+                <Field field="F57" selected="True" />
+                <Field field="F58" selected="True" />
+                <Field field="F59" selected="True" />
+                <Field field="F60" selected="True" />
+                <Field field="F61" selected="True" />
+                <Field field="F62" selected="True" />
+                <Field field="F63" selected="True" />
+                <Field field="F64" selected="True" />
+                <Field field="F65" selected="True" />
+                <Field field="F66" selected="True" />
+                <Field field="F67" selected="True" />
+                <Field field="F68" selected="True" />
+                <Field field="F69" selected="True" />
+                <Field field="F70" selected="True" />
+                <Field field="F71" selected="True" />
+                <Field field="F72" selected="True" />
+                <Field field="F73" selected="True" />
+                <Field field="F74" selected="True" />
+                <Field field="F75" selected="True" />
+                <Field field="F76" selected="True" />
+                <Field field="F77" selected="True" />
+                <Field field="F78" selected="True" />
+                <Field field="F79" selected="True" />
+                <Field field="F80" selected="True" />
+                <Field field="F81" selected="True" />
+                <Field field="F82" selected="True" />
+                <Field field="F83" selected="True" />
+                <Field field="F84" selected="True" />
+                <Field field="F85" selected="True" />
+                <Field field="F86" selected="True" />
+                <Field field="F87" selected="True" />
+                <Field field="F88" selected="True" />
+                <Field field="F89" selected="True" />
+                <Field field="F90" selected="True" />
+                <Field field="F91" selected="True" />
+                <Field field="F92" selected="True" />
+                <Field field="F93" selected="True" />
+                <Field field="F94" selected="True" />
+                <Field field="F95" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="331" y="902" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!IsNull([Value])</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>Value2</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-06-18 20:27:14</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-06-18 20:27:14</StartDate>
+                  <EndDate>2019-06-18 20:27:14</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([Value])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="523" y="902" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="Name" />
+              </GroupFields>
+              <HeaderField field="RecordID" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Name" size="3" source="CrossTab:Group:Concat:" type="String" />
+                <Field name="1" size="2048" source="CrossTab:Header:RecordID:1:Concat:" type="V_String" />
+                <Field name="2" size="2048" source="CrossTab:Header:RecordID:2:Concat:" type="V_String" />
+                <Field name="3" size="2048" source="CrossTab:Header:RecordID:3:Concat:" type="V_String" />
+                <Field name="4" size="2048" source="CrossTab:Header:RecordID:4:Concat:" type="V_String" />
+                <Field name="5" size="2048" source="CrossTab:Header:RecordID:5:Concat:" type="V_String" />
+                <Field name="6" size="2048" source="CrossTab:Header:RecordID:6:Concat:" type="V_String" />
+                <Field name="7" size="2048" source="CrossTab:Header:RecordID:7:Concat:" type="V_String" />
+                <Field name="8" size="2048" source="CrossTab:Header:RecordID:8:Concat:" type="V_String" />
+                <Field name="9" size="2048" source="CrossTab:Header:RecordID:9:Concat:" type="V_String" />
+                <Field name="10" size="2048" source="CrossTab:Header:RecordID:10:Concat:" type="V_String" />
+                <Field name="11" size="2048" source="CrossTab:Header:RecordID:11:Concat:" type="V_String" />
+                <Field name="12" size="2048" source="CrossTab:Header:RecordID:12:Concat:" type="V_String" />
+                <Field name="13" size="2048" source="CrossTab:Header:RecordID:13:Concat:" type="V_String" />
+                <Field name="14" size="2048" source="CrossTab:Header:RecordID:14:Concat:" type="V_String" />
+                <Field name="15" size="2048" source="CrossTab:Header:RecordID:15:Concat:" type="V_String" />
+                <Field name="16" size="2048" source="CrossTab:Header:RecordID:16:Concat:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Name" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings>
+            <Position x="427" y="902" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (11)">"RecordID","Name","Value","Value1","Value2"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="607" y="902" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Text</FieldType>
+              <Fields orderChanged="False">
+                <Field name="Name" />
+                <Field name="1" />
+                <Field name="2" />
+                <Field name="3" />
+                <Field name="4" />
+                <Field name="5" />
+                <Field name="6" />
+                <Field name="7" />
+                <Field name="8" />
+                <Field name="9" />
+                <Field name="10" />
+                <Field name="11" />
+                <Field name="12" />
+                <Field name="13" />
+                <Field name="14" />
+                <Field name="15" />
+                <Field name="16" />
+                <Field name="*Unknown" />
+              </Fields>
+              <NewFieldAddOn>New_</NewFieldAddOn>
+              <NewFieldAddOnPos>Prefix</NewFieldAddOnPos>
+              <CopyOutput value="True" />
+              <Expression>TRIM(REGEX_Replace([_CurrentField_], ".*?:", ""))</Expression>
+              <ChangeFieldType value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>TRIM(REGEX_Replace([_CurrentField_], ".*?:", ""))</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="104">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="187" y="866" width="876" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Reshape</Text>
+              <Font name="Arial" size="24" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="150" y="1050" width="1273" height="559" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 101</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+            <Position x="175" y="1166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>First</Mode>
+              <N>1</N>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>First 1</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="259" y="1166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields />
+              <DataFields>
+                <Field field="Name" selected="True" />
+                <Field field="1" selected="True" />
+                <Field field="2" selected="True" />
+                <Field field="3" selected="True" />
+                <Field field="4" selected="True" />
+                <Field field="5" selected="True" />
+                <Field field="6" selected="True" />
+                <Field field="7" selected="True" />
+                <Field field="8" selected="True" />
+                <Field field="9" selected="True" />
+                <Field field="10" selected="True" />
+                <Field field="11" selected="True" />
+                <Field field="12" selected="True" />
+                <Field field="13" selected="True" />
+                <Field field="14" selected="True" />
+                <Field field="15" selected="True" />
+                <Field field="16" selected="True" />
+                <Field field="New_Name" selected="True" />
+                <Field field="New_1" selected="True" />
+                <Field field="New_2" selected="True" />
+                <Field field="New_3" selected="True" />
+                <Field field="New_4" selected="True" />
+                <Field field="New_5" selected="True" />
+                <Field field="New_6" selected="True" />
+                <Field field="New_7" selected="True" />
+                <Field field="New_8" selected="True" />
+                <Field field="New_9" selected="True" />
+                <Field field="New_10" selected="True" />
+                <Field field="New_11" selected="True" />
+                <Field field="New_12" selected="True" />
+                <Field field="New_13" selected="True" />
+                <Field field="New_14" selected="True" />
+                <Field field="New_15" selected="True" />
+                <Field field="New_16" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="355.0001" y="1166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>Contains([Name],"New")</Expression>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>Contains</Operator>
+                <Field>Name</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-06-18 20:34:42</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2019-06-18 20:34:42</StartDate>
+                  <EndDate>2019-06-18 20:34:42</EndDate>
+                  <Operand>New</Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Contains([Name],"New")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="486" y="1134" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace([Name], &quot;New_&quot;, &quot;&quot;)" field="JoiningName" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[JoiningName = Replace([Name], "New_", "")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="679" y="1166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="JoiningName" />
+                <Field field="Value" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Name" />
+                <Field field="Value" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_Name" selected="True" rename="Right_Name" input="Right_" />
+                    <SelectField field="Right_Value" selected="True" rename="Right_Value" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="85">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="811" y="1202" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace([Value], &quot;(.*?)\s*:.*&quot;,&quot;$1&quot;)" field="Value" size="2048" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Value = REGEX_Replace([Value], "(.*?)\s*:.*","$1")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="86">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="955" y="1166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="JoiningName" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Name" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Value" selected="False" input="Left_" />
+                    <SelectField field="Right_Name" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>New Fields for those with ":"</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="87">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="399.0001" y="1394" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>!REGEX_Match([Value], "[QF]\d+")</Expression>
+              <Mode>Custom</Mode>
+              <Simple>
+                <Operator>=</Operator>
+                <Field>
+                </Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2019-06-18 20:39:07</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2019-06-18 20:39:07</StartDate>
+                  <EndDate>2019-06-18 20:39:07</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!REGEX_Match([Value], "[QF]\d+")</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="535.0001" y="1381" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[JoiningName]+1" field="JoiningName" size="4" type="Int32" />
+                <FormulaField expression="1" field="sorter" size="1" type="Byte" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[JoiningName = [JoiningName]+1
+sorter = 1
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="911" y="1394" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Value" selected="True" />
+                <SelectField field="JoiningName" selected="True" rename="Name" type="V_String" size="11" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1051" y="1166" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="JoiningName" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1339" y="1370" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="94">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="511.0001" y="1478" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="0" field="sorter" size="1" type="Byte" />
+                <FormulaField expression="[JoiningName]" field="Value" size="2048" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[sorter = 0
+Value = [JoiningName]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="271.0005" y="1394" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="JoiningName" selected="True" type="Int32" size="4" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="96">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="655" y="1394" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="97">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+            <Position x="783" y="1394" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SortInfo locale="0">
+                <Field field="sorter" order="Ascending" />
+                <Field field="JoiningName" order="Ascending" />
+              </SortInfo>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>sorter - Ascending
+JoiningName - Ascending</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+        </Node>
+        <Node ToolID="98">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1039" y="1394" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Name" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Unique: Name</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="199" y="1094" width="876" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Get the headers based on the questions (mostly dynamic)</Text>
+              <Font name="Arial" size="24" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
     </Node>
   </Nodes>
   <Connections>
@@ -2390,12 +3405,20 @@
       <Destination ToolID="55" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="45" Connection="Output" />
       <Destination ToolID="46" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="45" Connection="Output" />
       <Destination ToolID="68" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="55" Connection="Output" />
@@ -2429,6 +3452,122 @@
       <Origin ToolID="66" Connection="Output" />
       <Destination ToolID="67" Connection="Input" />
     </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="True" />
+      <Destination ToolID="78" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output26" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="93" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="93" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="True" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="82" Connection="False" />
+      <Destination ToolID="84" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="84" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Right" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="84" Connection="Left" />
+      <Destination ToolID="86" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="86" Connection="Right" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="84" Connection="Join" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Join" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="False" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="True" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="98" Connection="Unique" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
   </Connections>
   <Properties>
     <Memory default="True" />
@@ -2448,7 +3587,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>challenge_112_start_file</Name>
+      <Name>solved#112</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
