@@ -1,6 +1,26 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="2018.4">
   <Nodes>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1146" y="2286" width="1128" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Summary of Tools used</Text>
+          <Font name="Arial" size="14.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="111" g="208" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
     <Node ToolID="100">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
         <Position x="1146" y="1878" width="1128" height="192" />
@@ -287,7 +307,7 @@
           <RecordInfo>
             <Field name="AlteryxDocument" size="10" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
             <Field name="yxmdVer" size="6" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
-            <Field name="AlteryxDocument_OuterXML" size="31446" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
+            <Field name="AlteryxDocument_OuterXML" size="34125" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -299,7 +319,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16868_b5a4a93ca4bf40499daa97d90cf7f004_\Engine_15808_e74f377ffa6249cb91c121b43e35a5a7_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_12432_523289b0a5e54aa3936b6445a8e01b28_\Engine_15808_7e80f4bc0c874d9f91fdeeba2baba184_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -343,7 +363,7 @@
           <RecordInfo>
             <Field name="AlteryxDocument" size="10" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
             <Field name="yxmdVer" size="6" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
-            <Field name="AlteryxDocument_OuterXML" size="31446" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
+            <Field name="AlteryxDocument_OuterXML" size="34125" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
             <Field name="Properties" size="88" type="V_String" />
             <Field name="Properties_OuterXML" size="3447" type="V_String" />
           </RecordInfo>
@@ -357,7 +377,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16868_b5a4a93ca4bf40499daa97d90cf7f004_\Engine_15808_3efe282ed74e460a85152a6d0e368450_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_12432_523289b0a5e54aa3936b6445a8e01b28_\Engine_15808_40646f248b9b4c72bab07e921725964d_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -642,7 +662,7 @@
           <RecordInfo>
             <Field name="AlteryxDocument" size="10" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
             <Field name="yxmdVer" size="6" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
-            <Field name="AlteryxDocument_OuterXML" size="31446" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
+            <Field name="AlteryxDocument_OuterXML" size="34125" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Projects\Alteryx\Alteryx Workflow Template Example.yxmd" type="V_String" />
             <Field name="Node" size="26" type="V_String" />
             <Field name="ToolID" size="2" type="V_String" />
             <Field name="Node_OuterXML" size="3722" type="V_String" />
@@ -657,7 +677,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16868_b5a4a93ca4bf40499daa97d90cf7f004_\Engine_15808_28d88b46432141a6aabc343a0ff40f70_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_12432_523289b0a5e54aa3936b6445a8e01b28_\Engine_15808_1ca31df6c5c244ac8aa45416df5caf72_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -702,7 +722,7 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
-        <Position x="942" y="1134" />
+        <Position x="906" y="1134" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -763,8 +783,9 @@
             <Field name="Position_y" size="3" type="V_String" />
             <Field name="Position_width" size="8" type="V_String" />
             <Field name="Position_height" size="3" type="V_String" />
+            <Field description="RegEx: Parsed from Plugin" name="ToolType" size="254" source="RegEx: Parsed from Plugin" type="V_WString" />
             <Field name="Properties" size="43" type="V_String" />
-            <Field name="Configuration" size="75" type="V_String" />
+            <Field name="Configuration" size="108" type="V_String" />
             <Field name="Configuration_OuterXML" size="2189" type="V_String" />
             <Field name="Annotation" size="53" type="V_String" />
             <Field name="Annotation_DisplayMode" size="1" type="V_String" />
@@ -783,7 +804,7 @@
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1170" y="1134" />
+        <Position x="1194" y="1134" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -815,7 +836,7 @@
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1266" y="1122" />
+        <Position x="1290" y="1122" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -877,7 +898,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
-        <Position x="1362" y="1122" />
+        <Position x="1386" y="1122" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1165,7 +1186,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_16868_b5a4a93ca4bf40499daa97d90cf7f004_\Engine_15808_eb950766cdaf4bdbba857efd664a5eaa_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_12432_523289b0a5e54aa3936b6445a8e01b28_\Engine_15808_34315ec6a218438596fc1cef3e88241e_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1563,7 +1584,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="50">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1170" y="1326" />
+        <Position x="1194" y="1326" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1595,7 +1616,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="51">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1254" y="1314" />
+        <Position x="1290" y="1314" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1621,7 +1642,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="52">
       <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
-        <Position x="1338" y="1314" />
+        <Position x="1386" y="1314" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1664,7 +1685,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="53">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="1422" y="1314" />
+        <Position x="1482" y="1314" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1702,7 +1723,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
-        <Position x="1506" y="1314" />
+        <Position x="1578" y="1314" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1843,7 +1864,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
-        <Position x="1458" y="1122" />
+        <Position x="1482" y="1122" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2030,7 +2051,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="65">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1170" y="1530" />
+        <Position x="1194" y="1530" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2063,7 +2084,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
     </Node>
     <Node ToolID="66">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1254" y="1518" />
+        <Position x="1290" y="1518" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2076,6 +2097,7 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
             <SelectField field="Position_y" selected="True" type="Int32" size="4" />
             <SelectField field="Position_width" selected="True" type="Int32" size="4" />
             <SelectField field="Position_height" selected="True" type="Int32" size="4" />
+            <SelectField field="ToolType" selected="True" />
             <SelectField field="Configuration_OuterXML" selected="True" />
             <SelectField field="*Unknown" selected="False" />
           </SelectFields>
@@ -2125,43 +2147,6 @@ Node ToolID="(.*?)"</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
-    <Node ToolID="68">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="1338" y="1518" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Field>Plugin</Field>
-          <RegExExpression value=".*\.(.*?)$" />
-          <CaseInsensitve value="True" />
-          <Method>ParseComplex</Method>
-          <Replace expression="">
-            <CopyUnmatched value="True" />
-          </Replace>
-          <ParseSimple>
-            <SplitToRows value="False" />
-            <RootName />
-            <NumFields value="3" />
-            <ErrorHandling>Warn</ErrorHandling>
-          </ParseSimple>
-          <ParseComplex>
-            <Field field="ToolType" type="V_WString" size="254" />
-          </ParseComplex>
-          <Match>
-            <Field>Plugin_Matched</Field>
-            <ErrorUnmatched value="False" />
-          </Match>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <AnnotationText>Get Tool Type</AnnotationText>
-          <DefaultAnnotationText>Parse:
-.*\.(.*?)$</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
     </Node>
     <Node ToolID="75">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -2405,7 +2390,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="90">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1254" y="1974" />
+        <Position x="1290" y="1974" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2438,7 +2423,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="92">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1254" y="1746" />
+        <Position x="1290" y="1746" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2461,7 +2446,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="95">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="1338" y="1746" />
+        <Position x="1386" y="1746" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2498,7 +2483,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="97">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1422" y="1746" />
+        <Position x="1482" y="1746" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2519,7 +2504,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="98">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1506" y="1746" />
+        <Position x="1578" y="1746" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2538,7 +2523,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="101">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1350" y="1962" />
+        <Position x="1386" y="1962" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2560,7 +2545,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="102">
       <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
-        <Position x="1446" y="1962" />
+        <Position x="1482" y="1962" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2592,7 +2577,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="103">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1530" y="1962" />
+        <Position x="1578" y="1962" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2614,7 +2599,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="104">
       <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
-        <Position x="1650" y="1962" />
+        <Position x="1674" y="1962" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2793,7 +2778,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="111">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1254" y="2178" />
+        <Position x="1290" y="2178" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2826,7 +2811,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="112">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1350" y="2166" />
+        <Position x="1386" y="2166" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2848,7 +2833,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="113">
       <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
-        <Position x="1446" y="2166" />
+        <Position x="1482" y="2166" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2880,7 +2865,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="114">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1530" y="2166" />
+        <Position x="1578" y="2166" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2902,7 +2887,7 @@ Last modified by: EMAILADDRESS</Text>
     </Node>
     <Node ToolID="115">
       <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
-        <Position x="1650" y="2166" />
+        <Position x="1674" y="2166" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -3059,16 +3044,93 @@ Last modified by: EMAILADDRESS</Text>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
     </Node>
-    <Node ToolID="120">
-      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1146" y="2286" width="1128" height="192" />
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1194" y="2334" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Tools with error in the configuration</Text>
-          <Font name="Arial" size="14.25" style="0" />
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ToolID" selected="True" />
+            <SelectField field="Plugin" selected="True" />
+            <SelectField field="ToolType" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="123">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1290" y="2334" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Plugin" action="GroupBy" rename="Plugin" />
+            <SummarizeField field="ToolID" action="CountDistinct" rename="CountDistinct_ToolID" />
+            <SummarizeField field="ToolType" action="GroupBy" rename="ToolType" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="125">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1290" y="2406" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ToolID" action="CountDistinct" rename="Number of Tools" />
+            <SummarizeField field="Plugin" action="CountDistinct" rename="Types of Tools" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="126">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2502" y="330" width="100" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Output 1:
+Summary
+ - Number of tools
+ - Number of tool types
+ - Section Metainfo:
+    - Name
+    - Author
+    - Description
+    - Events (i.e. send email)
+ - Section Settings:
+    - DisableBrowse
+ - Documenting:
+    - Type of comment/container and count
+    - Number of tools not in a comment/container
+    - Number of tools with the default annotation
+    - ]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
           <TextColor name="Black" />
-          <FillColor r="111" g="208" b="255" />
+          <FillColor name="White" />
           <Shape shape="0" />
           <Justification Justification="4" />
         </Configuration>
@@ -3078,6 +3140,43 @@ Last modified by: EMAILADDRESS</Text>
           <Left value="False" />
         </Annotation>
       </Properties>
+    </Node>
+    <Node ToolID="127">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="1002" y="1134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Plugin</Field>
+          <RegExExpression value=".*\.(.*?)$" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="ToolType" type="V_WString" size="254" />
+          </ParseComplex>
+          <Match>
+            <Field>Plugin_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Get Tool Type</AnnotationText>
+          <DefaultAnnotationText>Parse:
+.*\.(.*?)$</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
     </Node>
   </Nodes>
   <Connections>
@@ -3147,7 +3246,7 @@ Last modified by: EMAILADDRESS</Text>
     </Connection>
     <Connection>
       <Origin ToolID="16" Connection="Output" />
-      <Destination ToolID="17" Connection="Input" />
+      <Destination ToolID="127" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="17" Connection="Output" />
@@ -3160,6 +3259,10 @@ Last modified by: EMAILADDRESS</Text>
     <Connection>
       <Origin ToolID="17" Connection="Output" />
       <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="121" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="19" Connection="True" />
@@ -3326,7 +3429,7 @@ Last modified by: EMAILADDRESS</Text>
       <Destination ToolID="67" Connection="Right" />
     </Connection>
     <Connection>
-      <Origin ToolID="68" Connection="Output" />
+      <Origin ToolID="66" Connection="Output" />
       <Destination ToolID="67" Connection="Left" />
     </Connection>
     <Connection>
@@ -3344,10 +3447,6 @@ Last modified by: EMAILADDRESS</Text>
     <Connection>
       <Origin ToolID="65" Connection="True" />
       <Destination ToolID="111" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="66" Connection="Output" />
-      <Destination ToolID="68" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="90" Connection="True" />
@@ -3424,6 +3523,18 @@ Last modified by: EMAILADDRESS</Text>
     <Connection>
       <Origin ToolID="118" Connection="Output" />
       <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="123" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="125" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="127" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
