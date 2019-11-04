@@ -1,6 +1,66 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<AlteryxDocument yxmdVer="2018.3">
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="678" y="750" width="432" height="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Keep shortest distance</Text>
+          <Font name="Arial" size="14.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="450" y="750" width="204" height="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Remove lines that cross water bodies</Text>
+          <Font name="Arial" size="14.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="750" width="372" height="252" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create lines between customers and splice points</Text>
+          <Font name="Arial" size="14.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
     <Node ToolID="36">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
         <Position x="54" y="306" width="300" height="408" />
@@ -66,29 +126,26 @@
           <DefaultAnnotationText>SanDiegoCounty.shp</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="STATEFP" size="2" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="COUNTYFP" size="3" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="COUNTYNS" size="8" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="GEOID" size="5" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="NAME" size="100" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="V_String" />
-            <Field name="NAMELSAD" size="100" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="V_String" />
-            <Field name="LSAD" size="2" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="CLASSFP" size="2" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="MTFCC" size="5" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="CSAFP" size="3" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="CBSAFP" size="5" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="METDIVFP" size="5" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="FUNCSTAT" size="1" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="ALAND" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="Int64" />
-            <Field name="AWATER" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="Int64" />
-            <Field name="INTPTLAT" size="11" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="INTPTLON" size="12" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="String" />
-            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\jmiller\Desktop\SanDiegoCounty.shp" type="SpatialObj" />
+            <Field name="STATEFP" size="2" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="COUNTYFP" size="3" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="COUNTYNS" size="8" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="GEOID" size="5" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="NAME" size="100" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="V_String" />
+            <Field name="NAMELSAD" size="100" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="V_String" />
+            <Field name="LSAD" size="2" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="CLASSFP" size="2" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="MTFCC" size="5" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="CSAFP" size="3" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="CBSAFP" size="5" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="METDIVFP" size="5" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="FUNCSTAT" size="1" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="ALAND" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="Int64" />
+            <Field name="AWATER" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="Int64" />
+            <Field name="INTPTLAT" size="11" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="INTPTLON" size="12" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\1\SanDiegoCounty.shp" type="SpatialObj" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -112,20 +169,17 @@
           <DefaultAnnotationText>tl_2018_06073_areawater.shp</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="ANSICODE" size="8" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="WString" />
-            <Field name="HYDROID" size="22" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="V_WString" />
-            <Field name="FULLNAME" size="100" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="V_WString" />
-            <Field name="MTFCC" size="5" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="WString" />
-            <Field name="ALAND" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="Int64" />
-            <Field name="AWATER" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="Int64" />
-            <Field name="INTPTLAT" size="11" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="WString" />
-            <Field name="INTPTLON" size="12" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="WString" />
-            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\jmiller\Downloads\tl_2018_06073_areawater\tl_2018_06073_areawater.shp" type="SpatialObj" />
+            <Field name="ANSICODE" size="8" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="String" />
+            <Field name="HYDROID" size="22" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="V_String" />
+            <Field name="FULLNAME" size="100" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="V_String" />
+            <Field name="MTFCC" size="5" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="String" />
+            <Field name="ALAND" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="Int64" />
+            <Field name="AWATER" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="Int64" />
+            <Field name="INTPTLAT" size="11" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="String" />
+            <Field name="INTPTLON" size="12" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="String" />
+            <Field name="SpatialObj" size="2147483647" source="File: C:\Users\DavidSM\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#137\challenge_137_start_file\_externals\2\tl_2018_06073_areawater.shp" type="SpatialObj" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -133,7 +187,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.MapInput.MapInput">
-        <Position x="66" y="534" />
+        <Position x="66" y="786" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -192,18 +246,12 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Label" size="9" source="MapInput:" type="String" />
-            <Field name="SpatialObj" size="2147483647" source="MapInput:" type="SpatialObj" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxMapInput" />
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.MapInput.MapInput">
-        <Position x="66" y="618" />
+        <Position x="66" y="870" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -254,12 +302,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Label" size="12" source="MapInput:" type="String" />
-            <Field name="SpatialObj" size="2147483647" source="MapInput:" type="SpatialObj" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxMapInput" />
     </Node>
@@ -318,13 +360,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Customer" size="9" source="TextInput:" type="String" />
-            <Field name="FiberSplice" size="12" source="TextInput:" type="String" />
-            <Field name="DistanceMiles" source="TextInput:" type="Double" />
-          </RecordInfo>
-        </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
     </Node>
@@ -334,13 +369,18 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_20192_fff84b4b62cd425c9923c5e67e65e20d_\Engine_22428_04f4fd2f37184f3fae4c7ca98a74243f_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_35608_f0edfa220dc54ded933fe044e6d4a628_\Engine_4252_c90f5533238b436f8cdf4bbe7c3c5a2e_.yxdb</TempFile>
+          <TempFileDataProfiling />
           <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
             <View1>
+              <DefaultTab>Profile</DefaultTab>
               <Hints>
                 <Table />
               </Hints>
             </View1>
+            <View2 />
           </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -399,7 +439,7 @@
       <Properties>
         <Configuration>
           <Text>In this challenge a telecom company is trying to determine the closest splice point to each of their customers in San Diego County. The caveat is that the closest point MAY NOT be across any body of water, river, pond, etc. Provided in the solution is 1) a shape file of water in San Diego, 2) a shape file of all US counties 3) Customer points and 4) Fiber Splice Points</Text>
-          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <Font name="Microsoft Sans Serif" size="12" style="0" />
           <TextColor name="Gray" />
           <FillColor name="White" />
           <Shape shape="0" />
@@ -412,45 +452,13 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="37">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="162" y="534" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_20192_fff84b4b62cd425c9923c5e67e65e20d_\Engine_22428_090e15413cb34f65baf702804fd643c7_.yxdb</TempFile>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="38">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="162" y="618" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_20192_fff84b4b62cd425c9923c5e67e65e20d_\Engine_22428_64d88a0a1837472fa2b9a62d9ed7a379_.yxdb</TempFile>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="39">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
         <Position x="162" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_20192_fff84b4b62cd425c9923c5e67e65e20d_\Engine_22428_cf5ba4db20934aa784ccf9eef99527df_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_35608_f0edfa220dc54ded933fe044e6d4a628_\Engine_4252_72bfa040e04d42508573ef57f5fa206d_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -461,6 +469,7 @@
                 <Map>
                   <BaseMap>[No Base Map]</BaseMap>
                 </Map>
+                <Table />
               </Hints>
             </View1>
             <View2 />
@@ -480,13 +489,21 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_20192_fff84b4b62cd425c9923c5e67e65e20d_\Engine_22428_94cc1d43e3fc4707b6c16974efadba34_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_35608_f0edfa220dc54ded933fe044e6d4a628_\Engine_4252_9e0b9a4a7caa4ef5a3d335b946c96547_.yxdb</TempFile>
+          <TempFileDataProfiling />
           <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
             <View1>
+              <DefaultTab>Map</DefaultTab>
               <Hints>
+                <Map>
+                  <BaseMap>Latest:DarkCarto</BaseMap>
+                </Map>
                 <Table />
               </Hints>
             </View1>
+            <View2 />
           </Layout>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -496,6 +513,187 @@
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="162" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="SpatialObj" action="SpatialObjCombine" rename="SpatialObjCombine_SpatialObj" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings>
+        <Position x="1170" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="CReW_ExpectEqual.yxmc" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.FindNearest.FindNearest">
+        <Position x="198" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="SpatialObj" />
+          <Universe SpatialObj="SpatialObj" />
+          <HowMany value="10" />
+          <MaxDistance value="100000" />
+          <MaxDistanceUnits>Miles</MaxDistanceUnits>
+          <Ignore0 value="False" />
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Label" selected="True" rename="LabelCustomer" input="Target_" />
+                <SelectField field="Target_SpatialObj" selected="True" rename="Customer" input="Target_" />
+                <SelectField field="Universe_Label" selected="True" rename="LabelSplice" input="Universe_" />
+                <SelectField field="Universe_SpatialObj" selected="True" rename="SplicePoint" input="Universe_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxFindNearest" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ST_CreateLine([Customer], [SplicePoint])" field="Cable" size="536870911" type="SpatialObj" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Cable = ST_CreateLine([Customer], [SplicePoint])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialMatch.SpatialMatch">
+        <Position x="522" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="Cable" />
+          <Universe SpatialObj="SpatialObj" />
+          <Method method="Intersects" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+          <IntersectPoly value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Keep the lines that do not intersect water bodies</AnnotationText>
+          <DefaultAnnotationText>Cable Where Target Intersects Universe SpatialObj</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialMatch" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="706" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="Customer" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>First 1 - Grouped by Customer</AnnotationText>
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="866" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="LabelCustomer" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LabelCustomer - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1026" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="LabelCustomer" selected="True" rename="Customer" />
+            <SelectField field="Customer" selected="False" />
+            <SelectField field="LabelSplice" selected="True" rename="FiberSplice" />
+            <SelectField field="SplicePoint" selected="False" />
+            <SelectField field="FindNearestRank" selected="False" />
+            <SelectField field="Direction" selected="False" />
+            <SelectField field="Cable" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
   </Nodes>
   <Connections>
@@ -508,16 +706,52 @@
       <Destination ToolID="40" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="66" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Targets" />
+    </Connection>
+    <Connection>
       <Origin ToolID="14" Connection="Output" />
-      <Destination ToolID="37" Connection="Input" />
+      <Destination ToolID="64" Connection="Targets" />
     </Connection>
     <Connection>
       <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="38" Connection="Input" />
+      <Destination ToolID="64" Connection="Universe" />
     </Connection>
     <Connection>
       <Origin ToolID="29" Connection="Output" />
       <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="58" Connection="Expected" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="58" Connection="Actual" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Matched" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Unmatched" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -538,7 +772,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>challenge_137_start_file</Name>
+      <Name>david137</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
