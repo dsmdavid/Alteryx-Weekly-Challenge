@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#175\file1.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>file1.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field1" name="1" size="31" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Formula: if IsNull([Width_MM]) then [Width_IN]*25.4 else [Width_MM] endif" type="FixedDecimal" />
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Formula: if IsNull([RATIO]) then ((([Tire Height]-[Wheel size])/2)/[Width_IN])*100 else [RATIO] endif" type="Double" />
+            <Field description="Formula: if [Wheel size]=&quot;0&quot; then [Row-1:Wheel size] else [Wheel size] endif" name="Wheel size" source="Formula: [_CurrentField_]" type="Float" />
+            <Field description="RegEx: Parsed from 2" name="Tire Height" source="RegEx: Parsed from 2" type="Double" />
+            <Field description="RegEx: Parsed from 2" name="Width_IN" source="RegEx: Parsed from 2" type="Double" />
+            <Field name="Sidewall IN" source="Formula: [Width_IN]*([RATIO]/100)" type="Double" />
+            <Field name="circum" source="Formula: [Tire Height]*PI()" type="Double" />
+            <Field name="Revs/Mile" source="Formula: (5280*12)/[circum]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="258" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RATIO" action="GroupBy" rename="RATIO" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Summarize: GroupBy - RATIO" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RATIO" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="522" y="318" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="522" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>RATIO</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-15 02:40:12</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2020-02-15 02:40:12</StartDate>
+              <EndDate>2020-02-15 02:40:12</EndDate>
+              <Operand>60</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RATIO] = 60</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field1" name="1" size="31" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Formula: if IsNull([Width_MM]) then [Width_IN]*25.4 else [Width_MM] endif" type="FixedDecimal" />
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Formula: if IsNull([RATIO]) then ((([Tire Height]-[Wheel size])/2)/[Width_IN])*100 else [RATIO] endif" type="Int16" />
+            <Field description="Formula: if [Wheel size]=&quot;0&quot; then [Row-1:Wheel size] else [Wheel size] endif" name="Wheel size" source="Formula: [_CurrentField_]" type="Float" />
+            <Field description="RegEx: Parsed from 2" name="Tire Height" source="RegEx: Parsed from 2" type="Double" />
+            <Field description="RegEx: Parsed from 2" name="Width_IN" source="RegEx: Parsed from 2" type="Double" />
+            <Field name="Sidewall IN" source="Formula: [Width_IN]*([RATIO]/100)" type="Double" />
+            <Field name="circum" source="Formula: [Tire Height]*PI()" type="Double" />
+            <Field name="Revs/Mile" source="Formula: (5280*12)/[circum]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field1" name="1" size="31" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Formula: if IsNull([Width_MM]) then [Width_IN]*25.4 else [Width_MM] endif" type="FixedDecimal" />
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Formula: if IsNull([RATIO]) then ((([Tire Height]-[Wheel size])/2)/[Width_IN])*100 else [RATIO] endif" type="Int16" />
+            <Field description="Formula: if [Wheel size]=&quot;0&quot; then [Row-1:Wheel size] else [Wheel size] endif" name="Wheel size" source="Formula: [_CurrentField_]" type="Float" />
+            <Field description="RegEx: Parsed from 2" name="Tire Height" source="RegEx: Parsed from 2" type="Double" />
+            <Field description="RegEx: Parsed from 2" name="Width_IN" source="RegEx: Parsed from 2" type="Double" />
+            <Field name="Sidewall IN" source="Formula: [Width_IN]*([RATIO]/100)" type="Double" />
+            <Field name="circum" source="Formula: [Tire Height]*PI()" type="Double" />
+            <Field name="Revs/Mile" source="Formula: (5280*12)/[circum]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="534" y="426" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="390" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="RATIO" />
+          <DataField field="Header" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="50" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="55" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="60" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="65" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="70" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="75" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="80" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="330" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[RATIO]" field="Header" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Header = [RATIO]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Summarize: GroupBy - RATIO" type="Int16" />
+            <Field name="Header" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RATIO" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="714" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">.\file2.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>file2.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="474" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression>replace([_CurrentField_], "_",".")</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="50" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="55" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="60" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="65" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="70" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="75" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+            <Field name="80" size="1073741823" source="Formula: [RATIO]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="198" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RATIO" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field1" name="1" size="31" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Formula: if IsNull([Width_MM]) then [Width_IN]*25.4 else [Width_MM] endif" type="FixedDecimal" />
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Formula: if IsNull([RATIO]) then ((([Tire Height]-[Wheel size])/2)/[Width_IN])*100 else [RATIO] endif" type="Int16" />
+            <Field description="Formula: if [Wheel size]=&quot;0&quot; then [Row-1:Wheel size] else [Wheel size] endif" name="Wheel size" source="Formula: [_CurrentField_]" type="Float" />
+            <Field description="RegEx: Parsed from 2" name="Tire Height" source="RegEx: Parsed from 2" type="Double" />
+            <Field description="RegEx: Parsed from 2" name="Width_IN" source="RegEx: Parsed from 2" type="Double" />
+            <Field name="Sidewall IN" source="Formula: [Width_IN]*([RATIO]/100)" type="Double" />
+            <Field name="circum" source="Formula: [Tire Height]*PI()" type="Double" />
+            <Field name="Revs/Mile" source="Formula: (5280*12)/[circum]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Question" />
+      <Destination ToolID="6" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Action" />
+      <Destination ToolID="5" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="4" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (4)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>App2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="6" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>5/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Drop Down (4)</Description>
+              <Name>Drop Down (4)</Name>
+              <ToolId value="4" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Field</Mode>
+              <Field_ToolId value="10" />
+              <Field_ConnectionName />
+              <Field_Connection>Output</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
+              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="False" />
+      <Wiz_ChainRunWizard>App3.yxwz</Wiz_ChainRunWizard>
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

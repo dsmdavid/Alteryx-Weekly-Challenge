@@ -1,0 +1,616 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#175\Tire Size Data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Tire Size Data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field1" name="1" size="31" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="Width_MM" source="Formula: if IsNull([Width_MM]) then [Width_IN]*25.4 else [Width_MM] endif" type="Double" />
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Formula: if IsNull([RATIO]) then ((([Tire Height]-[Wheel size])/2)/[Width_IN])*100 else [RATIO] endif" type="Double" />
+            <Field description="Formula: if [Wheel size]=&quot;0&quot; then [Row-1:Wheel size] else [Wheel size] endif" name="Wheel size" source="Formula: [_CurrentField_]" type="Float" />
+            <Field description="RegEx: Parsed from 2" name="Tire Height" source="RegEx: Parsed from 2" type="Double" />
+            <Field description="RegEx: Parsed from 2" name="Width_IN" source="RegEx: Parsed from 2" type="Double" />
+            <Field name="Sidewall IN" source="Formula: [Width_IN]*([RATIO]/100)" type="Double" />
+            <Field name="circum" source="Formula: [Tire Height]*PI()" type="Double" />
+            <Field name="Revs/Mile" source="Formula: (5280*12)/[circum]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="210" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Width_MM" action="GroupBy" rename="Width_MM" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Summarize: GroupBy - Width_MM" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Width_MM" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="474" y="234" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="475" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Width_MM</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-15 02:29:44</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>185</Operand>
+              <StartDate>2020-02-15 02:29:44</StartDate>
+              <EndDate>2020-02-15 02:29:44</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Width_MM] = 185</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field1" name="1" size="31" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Formula: if IsNull([Width_MM]) then [Width_IN]*25.4 else [Width_MM] endif" type="FixedDecimal" />
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Formula: if IsNull([RATIO]) then ((([Tire Height]-[Wheel size])/2)/[Width_IN])*100 else [RATIO] endif" type="Double" />
+            <Field description="Formula: if [Wheel size]=&quot;0&quot; then [Row-1:Wheel size] else [Wheel size] endif" name="Wheel size" source="Formula: [_CurrentField_]" type="Float" />
+            <Field description="RegEx: Parsed from 2" name="Tire Height" source="RegEx: Parsed from 2" type="Double" />
+            <Field description="RegEx: Parsed from 2" name="Width_IN" source="RegEx: Parsed from 2" type="Double" />
+            <Field name="Sidewall IN" source="Formula: [Width_IN]*([RATIO]/100)" type="Double" />
+            <Field name="circum" source="Formula: [Tire Height]*PI()" type="Double" />
+            <Field name="Revs/Mile" source="Formula: (5280*12)/[circum]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field1" name="1" size="31" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Formula: if IsNull([Width_MM]) then [Width_IN]*25.4 else [Width_MM] endif" type="FixedDecimal" />
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Formula: if IsNull([RATIO]) then ((([Tire Height]-[Wheel size])/2)/[Width_IN])*100 else [RATIO] endif" type="Double" />
+            <Field description="Formula: if [Wheel size]=&quot;0&quot; then [Row-1:Wheel size] else [Wheel size] endif" name="Wheel size" source="Formula: [_CurrentField_]" type="Float" />
+            <Field description="RegEx: Parsed from 2" name="Tire Height" source="RegEx: Parsed from 2" type="Double" />
+            <Field description="RegEx: Parsed from 2" name="Width_IN" source="RegEx: Parsed from 2" type="Double" />
+            <Field name="Sidewall IN" source="Formula: [Width_IN]*([RATIO]/100)" type="Double" />
+            <Field name="circum" source="Formula: [Tire Height]*PI()" type="Double" />
+            <Field name="Revs/Mile" source="Formula: (5280*12)/[circum]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="488" y="336" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="342" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="Width_MM" />
+          <DataField field="Header" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="63_5" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="114_3" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="115_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="125_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="127_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="135_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="145_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="152_4" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="155_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="165_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="175_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="185_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="190_5" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="195_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="203_2" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="205_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="215_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="215_9" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="225_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="228_6" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="235_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="241_3" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="245_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="254_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="255_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="265_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="266_7" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="275_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="279_4" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="285_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="292_1" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="295_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="304_8" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="305_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="315_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="317_5" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="325_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="330_2" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="335_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="342_9" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="345_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="355_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="355_6" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="368_3" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="375_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="381_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="385_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="393_7" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="405_0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="406_4" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="419_1" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="431_8" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="444_5" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="457_2" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="469_9" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="495_3" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="533_4" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="546_1" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="282" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Width_MM]" field="Header" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Header = [Width_MM]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Summarize: GroupBy - Width_MM" type="FixedDecimal" />
+            <Field name="Header" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Width_MM" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="666" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">.\file1.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>file1.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="426" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="63_5" />
+            <Field name="114_3" />
+            <Field name="115" />
+            <Field name="125" />
+            <Field name="127" />
+            <Field name="135" />
+            <Field name="145" />
+            <Field name="152_4" />
+            <Field name="155" />
+            <Field name="165" />
+            <Field name="175" />
+            <Field name="185" />
+            <Field name="190_5" />
+            <Field name="195" />
+            <Field name="203_2" />
+            <Field name="205" />
+            <Field name="215" />
+            <Field name="215_9" />
+            <Field name="225" />
+            <Field name="228_6" />
+            <Field name="235" />
+            <Field name="241_3" />
+            <Field name="245" />
+            <Field name="254" />
+            <Field name="255" />
+            <Field name="265" />
+            <Field name="266_7" />
+            <Field name="275" />
+            <Field name="279_4" />
+            <Field name="285" />
+            <Field name="292_1" />
+            <Field name="295" />
+            <Field name="304_8" />
+            <Field name="305" />
+            <Field name="315" />
+            <Field name="317_5" />
+            <Field name="325" />
+            <Field name="330_2" />
+            <Field name="335" />
+            <Field name="342_9" />
+            <Field name="345" />
+            <Field name="355" />
+            <Field name="355_6" />
+            <Field name="368_3" />
+            <Field name="375" />
+            <Field name="381" />
+            <Field name="385" />
+            <Field name="393_7" />
+            <Field name="405" />
+            <Field name="406_4" />
+            <Field name="419_1" />
+            <Field name="431_8" />
+            <Field name="444_5" />
+            <Field name="457_2" />
+            <Field name="469_9" />
+            <Field name="495_3" />
+            <Field name="533_4" />
+            <Field name="546_1" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression>replace([_CurrentField_], "_",".")</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="63.5" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="114.3" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="115.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="125.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="127.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="135.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="145.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="152.4" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="155.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="165.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="175.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="185.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="190.5" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="195.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="203.2" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="205.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="215.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="215.9" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="225.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="228.6" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="235.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="241.3" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="245.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="254.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="255.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="265.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="266.7" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="275.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="279.4" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="285.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="292.1" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="295.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="304.8" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="305.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="315.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="317.5" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="325.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="330.2" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="335.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="342.9" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="345.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="355.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="355.6" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="368.3" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="375.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="381.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="385.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="393.7" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="405.0" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="406.4" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="419.1" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="431.8" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="444.5" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="457.2" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="469.9" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="495.3" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="533.4" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+            <Field name="546.1" size="1073741823" source="Formula: [Width_MM]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Width_MM" selected="True" type="FixedDecimal" size="19.1" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Field1" name="1" size="31" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field description="RegEx: Parsed from 1" name="Width_MM" scale="1" size="19" source="Formula: if IsNull([Width_MM]) then [Width_IN]*25.4 else [Width_MM] endif" type="FixedDecimal" />
+            <Field description="RegEx: Parsed from 1" name="RATIO" source="Formula: if IsNull([RATIO]) then ((([Tire Height]-[Wheel size])/2)/[Width_IN])*100 else [RATIO] endif" type="Double" />
+            <Field description="Formula: if [Wheel size]=&quot;0&quot; then [Row-1:Wheel size] else [Wheel size] endif" name="Wheel size" source="Formula: [_CurrentField_]" type="Float" />
+            <Field description="RegEx: Parsed from 2" name="Tire Height" source="RegEx: Parsed from 2" type="Double" />
+            <Field description="RegEx: Parsed from 2" name="Width_IN" source="RegEx: Parsed from 2" type="Double" />
+            <Field name="Sidewall IN" source="Formula: [Width_IN]*([RATIO]/100)" type="Double" />
+            <Field name="circum" source="Formula: [Tire Height]*PI()" type="Double" />
+            <Field name="Revs/Mile" source="Formula: (5280*12)/[circum]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Question" />
+      <Destination ToolID="6" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="6" Connection="Action" />
+      <Destination ToolID="5" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="4" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (4)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>App1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="6" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>5/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Drop Down (4)</Description>
+              <Name>Drop Down (4)</Name>
+              <ToolId value="4" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Field</Mode>
+              <Field_ToolId value="12" />
+              <Field_ConnectionName />
+              <Field_Connection>Output</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
+              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="False" />
+      <Wiz_ChainRunWizard>App2.yxwz</Wiz_ChainRunWizard>
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
