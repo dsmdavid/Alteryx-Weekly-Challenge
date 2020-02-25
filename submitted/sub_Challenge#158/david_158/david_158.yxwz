@@ -1,0 +1,2620 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1674" y="834" width="720" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Insert Downloaded GIF</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="930" y="834" width="720" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create basic report</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="198" y="834" width="720" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Random quote from forismatic</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="594" y="594" width="324" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Pick one gif at random from those returned</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="198" y="594" width="384" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Query giphy and fetch results</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1026" y="594" width="492" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Giphy download gif</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1674" y="120" width="588" height="672" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Options - edit fields for search</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="Silver" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="Field1" />
+            <Field name="tool" />
+            <Field name="layout" />
+            <Field name="connector" />
+            <Field name="animal" />
+          </Fields>
+          <Data>
+            <r>
+              <c>https://giphy.com/search/</c>
+              <c>tool</c>
+              <c>layout</c>
+              <c>connector</c>
+              <c>animal</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" id="58a45b0d-580d-452c-8919-69117f2d6bfa" size="25" source="TextInput:" type="String" />
+            <Field name="tool" id="49dd95d7-d3ef-4d4f-a9e1-7cab11b5bb7a" size="4" source="TextInput:" type="String" />
+            <Field name="layout" id="84eca1d2-043c-495e-80df-56978c455e13" size="6" source="TextInput:" type="String" />
+            <Field name="connector" id="8d063c9a-ee7d-41f7-a902-6c85f33847e5" size="9" source="TextInput:" type="String" />
+            <Field name="animal" id="48e26684-bbec-4fdc-96d3-81bb5108949e" size="6" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="402" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>URL</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="Field1" selected="False" />
+              <Field name="tool" selected="False" />
+              <Field name="layout" selected="False" />
+              <Field name="connector" selected="False" />
+              <Field name="animal" selected="False" />
+              <Field name="URL" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="Field1" selected="False" />
+              <Field name="tool" selected="False" />
+              <Field name="layout" selected="False" />
+              <Field name="connector" selected="False" />
+              <Field name="animal" selected="False" />
+              <Field name="URL" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="486" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>DownloadData</Field>
+          <RegExExpression value="(https[^s\,\&lt;\&gt;]*?giphy.gif)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="String" size="40" />
+          </ParseComplex>
+          <Match>
+            <Field>Field1_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="1122" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>DownloadData</URLField>
+          <OutputMode>SpecificFile</OutputMode>
+          <OutputFileNameField>saveas</OutputFileNameField>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="Field1" selected="False" />
+              <Field name="DownloadData" selected="False" />
+              <Field name="DownloadHeaders" selected="False" />
+              <Field name="saveas" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="Field1" selected="False" />
+              <Field name="DownloadData" selected="False" />
+              <Field name="DownloadHeaders" selected="False" />
+              <Field name="saveas" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+            <Field name="rand" id="81f3d780-6661-4452-a031-407c9bc54ab4" scale="6" size="19" source="Formula: RAND()" type="FixedDecimal" />
+            <Field name="DownloadHeaders2" id="dba84620-06f7-4d13-8cfb-4af6ea6af6f6" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="582" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="DownloadData" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="DownloadData" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="DownloadData" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="666" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([DownloadData],&#xA;&quot;.*?/(\w+)/giphy.gif$&quot;, &quot;$1.gif&quot;)" field="saveas" size="1073741823" type="V_WString" />
+            <FormulaField expression="RAND()" field="rand" size="19.6" type="FixedDecimal" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>saveas and sorter</AnnotationText>
+          <DefaultAnnotationText>saveas = REGEX_Replace([DownloadData],
+".*?/(\w+)/giphy.gif$", "$1.gif")
+rand = ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+            <Field name="rand" id="81f3d780-6661-4452-a031-407c9bc54ab4" scale="6" size="19" source="Formula: RAND()" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="DownloadData" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="834" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+            <Field name="rand" id="81f3d780-6661-4452-a031-407c9bc54ab4" scale="6" size="19" source="Formula: RAND()" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="rand" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1026" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+            <Field name="rand" id="81f3d780-6661-4452-a031-407c9bc54ab4" scale="6" size="19" source="Formula: RAND()" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="rand" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output2">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+            <Field name="rand" id="81f3d780-6661-4452-a031-407c9bc54ab4" scale="6" size="19" source="Formula: RAND()" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="rand" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output3">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+            <Field name="rand" id="81f3d780-6661-4452-a031-407c9bc54ab4" scale="6" size="19" source="Formula: RAND()" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="rand" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1218" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Field1" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Count" id="bcfa02cf-5e27-4a8d-ae0a-b17d681e3f93" source="Summarize: Count" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1314" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Count" id="bcfa02cf-5e27-4a8d-ae0a-b17d681e3f93" source="Summarize: Count" type="Int64" />
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+            <Field name="rand" id="81f3d780-6661-4452-a031-407c9bc54ab4" scale="6" size="19" source="Formula: RAND()" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1518" y="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="13" />
+          <Fields>
+            <Field name="PreferredTool" />
+            <Field name="Type" />
+          </Fields>
+          <Data>
+            <r>
+              <c>RegEx</c>
+              <c>Tool</c>
+            </r>
+            <r>
+              <c>Make Columns</c>
+              <c>Tool</c>
+            </r>
+            <r>
+              <c>Expect Equal</c>
+              <c>Tool</c>
+            </r>
+            <r>
+              <c>Comment</c>
+              <c>Tool</c>
+            </r>
+            <r>
+              <c>Horizontal</c>
+              <c>Layout</c>
+            </r>
+            <r>
+              <c>Vertical</c>
+              <c>Layout</c>
+            </r>
+            <r>
+              <c>Straight</c>
+              <c>Connector</c>
+            </r>
+            <r>
+              <c>Perpendicular</c>
+              <c>Connector</c>
+            </r>
+            <r>
+              <c>Bezier</c>
+              <c>Connector</c>
+            </r>
+            <r>
+              <c>Dragon</c>
+              <c>Animal</c>
+            </r>
+            <r>
+              <c>Bee</c>
+              <c>Animal</c>
+            </r>
+            <r>
+              <c>Gryphon</c>
+              <c>Animal</c>
+            </r>
+            <r>
+              <c>Dog</c>
+              <c>Animal</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Options</AnnotationText>
+          <DefaultAnnotationText>Options</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1806" y="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="RecordID" />
+          <DataField field="PreferredTool" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="1" id="3ba608c5-02f4-4c7f-9a05-499bcd95c911" size="13" source="TextInput:" type="V_String" />
+            <Field name="2" id="cbf16cfc-e37f-48ab-b9bc-f0f209efc530" size="13" source="TextInput:" type="V_String" />
+            <Field name="3" id="b9d6afe1-9dd6-4eca-a91b-546a27c79342" size="13" source="TextInput:" type="V_String" />
+            <Field name="4" id="7b801401-ae02-4288-8069-e636c9d6161e" size="13" source="TextInput:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1614" y="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1902" y="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="10" />
+            <Field name="11" />
+            <Field name="12" />
+            <Field name="13" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Warn</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>RecordID</OldName>
+            <NewName>PreferredTool</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RegEx" id="b28d2db6-795c-4970-ad68-0f85f8ac0866" size="13" source="TextInput:" type="V_String" />
+            <Field name="Make Columns" id="48ca6c26-4b61-4b30-83d1-e304e2ce0efc" size="13" source="TextInput:" type="V_String" />
+            <Field name="Expect Equal" id="3439ee7e-e1a0-4fb3-8bc2-91d1709fb2d4" size="13" source="TextInput:" type="V_String" />
+            <Field name="Comment" id="bcc6697c-242c-42f2-b633-ef319515f29e" size="13" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="1998" y="204" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>Tool</Name>
+          <DefaultAnnotationText>Drop Down (24)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1806" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="RecordID" />
+          <DataField field="PreferredTool" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="5" id="9f1892ac-f27f-48c3-a4cb-efe779ad61f4" size="13" source="TextInput:" type="V_String" />
+            <Field name="6" id="3205c080-d907-410b-ae47-94186ef1bc0c" size="13" source="TextInput:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1902" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="5" />
+            <Field name="6" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Warn</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>RecordID</OldName>
+            <NewName>PreferredTool</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Horizontal" id="3edd241a-aa3b-4bbb-bd25-4b4273651be5" size="13" source="TextInput:" type="V_String" />
+            <Field name="Vertical" id="b3fc81c6-63e1-4940-a217-6b66fb54f657" size="13" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="1998" y="342" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>Layout</Name>
+          <DefaultAnnotationText>Drop Down (24)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1710" y="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-25 14:15:13</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Tool</Operand>
+              <StartDate>2020-02-25 14:15:13</StartDate>
+              <EndDate>2020-02-25 14:15:13</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Type] = "Tool"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1710" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-25 14:17:35</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Layout</Operand>
+              <StartDate>2020-02-25 14:17:35</StartDate>
+              <EndDate>2020-02-25 14:17:35</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Type] = "Layout"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1806" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="RecordID" />
+          <DataField field="PreferredTool" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="7" id="343d2c30-5dc8-4d71-be62-247507395ea2" size="13" source="TextInput:" type="V_String" />
+            <Field name="8" id="2eec96d3-5dcd-44f4-8e9b-178c0e8ab3c4" size="13" source="TextInput:" type="V_String" />
+            <Field name="9" id="cac3ea7f-2e0b-425e-b46b-1a26902d094d" size="13" source="TextInput:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1902" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="7" />
+            <Field name="8" />
+            <Field name="9" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Warn</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>RecordID</OldName>
+            <NewName>PreferredTool</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Straight" id="7887be1c-cba2-4b6d-be52-8db186e33cae" size="13" source="TextInput:" type="V_String" />
+            <Field name="Perpendicular" id="e2cf4d9a-7dfe-4f95-b510-059e5d4f4da7" size="13" source="TextInput:" type="V_String" />
+            <Field name="Bezier" id="c24c79ae-f36a-40f6-b005-98783c8d44db" size="13" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="1998" y="498" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>Connector</Name>
+          <DefaultAnnotationText>Drop Down (24)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1710" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-25 14:17:35</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Connector</Operand>
+              <StartDate>2020-02-25 14:17:35</StartDate>
+              <EndDate>2020-02-25 14:17:35</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Type] = "Connector"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1806" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="RecordID" />
+          <DataField field="PreferredTool" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="10" id="91425e10-2a71-4630-83cf-2f068d98fd33" size="13" source="TextInput:" type="V_String" />
+            <Field name="11" id="97e70daf-07cf-43d9-ba4e-7be487df857b" size="13" source="TextInput:" type="V_String" />
+            <Field name="12" id="2c59e278-fdc7-48c7-86a6-e50a4ff10e9f" size="13" source="TextInput:" type="V_String" />
+            <Field name="13" id="20aef831-70c2-4ffd-861e-722e50591a17" size="13" source="TextInput:" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1902" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="1" />
+            <Field name="2" />
+            <Field name="3" />
+            <Field name="4" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Warn</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>RecordID</OldName>
+            <NewName>PreferredTool</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Dragon" id="80b872b4-e08e-44d8-8441-bfb3c7c1d646" size="13" source="TextInput:" type="V_String" />
+            <Field name="Bee" id="36d86e19-2459-4ad7-9919-d2236e0e70e0" size="13" source="TextInput:" type="V_String" />
+            <Field name="Gryphon" id="0358393d-4596-4b09-a330-0c9ba04cd1a4" size="13" source="TextInput:" type="V_String" />
+            <Field name="Dog" id="f7a6ee1e-7649-4a96-8a3d-04e3348d09d5" size="13" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="1998" y="654" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>Animal</Name>
+          <DefaultAnnotationText>Drop Down (24)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1710" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-25 14:17:35</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Animal</Operand>
+              <StartDate>2020-02-25 14:17:35</StartDate>
+              <EndDate>2020-02-25 14:17:35</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Type] = "Animal"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="17b6f79d-60ae-4d66-a47a-a4ece574d8df" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="PreferredTool" id="81f14234-d4fc-43c8-895d-d3b92852cd6c" size="13" source="TextInput:" type="V_String" />
+            <Field name="Type" id="4772e47e-2393-45fe-a8ba-cbcbb3cc02bf" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="2094" y="204" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="2094" y="342" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="2094" y="498" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="2094" y="654" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="210" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Field1]+[tool]+&quot;-&quot;+[layout]+&quot;-&quot;+[connector]+&quot;-&quot;+[animal]" field="URL" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[URL = [Field1]+[tool]+"-"+[layout]+"-"+[connector]+"-"+[animal]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" id="58a45b0d-580d-452c-8919-69117f2d6bfa" size="25" source="TextInput:" type="String" />
+            <Field name="tool" id="49dd95d7-d3ef-4d4f-a9e1-7cab11b5bb7a" size="4" source="TextInput:" type="String" />
+            <Field name="layout" id="84eca1d2-043c-495e-80df-56978c455e13" size="6" source="TextInput:" type="String" />
+            <Field name="connector" id="8d063c9a-ee7d-41f7-a902-6c85f33847e5" size="9" source="TextInput:" type="String" />
+            <Field name="animal" id="48e26684-bbec-4fdc-96d3-81bb5108949e" size="6" source="TextInput:" type="String" />
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="306" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="URL" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="750" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="rand" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>rand - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URL" id="b96134c4-c3e4-4f2e-9624-2398f63fd75b" size="1073741823" source="Formula: [Field1]+[tool]+&quot;-&quot;+[layout]+&quot;..." type="V_WString" />
+            <Field name="DownloadData" id="e26ba3cc-7fca-4633-bb21-232df9efd02d" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="b06a2fcc-452c-4917-a1c6-32914e585027" size="2147483647" source="Download" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+            <Field name="rand" id="81f3d780-6661-4452-a031-407c9bc54ab4" scale="6" size="19" source="Formula: RAND()" type="FixedDecimal" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="rand" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="114" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="URLq" />
+          </Fields>
+          <Data>
+            <r>
+              <c>https://api.forismatic.com/api/1.0/?method=getQuote&amp;lang=en&amp;format=json</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URLq" id="be2001de-6d52-4975-aa4d-f63885d55471" size="71" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+        <Position x="402" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <URLField>URLq</URLField>
+          <OutputMode>String</OutputMode>
+          <CodePage>65001</CodePage>
+          <EncodeURLs value="True" />
+          <Headers>
+            <NameValues />
+            <Fields orderChanged="False">
+              <Field name="URLq" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </Fields>
+          </Headers>
+          <Payload>
+            <HTTPAction>GET</HTTPAction>
+            <QueryStringBodyMode>Compose</QueryStringBodyMode>
+            <ComposeNameValues />
+            <ComposeFields orderChanged="False">
+              <Field name="URLq" selected="False" />
+              <Field name="*Unknown" selected="False" />
+            </ComposeFields>
+          </Payload>
+          <UserName />
+          <Password />
+          <numConnections>2</numConnections>
+          <Timeout>600</Timeout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URLq" id="be2001de-6d52-4975-aa4d-f63885d55471" size="71" source="TextInput:" type="String" />
+            <Field name="DownloadData" id="9099716a-eb33-41eb-b165-a03bf3a22784" size="1073741823" source="Download" type="V_WString" />
+            <Field name="DownloadHeaders" id="c53e5476-7d0a-4e66-9dcc-42c5946e5103" size="2147483647" source="Download" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+        <Position x="594" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JSON_Field>DownloadData</JSON_Field>
+          <IncludeInOutput value="False" />
+          <SingleField value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="URLq" id="be2001de-6d52-4975-aa4d-f63885d55471" size="71" source="TextInput:" type="String" />
+            <Field name="DownloadHeaders" id="c53e5476-7d0a-4e66-9dcc-42c5946e5103" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" id="93d58784-8bb3-4d93-a739-1bdb3b5bbd07" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" id="ba4a7379-09d2-4b5f-aaa5-b72d96d051fb" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="762" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([JSON_Name],"Text") ||
+Contains([JSON_Name], "Author")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([JSON_Name],"Text") ||
+Contains([JSON_Name], "Author")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="URLq" id="be2001de-6d52-4975-aa4d-f63885d55471" size="71" source="TextInput:" type="String" />
+            <Field name="DownloadHeaders" id="c53e5476-7d0a-4e66-9dcc-42c5946e5103" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" id="93d58784-8bb3-4d93-a739-1bdb3b5bbd07" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" id="ba4a7379-09d2-4b5f-aaa5-b72d96d051fb" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="URLq" id="be2001de-6d52-4975-aa4d-f63885d55471" size="71" source="TextInput:" type="String" />
+            <Field name="DownloadHeaders" id="c53e5476-7d0a-4e66-9dcc-42c5946e5103" size="2147483647" source="Download" type="V_String" />
+            <Field name="JSON_Name" id="93d58784-8bb3-4d93-a739-1bdb3b5bbd07" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_ValueString" id="ba4a7379-09d2-4b5f-aaa5-b72d96d051fb" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="846" y="906" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="JSON_Name" />
+          <DataField field="JSON_ValueString" />
+          <Methods>
+            <Method method="First" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="930" y="906" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Quote</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Bahnschrift Condensed;}{\f1\fnil\fcharset0 Century Gothic;}{\f2\fnil\fcharset0 Arial;}}
+{\colortbl ;\red169\green169\blue169;\red173\green216\blue230;}
+\viewkind4\uc1\pard\cf1\f0\fs53 "\i\f1\fs41 [quoteText:A]\i0\f0\fs53 "\cf0\f2\fs24\par
+\par
+\pard\qr\cf2\f0\fs41 [quoteAuthor:A]\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>"[quoteText:A]"
+
+[quoteAuthor:...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Quote" id="c13044af-d287-413a-ac98-c339310e71b1" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+          <SortInfo />
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1002" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_63256_6eee67e27e7c4cba8e76b0c9d2dbc2ed_\Engine_42648_74b8dfd70bb64683b1e7384cb90f1d41_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="81">
+      <GuiSettings>
+        <Position x="1386" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ControlParams"><![CDATA[Control Parameter (4)=saveas
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>imageReader (57)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output8">
+          <RecordInfo>
+            <Field name="Image" id="73dba2c3-e298-4232-9397-8eca3fffe14f" size="2147483647" source="Report:Image: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro=".\\imageReader.yxmc" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1458" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_63256_6eee67e27e7c4cba8e76b0c9d2dbc2ed_\Engine_42648_a5e21f38c97a49d4a69ac21163850478_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="1314" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>480</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Yout Selection" selected="True" Width="" Alignment="Center" />
+            <Field name="Table" selected="True" Width="" Alignment="Center" />
+            <Field name="Output" selected="True" Width="" Alignment="Center" />
+            <Field name="Quote" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Layout" id="f670dcff-047f-4cb9-9896-e59bcaa5c7a0" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BlockUntilDone.BlockUntilDone">
+        <Position x="1410" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Layout" id="f670dcff-047f-4cb9-9896-e59bcaa5c7a0" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output2">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Layout" id="f670dcff-047f-4cb9-9896-e59bcaa5c7a0" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output3">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Layout" id="f670dcff-047f-4cb9-9896-e59bcaa5c7a0" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBlockUntilDone" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings>
+        <Position x="1506" y="966" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" id="f38c92b8-40b6-4b82-8a91-e7e5257f5e68" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1602" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Count" id="f38c92b8-40b6-4b82-8a91-e7e5257f5e68" source="(Multiple Sources)" type="Int64" />
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Layout" id="f670dcff-047f-4cb9-9896-e59bcaa5c7a0" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings>
+        <Position x="1698" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Numeric Up Down (12)">2</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output8">
+          <RecordInfo>
+            <Field name="Field1" id="2dd443c7-5439-4bbf-81df-be34a8f5f8f4" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CReW_WaitASecond.yxmc" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicInput.DynamicInput">
+        <Position x="1890" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <InputConfiguration>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">.\pre-output.html</File>
+              <FormatSpecificOptions>
+                <CodePage>28591</CodePage>
+                <Delimeter>\0</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>10000</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>False</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+          </InputConfiguration>
+          <Mode>ReadList</Mode>
+          <ReadList_Field>filename</ReadList_Field>
+          <ReadList_Type>FileName</ReadList_Type>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>pre-output.html</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" id="cad3ac09-bf08-4703-a500-4d431e4c7653" size="10000" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#158\david_158\pre-output.html" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicInput" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1794" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;pre-output&quot;" field="filename" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[filename = "pre-output"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" id="2dd443c7-5439-4bbf-81df-be34a8f5f8f4" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="filename" id="b8244e38-a40e-42a6-867b-e29cafd3874e" size="1073741823" source="Formula: &quot;pre-output&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2082" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Replace([Field_1], &quot;&lt;/body&gt;&quot;, '&lt;img src=&quot;.\'+saveas+'&quot;&gt;&lt;/img&gt;&lt;/body&gt;')" field="Field_1" size="10000" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>insert gif before end of body</AnnotationText>
+          <DefaultAnnotationText>Field_1 = Replace([Field_1], "&lt;/body&gt;", '&lt;img src=".\'+saveas+'"&gt;&lt;/img&gt;&lt;/body&gt;')...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" id="cad3ac09-bf08-4703-a500-4d431e4c7653" size="10000" source="Formula: Replace([Field_1], &quot;&lt;/body&gt;&quot;, ..." type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2274" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">.\output.html</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>\0</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>False</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>output.html</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1986" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_URL" selected="False" input="Source_" />
+                <SelectField field="Source_DownloadData" selected="False" input="Source_" />
+                <SelectField field="Source_DownloadHeaders" selected="False" input="Source_" />
+                <SelectField field="Source_rand" selected="False" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" id="cad3ac09-bf08-4703-a500-4d431e4c7653" size="10000" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#158\david_158\pre-output.html" type="V_String" />
+            <Field name="saveas" id="77edccdd-50bc-4bbf-8d45-54ade6517198" size="1073741823" source="Formula: REGEX_Replace([DownloadData],&#xA;..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2178" y="942" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="saveas" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" id="cad3ac09-bf08-4703-a500-4d431e4c7653" size="10000" source="Formula: Replace([Field_1], &quot;&lt;/body&gt;&quot;, ..." type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="942" y="966" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="tool" selected="True" Alignment="Right" />
+            <Field name="layout" selected="True" Alignment="Right" />
+            <Field name="connector" selected="True" Alignment="Right" />
+            <Field name="animal" selected="True" Alignment="Right" />
+            <Field name="Field1" selected="False" />
+            <Field name="URL" selected="False" />
+            <Field name="*Unknown" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Table" id="25c4a8f6-9de9-40c5-9251-ef73a94f588b" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1026" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Quote" id="c13044af-d287-413a-ac98-c339310e71b1" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Quote" id="c13044af-d287-413a-ac98-c339310e71b1" size="2147483647" source="Report:Text:" type="V_String" />
+            <Field name="Table" id="25c4a8f6-9de9-40c5-9251-ef73a94f588b" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Table" id="25c4a8f6-9de9-40c5-9251-ef73a94f588b" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1122" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Yout Selection</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 You had an unusual combination of answers...\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>You had an unusual combination...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Quote" id="c13044af-d287-413a-ac98-c339310e71b1" size="2147483647" source="Report:Text:" type="V_String" />
+            <Field name="Table" id="25c4a8f6-9de9-40c5-9251-ef73a94f588b" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+            <Field name="Yout Selection" id="08cd0124-9c74-449e-b5ff-393125c44680" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1218" y="918" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Output</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Free APIs and giphy search have this to say about you:\par
+\par
+  \par
+  \par
+  \par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Free APIs and giphy search hav...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="quoteAuthor" id="1f933b06-cd48-4e5e-b08c-93d5b086d45e" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="quoteText" id="27f7b62b-3427-4b2c-acfe-93ebd68f7621" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="Quote" id="c13044af-d287-413a-ac98-c339310e71b1" size="2147483647" source="Report:Text:" type="V_String" />
+            <Field name="Table" id="25c4a8f6-9de9-40c5-9251-ef73a94f588b" size="2147483647" source="Report:Table:Basic:" type="V_String" />
+            <Field name="Yout Selection" id="08cd0124-9c74-449e-b5ff-393125c44680" size="2147483647" source="Report:Text:" type="V_String" />
+            <Field name="Output" id="39cf8922-8ab4-4321-851e-2c9545421706" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings>
+        <Position x="1590" y="858" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>helperPreOutputSave (80)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro=".\\helperPreOutputSave.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Unique" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="73" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="73" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output2" />
+      <Destination ToolID="18" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="81" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="22" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Question Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="24" Connection="Question" />
+      <Destination ToolID="41" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="True" />
+      <Destination ToolID="28" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Question Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="29" Connection="Question" />
+      <Destination ToolID="42" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="False" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="False" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="34" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Question Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="35" Connection="Question" />
+      <Destination ToolID="43" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="True" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="False" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="38" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Question Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="39" Connection="Question" />
+      <Destination ToolID="44" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection name="#2" Wireless="True">
+      <Origin ToolID="41" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#1" Wireless="True">
+      <Origin ToolID="42" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#3" Wireless="True">
+      <Origin ToolID="43" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection name="#4" Wireless="True">
+      <Origin ToolID="44" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="True" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="77" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="77" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output8" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="66" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output2" />
+      <Destination ToolID="67" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output9" />
+      <Destination ToolID="67" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="82" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="68" Connection="Input7" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output8" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Join" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Tool</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Layout</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Connector</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Animal</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david_158</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="41" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/Data/r/c[2]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="42" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/Data/r/c[3]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="43" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/Data/r/c[4]</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="44" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/Data/r/c[5]</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (23)</Name>
+          <ToolId value="23" />
+          <Questions>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Which tool would you rather use?</Description>
+              <Name>Tool</Name>
+              <ToolId value="24" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Field</Mode>
+              <Field_ToolId value="22" />
+              <Field_ConnectionName />
+              <Field_Connection>Output</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
+              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Are you OK or do you prefer a vertical layout?</Description>
+              <Name>Layout</Name>
+              <ToolId value="29" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Field</Mode>
+              <Field_ToolId value="28" />
+              <Field_ConnectionName />
+              <Field_Connection>Output</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
+              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Do you need help? Do you fancy rect angles or do you see the beauty of the bezier?</Description>
+              <Name>Connector</Name>
+              <ToolId value="35" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Field</Mode>
+              <Field_ToolId value="34" />
+              <Field_ConnectionName />
+              <Field_Connection>Output</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
+              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Bark? Growl? What suits you?</Description>
+              <Name>Animal</Name>
+              <ToolId value="39" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>Field</Mode>
+              <Field_ToolId value="38" />
+              <Field_ConnectionName />
+              <Field_Connection>Output</Field_Connection>
+              <Field_IsOutput value="True" />
+              <Field_IncludeNone value="False" />
+              <Field_FilterTypes>Bool,Byte,Int16,Int32,Int64,FixedDecimal,Float,Double,String,WString,V_String,V_WString,Date,Time,DateTime,Blob,SpatialObj</Field_FilterTypes>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Wizard</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="56" Selected="False" />
+        <Tool ToolId="68" Selected="True" />
+        <Tool ToolId="58" Selected="False" />
+        <Tool ToolId="81" Selected="True" />
+        <Tool ToolId="82" Selected="True" />
+        <Tool ToolId="66" Selected="True" />
+        <Tool ToolId="72" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

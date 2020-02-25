@@ -1,0 +1,612 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="606" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Main</Name>
+          <Abbrev>m</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Number" />
+                <Field name="Position" />
+                <Field name="pos" />
+                <Field name="Left_Left_Right_Number" />
+                <Field name="Left_Left_Right_Position" />
+                <Field name="Right_pos2" />
+                <Field name="Right_Number2" />
+                <Field name="Right_Position2" />
+                <Field name="Right_pos3" />
+                <Field name="Left_Right_Number" />
+                <Field name="Left_Right_Position" />
+                <Field name="Left_Right_pos" />
+                <Field name="Right_Number" />
+                <Field name="Right_Position" />
+                <Field name="Right_pos" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>20</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c>12</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c>28</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c>24</c>
+                  <c>6</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>6</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>14</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>13</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>10</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>23</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>32</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>26</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>18</c>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>0</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>8</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>27</c>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>11</c>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>21</c>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>34</c>
+                  <c>4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>17</c>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>16</c>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>19</c>
+                  <c>5</c>
+                  <c>5</c>
+                  <c>33</c>
+                  <c>5</c>
+                  <c>5</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>m Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Number" id="4fa19771-e442-4a31-bda6-1afc1eb0b5c9" source="TextInput:" type="Byte" />
+            <Field name="Position" id="b9fad247-11dd-46fc-b43f-ff99e84e6b33" source="TextInput:" type="Byte" />
+            <Field name="pos" id="8e438002-a04d-4f12-a2f3-8b782f5bca7c" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Right_Number" id="22a841ca-8388-4de0-a8a3-f773d168b13f" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Right_Position" id="cea6c636-d5d2-4578-8916-22e4532a6c82" source="TextInput:" type="Byte" />
+            <Field name="Right_pos2" id="55c4c259-4127-4957-b3a2-0fb1071f2279" source="TextInput:" type="Byte" />
+            <Field name="Right_Number2" id="0197ad64-a8ef-41e2-902a-2f790d113b5c" source="TextInput:" type="Byte" />
+            <Field name="Right_Position2" id="8c7b0305-810a-49d4-a34b-581cfb54a485" source="TextInput:" type="Byte" />
+            <Field name="Right_pos3" id="6650889a-8fdf-42ae-be79-5fff7579025f" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_Number" id="31ec9cc9-b8a8-4226-b5e2-27f24123b4dd" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_Position" id="2624f236-c975-48c3-ab14-3f1eef4af9d7" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_pos" id="1c1c16ed-8c78-4907-9411-b99ae21ba61b" source="TextInput:" type="Byte" />
+            <Field name="Right_Number" id="44f48be3-4600-4cbe-aa66-1d337eff1e11" source="TextInput:" type="Byte" />
+            <Field name="Right_Position" id="688f3138-893f-402a-8c2c-7bd13ee34c1a" source="TextInput:" type="Byte" />
+            <Field name="Right_pos" id="cb428cd6-5633-44d2-9461-7dc5c842aa60" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1362" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="pos" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="pos" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Left_Left_Right_Number" selected="True" rename="Left_Left_Left_Right_Number" input="Left_" />
+                <SelectField field="Left_Left_Left_Right_Position" selected="True" rename="Left_Left_Left_Right_Position" input="Left_" />
+                <SelectField field="Left_Left_Right_Number" selected="True" rename="Left_Left_Right_Number" input="Left_" />
+                <SelectField field="Left_Left_Right_Position" selected="True" rename="Left_Left_Right_Position" input="Left_" />
+                <SelectField field="Left_Left_Right_pos" selected="True" rename="Left_Left_Right_pos" input="Left_" />
+                <SelectField field="Left_Right_Number" selected="True" rename="Left_Right_Number" input="Left_" />
+                <SelectField field="Left_Right_Position" selected="True" rename="Left_Right_Position" input="Left_" />
+                <SelectField field="Left_Right_pos" selected="True" rename="Left_Right_pos" input="Left_" />
+                <SelectField field="Right_Number" selected="True" rename="Right_Number" input="Right_" />
+                <SelectField field="Right_Position" selected="True" rename="Right_Position" input="Right_" />
+                <SelectField field="Right_pos" selected="True" rename="Right_pos" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Number" id="4fa19771-e442-4a31-bda6-1afc1eb0b5c9" source="TextInput:" type="Byte" />
+            <Field name="Position" id="b9fad247-11dd-46fc-b43f-ff99e84e6b33" source="TextInput:" type="Byte" />
+            <Field name="pos" id="8e438002-a04d-4f12-a2f3-8b782f5bca7c" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Right_Number" id="22a841ca-8388-4de0-a8a3-f773d168b13f" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Right_Position" id="cea6c636-d5d2-4578-8916-22e4532a6c82" source="TextInput:" type="Byte" />
+            <Field name="Right_pos2" id="55c4c259-4127-4957-b3a2-0fb1071f2279" source="TextInput:" type="Byte" />
+            <Field name="Right_Number2" id="0197ad64-a8ef-41e2-902a-2f790d113b5c" source="TextInput:" type="Byte" />
+            <Field name="Right_Position2" id="8c7b0305-810a-49d4-a34b-581cfb54a485" source="TextInput:" type="Byte" />
+            <Field name="Right_pos3" id="6650889a-8fdf-42ae-be79-5fff7579025f" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_Number" id="31ec9cc9-b8a8-4226-b5e2-27f24123b4dd" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_Position" id="2624f236-c975-48c3-ab14-3f1eef4af9d7" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_pos" id="1c1c16ed-8c78-4907-9411-b99ae21ba61b" source="TextInput:" type="Byte" />
+            <Field name="Right_Number" id="44f48be3-4600-4cbe-aa66-1d337eff1e11" source="TextInput:" type="Byte" />
+            <Field name="Right_Position" id="688f3138-893f-402a-8c2c-7bd13ee34c1a" source="TextInput:" type="Byte" />
+            <Field name="Right_pos" id="cb428cd6-5633-44d2-9461-7dc5c842aa60" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="pos" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Number" id="4fa19771-e442-4a31-bda6-1afc1eb0b5c9" source="TextInput:" type="Byte" />
+            <Field name="Position" id="b9fad247-11dd-46fc-b43f-ff99e84e6b33" source="TextInput:" type="Byte" />
+            <Field name="pos" id="8e438002-a04d-4f12-a2f3-8b782f5bca7c" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Left_Right_Number" id="22a841ca-8388-4de0-a8a3-f773d168b13f" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Left_Right_Position" id="cea6c636-d5d2-4578-8916-22e4532a6c82" source="TextInput:" type="Byte" />
+            <Field name="Right_pos2" id="55c4c259-4127-4957-b3a2-0fb1071f2279" source="TextInput:" type="Byte" />
+            <Field name="Right_Number2" id="0197ad64-a8ef-41e2-902a-2f790d113b5c" source="TextInput:" type="Byte" />
+            <Field name="Right_Position2" id="8c7b0305-810a-49d4-a34b-581cfb54a485" source="TextInput:" type="Byte" />
+            <Field name="Right_pos3" id="6650889a-8fdf-42ae-be79-5fff7579025f" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Right_Number" id="31ec9cc9-b8a8-4226-b5e2-27f24123b4dd" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Right_Position" id="2624f236-c975-48c3-ab14-3f1eef4af9d7" source="TextInput:" type="Byte" />
+            <Field name="Left_Left_Right_pos" id="1c1c16ed-8c78-4907-9411-b99ae21ba61b" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_Number" id="44f48be3-4600-4cbe-aa66-1d337eff1e11" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_Position" id="688f3138-893f-402a-8c2c-7bd13ee34c1a" source="TextInput:" type="Byte" />
+            <Field name="Left_Right_pos" id="cb428cd6-5633-44d2-9461-7dc5c842aa60" source="TextInput:" type="Byte" />
+            <Field name="Right_Number" id="180de041-5f6a-4d9d-8320-73ef3dd6b027" source="TextInput:" type="Byte" />
+            <Field name="Right_Position" id="c4a117c4-abf2-425e-8c6c-d654406bfb0f" source="TextInput:" type="Byte" />
+            <Field name="step" id="c1ead9a4-5064-4091-af74-f20f9bb60c4e" source="Formula: 0" type="Int16" />
+            <Field name="Right_pos" id="fe34fba5-1fc3-4c1e-822c-5fd0d419e66a" source="Formula: Mod([Position]+[step],6)" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="pos" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Number" id="180de041-5f6a-4d9d-8320-73ef3dd6b027" source="TextInput:" type="Byte" />
+            <Field name="Position" id="c4a117c4-abf2-425e-8c6c-d654406bfb0f" source="TextInput:" type="Byte" />
+            <Field name="step" id="c1ead9a4-5064-4091-af74-f20f9bb60c4e" source="Formula: 0" type="Int16" />
+            <Field name="pos" id="fe34fba5-1fc3-4c1e-822c-5fd0d419e66a" source="Formula: Mod([Position]+[step],6)" type="Int16" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="pos" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="822" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Mod([Position]+[step],6)" field="pos" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[pos = Mod([Position]+[step],6)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Number" id="180de041-5f6a-4d9d-8320-73ef3dd6b027" source="TextInput:" type="Byte" />
+            <Field name="Position" id="c4a117c4-abf2-425e-8c6c-d654406bfb0f" source="TextInput:" type="Byte" />
+            <Field name="step" id="c1ead9a4-5064-4091-af74-f20f9bb60c4e" source="Formula: 0" type="Int16" />
+            <Field name="pos" id="fe34fba5-1fc3-4c1e-822c-5fd0d419e66a" source="Formula: Mod([Position]+[step],6)" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="690" y="318" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control Parameter (6)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="696" y="390" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="690" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0" field="step" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[step = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Number" id="180de041-5f6a-4d9d-8320-73ef3dd6b027" source="TextInput:" type="Byte" />
+            <Field name="Position" id="c4a117c4-abf2-425e-8c6c-d654406bfb0f" source="TextInput:" type="Byte" />
+            <Field name="step" id="c1ead9a4-5064-4091-af74-f20f9bb60c4e" source="Formula: 0" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1518" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output11</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="570" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Ring</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Number" />
+                <Field name="Position" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>10</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>6</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Ring5</AnnotationText>
+          <DefaultAnnotationText>Ring5</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Number" id="180de041-5f6a-4d9d-8320-73ef3dd6b027" source="TextInput:" type="Byte" />
+            <Field name="Position" id="c4a117c4-abf2-425e-8c6c-d654406bfb0f" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Question" />
+      <Destination ToolID="7" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Action" />
+      <Destination ToolID="10" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (6)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (1)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (11)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (12)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>inner</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="7" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>0</ReplaceText>
+              <Destination>10/FormulaFields/FormulaField/@expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (5)</Name>
+          <ToolId value="5" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (6)</Description>
+              <Name>Control Parameter (6)</Name>
+              <ToolId value="6" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (11)</Description>
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (12)</Name>
+              <ToolId value="12" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (6)</Name>
+            <Description>Control Parameter (6)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="11" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

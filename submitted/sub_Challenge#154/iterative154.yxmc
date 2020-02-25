@@ -1,0 +1,1224 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="54" width="552" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Append new combinations</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="714" y="246" width="1176" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Switch to decide when to end iterations</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="714" y="54" width="1176" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Remove duplicates due to different order (i.e. browse,on,output,off === output,off,browse,on)</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>dynamic</Name>
+          <Abbrev>D</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="Options" />
+                <Field name="Option2" />
+                <Field name="J" />
+                <Field name="Tracker" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>Browse</c>
+                  <c>On</c>
+                  <c>1</c>
+                  <c>Browse,On</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Browse</c>
+                  <c>Off</c>
+                  <c>1</c>
+                  <c>Browse,Off</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>Input Data</c>
+                  <c>On</c>
+                  <c>1</c>
+                  <c>Input Data,On</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Input Data</c>
+                  <c>Off</c>
+                  <c>1</c>
+                  <c>Input Data,Off</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>Output Data</c>
+                  <c>On</c>
+                  <c>1</c>
+                  <c>Output Data,On</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>Output Data</c>
+                  <c>Off</c>
+                  <c>1</c>
+                  <c>Output Data,Off</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>D Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="15" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="450" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!Contains([Tracker], [Right_Options])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!Contains([Tracker], [Right_Options])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="1000000" source="TextInput:" type="V_WString" />
+            <Field name="Right_Options" id="2ee2560d-7241-4c88-a2af-28979d459354" size="11" source="TextInput:" type="String" />
+            <Field name="Right_Option2" id="9ef1efe5-499a-4501-9fa8-b17c3aa4d6e1" size="3" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="1000000" source="TextInput:" type="V_WString" />
+            <Field name="Right_Options" id="2ee2560d-7241-4c88-a2af-28979d459354" size="11" source="TextInput:" type="String" />
+            <Field name="Right_Option2" id="9ef1efe5-499a-4501-9fa8-b17c3aa4d6e1" size="3" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="594" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Tracker] +','+[Right_Options]+','+[Right_Option2]" field="Tracker" size="1000000" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update tracker</AnnotationText>
+          <DefaultAnnotationText><![CDATA[Tracker = [Tracker] +','+[Right_Options]+','+[Right_Option2]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="1000000" source="Formula: [Tracker] +','+[Right_Options]..." type="V_WString" />
+            <Field name="Right_Options" id="2ee2560d-7241-4c88-a2af-28979d459354" size="11" source="TextInput:" type="String" />
+            <Field name="Right_Option2" id="9ef1efe5-499a-4501-9fa8-b17c3aa4d6e1" size="3" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="750" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Options" selected="True" rename="Source_Options" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="1000000" source="Formula: [Tracker] +','+[Right_Options]..." type="V_WString" />
+            <Field name="Right_Options" id="2ee2560d-7241-4c88-a2af-28979d459354" size="11" source="TextInput:" type="String" />
+            <Field name="Right_Option2" id="9ef1efe5-499a-4501-9fa8-b17c3aa4d6e1" size="3" source="TextInput:" type="String" />
+            <Field name="Source_Options" id="081f1ffb-c88a-4a19-9d63-991b25e828a5" size="11" source="Summarize: GroupBy - Options" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="306" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Options" action="GroupBy" rename="Options" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Options</AnnotationText>
+          <DefaultAnnotationText>Options</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Options" id="081f1ffb-c88a-4a19-9d63-991b25e828a5" size="11" source="Summarize: GroupBy - Options" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Options" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="930" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!Contains([Tracker], [Source_Options])</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!Contains([Tracker], [Source_Options])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="1000000" source="Formula: [Tracker] +','+[Right_Options]..." type="V_WString" />
+            <Field name="Right_Options" id="2ee2560d-7241-4c88-a2af-28979d459354" size="11" source="TextInput:" type="String" />
+            <Field name="Right_Option2" id="9ef1efe5-499a-4501-9fa8-b17c3aa4d6e1" size="3" source="TextInput:" type="String" />
+            <Field name="Source_Options" id="081f1ffb-c88a-4a19-9d63-991b25e828a5" size="11" source="Summarize: GroupBy - Options" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="1000000" source="Formula: [Tracker] +','+[Right_Options]..." type="V_WString" />
+            <Field name="Right_Options" id="2ee2560d-7241-4c88-a2af-28979d459354" size="11" source="TextInput:" type="String" />
+            <Field name="Right_Option2" id="9ef1efe5-499a-4501-9fa8-b17c3aa4d6e1" size="3" source="TextInput:" type="String" />
+            <Field name="Source_Options" id="081f1ffb-c88a-4a19-9d63-991b25e828a5" size="11" source="Summarize: GroupBy - Options" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings>
+        <Position x="1026" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" id="9f0aad6d-0bc3-44a0-b4a2-82d8926ae399" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1926" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+            <Field name="J" id="a4c5559b-4d89-4f85-9a83-d9a3ffd9bc50" size="1073741823" source="Formula: 1" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Options" id="22b2f7ac-9b5c-4733-b70a-e25d03f07ee1" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Option2" id="fae8f9d7-223e-4d7d-8f8a-51fe274c2f93" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field name="Count" id="9f0aad6d-0bc3-44a0-b4a2-82d8926ae399" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2022" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-24 22:58:35</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2020-02-24 22:58:35</StartDate>
+              <EndDate>2020-02-24 22:58:35</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] &gt; 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+            <Field name="J" id="a4c5559b-4d89-4f85-9a83-d9a3ffd9bc50" size="1073741823" source="Formula: 1" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Options" id="22b2f7ac-9b5c-4733-b70a-e25d03f07ee1" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Option2" id="fae8f9d7-223e-4d7d-8f8a-51fe274c2f93" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field name="Count" id="9f0aad6d-0bc3-44a0-b4a2-82d8926ae399" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+            <Field name="J" id="a4c5559b-4d89-4f85-9a83-d9a3ffd9bc50" size="1073741823" source="Formula: 1" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Options" id="22b2f7ac-9b5c-4733-b70a-e25d03f07ee1" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Option2" id="fae8f9d7-223e-4d7d-8f8a-51fe274c2f93" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field name="Count" id="9f0aad6d-0bc3-44a0-b4a2-82d8926ae399" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Tracker" selected="True" type="V_WString" size="1000000" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>update types</AnnotationText>
+          <DefaultAnnotationText>update types</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="1000000" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2214" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>iterative</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>i Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2226" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>O Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2118" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="J" selected="True" />
+            <SelectField field="Tracker" selected="True" />
+            <SelectField field="Options" selected="True" />
+            <SelectField field="Option2" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+            <Field name="J" id="a4c5559b-4d89-4f85-9a83-d9a3ffd9bc50" size="1073741823" source="Formula: 1" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Options" id="22b2f7ac-9b5c-4733-b70a-e25d03f07ee1" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Option2" id="fae8f9d7-223e-4d7d-8f8a-51fe274c2f93" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="726" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Tracker" action="GroupBy" rename="Tracker" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tracker" id="8900235e-193e-4cfb-bdc9-3299ad5c5cf4" size="1000000" source="Summarize: GroupBy - Tracker" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Tracker" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="937" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Tracker</Field>
+          <RegExExpression value="([^,]+,[^,]+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_WString" size="1073741823" />
+          </ParseComplex>
+          <Match>
+            <Field>Tracker_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="527abea2-b99c-4b4d-b174-156b5327f7a2" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="8900235e-193e-4cfb-bdc9-3299ad5c5cf4" size="1000000" source="Summarize: GroupBy - Tracker" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1148" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+            <SummarizeField field="Tracker" action="Concat" rename="Concat_Tracker">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="81a5c74d-ba1c-4a6e-9b74-91bc8fe1f1ca" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field name="Concat_Tracker" id="ce784deb-a2db-480d-aafd-41236d797810" size="1073741823" source="Summarize: Concat - Tracker" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1254" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Concat_Tracker" action="GroupBy" rename="Tracker" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Concat_Tracker" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="1571" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Options</Field>
+          <RegExExpression value="([^,]+,[^,]+)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseSimple</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="True" />
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="RegExOut1" type="V_WString" size="1073741823" />
+          </ParseComplex>
+          <Match>
+            <Field>Tracker_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+            <Field name="J" id="a4c5559b-4d89-4f85-9a83-d9a3ffd9bc50" size="1073741823" source="Formula: 1" type="V_WString" />
+            <Field name="Options" id="03b67d47-2d32-491e-80af-965bffdef25f" size="1073741823" source="Formula: [Tracker]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Concat_Tracker" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1782" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Options" selected="False" />
+            <SelectField field="Options1" selected="True" rename="Options" />
+            <SelectField field="Options2" selected="True" rename="Option2" />
+            <SelectField field="Value" selected="False" rename="Options" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+            <Field name="J" id="a4c5559b-4d89-4f85-9a83-d9a3ffd9bc50" size="1073741823" source="Formula: 1" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Options" id="22b2f7ac-9b5c-4733-b70a-e25d03f07ee1" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Option2" id="fae8f9d7-223e-4d7d-8f8a-51fe274c2f93" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="832" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="527abea2-b99c-4b4d-b174-156b5327f7a2" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="8900235e-193e-4cfb-bdc9-3299ad5c5cf4" size="1000000" source="Summarize: GroupBy - Tracker" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Tracker" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1043" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Ascending" />
+            <Field field="Tracker" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Ascending
+Tracker - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="527abea2-b99c-4b4d-b174-156b5327f7a2" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="8900235e-193e-4cfb-bdc9-3299ad5c5cf4" size="1000000" source="Summarize: GroupBy - Tracker" type="V_WString" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Ascending" />
+            <Field field="Tracker" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1465" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="1" field="J" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Tracker]" field="Options" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[J = 1
+Options = [Tracker]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+            <Field name="J" id="a4c5559b-4d89-4f85-9a83-d9a3ffd9bc50" size="1073741823" source="Formula: 1" type="V_WString" />
+            <Field name="Options" id="03b67d47-2d32-491e-80af-965bffdef25f" size="1073741823" source="Formula: [Tracker]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Concat_Tracker" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1360" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Concat_Tracker" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="1676" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Options</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Options</RootName>
+          <Delimeters value="," />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="8916eb02-5149-4ff5-91aa-193509307c0c" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Tracker" id="787e0aca-b827-48c0-845e-d7def1195be4" size="1073741823" source="Summarize: GroupBy - Concat_Tracker" type="V_WString" />
+            <Field name="J" id="a4c5559b-4d89-4f85-9a83-d9a3ffd9bc50" size="1073741823" source="Formula: 1" type="V_WString" />
+            <Field name="Options" id="03b67d47-2d32-491e-80af-965bffdef25f" size="1073741823" source="Formula: [Tracker]" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Options1" id="22b2f7ac-9b5c-4733-b70a-e25d03f07ee1" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Options" name="Options2" id="fae8f9d7-223e-4d7d-8f8a-51fe274c2f93" size="1073741823" source="TextToColumns: Parsed from Options" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Concat_Tracker" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>static</Name>
+          <Abbrev>S</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="Options" />
+                <Field name="Option2" />
+                <Field name="J" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Browse</c>
+                  <c>Off</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Browse</c>
+                  <c>On</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Input Data</c>
+                  <c>Off</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Input Data</c>
+                  <c>On</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Output Data</c>
+                  <c>Off</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Output Data</c>
+                  <c>On</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>S Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Options" id="2ee2560d-7241-4c88-a2af-28979d459354" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="9ef1efe5-499a-4501-9fa8-b17c3aa4d6e1" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="290db4ec-8c06-4753-a493-6ab70ac7382c" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="306" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Options" selected="True" rename="Right_Options" input="Source_" />
+                <SelectField field="Source_Option2" selected="True" rename="Right_Option2" input="Source_" />
+                <SelectField field="Source_J" selected="False" rename="Source_J" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="f09140e4-be04-415b-86cf-75a0fbf4d672" source="TextInput:" type="Byte" />
+            <Field name="Options" id="27b9f42e-e196-4de2-82bd-c5addaa4042b" size="11" source="TextInput:" type="String" />
+            <Field name="Option2" id="ecf55435-b062-4b13-bed8-699d256a9359" size="3" source="TextInput:" type="String" />
+            <Field name="J" id="741bb284-dd68-49d1-9aca-ff1778ba6b21" source="TextInput:" type="Byte" />
+            <Field name="Tracker" id="7d433c49-6c0b-4644-87db-7289fcb26b92" size="1000000" source="TextInput:" type="V_WString" />
+            <Field name="Right_Options" id="2ee2560d-7241-4c88-a2af-28979d459354" size="11" source="TextInput:" type="String" />
+            <Field name="Right_Option2" id="9ef1efe5-499a-4501-9fa8-b17c3aa4d6e1" size="3" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="11" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="14" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output9" />
+      <Destination ToolID="17" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="17" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="False" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="47" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="47" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (44)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>iterative154</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (22)</Name>
+          <ToolId value="22" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (23)</Description>
+              <Name>Macro Output (23)</Name>
+              <ToolId value="23" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (24)</Description>
+              <Name>Macro Output (24)</Name>
+              <ToolId value="24" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (44)</Name>
+              <ToolId value="44" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>dynamic</Input>
+        <Output>iterative</Output>
+        <IterationLimit value="10" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="23" Selected="True" />
+        <Tool ToolId="24" Selected="True" />
+        <Tool ToolId="44" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

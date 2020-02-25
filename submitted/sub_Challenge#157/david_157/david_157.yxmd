@@ -1,0 +1,1239 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="510" y="546" width="516" height="264" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>sneak peak to the solution</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1722" y="138" width="624" height="420" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Do something with these?</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="196" b="196" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="858" y="306" width="852" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Score Model With</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="121" g="204" b="142" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="858" y="138" width="852" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Score Model Without F_38</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="121" g="204" b="142" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="234" y="270" width="528" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Obtain Top 10 vars by meanDecreaseGini</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="196" b="196" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="78" width="468" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #157</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="126" width="660" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>You are provided a dataset (Q2_variables.yxdb) that contains multiple variables. Select the ten (10) numeric variables with the highest Mean Decrease Gini coefficient from the variable importance plot. Use these variables to build a model to predict the target variable, [H0]. Compare two models: one based on all of the selected variables, and another that includes the selected variables except [F_38]. What is the effect of removing this variable [F_38] from the model? Provide the Chi-Sq effect as your answer.</Text>
+          <Font name="Microsoft Sans Serif" size="11.25" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="270" width="132" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Input
+
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">_externals\1\Q2_variables.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Q2_variables.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="S_2" id="cce54c10-229e-40a5-a79c-6925e5063e85" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_3" id="222bcde8-639b-4193-8ca6-3b1042c9e958" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_4" id="d36365b2-5f59-447e-98fd-32db161c5c54" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_5" id="92ef014b-a0bc-4ab1-a62d-a000ad9a412d" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_6" id="cc0756b3-c43c-4bb5-9f1d-75c49a1e0ee2" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_7" id="877486f4-46d6-4dfe-a31c-5fc78794cb80" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_8" id="e932acd2-16d0-45ab-a748-0cc7d9c39336" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_10" id="3386ebcf-898e-4f36-99bc-881177eefbe1" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_11" id="7ca7bdc0-6b5c-4ab5-bc28-c0b9da2c5eac" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="S_12" id="04cd579c-6f06-451d-bcdf-933d17216fbb" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_15" id="207096ae-fd21-4598-985f-f65f583607a8" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_16" id="4c3f2d74-90da-451f-9d25-1ee52be74129" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_17" id="29eec5e3-1703-46bb-b162-3ce35d87dbb8" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_18" id="066e8370-2ede-4a00-b491-fd3f21cd2105" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_19" id="5f68f92f-3f68-4d8d-a32d-9ffbe436ac91" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_20" id="0bc93cf1-3ed4-4c66-b11e-3ce2ae3ec2c0" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_21" id="b283c2b1-40de-44d3-ba4a-358b5ea54841" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_22" id="538a9b01-37ec-41e4-8c7d-296454892878" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_23" id="f01ea812-68b5-45ab-9b2d-167e22ec8b6e" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_24" id="e5278014-6eea-4d2a-aaf1-44a50b201157" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_26" id="c19f2d72-17ce-4afe-85b9-88c9d2384622" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_28" id="fbb7d5c5-0965-4a48-81b4-be5f585c8481" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_29" id="0abee78f-7b3b-4a82-aaf8-6eb7f8c73f64" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_30" id="799b26dd-95a9-406f-90f5-1f6f41bec710" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_31" id="7cdcac62-fcbe-402c-81ba-3b31cb64ee38" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_33" id="2c691b6c-38da-4fdd-90df-e3bb680338df" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_34" id="6d9d8ee9-ea65-4447-8519-48a5024dbeff" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_35" id="5879e097-7917-49a2-90e7-a53458a2ce36" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_36" id="95a1eb56-74d3-4be6-85b7-adae4de610d2" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_38" id="63d57bb5-62cd-4fb3-94fe-c72266d835b2" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_39" id="82af9a75-b6a3-40fc-9a04-e7fa8df3864c" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_42" id="d63e9d8f-6462-4ef4-a874-afa8b3ee3508" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_44" id="bba35310-3d85-43c1-9531-fac8136670f8" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_46" id="c71d6514-1435-4592-90f1-3914c75b6549" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_47" id="a264dbba-f1a9-48ce-8d4a-5baa55b0a2bc" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_48" id="e4b136fb-2154-4ac6-ba38-9f7f5537344a" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_49" id="bf2e1bd6-7ff7-4fe4-8ab0-865a5f30a2de" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_50" id="92f20dc2-ab90-4525-b08e-9400e1245555" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="F_51" id="fc509fa5-4f2b-40a7-a56f-a145e93a9e3a" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="H1" id="08785a19-b865-4572-babb-2e08e54aea6f" size="255" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="H2" id="d717957b-0bc0-414a-9f23-a0b0d3faf3f7" size="255" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="H3" id="d2c60704-61cd-4287-a157-9d9d992ba474" size="255" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="H4" id="b4080168-7af4-4242-8e2c-269df36820ca" size="255" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="H5" id="f7eb491b-4206-4674-9467-40b4f644f7b8" size="255" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="H0" id="2bcc8c09-bc8e-4014-88f5-784caff2b15e" size="255" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="282" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">forest</Value>
+          <Value name="Y Var">H0</Value>
+          <Value name="X Vars">S_2 + S_3 + S_4 + S_5 + S_6 + S_7 + S_8 + S_10 + S_11 + S_12 + F_15 + F_16 + F_17 + F_18 + F_19 + F_20 + F_21 + F_22 + F_23 + F_24 + F_26 + F_28 + F_29 + F_30 + F_31 + F_33 + F_34 + F_35 + F_36 + F_38 + F_39 + F_42 + F_44 + F_46 + F_47 + F_48 + F_49 + F_50 + F_51</Value>
+          <Value name="Num Trees">500</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxRPluginGui.R">
+        <Position x="426" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RScript># Read in serialized model object
+modelObj &lt;- read.Alteryx("#1", mode="data.frame")
+
+# Unserialize model
+model &lt;- unserializeObject(as.character(modelObj$Object[1]))
+
+# load library
+library(randomForest)
+
+# extract feature importance
+importance &lt;- importance(model)
+
+# convert to data frame
+output &lt;- data.frame(var = row.names(importance), importance)
+
+# write out data frame
+write.Alteryx(output, 1)</RScript>
+          <UseFullUpdate value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output1">
+          <RecordInfo>
+            <Field id="d2ddec3c-33f5-4fd5-b4ba-12da21fb477a" name="var" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field id="dd90a18c-ae1e-4c84-a178-c205bf0a59b5" name="MeanDecreaseGini" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxRPluginEngine.dll" EngineDllEntryPoint="AlteryxR" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="534" y="308" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="MeanDecreaseGini" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>MeanDecreaseGini - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="666" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>10</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 10</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1065" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="var" action="Concat" rename="Concat_var">
+              <Concat_Start>"</Concat_Start>
+              <Separator>","</Separator>
+              <Concat_End>"</Concat_End>
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>concat varNames to string</AnnotationText>
+          <DefaultAnnotationText>concat varNames to string</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="1248" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (5)=Concat_var
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select subset of columns</AnnotationText>
+          <DefaultAnnotationText>select subset of columns</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output4">
+          <RecordInfo>
+            <Field name="S_3" id="222bcde8-639b-4193-8ca6-3b1042c9e958" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="S_6" id="cc0756b3-c43c-4bb5-9f1d-75c49a1e0ee2" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="S_11" id="7ca7bdc0-6b5c-4ab5-bc28-c0b9da2c5eac" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="S_12" id="04cd579c-6f06-451d-bcdf-933d17216fbb" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_15" id="207096ae-fd21-4598-985f-f65f583607a8" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_19" id="5f68f92f-3f68-4d8d-a32d-9ffbe436ac91" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_21" id="b283c2b1-40de-44d3-ba4a-358b5ea54841" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_23" id="f01ea812-68b5-45ab-9b2d-167e22ec8b6e" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_29" id="0abee78f-7b3b-4a82-aaf8-6eb7f8c73f64" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_38" id="63d57bb5-62cd-4fb3-94fe-c72266d835b2" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="H0" id="2bcc8c09-bc8e-4014-88f5-784caff2b15e" size="255" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="helperListSelect.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="882" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>var</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-25 10:28:53</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>F_38</Operand>
+              <StartDate>2020-02-25 10:28:53</StartDate>
+              <EndDate>2020-02-25 10:28:53</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[var] != "F_38"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1065" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="var" action="Concat" rename="Concat_var">
+              <Concat_Start>"</Concat_Start>
+              <Separator>","</Separator>
+              <Concat_End>"</Concat_End>
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>concat varNames to string</AnnotationText>
+          <DefaultAnnotationText>concat varNames to string</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings>
+        <Position x="1248" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (5)=Concat_var
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>select subset of columns</AnnotationText>
+          <DefaultAnnotationText>select subset of columns</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output4">
+          <RecordInfo>
+            <Field name="S_3" id="222bcde8-639b-4193-8ca6-3b1042c9e958" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="S_6" id="cc0756b3-c43c-4bb5-9f1d-75c49a1e0ee2" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="S_11" id="7ca7bdc0-6b5c-4ab5-bc28-c0b9da2c5eac" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="S_12" id="04cd579c-6f06-451d-bcdf-933d17216fbb" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_15" id="207096ae-fd21-4598-985f-f65f583607a8" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_19" id="5f68f92f-3f68-4d8d-a32d-9ffbe436ac91" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_21" id="b283c2b1-40de-44d3-ba4a-358b5ea54841" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_23" id="f01ea812-68b5-45ab-9b2d-167e22ec8b6e" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="F_29" id="0abee78f-7b3b-4a82-aaf8-6eb7f8c73f64" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="H0" id="2bcc8c09-bc8e-4014-88f5-784caff2b15e" size="255" source="File: C:\Users\ebonnell\Desktop\Expert Exam\ml-prove_new.xlsx|||`Sheet1$` (BatchMacro) (BatchMacro) (BatchMacro)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#157\david_157\helperListSelect.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings>
+        <Position x="1431" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">forestAll</Value>
+          <Value name="Y Var">H0</Value>
+          <Value name="X Vars">S_3 + S_6 + S_11 + S_12 + F_15 + F_19 + F_21 + F_23 + F_29 + F_38</Value>
+          <Value name="Num Trees">500</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings>
+        <Position x="1431" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">forestWithout</Value>
+          <Value name="Y Var">H0</Value>
+          <Value name="X Vars">S_3 + S_6 + S_11 + S_12 + F_15 + F_19 + F_21 + F_23 + F_29</Value>
+          <Value name="Num Trees">500</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="786" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="570" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="var" />
+          </Fields>
+          <Data>
+            <r>
+              <c>H0</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Add H0</AnnotationText>
+          <DefaultAnnotationText>Add H0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="Score">
+        <Position x="1614" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="Score">
+        <Position x="1614" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1722" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [X_0] &gt; [X_1] then 0 else 1 endif" field="ValEst" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[ValEst = if [X_0] > [X_1] then 0 else 1 endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1722" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="padleft(tostring(if [X_0] &gt; [X_1] then 0 else 1 endif + 10 *ToNumber(H0)),2,&quot;0&quot;)" field="ValEst" size="64" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ValEst = padleft(tostring(if [X_0] &gt; [X_1] then 0 else 1 endif + 10 *ToNumber(H0...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="Logistic_Regression">
+        <Position x="630" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">advanced</Value>
+          <Value name="lambda_1se">True</Value>
+          <Value name="lambda_min">False</Value>
+          <Value name="Model Name">Logistic_Regression_All</Value>
+          <Value name="Y Var">H0</Value>
+          <Value name="X Vars">S_3,S_6,S_11,S_12,F_15,F_19,F_21,F_23,F_29,F_38</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec" />
+          <Value name="regularization">False</Value>
+          <Value name="alpha">0.5</Value>
+          <Value name="standardize_pred">False</Value>
+          <Value name="internal_cv">False</Value>
+          <Value name="nfolds">5</Value>
+          <Value name="lambda">lambda_1se</Value>
+          <Value name="set_seed_internal_cv">False</Value>
+          <Value name="seed_internal_cv">1</Value>
+          <Value name="lambda_no_cv">0.5</Value>
+          <Value name="Link">logit</Value>
+          <Value name="external_cv">False</Value>
+          <Value name="nfolds_external">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="posClass">
+          </Value>
+          <Value name="stratified">False</Value>
+          <Value name="set_seed_external_cv">False</Value>
+          <Value name="external_seed_value">1</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Logistic_Regression_All</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Logistic_Regression/Supporting_Macros/Logistic_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Logistic_Regression/Supporting_Macros/Logistic_Regression.yxmc" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="Logistic_Regression">
+        <Position x="618" y="690" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">advanced</Value>
+          <Value name="lambda_1se">True</Value>
+          <Value name="lambda_min">False</Value>
+          <Value name="Model Name">Logistic_Regression_WOF38</Value>
+          <Value name="Y Var">H0</Value>
+          <Value name="X Vars">S_3,S_6,S_11,S_12,F_15,F_19,F_21,F_23,F_29</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec" />
+          <Value name="regularization">False</Value>
+          <Value name="alpha">0.5</Value>
+          <Value name="standardize_pred">False</Value>
+          <Value name="internal_cv">False</Value>
+          <Value name="nfolds">5</Value>
+          <Value name="lambda">lambda_1se</Value>
+          <Value name="set_seed_internal_cv">False</Value>
+          <Value name="seed_internal_cv">1</Value>
+          <Value name="lambda_no_cv">0.5</Value>
+          <Value name="Link">logit</Value>
+          <Value name="external_cv">False</Value>
+          <Value name="nfolds_external">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="posClass">
+          </Value>
+          <Value name="stratified">False</Value>
+          <Value name="set_seed_external_cv">False</Value>
+          <Value name="external_seed_value">1</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Logistic_Regression_WOF38</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Logistic_Regression/Supporting_Macros/Logistic_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Logistic_Regression/Supporting_Macros/Logistic_Regression.yxmc" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings>
+        <Position x="882" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Nested_Test.yxmc" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="990" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_35064_df6fc1c846c5489e896ab353423feb7d_\Engine_42648_67bab776b9b9459183beaa59ada03283_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="82">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1434" y="1590" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_35064_df6fc1c846c5489e896ab353423feb7d_\Engine_42648_73bb2ba52ce74e48bf6f12c82d55176a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings>
+        <Position x="1974" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="ChiSquare">True</Value>
+          <Value name="Var1 Chi">ValWith</Value>
+          <Value name="Var2 Chi">ValWithout</Value>
+          <Value name="NoChiSquare">False</Value>
+          <Value name="Var1">ValWith</Value>
+          <Value name="Var2">ValWith</Value>
+          <Value name="Var3" />
+          <Value name="Var4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ContingencyTable.yxmc" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1890" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ValEst" selected="True" rename="ValWithOut" input="Left_" />
+                <SelectField field="Right_S_3" selected="False" rename="Right_S_3" input="Right_" />
+                <SelectField field="Right_S_6" selected="False" rename="Right_S_6" input="Right_" />
+                <SelectField field="Right_S_11" selected="False" rename="Right_S_11" input="Right_" />
+                <SelectField field="Right_S_12" selected="False" rename="Right_S_12" input="Right_" />
+                <SelectField field="Right_F_15" selected="False" rename="Right_F_15" input="Right_" />
+                <SelectField field="Right_F_19" selected="False" rename="Right_F_19" input="Right_" />
+                <SelectField field="Right_F_21" selected="False" rename="Right_F_21" input="Right_" />
+                <SelectField field="Right_F_23" selected="False" rename="Right_F_23" input="Right_" />
+                <SelectField field="Right_F_29" selected="False" rename="Right_F_29" input="Right_" />
+                <SelectField field="Right_H0" selected="False" rename="Right_H0" input="Right_" />
+                <SelectField field="Right_X_0" selected="False" rename="Right_X_0" input="Right_" />
+                <SelectField field="Right_X_1" selected="False" rename="Right_X_1" input="Right_" />
+                <SelectField field="Right_ValEst" selected="True" rename="ValWith" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2094" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_35064_df6fc1c846c5489e896ab353423feb7d_\Engine_42648_7d2f66c153e94585980b093c4221bfd8_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2094" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_35064_df6fc1c846c5489e896ab353423feb7d_\Engine_42648_f6e0d1325b1846609e8a3e64f5d59ecd_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1734" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="padleft(tostring(if [X_0] &gt; [X_1] then 0 else 1 endif + 10 *ToNumber(H0)),2,&quot;0&quot;)" field="ValEst" size="64" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ValEst = padleft(tostring(if [X_0] &gt; [X_1] then 0 else 1 endif + 10 *ToNumber(H0...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="19" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="22" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="57" Connection="Center Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="57" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output1" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output4" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output4" />
+      <Destination ToolID="33" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="33" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output4" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output4" />
+      <Destination ToolID="34" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="34" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="91" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="91" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Report" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Interactive Pivot" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Join" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david_157</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
