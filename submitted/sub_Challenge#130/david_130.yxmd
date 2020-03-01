@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.4">
+<AlteryxDocument yxmdVer="2019.4">
   <Nodes>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="394" y="298" width="324" height="264" />
+        <Position x="390" y="294" width="324" height="264" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -23,7 +23,7 @@
     </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="58" y="298" width="312" height="264" />
+        <Position x="54" y="294" width="312" height="264" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -43,7 +43,7 @@
     </Node>
     <Node ToolID="30">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="58" y="142" width="660" height="144" />
+        <Position x="54" y="138" width="660" height="144" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -67,7 +67,7 @@
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="82" y="58" width="324" height="72" />
+        <Position x="78" y="54" width="324" height="72" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -88,7 +88,7 @@
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="466" y="70" width="468" height="40" />
+        <Position x="462" y="66" width="468" height="40" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -108,11 +108,11 @@
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="250" y="418" />
+        <Position x="246" y="414" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\957789\AppData\Local\Temp\Engine_19612_8f9076ca93074a3dbfc3938b37cc0dd6_\Engine_6352_c0972b8166b74382b5fb76a2476a50f9_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7288_f819d6de692f4e6c849a0dddbfbdf8e0_\Engine_25672_8b9e18645fd34674bd4d69a90a132cbb_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -136,11 +136,11 @@
     </Node>
     <Node ToolID="41">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="586" y="418" />
+        <Position x="582" y="414" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\957789\AppData\Local\Temp\Engine_19612_8f9076ca93074a3dbfc3938b37cc0dd6_\Engine_6352_475314f3671e47a79bbca0871bee6702_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7288_f819d6de692f4e6c849a0dddbfbdf8e0_\Engine_25672_859c59c49efb4b10808b95ff7ce21edb_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -164,7 +164,7 @@
     </Node>
     <Node ToolID="42">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="106" y="418" />
+        <Position x="138" y="618" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -197,7 +197,7 @@
     </Node>
     <Node ToolID="44">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
-        <Position x="454" y="418" />
+        <Position x="450" y="414" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -230,7 +230,7 @@
     </Node>
     <Node ToolID="45">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
-        <Position x="214.5" y="578.5" />
+        <Position x="246.5" y="618" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -243,7 +243,8 @@
           </Replace>
           <ParseSimple>
             <SplitToRows value="False" />
-            <RootName />
+            <RootName>
+            </RootName>
             <NumFields value="3" />
             <ErrorHandling>Warn</ErrorHandling>
           </ParseSimple>
@@ -258,9 +259,8 @@
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>Replace:
-\b(\w+)\b\W+(\1)
-\1</DefaultAnnotationText>
+          <AnnotationText>Replace \b(\w+)\b\W+(\1)</AnnotationText>
+          <DefaultAnnotationText>Replace \b(\w+)\b\W+(\1)</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -268,7 +268,7 @@
     </Node>
     <Node ToolID="47">
       <GuiSettings>
-        <Position x="656.5" y="565.5" />
+        <Position x="364.5" y="606" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -277,9 +277,6 @@
           <DefaultAnnotationText />
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
       </Properties>
       <EngineSettings Macro="CReW_ExpectEqual.yxmc" />
     </Node>
@@ -324,7 +321,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>solved</Name>
+      <Name>solved_130</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
