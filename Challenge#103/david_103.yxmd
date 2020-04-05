@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2019.2">
+<AlteryxDocument yxmdVer="2019.4">
   <Nodes>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -121,7 +121,7 @@ How well does your model predict the number of points the Patriots score during 
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_dbc8be19d2e746be9b440264976c9de4_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_14724_9cc6621379624adfb34c95c4e2c7607b_\Engine_28484_2e41efd449e94ca5a90882abcb9cb942_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -149,7 +149,7 @@ How well does your model predict the number of points the Patriots score during 
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_1fca84934f674257b50691cf2e8688a7_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6612_badf116ba8144c21a64b07da356f5ef6_\Engine_28484_ddca4e8e8afb4a7bb275f8354b030710_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -256,7 +256,7 @@ How well does your model predict the number of points the Patriots score during 
         <Annotation DisplayMode="0">
           <Name />
           <AnnotationText>2017 Patriots Data</AnnotationText>
-          <DefaultAnnotationText />
+          <DefaultAnnotationText>2017 Patriots Data</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -347,7 +347,7 @@ How well does your model predict the number of points the Patriots score during 
         <Annotation DisplayMode="0">
           <Name />
           <AnnotationText>2016 Patriots Data</AnnotationText>
-          <DefaultAnnotationText />
+          <DefaultAnnotationText>2016 Patriots Data</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -359,7 +359,7 @@ How well does your model predict the number of points the Patriots score during 
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_6a37632c73984d0b806b6453bb5d5a3e_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_14724_9cc6621379624adfb34c95c4e2c7607b_\Engine_28484_7b306940bec1446ba1e2b74264dd55d0_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -409,7 +409,7 @@ How well does your model predict the number of points the Patriots score during 
         <Annotation DisplayMode="0">
           <Name />
           <AnnotationText>Superbowl Model Results</AnnotationText>
-          <DefaultAnnotationText />
+          <DefaultAnnotationText>Superbowl Model Results</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -452,7 +452,7 @@ How well does your model predict the number of points the Patriots score during 
         <Annotation DisplayMode="0">
           <Name />
           <AnnotationText>Week 13 (Regular Season Game) Model Results</AnnotationText>
-          <DefaultAnnotationText />
+          <DefaultAnnotationText>Week 13 (Regular Season Game) Model Results</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -464,7 +464,7 @@ How well does your model predict the number of points the Patriots score during 
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_bb43168483aa4077b04fc011592113d3_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6612_badf116ba8144c21a64b07da356f5ef6_\Engine_28484_cf2e6ea0909f47f29d8a458f319b6c60_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -543,7 +543,7 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="111">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="510" y="774" />
+        <Position x="516" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -582,12 +582,13 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="113">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="798" y="774" />
+        <Position x="786" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <GroupFields>
             <Field field="RecordID" />
+            <Field field="S" />
           </GroupFields>
           <HeaderField field="item" />
           <DataField field="Field_1" />
@@ -604,35 +605,37 @@ How well does your model predict the number of points the Patriots score during 
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="CrossTab:Group:First:" type="Int32" />
-            <Field description="TextToColumns: Parsed from Field_1" name="1" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="2" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="3" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="4" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="5" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="6" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="7" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="8" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="9" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="10" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="11" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="12" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="13" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="14" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="15" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="16" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="17" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="18" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="19" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="20" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="21" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="22" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="23" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="24" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="25" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field name="RecordID" id="38d8314c-1269-49b6-9417-f8558b2c138d" source="CrossTab:Group:First:" type="Int32" />
+            <Field name="S" id="a37ad34a-5ecf-4bc5-a593-468881005b0b" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Field_1" name="1" id="915495f5-7ce0-47ae-9011-cb188251a900" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="2" id="996dfc8c-7c64-4a3e-98c5-b6ebf5d6a540" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="3" id="cdfe2194-18d8-4ab6-893a-34fbb105369b" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="4" id="8275a653-6ff4-4498-8c80-7c7211349add" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="5" id="7bb9763c-21ae-4c3e-81cb-02211550d273" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="6" id="3684b699-356b-42e5-9777-6d84cf8e1779" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="7" id="bacb5218-8cf4-41d1-9819-b9de5e7fb17a" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="8" id="2305a536-8d2f-4b15-86e1-44c72960435c" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="9" id="3b2afd93-40d4-4809-ae74-ade8e37ed5b7" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="10" id="4d293831-f2f2-418c-b093-2b2de66b73a4" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="11" id="64926d06-53c1-4c83-b44e-f7bbe3cb810f" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="12" id="030c5c8b-6127-4cfd-814e-816dad50a7f5" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="13" id="9fbe790e-0b80-4044-9cf4-d29244ed569c" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="14" id="361d7da9-0faf-45f4-8a61-a8231823df69" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="15" id="2599b7c2-c008-4a0f-967c-f0573b0d71d3" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="16" id="a936c256-bd4e-4004-b43e-3955707d9f67" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="17" id="06756702-1adb-4200-9298-3d2a7eb9358d" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="18" id="d1ed8628-629a-4b1e-a6e3-6748ecb14a7a" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="19" id="fd010253-1e90-4cb0-8bdc-2017a87849aa" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="20" id="610bc179-2ac2-4a87-a0a6-e932ffc4cf8c" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="21" id="b1c7b381-b4e0-489a-9460-7686031dfb44" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="22" id="228fc6eb-043c-428b-9875-23cb794190e3" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="23" id="6f04587d-7e1d-4122-bba3-39b907889c00" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="24" id="5b79786b-82db-459c-965c-5f55f1e2973c" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="25" id="a3940547-c374-4103-830d-8d01870fe4ee" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
           </RecordInfo>
           <SortInfo>
             <Field field="RecordID" order="Asc" />
+            <Field field="S" order="Asc" />
           </SortInfo>
         </MetaInfo>
       </Properties>
@@ -640,7 +643,7 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="114">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="702" y="762" />
+        <Position x="696" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -666,7 +669,7 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="115">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="882" y="786" />
+        <Position x="876" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -712,35 +715,37 @@ How well does your model predict the number of points the Patriots score during 
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="1" source="CrossTab:Group:First:" type="Int32" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Week" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Day" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Date" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Field_27" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Field_27_2" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Field_27_3" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="OT" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Rec" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Field_27_4" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Opp" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Tm" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Opp2" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="1stD" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="TotYd" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="PassY" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="RushY" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="TO" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="1stD2" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="TotYd2" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="PassY2" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="RushY2" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="TO2" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Offense" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Defense" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Sp. Tms" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field name="1" id="1ce9608a-14e3-429e-9896-2e9d05e214a0" source="CrossTab:Group:First:" type="Int32" />
+            <Field name="17" id="5b937d46-8dc7-4ce9-92d3-0e66704ca9ca" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Week" id="421102df-3c3f-4ce5-aa03-66e7e876bdcc" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Day" id="b5365588-5fb9-41e0-9b30-fa8df63cbb05" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Date" id="bddc8dc4-c593-4b45-a83b-2398e92e88c0" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_28" id="3d505010-af2a-4060-8f44-c6d504263f7f" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_28_2" id="e8150855-ea53-453d-b43c-f87dd535d827" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_28_3" id="5bbba686-ec80-4634-9a23-7b5956a9c230" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="OT" id="dc0146a5-28d4-42f8-a9c7-f0dcfd06c08e" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Rec" id="1fe97c3c-489a-4490-b81d-ad9e8e8b9e2b" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_28_4" id="e17cf091-22a9-4ba2-b0e3-cc1a74f14f0a" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Opp" id="f6166ad3-3487-40c4-9ddf-9d1b9ce9d90a" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Tm" id="7e2db4b7-4576-4748-a51c-15cf0637c063" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Opp2" id="570b0bf3-83fc-4086-b48e-b1636867ea03" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="1stD" id="de7435f1-e1b8-4a70-8aed-410178884a0f" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="TotYd" id="6334fe35-1f8c-4759-9974-d4057dda527b" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="PassY" id="20d874b1-9845-4f26-aa85-ba4a0cbef82c" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="RushY" id="d220054d-6516-4652-b14f-4a58680e7b98" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="TO" id="bfaef9b1-595e-48e6-aeb3-fd73b11be0ea" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="1stD2" id="ac94270a-c14e-4c64-a756-4ece8839a85b" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="TotYd2" id="848ad362-480e-431b-98f3-9d516843cbbb" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="PassY2" id="4d2bc917-4b98-440b-8b6f-815bf2adff54" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="RushY2" id="74ca4886-bd09-4bad-80a0-d7df063c6766" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="TO2" id="e3ff6952-39cd-41bc-8681-6cc82bc3f768" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Offense" id="c72ab047-dc80-4430-a3c2-cb7a7b2e2645" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Defense" id="7b559bca-2d03-4355-aa63-d7afbbfd422e" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Sp. Tms" id="3ffc3a8c-d387-4d3e-9e70-f5d69243baca" size="149" source="TextToColumns: Parsed from Field_1" type="V_String" />
           </RecordInfo>
           <SortInfo>
             <Field field="1" order="Asc" />
+            <Field field="17" order="Asc" />
           </SortInfo>
         </MetaInfo>
       </Properties>
@@ -748,7 +753,7 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="116">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="966" y="798" />
+        <Position x="966" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -756,18 +761,19 @@ How well does your model predict the number of points the Patriots score during 
           <CommaDecimal value="False" />
           <SelectFields>
             <SelectField field="1" selected="False" />
+            <SelectField field="17" selected="True" rename="S" />
             <SelectField field="Week" selected="True" type="Int64" size="8" />
-            <SelectField field="Field_27" selected="True" rename="Time" />
-            <SelectField field="Field_27_2" selected="False" />
-            <SelectField field="Field_27_3" selected="False" />
             <SelectField field="OT" selected="False" />
-            <SelectField field="Field_27_4" selected="False" />
             <SelectField field="TO" selected="True" rename="TO_off" />
             <SelectField field="1stD2" selected="True" rename="1stD_def" />
             <SelectField field="TotYd2" selected="True" rename="TotYd_def" />
             <SelectField field="PassY2" selected="True" rename="PassY_def" />
             <SelectField field="RushY2" selected="True" rename="RushY_def" />
             <SelectField field="TO2" selected="True" rename="TO_def" />
+            <SelectField field="Field_27" selected="True" rename="Time" />
+            <SelectField field="Field_27_2" selected="False" />
+            <SelectField field="Field_27_3" selected="False" />
+            <SelectField field="Field_27_4" selected="False" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -779,46 +785,9 @@ How well does your model predict the number of points the Patriots score during 
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="117">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1062" y="714" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Expression>!IsNull([Week])
-&amp;&amp;
-!IsEmpty([Day])</Expression>
-          <Mode>Custom</Mode>
-          <Simple>
-            <Operator>IsNotNull</Operator>
-            <Field>Week</Field>
-            <Operands>
-              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
-              <DateType>fixed</DateType>
-              <PeriodDate>2018-12-18 19:08:56</PeriodDate>
-              <PeriodType>
-              </PeriodType>
-              <PeriodCount>0</PeriodCount>
-              <Operand>
-              </Operand>
-              <StartDate>2018-12-18 19:08:56</StartDate>
-              <EndDate>2018-12-18 19:08:56</EndDate>
-            </Operands>
-          </Simple>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>!IsNull([Week])
-&amp;&amp;
-!IsEmpty([Day])</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
     <Node ToolID="118">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
-        <Position x="1158" y="786" />
+        <Position x="1236" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -843,6 +812,7 @@ How well does your model predict the number of points the Patriots score during 
             <Field field="Offense" selected="True" />
             <Field field="Defense" selected="True" />
             <Field field="Sp. Tms" selected="True" />
+            <Field field="Type" selected="True" />
             <Field field="*Unknown" selected="True" />
           </Fields>
         </Configuration>
@@ -853,27 +823,32 @@ How well does your model predict the number of points the Patriots score during 
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field description="TextToColumns: Parsed from Field_1" name="Week" source="TextToColumns: Parsed from Field_1" type="Int64" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Day" size="3" source="TextToColumns: Parsed from Field_1" type="String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Date" size="12" source="TextToColumns: Parsed from Field_1" type="String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Time" size="9" source="TextToColumns: Parsed from Field_1" type="String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Rec" size="4" source="TextToColumns: Parsed from Field_1" type="String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Opp" size="20" source="TextToColumns: Parsed from Field_1" type="String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Tm" source="TextToColumns: Parsed from Field_1" type="Byte" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Opp2" source="TextToColumns: Parsed from Field_1" type="Byte" />
-            <Field description="TextToColumns: Parsed from Field_1" name="1stD" source="TextToColumns: Parsed from Field_1" type="Byte" />
-            <Field description="TextToColumns: Parsed from Field_1" name="TotYd" source="TextToColumns: Parsed from Field_1" type="Int16" />
-            <Field description="TextToColumns: Parsed from Field_1" name="PassY" source="TextToColumns: Parsed from Field_1" type="Int16" />
-            <Field description="TextToColumns: Parsed from Field_1" name="RushY" source="TextToColumns: Parsed from Field_1" type="Byte" />
-            <Field description="TextToColumns: Parsed from Field_1" name="TO_off" size="1" source="TextToColumns: Parsed from Field_1" type="String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="1stD_def" source="TextToColumns: Parsed from Field_1" type="Byte" />
-            <Field description="TextToColumns: Parsed from Field_1" name="TotYd_def" source="TextToColumns: Parsed from Field_1" type="Int16" />
-            <Field description="TextToColumns: Parsed from Field_1" name="PassY_def" source="TextToColumns: Parsed from Field_1" type="Int16" />
-            <Field description="TextToColumns: Parsed from Field_1" name="RushY_def" source="TextToColumns: Parsed from Field_1" type="Byte" />
-            <Field description="TextToColumns: Parsed from Field_1" name="TO_def" size="1" source="TextToColumns: Parsed from Field_1" type="String" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Offense" source="TextToColumns: Parsed from Field_1" type="Double" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Defense" source="TextToColumns: Parsed from Field_1" type="Double" />
-            <Field description="TextToColumns: Parsed from Field_1" name="Sp. Tms" source="TextToColumns: Parsed from Field_1" type="Double" />
+            <Field name="S" id="393f0b94-62b8-4fcd-8347-143bf73d6667" source="CrossTab:Group:First:" type="Byte" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Week" id="6d9ec3f6-e702-44a4-b800-174156413300" source="TextToColumns: Parsed from Field_1" type="Int64" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Day" id="465f9c70-e3ca-4346-93b4-bc84395f0e1e" size="3" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Date" id="8fe4a426-2e09-44af-99af-cbc4e5357529" size="12" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_28" id="bbbbaa8b-51fb-4709-bc1f-357d50a8b572" size="9" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_28_2" id="cd0d7f82-f3b7-48be-b961-8e778909a65c" size="8" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_28_3" id="9071eaaa-c457-4baa-ace2-bccfdfa34dab" size="1" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Rec" id="8006d982-1f72-43aa-a3bf-d6a97c44f32b" size="4" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Field_28_4" id="cd74da95-7c4b-4009-b38a-5b2346049c85" size="1" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Opp" id="c3df9f3c-05c0-41d7-a81e-4123b8e2d545" size="20" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Tm" id="97eea6f8-a336-480c-b440-b55f27940f61" source="TextToColumns: Parsed from Field_1" type="Byte" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Opp2" id="0f63fa66-960e-474e-b09f-bf0fd4ffbdca" source="TextToColumns: Parsed from Field_1" type="Byte" />
+            <Field description="TextToColumns: Parsed from Field_1" name="1stD" id="a9dbddb9-584e-422a-85f2-45320b8e6b23" source="TextToColumns: Parsed from Field_1" type="Byte" />
+            <Field description="TextToColumns: Parsed from Field_1" name="TotYd" id="03bf10e6-5292-47a8-9638-e916a8a02c85" source="TextToColumns: Parsed from Field_1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Field_1" name="PassY" id="3d427311-713b-426f-bee9-4507a0b01a8c" source="TextToColumns: Parsed from Field_1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Field_1" name="RushY" id="5f8fc120-64ed-41b8-abfb-44a9b7833ad8" source="TextToColumns: Parsed from Field_1" type="Byte" />
+            <Field description="TextToColumns: Parsed from Field_1" name="TO_off" id="cfc7d898-9d32-496d-bd29-6897aa322626" size="1" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="1stD_def" id="d50ddba9-0d05-4abf-96b7-ecf5dc1263c2" source="TextToColumns: Parsed from Field_1" type="Byte" />
+            <Field description="TextToColumns: Parsed from Field_1" name="TotYd_def" id="54a311d1-608c-4b3a-ab75-4aa024d5e2e5" source="TextToColumns: Parsed from Field_1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Field_1" name="PassY_def" id="5e4fc801-a8e5-4b62-9296-6e0fd1cca677" source="TextToColumns: Parsed from Field_1" type="Int16" />
+            <Field description="TextToColumns: Parsed from Field_1" name="RushY_def" id="ea5ec58b-b7c0-41f1-b11c-7a1a68cc1aae" source="TextToColumns: Parsed from Field_1" type="Byte" />
+            <Field description="TextToColumns: Parsed from Field_1" name="TO_def" id="b83922a8-c86c-433d-8fde-1f5daef1013f" size="1" source="TextToColumns: Parsed from Field_1" type="String" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Offense" id="99277071-9b15-4a07-ab7f-2648d18015bd" source="TextToColumns: Parsed from Field_1" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Defense" id="659fa0c3-0a66-49d2-961f-5186f9f3a686" source="TextToColumns: Parsed from Field_1" type="Double" />
+            <Field description="TextToColumns: Parsed from Field_1" name="Sp. Tms" id="e2f1aa3b-0cd1-4d23-8fa9-2ef45642b280" source="TextToColumns: Parsed from Field_1" type="Double" />
+            <Field description="Formula: if !isnull([Week]) then 'Regul..." name="Type" id="291ba4b0-ba18-4cf9-bb6a-8d02f2785869" size="8" source="Formula: if !isnull([Week]) then 'Regul..." type="String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -881,7 +856,7 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="119">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1242" y="786" />
+        <Position x="1326" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -912,7 +887,7 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="120">
       <GuiSettings>
-        <Position x="1314" y="786" />
+        <Position x="1416" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -938,7 +913,7 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="121">
       <GuiSettings>
-        <Position x="1422" y="786" />
+        <Position x="2136" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -960,11 +935,11 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="122">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1518" y="750" />
+        <Position x="2226" y="714" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_ca0ff06bcdd84219878de358bf4d0261_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6612_badf116ba8144c21a64b07da356f5ef6_\Engine_28484_85e7465e0c844e8e92b12a66c466d298_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -988,11 +963,11 @@ How well does your model predict the number of points the Patriots score during 
     </Node>
     <Node ToolID="123">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1722" y="822" />
+        <Position x="2226" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_f880b83c7ea5452586efc146443a0bde_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6612_badf116ba8144c21a64b07da356f5ef6_\Engine_28484_e101b736f2d045dfa87fe97cbb912922_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1014,135 +989,9 @@ How well does your model predict the number of points the Patriots score during 
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="124">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.PearsonCorrelation.PearsonCorrelation">
-        <Position x="1434" y="858" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Fields orderChanged="False">
-            <Field name="1stD" />
-            <Field name="TotYd" />
-            <Field name="PassY" />
-            <Field name="RushY" />
-            <Field name="TO_off" />
-            <Field name="TO_def" />
-            <Field name="Week" selected="False" />
-            <Field name="Tm" selected="False" />
-            <Field name="1stD_def" selected="False" />
-            <Field name="TotYd_def" selected="False" />
-            <Field name="PassY_def" selected="False" />
-            <Field name="RushY_def" selected="False" />
-            <Field name="Sp. Tms" selected="False" />
-            <Field name="*Unknown" selected="False" />
-          </Fields>
-          <Covariance value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxPearsonCorrelation" />
-    </Node>
-    <Node ToolID="125">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1530" y="858" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_5effc21c4c8c4fef98204c6218f25bb8_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="126">
-      <GuiSettings>
-        <Position x="1422" y="690" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="Input.Field Selection"><![CDATA[Variable1=Tm
-Variable2=1stD
-]]></Value>
-          <Value name="Enable Group By">False</Value>
-          <Value name="Select Field to Group By">Week</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="SpearmanCorrCoeff.yxmc" />
-    </Node>
-    <Node ToolID="127">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1518" y="690" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_450fb08c5a07479aa1347018b88c186d_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
-    <Node ToolID="128">
-      <GuiSettings>
-        <Position x="1410" y="942" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="estimation pct">80</Value>
-          <Value name="validation pct">20</Value>
-          <Value name="rand seed">1</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
-    </Node>
     <Node ToolID="129">
       <GuiSettings Plugin="Linear_Regression">
-        <Position x="1578" y="930" />
+        <Position x="2226" y="870" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1157,7 +1006,7 @@ Variable2=1stD
           <Value name="lambda_min">False</Value>
           <Value name="Model Name">Linear_Regression_129</Value>
           <Value name="Y Var">Tm</Value>
-          <Value name="X Vars">1stD,PassY,RushY,TO_off,TO_def</Value>
+          <Value name="X Vars">1stD,TotYd,TO_def</Value>
           <Value name="Omit Constant">False</Value>
           <Value name="Use Weights">False</Value>
           <Value name="Weight Vec" />
@@ -1181,46 +1030,22 @@ Variable2=1stD
       </Properties>
       <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
     </Node>
-    <Node ToolID="130">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1674" y="846" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_bab4cd68aa9e4d9395b70392dc1ebd36_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints />
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="131">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1674" y="930" />
+        <Position x="2442" y="822" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_302ae3307fd543bfa9434219554550a4_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6612_badf116ba8144c21a64b07da356f5ef6_\Engine_28484_5f512cba31244ce6bf52d4204a1b61c0_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
             <View1>
               <DefaultTab>Report</DefaultTab>
-              <Hints />
+              <Hints>
+                <Table />
+              </Hints>
             </View1>
             <View2 />
           </Layout>
@@ -1235,11 +1060,11 @@ Variable2=1stD
     </Node>
     <Node ToolID="132">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1674" y="1014" />
+        <Position x="2442" y="942" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_0d92fbf916814799a4e6da71aff5bd0f_.yxdb</TempFile>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6612_badf116ba8144c21a64b07da356f5ef6_\Engine_28484_d162ff85a4a6415bb0790b0baba05158_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -1263,7 +1088,7 @@ Variable2=1stD
     </Node>
     <Node ToolID="133">
       <GuiSettings Plugin="Score">
-        <Position x="1854" y="990" />
+        <Position x="2598" y="846" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1307,126 +1132,10 @@ Variable2=1stD
         </Annotation>
       </Properties>
       <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
-    </Node>
-    <Node ToolID="134">
-      <GuiSettings>
-        <Position x="1602" y="1086" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="model.name">Boosted</Value>
-          <Value name="select.target">Tm</Value>
-          <Value name="select.predictors">Week=False,Day=False,Date=False,Time=False,Rec=False,Opp=False,Tm=False,Opp2=False,1stD=True,TotYd=False,PassY=True,RushY=True,TO_off=True,1stD_def=False,TotYd_def=False,PassY_def=False,RushY_def=False,TO_def=True,Offense=False,Defense=False,Sp. Tms=False</Value>
-          <Value name="use.weights">False</Value>
-          <Value name="select.weights">Week</Value>
-          <Value name="marginal.plots">False</Value>
-          <Value name="plot.min.importance">2.5</Value>
-          <Value name="type.distribution">False</Value>
-          <Value name="type.continuous">True</Value>
-          <Value name="dist.gaussian">True</Value>
-          <Value name="dist.laplace">False</Value>
-          <Value name="dist.t">False</Value>
-          <Value name="t.df">4</Value>
-          <Value name="type.count">False</Value>
-          <Value name="type.binomial">False</Value>
-          <Value name="dist.bernoulli">True</Value>
-          <Value name="dist.adaboost">False</Value>
-          <Value name="type.multinomial">False</Value>
-          <Value name="n.trees">4000</Value>
-          <Value name="assess.cv">True</Value>
-          <Value name="num.folds">5</Value>
-          <Value name="n.cores">1</Value>
-          <Value name="assess.test">False</Value>
-          <Value name="train.fraction">50.0</Value>
-          <Value name="assess.oob">False</Value>
-          <Value name="bag.fraction">50.0</Value>
-          <Value name="shrinkage">0.0020</Value>
-          <Value name="interaction.depth">1</Value>
-          <Value name="n.minobsinnode">10</Value>
-          <Value name="rand.seed">1</Value>
-          <Value name="inches">True</Value>
-          <Value name="in.w">5.50</Value>
-          <Value name="in.h">5.50</Value>
-          <Value name="centimeters">False</Value>
-          <Value name="cm.w">13.00</Value>
-          <Value name="cm.h">14.95</Value>
-          <Value name="graph.resolution">1x</Value>
-          <Value name="pointsize">10</Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
-    </Node>
-    <Node ToolID="135">
-      <GuiSettings Plugin="Score">
-        <Position x="1854" y="1050" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Value name="modelChoice">Local Model</Value>
-          <Value name="score field">Tm</Value>
-          <Value name="is oversampled">False</Value>
-          <Value name="oversampled value">
-          </Value>
-          <Value name="original percent">2</Value>
-          <Value name="log y">False</Value>
-          <Value name="prediction.interval">False</Value>
-          <Value name="interval.level">95</Value>
-          <Value name="append.xdf">False</Value>
-          <Value name="num.records">256000</Value>
-          <Value name="credentials">
-          </Value>
-          <Value name="models">
-          </Value>
-          <Value name="page">
-          </Value>
-          <Value name="errorStatus">
-          </Value>
-          <Value name="modelDetailJSON">
-          </Value>
-          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
-          <Value name="promoteURL">
-          </Value>
-          <Value name="username">
-          </Value>
-          <Value name="model_name">
-          </Value>
-          <Value name="model_owner">
-          </Value>
-          <Value name="apiKey">
-          </Value>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
-    </Node>
-    <Node ToolID="136">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1698" y="1122" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_8684_c15d18bc84314d1aba82ad1e012d5b2d_\Engine_32072_f532739117e44c48b5b3dbc446ecfd63_.yxdb</TempFile>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
     <Node ToolID="137">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="966" y="870" />
+        <Position x="1056" y="774" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1452,6 +1161,399 @@ elseif isempty([Day]) then ...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
     </Node>
+    <Node ToolID="139">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1146" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>Day</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-04-05 22:39:09</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2020-04-05 22:39:09</StartDate>
+              <EndDate>2020-04-05 22:39:09</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([Day])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="142">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1596" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!([Tile_SequenceNum] =3 &amp;&amp; [Type] != 'Regular')</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>F - superbowl
+T - all others</AnnotationText>
+          <DefaultAnnotationText>!([Tile_SequenceNum] =3 &amp;&amp; [Type] != 'Regular')</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="143">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1686" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="144">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1776" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="RAND()" field="random" size="19.6" type="FixedDecimal" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[random = RAND()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="145">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1866" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="random" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>random - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="146">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1956" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>2</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="147">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1956" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>2</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="148">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="2226" y="1062" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="149">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2046" y="954" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="False" />
+            <SelectField field="random" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="141">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Tile.Tile">
+        <Position x="1506" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Method>UniqueValue</Method>
+          <UniqueValue>
+            <UniqueFields>
+              <Field field="S" />
+              <Field field="Type" />
+            </UniqueFields>
+            <DontSort value="False" />
+          </UniqueValue>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTile" />
+    </Node>
+    <Node ToolID="151">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="2046" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="152">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="222" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'17'" field="S" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[S = '17'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="153">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="222" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'16'" field="S" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[S = '16'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="154">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2670" y="846" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="S" selected="False" />
+            <SelectField field="Week" selected="False" />
+            <SelectField field="Day" selected="False" />
+            <SelectField field="Field_28" selected="False" />
+            <SelectField field="Field_28_2" selected="False" />
+            <SelectField field="Field_28_3" selected="False" />
+            <SelectField field="Rec" selected="False" />
+            <SelectField field="Field_28_4" selected="False" />
+            <SelectField field="Opp2" selected="False" />
+            <SelectField field="PassY" selected="False" />
+            <SelectField field="RushY" selected="False" />
+            <SelectField field="X1stD_def" selected="False" />
+            <SelectField field="TotYd_def" selected="False" />
+            <SelectField field="PassY_def" selected="False" />
+            <SelectField field="RushY_def" selected="False" />
+            <SelectField field="Offense" selected="False" />
+            <SelectField field="Defense" selected="False" />
+            <SelectField field="Sp..Tms" selected="False" />
+            <SelectField field="Tile_Num" selected="False" />
+            <SelectField field="Tile_SequenceNum" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="155">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="630" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6612_badf116ba8144c21a64b07da356f5ef6_\Engine_28484_d92e3e7752b043b898756bd8f8bbf465_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="156">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="258" y="690" width="1128" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>PARSE</Text>
+          <Font name="Arial" size="26.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="157">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1422" y="690" width="672" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create SAMPLES</Text>
+          <Font name="Arial" size="26.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="158">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2118" y="690" width="756" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Variable selection, model training and scoring</Text>
+          <Font name="Arial" size="26.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -1460,7 +1562,7 @@ elseif isempty([Day]) then ...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="101" Connection="Output" />
-      <Destination ToolID="108" Connection="Input" />
+      <Destination ToolID="152" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="102" Connection="Output" />
@@ -1468,7 +1570,7 @@ elseif isempty([Day]) then ...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="102" Connection="Output" />
-      <Destination ToolID="109" Connection="Input" />
+      <Destination ToolID="153" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="105" Connection="Output" />
@@ -1512,15 +1614,7 @@ elseif isempty([Day]) then ...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="116" Connection="Output" />
-      <Destination ToolID="117" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="116" Connection="Output" />
       <Destination ToolID="137" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="117" Connection="False" />
-      <Destination ToolID="118" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="118" Connection="Output" />
@@ -1532,19 +1626,7 @@ elseif isempty([Day]) then ...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="120" Connection="Output26" />
-      <Destination ToolID="121" Connection="Data Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="120" Connection="Output26" />
-      <Destination ToolID="124" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="120" Connection="Output26" />
-      <Destination ToolID="126" Connection="Field Selection" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="120" Connection="Output26" />
-      <Destination ToolID="128" Connection="Input" />
+      <Destination ToolID="141" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="121" Connection="Output" />
@@ -1555,40 +1637,12 @@ elseif isempty([Day]) then ...</DefaultAnnotationText>
       <Destination ToolID="123" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="124" Connection="Output" />
-      <Destination ToolID="125" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="126" Connection="Output16" />
-      <Destination ToolID="127" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="128" Connection="Estimation" />
-      <Destination ToolID="129" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="128" Connection="Estimation" />
-      <Destination ToolID="134" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="128" Connection="Validation" />
-      <Destination ToolID="133" Connection="Data" />
-    </Connection>
-    <Connection>
       <Origin ToolID="129" Connection="Output" />
       <Destination ToolID="133" Connection="Model" />
     </Connection>
     <Connection>
-      <Origin ToolID="128" Connection="Validation" />
-      <Destination ToolID="135" Connection="Data" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="134" Connection="Output" />
-      <Destination ToolID="135" Connection="Model" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="129" Connection="Output" />
-      <Destination ToolID="130" Connection="Input" />
+      <Origin ToolID="148" Connection="Output" />
+      <Destination ToolID="133" Connection="Data" />
     </Connection>
     <Connection>
       <Origin ToolID="129" Connection="Reports" />
@@ -1599,8 +1653,76 @@ elseif isempty([Day]) then ...</DefaultAnnotationText>
       <Destination ToolID="132" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="134" Connection="Report" />
-      <Destination ToolID="136" Connection="Input" />
+      <Origin ToolID="133" Connection="Output" />
+      <Destination ToolID="154" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="139" Connection="True" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="142" Connection="True" />
+      <Destination ToolID="143" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="142" Connection="False" />
+      <Destination ToolID="148" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="149" Connection="Output" />
+      <Destination ToolID="148" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="143" Connection="Output" />
+      <Destination ToolID="144" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="144" Connection="Output" />
+      <Destination ToolID="145" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Output" />
+      <Destination ToolID="146" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="145" Connection="Output" />
+      <Destination ToolID="147" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="146" Connection="Output" />
+      <Destination ToolID="149" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="147" Connection="Output" />
+      <Destination ToolID="151" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="141" Connection="Output" />
+      <Destination ToolID="142" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="151" Connection="Output" />
+      <Destination ToolID="121" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="151" Connection="Output" />
+      <Destination ToolID="129" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="153" Connection="Output" />
+      <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="154" Connection="Output" />
+      <Destination ToolID="155" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -1621,7 +1743,7 @@ elseif isempty([Day]) then ...</DefaultAnnotationText>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>david#103</Name>
+      <Name>david_103</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
