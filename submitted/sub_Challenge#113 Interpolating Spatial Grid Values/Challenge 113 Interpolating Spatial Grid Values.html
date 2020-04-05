@@ -1,0 +1,14 @@
+﻿</body>
+</head>
+<P>So many different solutions to last week's Challenge have been posted <A href="https://community.alteryx.com/t5/Weekly-Challenge/Challenge-112-Organizing-Survey-Data/td-p/154577" target="_blank">here</A>!</P>
+<P>&nbsp;</P>
+<P>This week's Challenge riffs off a process typically used in spatial analysis with raster inputs: interpolation.&nbsp; In this Challenge, you are provided with two inputs: a polygon representing the island of Maui (hey, there's still snow in the forecast here in CO...can you blame me for picking a beachy location?) and a table of values representing the elevation measurements for 500 m x 500 m grid cells (much like a Digital Elevation Model).&nbsp; However, some grid cells contain a value of 0.&nbsp; We'll use some spatial tools to interpolate, or estimate, the values of the cells containing 0 from a "nearest neighborhood" or surrounding cell values.&nbsp;</P>
+<P>&nbsp;</P>
+<P>First, build a 500 m x 500 m grid around the island of Maui.&nbsp; &nbsp;Then, interpolate the missing value using the average of the known measurements from the surrounding cells, or "neighborhood".&nbsp; Use a neighborhood of the 8 nearest surrounding cells in a unique cardinal direction (see example below; a neighborhood of a cell containing a 0 is outlined in blue. In this example, the new interpolated value of the center cell would be 61.5). Should a missing value be located on the edge, use only the nearest cells in a unique cardinal direction, even if 8 values are not used for the calculation.</P>
+<P><span class="lia-inline-image-display-wrapper lia-image-align-center" image-alt="example.png" style="width: 424px;"><img src="https://pvsmt99345.i.lithium.com/t5/image/serverpage/image-id/32748i47B3A2A3D8A51E93/image-size/large?v=1.0&amp;px=999" title="example.png" alt="example.png" /></span></P>
+<P>&nbsp;</P>
+<P>&nbsp;</P>
+<P>Hint: Grid cell Grd37_68 is column 37, row 68. The Grid tool starts with column 0.</P>
+<P>&nbsp;</P>
+<body>
+<html>

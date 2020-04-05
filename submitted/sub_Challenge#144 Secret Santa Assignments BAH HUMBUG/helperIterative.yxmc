@@ -1,0 +1,816 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="198" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>data</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="50" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="First" />
+                <Field name="Last" />
+                <Field name="Email" />
+                <Field name="Scroogieness" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>Avery</c>
+                  <c>Ortiz</c>
+                  <c>Avery.Ortiz@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>Wayne</c>
+                  <c>Stephens</c>
+                  <c>Wayne.Stephens@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>Irma</c>
+                  <c>Cooper</c>
+                  <c>Irma.Cooper@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>Flynn</c>
+                  <c>Chen</c>
+                  <c>Flynn.Chen@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>Edwin</c>
+                  <c>Fernandez</c>
+                  <c>Edwin.Fernandez@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>Evandro</c>
+                  <c>Alves</c>
+                  <c>Evandro.Alves@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>Floyd</c>
+                  <c>George</c>
+                  <c>Floyd.George@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>Simon</c>
+                  <c>Taylor</c>
+                  <c>Simon.Taylor@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>Koray</c>
+                  <c>Bakırcıoğlu</c>
+                  <c>Koray.Bakırcıoğlu@Example.Com</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>Joel</c>
+                  <c>Ollila</c>
+                  <c>Joel.Ollila@Example.Com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>Joel</c>
+                  <c>Lindal</c>
+                  <c>Joel.Lindal@Example.Com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>Milan</c>
+                  <c>Berger</c>
+                  <c>Milan.Berger@Example.Com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>Esther</c>
+                  <c>Rodriguez</c>
+                  <c>Esther.Rodriguez@Example.Com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>Catalina</c>
+                  <c>Martinez</c>
+                  <c>Catalina.Martinez@Example.Com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>Heidi</c>
+                  <c>Lauvås</c>
+                  <c>Heidi.Lauvås@Example.Com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>Chloe</c>
+                  <c>Wells</c>
+                  <c>Chloe.Wells@Example.Com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>Sebastian</c>
+                  <c>Suarez</c>
+                  <c>Sebastian.Suarez@Example.Com</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>Edzard</c>
+                  <c>Molleman</c>
+                  <c>Edzard.Molleman@Example.Com</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>Nanna</c>
+                  <c>Sørensen</c>
+                  <c>Nanna.Sørensen@Example.Com</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>Jos</c>
+                  <c>Udink</c>
+                  <c>Jos.Udink@Example.Com</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>Andres</c>
+                  <c>Roman</c>
+                  <c>Andres.Roman@Example.Com</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>Hugo</c>
+                  <c>Hernandez</c>
+                  <c>Hugo.Hernandez@Example.Com</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>Pilar</c>
+                  <c>Saez</c>
+                  <c>Pilar.Saez@Example.Com</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>Catherine</c>
+                  <c>Hale</c>
+                  <c>Catherine.Hale@Example.Com</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>Sharlene</c>
+                  <c>Powell</c>
+                  <c>Sharlene.Powell@Example.Com</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>Elizabeth</c>
+                  <c>Gauthier</c>
+                  <c>Elizabeth.Gauthier@Example.Com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>Carl</c>
+                  <c>Pedersen</c>
+                  <c>Carl.Pedersen@Example.Com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>Halil</c>
+                  <c>Lecomte</c>
+                  <c>Halil.Lecomte@Example.Com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>Melvin</c>
+                  <c>Gardner</c>
+                  <c>Melvin.Gardner@Example.Com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>Rodney</c>
+                  <c>Garcia</c>
+                  <c>Rodney.Garcia@Example.Com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>Tomothy</c>
+                  <c>Thompson</c>
+                  <c>Tomothy.Thompson@Example.Com</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>Mélissa</c>
+                  <c>Dupuis</c>
+                  <c>Mélissa.Dupuis@Example.Com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>Laurie</c>
+                  <c>Liu</c>
+                  <c>Laurie.Liu@Example.Com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>تینا</c>
+                  <c>صدر</c>
+                  <c>تینا.صدر@Example.Com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>محمد</c>
+                  <c>حسینی</c>
+                  <c>محمد.حسینی@Example.Com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>Alexander</c>
+                  <c>Vargas</c>
+                  <c>Alexander.Vargas@Example.Com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>Ayşe</c>
+                  <c>Koç</c>
+                  <c>Ayşe.Koç@Example.Com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>Nico</c>
+                  <c>Dubois</c>
+                  <c>Nico.Dubois@Example.Com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>Elsa</c>
+                  <c>Neva</c>
+                  <c>Elsa.Neva@Example.Com</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>Jaxon</c>
+                  <c>Edwards</c>
+                  <c>Jaxon.Edwards@Example.Com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>Mato</c>
+                  <c>Plate</c>
+                  <c>Mato.Plate@Example.Com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>Gabriel</c>
+                  <c>Hale</c>
+                  <c>Gabriel.Hale@Example.Com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>Sátiro</c>
+                  <c>Silveira</c>
+                  <c>Sátiro.Silveira@Example.Com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>Mariano</c>
+                  <c>Molina</c>
+                  <c>Mariano.Molina@Example.Com</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>Savannah</c>
+                  <c>King</c>
+                  <c>Savannah.King@Example.Com</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>Tracy</c>
+                  <c>Black</c>
+                  <c>Tracy.Black@Example.Com</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>Felix</c>
+                  <c>Andersen</c>
+                  <c>Felix.Andersen@Example.Com</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>Johanne</c>
+                  <c>Poulsen</c>
+                  <c>Johanne.Poulsen@Example.Com</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>Taciano</c>
+                  <c>Das Neves</c>
+                  <c>Taciano.Dasneves@Example.Com</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>Lidwina</c>
+                  <c>Dinter</c>
+                  <c>Lidwina.Dinter@Example.Com</c>
+                  <c>1</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="812b830a-a915-4740-9bcf-363ac553fbc3" source="TextInput:" type="Byte" />
+            <Field name="First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="306" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="Last" rename="Last_RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>last</AnnotationText>
+          <DefaultAnnotationText>last</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Last_RecordID" id="ef9c173f-76d1-44b1-8961-f4b0c1173fa0" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="414" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Last_RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Last_RecordID" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>remove last</AnnotationText>
+          <DefaultAnnotationText>remove last</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" id="812b830a-a915-4740-9bcf-363ac553fbc3" source="TextInput:" type="Byte" />
+            <Field name="First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" id="812b830a-a915-4740-9bcf-363ac553fbc3" source="TextInput:" type="Byte" />
+            <Field name="First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Last_RecordID" id="ef9c173f-76d1-44b1-8961-f4b0c1173fa0" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Last_RecordID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="306" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="First" rename="First_RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>first</AnnotationText>
+          <DefaultAnnotationText>first</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="First_RecordID" id="0b0ca681-c77b-49c4-8876-dded92bff94c" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="510" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="First_RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="True" input="Right_" />
+                <SelectField field="Right_First" selected="True" input="Right_" />
+                <SelectField field="Right_Last" selected="True" input="Right_" />
+                <SelectField field="Right_Email" selected="True" input="Right_" />
+                <SelectField field="Right_Scroogieness" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>remove first</AnnotationText>
+          <DefaultAnnotationText>remove first</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="First_RecordID" id="0b0ca681-c77b-49c4-8876-dded92bff94c" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="First_RecordID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" id="812b830a-a915-4740-9bcf-363ac553fbc3" source="TextInput:" type="Byte" />
+            <Field name="First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" id="812b830a-a915-4740-9bcf-363ac553fbc3" source="TextInput:" type="Byte" />
+            <Field name="First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="702" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="False" input="Left_" />
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_First" selected="True" rename="Right_First" input="Right_" />
+                <SelectField field="Right_Last" selected="True" rename="Right_Last" input="Right_" />
+                <SelectField field="Right_Email" selected="True" rename="Right_Email" input="Right_" />
+                <SelectField field="Right_Scroogieness" selected="True" rename="Right_Scroogieness" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>pair</AnnotationText>
+          <DefaultAnnotationText>pair</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+            <Field name="Right_First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Right_Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Right_Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Right_Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="First" id="a0e324ad-8ba9-4d23-80b0-55e5e07e4c63" size="9" source="TextInput:" type="WString" />
+            <Field name="Last" id="1f62d078-51dd-44e3-904d-0f444252dbe8" size="11" source="TextInput:" type="WString" />
+            <Field name="Email" id="4ba5d8d6-0abb-4ae2-8d7b-a879e0f860b1" size="30" source="TextInput:" type="V_WString" />
+            <Field name="Scroogieness" id="294d8460-7d14-4a62-a85b-ae3bc4882429" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="906" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Data</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Data</AnnotationText>
+          <DefaultAnnotationText>O Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="918" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output11</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>iterative</AnnotationText>
+          <DefaultAnnotationText>i Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Left" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Right" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>helperIterative</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (9)</Name>
+          <ToolId value="9" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (10)</Description>
+              <Name>Macro Output (10)</Name>
+              <ToolId value="10" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (11)</Description>
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>data</Input>
+        <Output>Output11</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="10" Selected="True" />
+        <Tool ToolId="11" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

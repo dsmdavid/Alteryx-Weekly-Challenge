@@ -1,0 +1,1219 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1422" y="318" width="264" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Add switch</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="978" y="318" width="432" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Compare totals</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="546" y="378" width="384" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Getting older</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="546" y="174" width="384" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>New bunnies</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="426" y="174" width="100" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>DEAD</Text>
+          <Font name="Arial" size="18" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="246" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>iterative</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="5" />
+              <Fields>
+                <Field name="MalePop" />
+                <Field name="FemalePop" />
+                <Field name="Age" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>11</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>4</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="42d72fc9-ebc3-4d82-9ab8-934ac6417aaf" source="TextInput:" type="Byte" />
+            <Field name="FemalePop" id="c799d44d-c706-44a0-866f-715d406699c7" source="TextInput:" type="Byte" />
+            <Field name="Age" id="6e592839-1b8c-45be-8cc8-d6e0b4b50c73" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="438" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;</Operator>
+            <Field>Age</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-03-08 21:42:28</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>24</Operand>
+              <StartDate>2020-03-08 21:42:28</StartDate>
+              <EndDate>2020-03-08 21:42:28</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Age] &lt; 24</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="MalePop" id="42d72fc9-ebc3-4d82-9ab8-934ac6417aaf" source="TextInput:" type="Int64" />
+            <Field name="FemalePop" id="c799d44d-c706-44a0-866f-715d406699c7" source="TextInput:" type="Int64" />
+            <Field name="Age" id="6e592839-1b8c-45be-8cc8-d6e0b4b50c73" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="MalePop" id="42d72fc9-ebc3-4d82-9ab8-934ac6417aaf" source="TextInput:" type="Int64" />
+            <Field name="FemalePop" id="c799d44d-c706-44a0-866f-715d406699c7" source="TextInput:" type="Int64" />
+            <Field name="Age" id="6e592839-1b8c-45be-8cc8-d6e0b4b50c73" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="546" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;=</Operator>
+            <Field>Age</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-03-08 21:45:51</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>4</Operand>
+              <StartDate>2020-03-08 21:45:51</StartDate>
+              <EndDate>2020-03-08 21:45:51</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Age] &gt;= 4</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="MalePop" id="42d72fc9-ebc3-4d82-9ab8-934ac6417aaf" source="TextInput:" type="Int64" />
+            <Field name="FemalePop" id="c799d44d-c706-44a0-866f-715d406699c7" source="TextInput:" type="Int64" />
+            <Field name="Age" id="6e592839-1b8c-45be-8cc8-d6e0b4b50c73" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="MalePop" id="42d72fc9-ebc3-4d82-9ab8-934ac6417aaf" source="TextInput:" type="Int64" />
+            <Field name="FemalePop" id="c799d44d-c706-44a0-866f-715d406699c7" source="TextInput:" type="Int64" />
+            <Field name="Age" id="6e592839-1b8c-45be-8cc8-d6e0b4b50c73" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="630" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[FemalePop]" field="New_Males" size="8" type="Int64" />
+            <FormulaField expression="3*[FemalePop]" field="New_Females" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[New_Males = [FemalePop]
+New_Females = 3*[FemalePop]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="42d72fc9-ebc3-4d82-9ab8-934ac6417aaf" source="TextInput:" type="Int64" />
+            <Field name="FemalePop" id="c799d44d-c706-44a0-866f-715d406699c7" source="TextInput:" type="Int64" />
+            <Field name="Age" id="6e592839-1b8c-45be-8cc8-d6e0b4b50c73" source="TextInput:" type="Int16" />
+            <Field name="New_Males" id="3e8d96b9-43e1-48ad-8619-2c814765d8b5" source="Formula: [FemalePop]" type="Int64" />
+            <Field name="New_Females" id="6b20981c-b027-479e-a12b-0deaa1249e67" source="Formula: 3*[FemalePop]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="726" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="New_Males" action="Sum" rename="MalePop" />
+            <SummarizeField field="New_Females" action="Sum" rename="FemalePop" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="8a1bd4bf-9caa-4c9b-a433-0a82f63c7b9b" source="Summarize: Sum - New_Males" type="Int64" />
+            <Field name="FemalePop" id="a324e8de-e169-41f4-b097-9baf020f5c7a" source="Summarize: Sum - New_Females" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="810" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0" field="Age" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Age = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="8a1bd4bf-9caa-4c9b-a433-0a82f63c7b9b" source="Summarize: Sum - New_Males" type="Int64" />
+            <Field name="FemalePop" id="a324e8de-e169-41f4-b097-9baf020f5c7a" source="Summarize: Sum - New_Females" type="Int64" />
+            <Field name="Age" id="1ecd9bc6-188b-43f8-9c05-63760e19db18" source="Formula: 0" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="810" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Age]+1" field="Age" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Age = [Age]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="42d72fc9-ebc3-4d82-9ab8-934ac6417aaf" source="TextInput:" type="Int64" />
+            <Field name="FemalePop" id="c799d44d-c706-44a0-866f-715d406699c7" source="TextInput:" type="Int64" />
+            <Field name="Age" id="6e592839-1b8c-45be-8cc8-d6e0b4b50c73" source="Formula: [Age]+1" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="MalePop" selected="True" type="Int64" size="8" />
+            <SelectField field="FemalePop" selected="True" type="Int64" size="8" />
+            <SelectField field="Age" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="42d72fc9-ebc3-4d82-9ab8-934ac6417aaf" source="TextInput:" type="Int64" />
+            <Field name="FemalePop" id="c799d44d-c706-44a0-866f-715d406699c7" source="TextInput:" type="Int64" />
+            <Field name="Age" id="6e592839-1b8c-45be-8cc8-d6e0b4b50c73" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="978" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="850f309f-fe84-4402-837a-ba63c8862b63" source="(Multiple Sources)" type="Int64" />
+            <Field name="FemalePop" id="5dce14fc-cf11-4081-b4a3-e96b6c133712" source="(Multiple Sources)" type="Int64" />
+            <Field name="Age" id="9b989457-0d68-4cef-96ce-e05b7d6f6939" source="Formula: (Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1062" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="MalePop" action="Sum" rename="Sum_MalePop" />
+            <SummarizeField field="FemalePop" action="Sum" rename="Sum_FemalePop" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_MalePop" id="38f63d16-ac9b-4d95-9ed0-b36de5d110db" source="Summarize: Sum - MalePop" type="Int64" />
+            <Field name="Sum_FemalePop" id="b2a6ebed-9481-4d2f-830a-d510719cd669" source="Summarize: Sum - FemalePop" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1158" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum_MalePop]+[Sum_FemalePop]" field="Total" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Total = [Sum_MalePop]+[Sum_FemalePop]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_MalePop" id="38f63d16-ac9b-4d95-9ed0-b36de5d110db" source="Summarize: Sum - MalePop" type="Int64" />
+            <Field name="Sum_FemalePop" id="b2a6ebed-9481-4d2f-830a-d510719cd669" source="Summarize: Sum - FemalePop" type="Int64" />
+            <Field name="Total" id="a4d17aa0-2d8c-4d91-8864-4d3a083e780a" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Human Pop]*POW(1+0.00058, [Engine.IterationNumber]+1)" field="Current Human" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Current Human = [Human Pop]*POW(1+0.00058, [Engine.IterationNumber]+1)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" id="0d53e859-9057-4714-9c1a-0d41716960e6" source="TextInput:" type="Date" />
+            <Field name="Human Pop" id="d39666ae-584d-4006-9152-6ca341fba3f3" source="TextInput:" type="Int32" />
+            <Field name="Current Human" id="0a0fc8f8-4f12-41f6-aa83-07c7f4449cb1" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1266" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_MalePop" id="38f63d16-ac9b-4d95-9ed0-b36de5d110db" source="Summarize: Sum - MalePop" type="Int64" />
+            <Field name="Sum_FemalePop" id="b2a6ebed-9481-4d2f-830a-d510719cd669" source="Summarize: Sum - FemalePop" type="Int64" />
+            <Field name="Total" id="a4d17aa0-2d8c-4d91-8864-4d3a083e780a" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="0d53e859-9057-4714-9c1a-0d41716960e6" source="TextInput:" type="Date" />
+            <Field name="Human Pop" id="d39666ae-584d-4006-9152-6ca341fba3f3" source="TextInput:" type="Int32" />
+            <Field name="Current Human" id="0a0fc8f8-4f12-41f6-aa83-07c7f4449cb1" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1338" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Total] &lt;= 2* [Current Human]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Total] &lt;= 2* [Current Human]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Sum_MalePop" id="38f63d16-ac9b-4d95-9ed0-b36de5d110db" source="Summarize: Sum - MalePop" type="Int64" />
+            <Field name="Sum_FemalePop" id="b2a6ebed-9481-4d2f-830a-d510719cd669" source="Summarize: Sum - FemalePop" type="Int64" />
+            <Field name="Total" id="a4d17aa0-2d8c-4d91-8864-4d3a083e780a" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="0d53e859-9057-4714-9c1a-0d41716960e6" source="TextInput:" type="Date" />
+            <Field name="Human Pop" id="d39666ae-584d-4006-9152-6ca341fba3f3" source="TextInput:" type="Int32" />
+            <Field name="Current Human" id="0a0fc8f8-4f12-41f6-aa83-07c7f4449cb1" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Sum_MalePop" id="38f63d16-ac9b-4d95-9ed0-b36de5d110db" source="Summarize: Sum - MalePop" type="Int64" />
+            <Field name="Sum_FemalePop" id="b2a6ebed-9481-4d2f-830a-d510719cd669" source="Summarize: Sum - FemalePop" type="Int64" />
+            <Field name="Total" id="a4d17aa0-2d8c-4d91-8864-4d3a083e780a" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="0d53e859-9057-4714-9c1a-0d41716960e6" source="TextInput:" type="Date" />
+            <Field name="Human Pop" id="d39666ae-584d-4006-9152-6ca341fba3f3" source="TextInput:" type="Int32" />
+            <Field name="Current Human" id="0a0fc8f8-4f12-41f6-aa83-07c7f4449cb1" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1422" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="1" field="Continue" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Continue = 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_MalePop" id="38f63d16-ac9b-4d95-9ed0-b36de5d110db" source="Summarize: Sum - MalePop" type="Int64" />
+            <Field name="Sum_FemalePop" id="b2a6ebed-9481-4d2f-830a-d510719cd669" source="Summarize: Sum - FemalePop" type="Int64" />
+            <Field name="Total" id="a4d17aa0-2d8c-4d91-8864-4d3a083e780a" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="0d53e859-9057-4714-9c1a-0d41716960e6" source="TextInput:" type="Date" />
+            <Field name="Human Pop" id="d39666ae-584d-4006-9152-6ca341fba3f3" source="TextInput:" type="Int32" />
+            <Field name="Current Human" id="0a0fc8f8-4f12-41f6-aa83-07c7f4449cb1" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="Continue" id="d6a8613b-e05d-4f58-9c1f-a5d84b3992e6" source="Formula: 1" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1422" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="0" field="Continue" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Continue = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_MalePop" id="38f63d16-ac9b-4d95-9ed0-b36de5d110db" source="Summarize: Sum - MalePop" type="Int64" />
+            <Field name="Sum_FemalePop" id="b2a6ebed-9481-4d2f-830a-d510719cd669" source="Summarize: Sum - FemalePop" type="Int64" />
+            <Field name="Total" id="a4d17aa0-2d8c-4d91-8864-4d3a083e780a" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="0d53e859-9057-4714-9c1a-0d41716960e6" source="TextInput:" type="Date" />
+            <Field name="Human Pop" id="d39666ae-584d-4006-9152-6ca341fba3f3" source="TextInput:" type="Int32" />
+            <Field name="Current Human" id="0a0fc8f8-4f12-41f6-aa83-07c7f4449cb1" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="Continue" id="8cdb515f-a4ca-44da-a192-ffa55e17b90e" source="Formula: 0" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1518" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Sum_MalePop" id="b3670468-c68d-4313-9be2-91fa29a26e26" source="Summarize: Sum - MalePop" type="Int64" />
+            <Field name="Sum_FemalePop" id="73a70564-da92-4373-95ce-f94a3ccfd494" source="Summarize: Sum - FemalePop" type="Int64" />
+            <Field name="Total" id="fca8ae53-bf23-4ac4-9126-8ee9738520ab" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="adfdf7c2-252e-433d-b6c3-e1c796fc2b96" source="TextInput:" type="Date" />
+            <Field name="Human Pop" id="c1830522-cfac-4e02-b0ec-4d1238b90d80" source="TextInput:" type="Int32" />
+            <Field name="Current Human" id="2b089e70-fe49-4e4b-8d9e-d6dc371dbc88" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="Continue" id="ac4cdf44-7650-4cde-9ed1-995ed101da20" source="Formula: (Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1590" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Total" selected="True" />
+            <SelectField field="Date" selected="True" />
+            <SelectField field="Current Human" selected="True" />
+            <SelectField field="Continue" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Total" id="fca8ae53-bf23-4ac4-9126-8ee9738520ab" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="adfdf7c2-252e-433d-b6c3-e1c796fc2b96" source="TextInput:" type="Date" />
+            <Field name="Current Human" id="2b089e70-fe49-4e4b-8d9e-d6dc371dbc88" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="Continue" id="ac4cdf44-7650-4cde-9ed1-995ed101da20" source="Formula: (Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1686" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Add decision</AnnotationText>
+          <DefaultAnnotationText>Add decision</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="850f309f-fe84-4402-837a-ba63c8862b63" source="(Multiple Sources)" type="Int64" />
+            <Field name="FemalePop" id="5dce14fc-cf11-4081-b4a3-e96b6c133712" source="(Multiple Sources)" type="Int64" />
+            <Field name="Age" id="9b989457-0d68-4cef-96ce-e05b7d6f6939" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Total" id="fca8ae53-bf23-4ac4-9126-8ee9738520ab" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="adfdf7c2-252e-433d-b6c3-e1c796fc2b96" source="TextInput:" type="Date" />
+            <Field name="Current Human" id="2b089e70-fe49-4e4b-8d9e-d6dc371dbc88" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="Continue" id="ac4cdf44-7650-4cde-9ed1-995ed101da20" source="Formula: (Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1758" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Continue</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-03-08 21:30:02</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2020-03-08 21:30:02</StartDate>
+              <EndDate>2020-03-08 21:30:02</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Continue] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="MalePop" id="850f309f-fe84-4402-837a-ba63c8862b63" source="(Multiple Sources)" type="Int64" />
+            <Field name="FemalePop" id="5dce14fc-cf11-4081-b4a3-e96b6c133712" source="(Multiple Sources)" type="Int64" />
+            <Field name="Age" id="9b989457-0d68-4cef-96ce-e05b7d6f6939" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Total" id="fca8ae53-bf23-4ac4-9126-8ee9738520ab" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="adfdf7c2-252e-433d-b6c3-e1c796fc2b96" source="TextInput:" type="Date" />
+            <Field name="Current Human" id="2b089e70-fe49-4e4b-8d9e-d6dc371dbc88" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="Continue" id="ac4cdf44-7650-4cde-9ed1-995ed101da20" source="Formula: (Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="MalePop" id="850f309f-fe84-4402-837a-ba63c8862b63" source="(Multiple Sources)" type="Int64" />
+            <Field name="FemalePop" id="5dce14fc-cf11-4081-b4a3-e96b6c133712" source="(Multiple Sources)" type="Int64" />
+            <Field name="Age" id="9b989457-0d68-4cef-96ce-e05b7d6f6939" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Total" id="fca8ae53-bf23-4ac4-9126-8ee9738520ab" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="adfdf7c2-252e-433d-b6c3-e1c796fc2b96" source="TextInput:" type="Date" />
+            <Field name="Current Human" id="2b089e70-fe49-4e4b-8d9e-d6dc371dbc88" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="Continue" id="ac4cdf44-7650-4cde-9ed1-995ed101da20" source="Formula: (Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1890" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="MalePop" selected="True" />
+            <SelectField field="FemalePop" selected="True" />
+            <SelectField field="Age" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>restore input</AnnotationText>
+          <DefaultAnnotationText>restore input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="850f309f-fe84-4402-837a-ba63c8862b63" source="(Multiple Sources)" type="Int64" />
+            <Field name="FemalePop" id="5dce14fc-cf11-4081-b4a3-e96b6c133712" source="(Multiple Sources)" type="Int64" />
+            <Field name="Age" id="9b989457-0d68-4cef-96ce-e05b7d6f6939" source="Formula: (Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1998" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>i</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>i Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2094" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output27</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="270" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>human</Name>
+          <Abbrev>H</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Date" />
+                <Field name="Human Pop" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2018-07-02</c>
+                  <c>326766748</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>H Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Date" id="0d53e859-9057-4714-9c1a-0d41716960e6" source="TextInput:" type="Date" />
+            <Field name="Human Pop" id="d39666ae-584d-4006-9152-6ca341fba3f3" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1890" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeAdd([Date],[Engine.IterationNumber]+1,'month')" field="When" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[When = DateTimeAdd([Date],[Engine.IterationNumber]+1,'month')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="MalePop" id="850f309f-fe84-4402-837a-ba63c8862b63" source="(Multiple Sources)" type="Int64" />
+            <Field name="FemalePop" id="5dce14fc-cf11-4081-b4a3-e96b6c133712" source="(Multiple Sources)" type="Int64" />
+            <Field name="Age" id="9b989457-0d68-4cef-96ce-e05b7d6f6939" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field name="Total" id="fca8ae53-bf23-4ac4-9126-8ee9738520ab" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Date" id="adfdf7c2-252e-433d-b6c3-e1c796fc2b96" source="TextInput:" type="Date" />
+            <Field name="Current Human" id="2b089e70-fe49-4e4b-8d9e-d6dc371dbc88" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="Continue" id="ac4cdf44-7650-4cde-9ed1-995ed101da20" source="Formula: (Multiple Sources)" type="Byte" />
+            <Field name="When" id="dab22598-10c4-4a75-b721-c7c0be10e70c" size="1073741823" source="Formula: DateTimeAdd([Date],[Engine.Ite..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1962" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="MalePop" selected="False" />
+            <SelectField field="FemalePop" selected="False" />
+            <SelectField field="Age" selected="False" />
+            <SelectField field="Date" selected="False" />
+            <SelectField field="Continue" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Total" id="fca8ae53-bf23-4ac4-9126-8ee9738520ab" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Current Human" id="2b089e70-fe49-4e4b-8d9e-d6dc371dbc88" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="When" id="dab22598-10c4-4a75-b721-c7c0be10e70c" size="1073741823" source="Formula: DateTimeAdd([Date],[Engine.Ite..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="2034" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Total" id="fca8ae53-bf23-4ac4-9126-8ee9738520ab" source="Formula: [Sum_MalePop]+[Sum_FemalePop]" type="Int64" />
+            <Field name="Current Human" id="2b089e70-fe49-4e4b-8d9e-d6dc371dbc88" source="Formula: [Human Pop]*POW(1+0.00058, [En..." type="Int64" />
+            <Field name="When" id="dab22598-10c4-4a75-b721-c7c0be10e70c" size="1073741823" source="Formula: DateTimeAdd([Date],[Engine.Ite..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="23" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="16" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="False" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="False" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (26)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (27)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>monthly</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (14)</Name>
+          <ToolId value="14" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (13)</Name>
+              <ToolId value="13" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (26)</Description>
+              <Name>Macro Output (26)</Name>
+              <ToolId value="26" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (27)</Description>
+              <Name>Macro Output (27)</Name>
+              <ToolId value="27" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>iterative</Input>
+        <Output>i</Output>
+        <IterationLimit value="10000" />
+        <LimitBehavior>Ignore</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="26" Selected="True" />
+        <Tool ToolId="27" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

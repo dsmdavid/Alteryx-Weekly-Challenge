@@ -1,0 +1,1956 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2250" y="690" width="360" height="564" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Efficiency and sort selected</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1446" y="1074" width="456" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Keep only those in CO</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1446" y="690" width="456" height="372" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Select needed fields only</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1926" y="690" width="312" height="564" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Apply selection criteria (numbers, etc + state)</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="231" g="206" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="510" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Blue to highlight general data prep</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="870" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Orange for test tool segments</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="188" b="121" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="378" width="312" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Green for inputs and outputs</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="174" g="255" b="174" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1164" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Challenge#145</Text>
+          <Font name="Segoe UI" size="48" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="210" width="456" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Workflow built by: Github/dsmdavid
+]]></Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="630" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Purple for Logic</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="231" g="206" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="990" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Red for Danger Items</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="147" b="147" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="1110" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Yellow sticky notes for handovers and WIP</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="151" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="294" width="312" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Documentation Guide:</Text>
+          <Font name="Segoe UI" size="20.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="6" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="750" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Grey for interface tools</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="218" g="218" b="218" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="426" y="330" width="756" height="432" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[SANTALYTICS 2018 - Part 1
+ 
+
+In the spirit of the season, the Community team would like to donate to a local Colorado charity and we need your help! In today's challenge, you'll help us find a worthy charity, and in next week's part II, you'll help us determine exactly how to spend the money.
+
+We need you to analyze publicly available IRS data. There are three key datasets:
+
+Exempt Organization Returns Filed in Calendar Year 2017: download the Form 990 Extract here. (https://s3-us-west-1.amazonaws.com/ayx.community.assets/17eofinextract990.dat)
+Download the corresponding data dictionary here. (https://s3-us-west-1.amazonaws.com/ayx.community.assets/17eofinextractdoc.xls)
+There's also an IRS lookup list that will allow you associate Employer Identification Number (EIN) to the charity's name. Download it here. (https://s3-us-west-1.amazonaws.com/ayx.community.assets/data-download-pub78.txt)
+
+Blend and analyze the data to determine which charity we will donate to given:
+
+It needs to be in Colorado (see State field)
+It should benefit people (see Grants to individuals? field)
+They should actively be raising funds (see Fundraising activities? field)
+We should be allowed to donate items, not just cash (see Deductible non-cash contributions? field)
+The charity should be small and flying under the radar (Number of employees < 300; Advertising and promotion < $1,000)
+But making a big impact (Total contributions > $5,000,000)
+
+Once you've narrowed down the list based on the above criteria, rank the remaining charities based on fundraising efficiency and select the top charity! (see Fundraising expenses and Total contributions fields)
+
+ 
+
+Extra credit: Come up with your own ranking criteria to identify a worthy charity in your neck of the woods!
+
+ ]]></Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="84">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1818" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="EIN" />
+            <Field name="tax_pd" />
+            <Field name="rptincfnndrsngcd" />
+            <Field name="rptgrntstoindvcd" />
+            <Field name="recvnoncashcd" />
+            <Field name="noemplyeesw3cnt" />
+            <Field name="totcntrbgfts" />
+            <Field name="advrtpromo" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Warn</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>Data Items on Form 990 Annual Masterfile Extract</OldName>
+            <NewName>F2</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="Employer Identification Number" id="eab84707-cf52-42d3-989d-9fab845fa185" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Tax period" id="497f9f20-5ae2-4c65-840c-2cff231f340e" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Fundraising activities?" id="cccc92e2-79b3-48e1-9e46-56e7208fb7c7" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Grants to individuals?" id="a0bc4742-665d-46b8-946f-f6611e69e776" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Deductible non-cash contributions?" id="82883e9c-2e21-438b-a759-9ebad7d8be6a" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Number of employees" id="930606d6-7e0a-4835-bc13-2aff7bde2884" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Total contributions" id="c178611c-b0c9-4495-8aa9-00325f7af0e1" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Fundraising expenses" id="7551388f-955d-42aa-9cc9-e986f12c7c9a" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="Advertising and promotion" id="11788fed-b366-416a-b985-75b45d7c152d" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1470" y="978" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([F2], 'grants to individuals?') ||
+Contains([F2], 'fundraising activities') ||
+Contains([F2], 'deductible non-cash') ||
+Contains([F2], 'employees') ||
+Contains([F2], 'advertising') ||
+Contains([F2], 'total contr') ||
+Contains([F2], "fundraising expenses")
+||
+Contains([F2], 'employer identification') ||
+Contains([F2], 'tax period')</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Fields needed</AnnotationText>
+          <DefaultAnnotationText>Contains([F2], 'grants to individuals?') ||
+Contains([F2], 'fundraising activiti...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1578" y="894" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Data Items on Form 990 Annual Masterfile Extract" action="Concat" rename="Names">
+              <Concat_Start>"</Concat_Start>
+              <Separator>","</Separator>
+              <Concat_End>"</Concat_End>
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>list of fields to keep</AnnotationText>
+          <DefaultAnnotationText>list of fields to keep</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="87">
+      <GuiSettings>
+        <Position x="1698" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (4)=Names
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>field selector</AnnotationText>
+          <DefaultAnnotationText>field selector</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output6">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="EIN" id="a1b1e7e5-04ee-407e-836e-c2664f6de7b1" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="tax_pd" id="c6ef1878-8081-4230-8a8f-f975105180e3" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="rptincfnndrsngcd" id="2234c41e-5426-4334-9f13-f596ad02f99e" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="rptgrntstoindvcd" id="f5b5d2ae-dedb-4600-b9f5-ce23cea68f26" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="recvnoncashcd" id="b2339130-b3a3-42b4-93ef-a604a63c2e3e" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="noemplyeesw3cnt" id="711b2bdd-9660-45bb-a574-c02a281eb07f" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="totcntrbgfts" id="2cd4b0af-6d5c-4366-bd45-ae744617ea1c" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="lessdirfndrsng" id="9e495fb5-5a6b-4225-ade9-01116eb5188a" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="advrtpromo" id="fa7d8864-0acd-4d39-a872-6dc6a07a9ac2" size="1073741823" source="TextToColumns: Parsed from DownloadData (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro=".\helperFieldSelector.yxmc" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1470" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="1" selected="True" rename="EIN" />
+            <SelectField field="2" selected="True" rename="NAME" />
+            <SelectField field="3" selected="False" />
+            <SelectField field="4" selected="True" rename="STATE" />
+            <SelectField field="5" selected="False" />
+            <SelectField field="6" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1578" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>STATE</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-03-28 15:42:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>CO</Operand>
+              <StartDate>2020-03-28 15:42:05</StartDate>
+              <EndDate>2020-03-28 15:42:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[STATE] = "CO"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="90">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="2058" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Employer Identification Number</FieldFind>
+          <FieldSearch>EIN</FieldSearch>
+          <ReplaceFoundField>NAME</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="NAME" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1938" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Fundraising activities?] = "Y" &amp;&amp;
+[Grants to individuals?] = "Y" &amp;&amp;
+[Deductible non-cash contributions?] = "Y" &amp;&amp;
+tonumber([Number of employees]) &lt;300 &amp;&amp;
+tonumber([Advertising and promotion])&lt;1000 &amp;&amp;
+ToNumber([Total contributions]) &gt;5000000</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Apply criteria</AnnotationText>
+          <DefaultAnnotationText>[Fundraising activities?] = "Y" &amp;&amp;
+[Grants to individuals?] = "Y" &amp;&amp;
+[Deductible...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2178" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>NAME</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-03-28 15:46:05</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2020-03-28 15:46:05</StartDate>
+              <EndDate>2020-03-28 15:46:05</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([NAME])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2298" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber([Total contributions])&#xA;/&#xA;ToNumber([Fundraising expenses])" field="Efficiency" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Efficiency = ToNumber([Total contributions])
+/
+ToNumber([Fundraising expenses])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="2418" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Efficiency" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Efficiency - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2538" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Employer Identification Number" selected="True" />
+            <SelectField field="NAME" selected="True" />
+            <SelectField field="Tax period" selected="True" />
+            <SelectField field="Fundraising activities?" selected="False" />
+            <SelectField field="Grants to individuals?" selected="False" />
+            <SelectField field="Deductible non-cash contributions?" selected="False" />
+            <SelectField field="Number of employees" selected="False" />
+            <SelectField field="Total contributions" selected="True" />
+            <SelectField field="Fundraising expenses" selected="True" />
+            <SelectField field="Advertising and promotion" selected="False" />
+            <SelectField field="Efficiency" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1362" y="834" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">990form</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>990form</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1362" y="978" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="8">datadictionary.xls|||`990$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <NoProgress>False</NoProgress>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>datadictionary.xls
+Query=`990$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Data Items on Form 990 Annual Masterfile Extract" id="e21eed3b-5966-41e9-86dd-38dd9e1a294b" size="255" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#145\datadictionary.xls|||`990$`" type="V_WString" />
+            <Field name="F2" id="6ad87c26-f4e9-44af-8a7d-1133db3db2b7" size="255" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#145\datadictionary.xls|||`990$`" type="V_WString" />
+            <Field name="F3" id="fd350f6c-9762-491d-9ef4-a43e81f744a8" size="255" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#145\datadictionary.xls|||`990$`" type="V_WString" />
+            <Field name="F4" id="63ed3754-f678-41fc-908e-c92cadde9233" size="255" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#145\datadictionary.xls|||`990$`" type="V_WString" />
+            <Field name="F5" id="6be6163a-36ac-433f-892c-175388811aae" size="255" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#145\datadictionary.xls|||`990$`" type="V_WString" />
+            <Field name="F6" id="3f2dd055-d9d7-40c9-be79-b461a7ffd253" size="255" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#145\datadictionary.xls|||`990$`" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1362" y="1086" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">lookup</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>lookup</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from DownloadData" name="1" id="570e68d3-44af-4284-9dbd-719fb415ed2d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="2" id="e380851e-8924-41ef-9340-c1dce57d681a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="3" id="2ad8c642-4efd-4483-b664-236aea375103" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="4" id="dfac5c25-2d01-4a27-a385-5c7f621fcee3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="5" id="21da21ae-0ec7-45a7-ad86-43070d1fe0bb" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+            <Field description="TextToColumns: Parsed from DownloadData" name="6" id="f71b0538-2eb5-402a-87a1-c78c8c37c5d3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="414" y="690" width="900" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Download URLs</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="425" y="808.9999" width="889" height="389.0001" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Download and parse</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="918" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>DownloadData</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>
+              </RootName>
+              <Delimeters value="\s" />
+              <NumFields value="246" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>\s to new col</AnnotationText>
+              <DefaultAnnotationText>\s to new col</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1002" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DownloadData" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="1110" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>FirstRow</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="1" />
+                <Field name="2" />
+                <Field name="3" />
+                <Field name="4" />
+                <Field name="5" />
+                <Field name="6" />
+                <Field name="7" />
+                <Field name="8" />
+                <Field name="9" />
+                <Field name="10" />
+                <Field name="11" />
+                <Field name="12" />
+                <Field name="13" />
+                <Field name="14" />
+                <Field name="15" />
+                <Field name="16" />
+                <Field name="17" />
+                <Field name="18" />
+                <Field name="19" />
+                <Field name="20" />
+                <Field name="21" />
+                <Field name="22" />
+                <Field name="23" />
+                <Field name="24" />
+                <Field name="25" />
+                <Field name="26" />
+                <Field name="27" />
+                <Field name="28" />
+                <Field name="29" />
+                <Field name="30" />
+                <Field name="31" />
+                <Field name="32" />
+                <Field name="33" />
+                <Field name="34" />
+                <Field name="35" />
+                <Field name="36" />
+                <Field name="37" />
+                <Field name="38" />
+                <Field name="39" />
+                <Field name="40" />
+                <Field name="41" />
+                <Field name="42" />
+                <Field name="43" />
+                <Field name="44" />
+                <Field name="45" />
+                <Field name="46" />
+                <Field name="47" />
+                <Field name="48" />
+                <Field name="49" />
+                <Field name="50" />
+                <Field name="51" />
+                <Field name="52" />
+                <Field name="53" />
+                <Field name="54" />
+                <Field name="55" />
+                <Field name="56" />
+                <Field name="57" />
+                <Field name="58" />
+                <Field name="59" />
+                <Field name="60" />
+                <Field name="61" />
+                <Field name="62" />
+                <Field name="63" />
+                <Field name="64" />
+                <Field name="65" />
+                <Field name="66" />
+                <Field name="67" />
+                <Field name="68" />
+                <Field name="69" />
+                <Field name="70" />
+                <Field name="71" />
+                <Field name="72" />
+                <Field name="73" />
+                <Field name="74" />
+                <Field name="75" />
+                <Field name="76" />
+                <Field name="77" />
+                <Field name="78" />
+                <Field name="79" />
+                <Field name="80" />
+                <Field name="81" />
+                <Field name="82" />
+                <Field name="83" />
+                <Field name="84" />
+                <Field name="85" />
+                <Field name="86" />
+                <Field name="87" />
+                <Field name="88" />
+                <Field name="89" />
+                <Field name="90" />
+                <Field name="91" />
+                <Field name="92" />
+                <Field name="93" />
+                <Field name="94" />
+                <Field name="95" />
+                <Field name="96" />
+                <Field name="97" />
+                <Field name="98" />
+                <Field name="99" />
+                <Field name="100" />
+                <Field name="101" />
+                <Field name="102" />
+                <Field name="103" />
+                <Field name="104" />
+                <Field name="105" />
+                <Field name="106" />
+                <Field name="107" />
+                <Field name="108" />
+                <Field name="109" />
+                <Field name="110" />
+                <Field name="111" />
+                <Field name="112" />
+                <Field name="113" />
+                <Field name="114" />
+                <Field name="115" />
+                <Field name="116" />
+                <Field name="117" />
+                <Field name="118" />
+                <Field name="119" />
+                <Field name="120" />
+                <Field name="121" />
+                <Field name="122" />
+                <Field name="123" />
+                <Field name="124" />
+                <Field name="125" />
+                <Field name="126" />
+                <Field name="127" />
+                <Field name="128" />
+                <Field name="129" />
+                <Field name="130" />
+                <Field name="131" />
+                <Field name="132" />
+                <Field name="133" />
+                <Field name="134" />
+                <Field name="135" />
+                <Field name="136" />
+                <Field name="137" />
+                <Field name="138" />
+                <Field name="139" />
+                <Field name="140" />
+                <Field name="141" />
+                <Field name="142" />
+                <Field name="143" />
+                <Field name="144" />
+                <Field name="145" />
+                <Field name="146" />
+                <Field name="147" />
+                <Field name="148" />
+                <Field name="149" />
+                <Field name="150" />
+                <Field name="151" />
+                <Field name="152" />
+                <Field name="153" />
+                <Field name="154" />
+                <Field name="155" />
+                <Field name="156" />
+                <Field name="157" />
+                <Field name="158" />
+                <Field name="159" />
+                <Field name="160" />
+                <Field name="161" />
+                <Field name="162" />
+                <Field name="163" />
+                <Field name="164" />
+                <Field name="165" />
+                <Field name="166" />
+                <Field name="167" />
+                <Field name="168" />
+                <Field name="169" />
+                <Field name="170" />
+                <Field name="171" />
+                <Field name="172" />
+                <Field name="173" />
+                <Field name="174" />
+                <Field name="175" />
+                <Field name="176" />
+                <Field name="177" />
+                <Field name="178" />
+                <Field name="179" />
+                <Field name="180" />
+                <Field name="181" />
+                <Field name="182" />
+                <Field name="183" />
+                <Field name="184" />
+                <Field name="185" />
+                <Field name="186" />
+                <Field name="187" />
+                <Field name="188" />
+                <Field name="189" />
+                <Field name="190" />
+                <Field name="191" />
+                <Field name="192" />
+                <Field name="193" />
+                <Field name="194" />
+                <Field name="195" />
+                <Field name="196" />
+                <Field name="197" />
+                <Field name="198" />
+                <Field name="199" />
+                <Field name="200" />
+                <Field name="201" />
+                <Field name="202" />
+                <Field name="203" />
+                <Field name="204" />
+                <Field name="205" />
+                <Field name="206" />
+                <Field name="207" />
+                <Field name="208" />
+                <Field name="209" />
+                <Field name="210" />
+                <Field name="211" />
+                <Field name="212" />
+                <Field name="213" />
+                <Field name="214" />
+                <Field name="215" />
+                <Field name="216" />
+                <Field name="217" />
+                <Field name="218" />
+                <Field name="219" />
+                <Field name="220" />
+                <Field name="221" />
+                <Field name="222" />
+                <Field name="223" />
+                <Field name="224" />
+                <Field name="225" />
+                <Field name="226" />
+                <Field name="227" />
+                <Field name="228" />
+                <Field name="229" />
+                <Field name="230" />
+                <Field name="231" />
+                <Field name="232" />
+                <Field name="233" />
+                <Field name="234" />
+                <Field name="235" />
+                <Field name="236" />
+                <Field name="237" />
+                <Field name="238" />
+                <Field name="239" />
+                <Field name="240" />
+                <Field name="241" />
+                <Field name="242" />
+                <Field name="243" />
+                <Field name="244" />
+                <Field name="245" />
+                <Field name="246" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression />
+              <FirstRow>
+                <OnError>Warn</OnError>
+              </FirstRow>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from DownloadData" name="elf" id="d0e2caa5-5d10-41b2-a3c7-5ddbc6088d1f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="EIN" id="95cfb04b-4f58-4d27-b8af-5233268fca96" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="tax_pd" id="52decbe8-2c70-40fc-ac9a-c20c804a59e1" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="subseccd" id="f2594972-caa1-4be8-87a0-c4e3c8661a37" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="s501c3or4947a1cd" id="9d5d1ec2-0d4c-4de8-aa5b-0705e3171dfc" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="schdbind" id="33eb9a30-85fc-4eae-9406-aa63949c058c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="politicalactvtscd" id="2813f3b0-9990-412a-9719-7b891e133628" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="lbbyingactvtscd" id="42997d5a-66b7-4efb-aa00-85a4f0c7f0fd" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="subjto6033cd" id="eb8438c7-757b-4c45-9989-e959cffdb835" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="dnradvisedfundscd" id="12a2e9f5-f446-4d97-94ee-bdc86f18c712" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prptyintrcvdcd" id="feb71c1e-179c-4ade-ae9d-1b8b36a36e85" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="maintwrkofartcd" id="980a6256-daa8-4b02-81ab-ea8bbdf2a66f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="crcounselingqstncd" id="fd4f2c4c-e03f-4ea2-8126-0feb18adc18a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="hldassetsintermpermcd" id="7b4f5351-5d2c-465c-800c-9bb436b43a26" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptlndbldgeqptcd" id="f00d4dba-fdc0-49c0-9c10-93afbeb201fb" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptinvstothsecd" id="89158a98-39a9-42bd-a5b1-554e7ea7f56a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptinvstprgrelcd" id="68e15a30-cf02-48f6-8e4d-53625337b850" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptothasstcd" id="cda0165b-d619-4717-abc4-68edeecd0c2d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptothliabcd" id="e694e697-464c-4c4b-a640-df300a1e2c8d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="sepcnsldtfinstmtcd" id="6581fef9-eb86-4dc8-8c72-09bbbcc0368a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="sepindaudfinstmtcd" id="9198cd8f-7723-47cf-bf16-41546cdec36f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="inclinfinstmtcd" id="f7c9b8fd-4635-421b-84a5-e34b0c04cc34" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="operateschools170cd" id="849794f1-a574-4fc3-bd7d-5e295f292a6b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="frgnofficecd" id="7eda611b-6c64-4ea1-adaa-b8f83f6361ef" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="frgnrevexpnscd" id="db50087e-d895-4478-8f22-385da93a6243" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="frgngrntscd" id="581ba11c-c737-4e70-b847-9ef23fbeaf1f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="frgnaggragrntscd" id="314f241c-c481-47b1-a76d-2d7c7845b97c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptprofndrsngfeescd" id="6d5234be-7527-4551-a6ba-c7cdc2f1db28" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptincfnndrsngcd" id="101bbfef-9ef2-4cb1-9dde-b8c34d0b4320" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptincgamingcd" id="171d46f9-9a53-4a34-afde-3217670a2a33" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="operatehosptlcd" id="39cebd64-746b-4c05-a9e2-9881e4e6785f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="hospaudfinstmtcd" id="eb0a108d-322a-43d6-8703-4992e95d6bbb" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptgrntstogovtcd" id="1cc13eaa-3def-4f3c-92e5-c0fa419a7671" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptgrntstoindvcd" id="bc06674e-8d8b-40ff-8255-1f3ea4ddba1e" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rptyestocompnstncd" id="4451e429-bb62-44d7-ad62-8dc1848e72e6" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="txexmptbndcd" id="d0db43e1-343e-406c-90c6-2490df1b0651" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="invstproceedscd" id="37872a18-2122-4232-84e3-d66f5f6ff6da" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="maintescrwaccntcd" id="c3afe6f3-1a5c-4157-85d6-f79c984a0f3e" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="actonbehalfcd" id="f64316d2-c440-4fcd-aa02-490091b42306" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="engageexcessbnftcd" id="77b19519-c211-4fb9-b6c6-66af377bbdf3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="awarexcessbnftcd" id="e8352113-6b98-497b-b428-b7d1d00f460b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="loantofficercd" id="f937a479-d308-4f5b-b882-e885e87daa2c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grantoofficercd" id="c2d04260-ff4a-42c6-bcfd-994bdc471b04" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="dirbusnreltdcd" id="319f9dc7-8d64-4321-bb32-9ae51265be69" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="fmlybusnreltdcd" id="ece60fd7-3e5b-4aaa-8448-e80ff61c2d7d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="servasofficercd" id="314a500d-b429-4877-b51a-a8fa4a2c12a3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="recvnoncashcd" id="e38eaaaa-77a2-451a-80e7-644a02e52afb" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="recvartcd" id="95963e72-79fa-4218-b0b7-143a9886742b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="ceaseoperationscd" id="beb0c6da-cc2e-4196-8de4-85d39f417fdb" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="sellorexchcd" id="5bab32a5-003c-4892-87ec-ec5353dd392b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="ownsepentcd" id="f78f3eac-40b9-4b31-a870-4bfc14551471" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="reltdorgcd" id="6a9e2add-1e8d-49d0-b184-abaca33cdc32" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="intincntrlcd" id="67b8c840-9074-4b5d-9432-a7c40d5032ac" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="orgtrnsfrcd" id="a0ff8751-8d20-4e77-9092-da3009bb958b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="conduct5percentcd" id="d38c659c-5a94-4c4c-9f1e-8d6dfef0833b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="compltschocd" id="ae15fb0f-0232-4c30-90a0-9cbf40f3aa84" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="f1096cnt" id="cb773942-84bb-489d-baeb-62d3b5ab8034" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="fw2gcnt" id="76e699e8-63bc-41ee-9571-ebf5358b6541" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="wthldngrulescd" id="c43b84a3-6a9d-44de-b734-7d49a76b7fd7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="noemplyeesw3cnt" id="25c0e332-33ad-4acd-a337-3df45006dedd" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="filerqrdrtnscd" id="df360252-fe39-4f22-95a8-ec9af2675c3f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="unrelbusinccd" id="e57b8c0f-657e-40d5-984d-f831d7b79994" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="filedf990tcd" id="177ce6c0-19cc-452a-9836-c998b5349f23" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="frgnacctcd" id="f89b063b-202f-4bc8-b9e8-5f301de755b7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prohibtdtxshltrcd" id="8c88a713-2441-4fa0-ac85-115820e9863b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prtynotifyorgcd" id="b41551b4-98a0-4b9b-87d8-d2b5ea29247a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="filedf8886tcd" id="ec956a97-b0bf-4405-881b-d30e23cecf5d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="solicitcntrbcd" id="0cf1735c-b024-4eec-8b44-5474bdc236d7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="exprstmntcd" id="054643b8-ded2-44ea-9682-6863c21fc795" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="providegoodscd" id="3aab8664-8578-4b08-9bb1-c9f1b805defa" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="notfydnrvalcd" id="64442804-9061-417c-80b5-294e07ec737a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="filedf8282cd" id="c977b902-931b-4428-8793-c5fac68e137c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="f8282cnt" id="c13f4f66-b784-40df-9d8d-2314c5d613cf" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="fndsrcvdcd" id="e2802ca8-f734-41ea-ae35-6c79f0cb2e3b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="premiumspaidcd" id="29716eaf-e44f-4d9e-ab6d-02c8438883e5" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="filedf8899cd" id="26ffe405-e25e-45ab-b914-f686168ff1e2" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="filedf1098ccd" id="a541283e-9ee4-44b7-959d-8fe8590a6b21" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="excbushldngscd" id="916f6d1b-23f0-41ed-972c-4dfeb10e2153" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="s4966distribcd" id="b16cecbd-571a-49d8-b93f-a088b6533a72" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="distribtodonorcd" id="7dbe6390-679d-4473-b211-fc2494a1f30f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="initiationfees" id="c9174631-9088-4e27-891f-96a1a2c7d95d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsrcptspublicuse" id="5fc41be1-f4ab-4ba6-8f2f-dc5636f488ef" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsincmembers" id="dd813682-bf12-4499-8518-60d0b8ec9152" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsincother" id="381bab4d-2a69-4d02-bbcd-60d17c91cb34" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="filedlieuf1041cd" id="f10ab02f-ae06-4ff4-a582-b65d9c6f549f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="txexmptint" id="14b4a426-c9c6-4dd5-ad9f-a25264bdd3df" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="qualhlthplncd" id="87c7fdbe-4b66-49b2-ba1a-7fdaa3666d0c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="qualhlthreqmntn" id="d5194c06-222b-4729-a482-f0e9c7f6707a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="qualhlthonhnd" id="a91152c9-310d-4e17-b21e-3fbc6452b87d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rcvdpdtngcd" id="d22ae67e-0a2d-42a2-9d6c-e2e1ce1e33f4" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="filedf720cd" id="dd833b4b-da58-4b0b-b67f-bf22a546f73a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totreprtabled" id="65305a9f-c32a-4dba-b8fa-e3e92aaae7bc" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totcomprelatede" id="3e4c288e-b0ba-47e5-99c0-8f31c896b16d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totestcompf" id="c2aa4be6-41c9-42ef-9c59-68b92a3bbf24" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="noindiv100kcnt" id="672f93c4-1cea-4d52-9045-916611598eb0" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="nocontractor100kcnt" id="857b4977-e801-4ea8-8849-36bc4378dd32" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totcntrbgfts" id="a16b52e7-c1fd-45e6-85ff-54c5ee9f7156" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prgmservcode2acd" id="fd0287fe-109d-4379-ae7f-47dfffbe9c9a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totrev2acola" id="6443d960-3eba-4d30-8a08-c37b7f599c63" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prgmservcode2bcd" id="74477ec0-b257-440f-bb1d-0b636fdc760b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totrev2bcola" id="92915e15-f2bd-419c-9104-41831844eb47" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prgmservcode2ccd" id="62365327-43bd-46f4-8248-edb5573ff9f3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totrev2ccola" id="f4b9f101-5f3f-435b-a5e8-99bf69d28519" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prgmservcode2dcd" id="396e4e6f-044d-4346-8754-3d84dc81cf5a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totrev2dcola" id="75a216e2-8ae4-4482-acf3-b89166fc4b39" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prgmservcode2ecd" id="c2dee072-8944-4ecf-93e5-f36e748660f3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totrev2ecola" id="4efd5844-2a69-4629-a389-ac6922dd185a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totrev2fcola" id="a07430bd-fcbc-40c2-b7cf-7cf7577a3cba" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totprgmrevnue" id="8704b5f7-846a-4c57-ad7e-f4dff4b078f3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="invstmntinc" id="c0ce4c0b-52ff-4b70-b787-28207db02089" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="txexmptbndsproceeds" id="6f680f74-9b89-47b9-a246-f3e42ad60dd9" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="royaltsinc" id="cf97097b-4a7d-4c2a-a59f-c347b01cf17e" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsrntsreal" id="f5b6e90f-cbce-4a5e-97e7-c0f248638f21" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsrntsprsnl" id="bde6023b-ad42-4af0-b30d-234b433e21fa" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rntlexpnsreal" id="e165d1a4-57ca-42b6-a50c-956693d600d2" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rntlexpnsprsnl" id="3b3b015b-edf2-414d-a310-b57f2e563bd6" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rntlincreal" id="21173274-4549-4325-83ad-0932cbc272a2" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rntlincprsnl" id="3d3904ef-5330-4589-aad6-dd51fcb2e577" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="netrntlinc" id="c3fec4a4-44ba-4365-880d-475d3b500155" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsalesecur" id="617c98f8-5f81-462a-810b-9c8f4cf0b341" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsalesothr" id="f0489314-0f7d-45a7-9fae-063221aad96d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="cstbasisecur" id="47fa6836-0d2e-45af-9a26-47070847f59c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="cstbasisothr" id="747bb441-24bc-496e-b855-320f556257f1" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="gnlsecur" id="625157f7-f64f-400d-9351-aa515f2d142e" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="gnlsothr" id="5d2c5cff-43f7-454f-97d8-3560df587467" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="netgnls" id="05fe01a9-55aa-4f35-81e6-92a0481f1d76" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsincfndrsng" id="3e92739a-8167-4f73-a083-97e58b52110a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="lessdirfndrsng" id="a9104aae-ec24-41a8-a072-ee1852873c42" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="netincfndrsng" id="7175247b-2277-4d08-800d-b12973491735" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsincgaming" id="80a36981-af59-4738-b031-b10bf97ec76f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="lessdirgaming" id="43ece73e-8dd2-4266-928a-efc87eefb60e" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="netincgaming" id="77932e99-d12d-4120-b018-3980af14fa80" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsalesinvent" id="d2e7a117-a104-4c66-9ce2-06cc758c096f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="lesscstofgoods" id="1360fea3-50bf-4ec9-934b-523da9c6c550" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="netincsales" id="65476126-7d34-44b8-9413-7bdb31ff6c89" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="miscrev11acd" id="8ab3cb9f-702c-4428-bb24-daffb60db96e" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="miscrevtota" id="e9dbb18e-ed4d-4912-8e02-82c877c7162e" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="miscrev11bcd" id="8d885ce7-2e6f-41b1-b509-cb9f9dadfaee" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="miscrevtot11b" id="a232dcb9-e6b4-484b-aac3-95bf4723bb33" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="miscrev11ccd" id="f7687e17-3efd-4040-996c-5c1e5b5b578c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="miscrevtot11c" id="a5b85b6b-3c4d-41c9-8939-c7ae0fbaadfa" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="miscrevtot11d" id="36d6ed05-3021-47a1-a2cc-501fc1753eab" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="miscrevtot11e" id="f78b0935-8f0d-4222-b299-3b3c74be1a33" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totrevenue" id="b97b4b09-028a-4977-83b2-41be2cbe12f1" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grntstogovt" id="94831730-3bdc-4964-be7f-927502e3dcc7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grnsttoindiv" id="92e7bbee-9a0f-49fc-8c93-0721f01f46a6" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grntstofrgngovt" id="039560b7-9662-411d-b709-68a159bb669b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="benifitsmembrs" id="ec08ec84-352a-491b-8aa4-fa1b3eda01a7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="compnsatncurrofcr" id="017165f6-8c7e-46bf-b245-4429505c672a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="compnsatnandothr" id="4198c04f-a468-49c4-8e93-73d10a14fd5b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrsalwages" id="c244da2c-52ef-4008-b0d0-6201c046affb" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="pensionplancontrb" id="135ae18a-63e6-4fdf-8db3-22c032689ddb" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othremplyeebenef" id="89e3ba8b-e8c3-42a6-8446-25ec5110982f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="payrolltx" id="3bbf0218-d2c8-4047-a906-4c66666a3425" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="feesforsrvcmgmt" id="68cd5efc-2328-4bbb-8b9e-61df7b8ce089" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="legalfees" id="48ec4590-39fc-4a54-a2a4-2bd20298c6dd" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="accntingfees" id="bb2c45be-c940-4fd5-8808-a3e09384a80a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="feesforsrvclobby" id="b19b9157-4900-4971-80fe-863b8b2b11ad" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="profndraising" id="12e1902b-dd82-4c6d-8e8a-3015e5ac52ea" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="feesforsrvcinvstmgmt" id="b36a2eba-5fb0-4cd8-9575-4c02ecd00809" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="feesforsrvcothr" id="fb265e42-8029-43f1-a117-f2b46b6661fc" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="advrtpromo" id="9b35990b-7b04-4d52-8393-d1b9373d1e97" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="officexpns" id="254af231-9213-44c2-8ed3-ad07ee4e61c0" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="infotech" id="9594ac98-e272-4c56-b642-7404f79e028e" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="royaltsexpns" id="50b27d2a-eba4-4d92-b61f-f8ee04b36b77" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="occupancy" id="6c8adab1-1e4e-4bc0-90f0-73499e73e13a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="travel" id="1409879a-661e-4f9b-8adf-26d7c110b4a8" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="travelofpublicoffcl" id="73931a83-7356-4087-b72c-f6e2a89e7811" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="converconventmtng" id="62dbac2a-bb19-4ee6-9640-1ce7549b14fd" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="interestamt" id="85bc1381-4531-448c-b67b-048ad3257c93" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="pymtoaffiliates" id="e96d20be-12e4-446a-ab22-59b11d197413" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="deprcatndepletn" id="88431819-30cb-438c-bc4c-3881b22edba1" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="insurance" id="8ebbd6d3-bfed-40f3-acf3-eda7ef6419d7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrexpnsa" id="d9e89f2c-9373-4c53-b8bc-e5f0b3390218" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrexpnsb" id="bd164dbe-d466-4419-bff5-69d10ae4d5a3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrexpnsc" id="db871a6f-d6a7-4088-a0e0-29b731d41c4d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrexpnsd" id="98300d4e-68c7-455e-9977-df418e1b5ba5" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrexpnse" id="bcda02ad-98d7-459a-9e12-7f7eab0e3f86" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrexpnsf" id="46798079-5eb3-478b-8e29-c5577561d863" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totfuncexpns" id="cd69f643-dcfb-4149-94dc-9cdf4c025df4" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="nonintcashend" id="77a573b4-3e3e-4e87-80f3-aca4dc749d80" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="svngstempinvend" id="0e811905-da7f-4a48-a7ce-3c9a343a924c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="pldgegrntrcvblend" id="bbe71829-74b0-4aee-8d64-812d02ca43e1" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="accntsrcvblend" id="d5594a99-a203-43e1-a731-6cd158a4704b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="currfrmrcvblend" id="88a18f00-1727-4422-9378-806de6ddd18c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rcvbldisqualend" id="046bf655-0dda-45f5-aa51-2b7dc31c4ac4" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="notesloansrcvblend" id="0676eee5-b2ae-4322-ba81-981780659338" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="invntriesalesend" id="86fd0e12-9640-4639-bb27-c77be257781a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="prepaidexpnsend" id="72f0aaa4-651b-4b18-8a92-73d4aa110b41" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="lndbldgsequipend" id="c79303e7-dd4f-4a0b-b70c-318edee794ea" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="invstmntsend" id="18dd789c-f1cf-458d-ac01-c764aff448ae" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="invstmntsothrend" id="8bbecb8c-9b66-45d9-a3bb-1812507efc4a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="invstmntsprgmend" id="cb1b8bba-7e5e-4fd6-8db7-b781dd37317f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="intangibleassetsend" id="166e1dbd-cf74-4296-a4c1-4a7bab030483" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrassetsend" id="309ce7bd-adb5-4bd8-96c3-c0fac0957258" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totassetsend" id="43a1c312-e72a-4a71-b90a-d69c0181e6f2" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="accntspayableend" id="64c7bfc0-44cd-4933-bbfa-f1c7d4c8bf69" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grntspayableend" id="1a067f9c-21df-4464-af4f-8f56c8479554" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="deferedrevnuend" id="93b6429b-6d5f-4a5e-ba0a-405ef8459886" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="txexmptbndsend" id="49652748-2820-4ecc-9ccd-42f65b26ba2a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="escrwaccntliabend" id="f5f91ddf-14d0-42d7-9c51-a97de01e2b67" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="paybletoffcrsend" id="1f1e5337-df53-4bd9-b72a-3339a14ac186" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="secrdmrtgsend" id="5a35c1dd-878e-492c-9107-51b35c300e71" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="unsecurednotesend" id="c10ed781-2235-4596-b714-70ac4f657eb9" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrliabend" id="d0c6bfee-4259-412a-b9e9-b9913deb9e58" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totliabend" id="924d31e4-9e3d-4d0d-bccf-eedcf11cd4b1" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="unrstrctnetasstsend" id="d1051f5c-ada3-4f2b-8345-795d71827211" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="temprstrctnetasstsend" id="3ab58c72-95b1-46dd-bcb0-5303c3ed2d85" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="permrstrctnetasstsend" id="3eeb09aa-ecb7-4b74-960e-0e36d18f7cf9" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="capitalstktrstend" id="1f82c2ad-34ef-4cc5-93aa-49136aeaf58d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="paidinsurplusend" id="b1e5c719-65ce-473a-8a7b-9ddef09eb89b" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="retainedearnend" id="e41bdead-9e88-486e-a5db-4d1083e0c7fd" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totnetassetend" id="427ceeef-216d-47fc-9bce-8bdda107a8af" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totnetliabastend" id="072ba473-5e8c-454e-8336-3193bb1cd59d" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="nonpfrea" id="c280f630-576c-48df-bdb1-380be5007620" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totnooforgscnt" id="a9c3e681-31c2-4250-bbd9-64fb058f6dea" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totsupport" id="ab9b5195-470d-49da-b932-32a073f654a3" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="gftgrntsrcvd170" id="b06b11ee-7776-4754-83a7-21aee42339ec" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="txrevnuelevied170" id="d824f4b8-33ef-421c-b068-80bedab95a30" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="srvcsval170" id="b3e41e12-62e4-4421-8e50-56b83f7accdf" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="pubsuppsubtot170" id="c09461bf-4ad2-4401-8393-51362ae8f0c7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="exceeds2pct170" id="b380f63c-acd9-4238-8b2c-b6d1cf011d9c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="pubsupplesspct170" id="460192c5-b555-4dd8-a2ea-b0bed11d9540" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="samepubsuppsubtot170" id="e98e18a4-d84d-44ae-b201-9b703efd232a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsinc170" id="071eada1-f6a7-4e29-b22e-7595ee738c2a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="netincunreltd170" id="6b558752-5936-45d1-903d-3fc361c95eba" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrinc170" id="6b458050-4e6c-474c-892a-060db368a2f7" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totsupp170" id="85900e19-3188-4c74-a46b-326d75176c01" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsrcptsrelated170" id="9836d0ba-ff61-4966-9470-65c4111c5d2c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totgftgrntrcvd509" id="3c8394e7-5252-4bd7-80bb-f5c6181159d9" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsrcptsadmissn509" id="b1e9490c-1def-46a0-8245-a47c5bb74f47" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsrcptsactivities509" id="db1c59ef-4d94-4bb9-9750-f5bfdbba45a0" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="txrevnuelevied509" id="ad75efc5-735b-4b60-ab54-71cb06efe1a0" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="srvcsval509" id="ccabe4fc-fe9a-4817-9192-d546fc9294c9" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="pubsuppsubtot509" id="f47fceb6-e78f-4e75-bbbd-2bb3ba739dd6" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="rcvdfrmdisqualsub509" id="5762eb3f-9d01-40c0-bb47-1689aac57c00" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="exceeds1pct509" id="6ad98e22-d0a0-4667-9cf2-b440b174589a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="subtotpub509" id="123705b4-e411-4bbc-8450-565a0b8dae27" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="pubsupplesub509" id="34b56aa9-ccd6-4bf4-8b35-72c338a7943c" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="samepubsuppsubtot509" id="c1a4c03f-2655-4b38-8624-cd27c6ca1817" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="grsinc509" id="7124d059-fff5-487f-ba7b-4f33ef724d56" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="unreltxincls511tx509" id="cd7c5459-09a0-454b-9ddd-395e0ab6bec1" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="subtotsuppinc509" id="675a7f30-3fd5-4750-9bfd-58387c7d8bbe" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="netincunrelatd509" id="d46aec82-a1d1-4677-94e0-5279975a95e9" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="othrinc509" id="1ea60d01-6be9-4d55-aaf9-696ceda0016f" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+                <Field description="TextToColumns: Parsed from DownloadData" name="totsupp509" id="70830480-2663-4cca-9f28-7d75bac5f55a" size="1073741823" source="TextToColumns: Parsed from DownloadData" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="810" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>DownloadData</Field>
+              <Delimeters value="\n" />
+              <NumFields value="1" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>new lines to new rows</AnnotationText>
+              <DefaultAnnotationText>new lines to new rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1230" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">990form</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>990form</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="450" y="857.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="URL" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>https://s3-us-west-1.amazonaws.com/ayx.community.assets/17eofinextract990.dat</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[990Form
+]]></AnnotationText>
+              <DefaultAnnotationText><![CDATA[990F
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="450" y="977.9999" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="URL" />
+                <Field name="filename" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>https://s3-us-west-1.amazonaws.com/ayx.community.assets/17eofinextractdoc.xls</c>
+                  <c>datadictionary.xls</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Data Dictionary</AnnotationText>
+              <DefaultAnnotationText>Data Dictionary</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="558" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URL</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="558" y="978.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URL</URLField>
+              <OutputMode>SpecificFile</OutputMode>
+              <OutputFileNameField>filename</OutputFileNameField>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="URL" selected="False" />
+                  <Field name="filename" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="URL" selected="False" />
+                  <Field name="filename" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>save excel</AnnotationText>
+              <DefaultAnnotationText>save excel</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="47">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="654" y="858" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="URL" selected="False" />
+                <SelectField field="DownloadHeaders" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="462" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="URL" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>https://s3-us-west-1.amazonaws.com/ayx.community.assets/data-download-pub78.txt</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[LookUp
+]]></AnnotationText>
+              <DefaultAnnotationText>Data Dictionary</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="558.0001" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>URL</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="URL" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1230" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File FileFormat="19" MaxRecords="">lookup</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <NoSpatialIndex>False</NoSpatialIndex>
+                <SaveSource>True</SaveSource>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>lookup</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="942" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>DownloadData</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>
+              </RootName>
+              <Delimeters value="|" />
+              <NumFields value="6" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>| to new cols</AnnotationText>
+              <DefaultAnnotationText>| to new cols</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+            <Position x="750.0001" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>DownloadData</Field>
+              <RegExExpression value="\n" />
+              <CaseInsensitve value="True" />
+              <Method>Replace</Method>
+              <Replace expression=";">
+                <CopyUnmatched value="True" />
+              </Replace>
+              <ParseSimple>
+                <SplitToRows value="False" />
+                <RootName>DownloadData</RootName>
+                <NumFields value="3" />
+                <ErrorHandling>Warn</ErrorHandling>
+              </ParseSimple>
+              <ParseComplex>
+                <Field field="No Marked Groups Found" type="No Marked Groups Found" size="No Marked Groups Found" />
+              </ParseComplex>
+              <Match>
+                <Field>DownloadData_Matched</Field>
+                <ErrorUnmatched value="False" />
+              </Match>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>new lines to ;</AnnotationText>
+              <DefaultAnnotationText>new lines to ;</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="846" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>DownloadData</Field>
+              <Delimeters value=";" />
+              <NumFields value="1" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>; to new rows</AnnotationText>
+              <DefaultAnnotationText>; to new rows</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="654" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DownloadData" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1134" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>6</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2020-03-28 15:07:51</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <StartDate>2020-03-28 15:07:51</StartDate>
+                  <EndDate>2020-03-28 15:07:51</EndDate>
+                  <Operand>
+                  </Operand>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([6])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1038" y="1098" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="DownloadData" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="84" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="True" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="True" />
+      <Destination ToolID="84" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="87" Connection="Output6" />
+      <Destination ToolID="84" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="86" Connection="Output" />
+      <Destination ToolID="87" Connection="Control" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="87" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="89" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="True" />
+      <Destination ToolID="90" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="True" />
+      <Destination ToolID="90" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="True" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="95" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Output" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="79" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="True" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Day1-Puzzle1</Name>
+      <Description>David's take on the Advent of Code 2019 using Alteryx</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>Ben Moss</Author>
+      <Company>The Information Lab</Company>
+      <Copyright />
+      <DescriptionLink actual="https://github.com/dsmdavid/AdventCode2019" displayed="GitHub" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

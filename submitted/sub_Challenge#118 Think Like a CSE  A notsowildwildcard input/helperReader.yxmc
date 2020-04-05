@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="Path" RecordLimit="" SearchSubDirs="False" FileFormat="25">F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>File1.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Column1" id="34372178-f33a-4b7e-ad3b-63d07d17fba0" size="255" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Column2" id="a667150b-bc0c-4666-babd-5cbe5e1b5fd0" size="255" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="V_String" />
+            <Field name="Column3" id="58a214b7-0f64-41a3-936d-a8bf3d7236eb" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column4" id="0c9c34e7-29c9-43ef-af51-bce3c915ebc5" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column5" id="0754fe08-071e-47b0-9bb0-1a38a05926b7" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column6" id="1e90eda0-62f8-4174-9545-7420f249e96e" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column7" id="be62ff88-030c-4485-87db-8e8d84f2ddc6" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column8" id="eeed7912-7077-48cb-927c-6925a173dfe8" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column9" id="7871faee-7464-4de2-aee2-57be9d91dcc0" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column10" id="df4c064a-a537-4942-b638-3e2d11d12c79" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column11" id="6793093c-00d1-4e55-9365-b34bcfc06ef0" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column12" id="c1f79219-1d5f-4c03-bbf6-cc0d6910f12c" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column13" id="ca4cea08-a8c2-4851-a6ea-78662729a845" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column14" id="834073db-a77d-4a47-a212-549f7a52e170" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column15" id="7635510c-b02b-48a9-a3b0-9020b4f25b8a" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column16" id="aa9cfd50-69ff-4eb5-85ce-9a96113cad53" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column17" id="c3875181-ed0a-4b62-b116-39eb2b6d4b3b" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column18" id="3b626ffc-d9b3-42e8-911b-394069fbde6a" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column19" id="fc987a43-a2eb-4771-aa8e-b396d7af22f8" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column20" id="53f740a1-269b-432e-b2dc-2031b380d0a8" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column21" id="6b35ef95-286e-4ff8-8092-f703c7f5a271" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column22" id="e1e1f628-f1ad-4a72-be0d-e3befd95e464" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column23" id="c4b96f64-6095-42a0-a3ea-bf246fd5966f" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column24" id="4d668c3f-4158-4b6d-8357-298ccdf3c41f" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column25" id="48ad3a74-7a1d-4b1a-85ba-7bd060eea3fb" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="Column26" id="767c4290-6962-409e-b9e1-e054969eedb5" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\todo\Challenge#118 Think Like a CSE  A notsowildwildcard input\File1.xlsx|||`Sheet1$`" type="Double" />
+            <Field name="FileName" id="4bbf4d2b-85a2-4893-b5b1-2651e3150577" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="126" y="30" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control Parameter (3)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="174" y="144" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="414" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output5</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="3" Connection="Question" />
+      <Destination ToolID="4" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="4" Connection="Action" />
+      <Destination ToolID="1" Connection="Action" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (3)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (5)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>helperReader</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="4" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>1/File</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (3)</Description>
+              <Name>Control Parameter (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (5)</Description>
+              <Name>Macro Output (5)</Name>
+              <ToolId value="5" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AutoByName</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (3)</Name>
+            <Description>Control Parameter (3)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="5" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

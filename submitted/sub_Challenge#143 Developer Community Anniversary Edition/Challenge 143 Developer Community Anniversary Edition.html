@@ -1,0 +1,23 @@
+﻿</body>
+</head>
+<P>The solution to last week's Challenge can be found <A href="https://community.alteryx.com/t5/Weekly-Challenge/Challenge-142-Life-Certainties-Workflows-Death-and-Taxes/td-p/330214" target="_blank">HERE!</A></P>
+<P>&nbsp;</P>
+<P>Sometimes, Designer doesn't do what you want it to. Fortunately, it is endlessly extensible. This week's challenge will ease you into the world of the Alteryx SDKs - upon successful completion of the challenge, you will be an Alteryx Developer. You can do this - REALLY!<BR /> <BR />For the purposes of this exercise, you have already extended Alteryx by creating a macro (<EM><STRONG><SPAN class="lia-link-navigation lia-attachment-link-disabled lia-link-disabled">Outlier.yxmc</SPAN></STRONG></EM> attached to <A href="https://community.alteryx.com/t5/Alteryx-Designer-Discussions/Finding-Outliers-where-to-start/m-p/25693/highlight/true#M10636" target="_blank">this post</A>). Eventually, you may want to further extend your new tool by leveraging open source Python <A href="http://scikit-learn.org/stable/modules/outlier_detection.html" target="_blank" rel="nofollow noopener noreferrer">functionality</A> with the <A href="https://help.alteryx.com/developer/current/Python/Overview.htm?tocpath=SDKs%7CBuild%20Custom%20Tools%7CPython%20SDK%7C_____0" target="_blank" rel="nofollow noopener noreferrer">Python SDK</A>. After you do that, you might want to make a fancy new interface with the <A href="https://help.alteryx.com/developer/current/HTML/Overview.htm" target="_blank" rel="nofollow noopener noreferrer">HTML GUI SDK</A> (see <A href="https://community.alteryx.com/t5/Dev-Space/HTML-Tool-Challenge-BUILD-an-HTML-tool-and-win-a-prize/m-p/302774" target="_blank">here</A> for inspiration). But we're going to take baby steps, and will start by <STRONG><EM>simply replicating the macro's UI using the HTML GUI SDK</EM></STRONG>.<BR /><BR /><STRONG><EM>Advanced Challenge</EM></STRONG>: Do this on your own with nothing but <A href="http://developers.alteryx.com" target="_blank" rel="nofollow noopener noreferrer">Developer Community</A> (happy one year anniversary!) and the <A href="https://help.alteryx.com/developer/current/HTML/Overview.htm" target="_blank" rel="nofollow noopener noreferrer">documentation</A> to guide you (<A href="https://community.alteryx.com/t5/Engine-Works-Blog/Building-an-HTML-Macro/ba-p/158691" target="_blank">this post</A> is also very helpful).<BR /> <BR /><EM><STRONG>Basic Challenge</STRONG></EM>: Place the Outlier folder contained within the attached zip file in your HTML plugins folder (e.g. <CODE>C:\Program Files\Alteryx\bin\HtmlPlugins\</CODE> for an admin install). Restart Alteryx. You will now see the Outlier tool in the Data Investigation category. But the tool's interface is blank! Modify the Gui.html file to add the appropriate controls.</P>
+<P>&nbsp;</P>
+<P>Hint below...</P>
+<div class="lia-spoiler-container"><a class="lia-spoiler-link" href="#" rel="nofollow noopener noreferrer">Spoiler</a><noscript> (Highlight to read)</noscript><div class="lia-spoiler-border"><div class="lia-spoiler-content">Add the following lines of code between the body tags:<BR />
+<PRE>&lt;div class="widgetLabel"&gt;Z&lt;/div&gt;
+&lt;ayx data-ui-props='{type:"NumericSpinner", widgetId:"z_spinner"}' data-item-props='{dataName:"z_spinner", dataType:"SimpleFloat"}'&gt;&lt;/ayx&gt;
+
+&lt;div class="widgetLabel"&gt;Field to test&lt;/div&gt;
+&lt;ayx data-ui-props='{type:"DropDown", widgetId:"field_dropDown"}' data-item-props='{dataName:"field_dropDown", dataType:"FieldSelector"}'&gt;&lt;/ayx&gt;</PRE>
+</div><noscript><div class="lia-spoiler-noscript-container"><div class="lia-spoiler-noscript-content">Add the following lines of code between the body tags:
+&lt;div class="widgetLabel"&gt;Z&lt;/div&gt;
+&lt;ayx data-ui-props='{type:"NumericSpinner", widgetId:"z_spinner"}' data-item-props='{dataName:"z_spinner", dataType:"SimpleFloat"}'&gt;&lt;/ayx&gt;
+
+&lt;div class="widgetLabel"&gt;Field to test&lt;/div&gt;
+&lt;ayx data-ui-props='{type:"DropDown", widgetId:"field_dropDown"}' data-item-props='{dataName:"field_dropDown", dataType:"FieldSelector"}'&gt;&lt;/ayx&gt;
+</div></div></noscript></div></div>
+<P>&nbsp;</P>
+<body>
+<html>

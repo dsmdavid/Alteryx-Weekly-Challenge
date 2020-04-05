@@ -1,0 +1,955 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="990" y="582" width="480" height="216" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Fit curve and plot</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="498" y="582" width="480" height="216" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Count how often it happens and calculate percentages</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="582" width="408" height="216" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create tests, group size and people with DOB</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="438" y="78" width="468" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #140</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="378" y="306" width="324" height="264" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Outputs</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="306" width="300" height="264" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Inputs
+
+
+
+
+
+
+No data needed for this challenge</Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="150" width="660" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This week we will run an anecdotal workflow to prove the Birthday Paradox! The Birthday paradox simply refers to the phenomenon that if you assembled 23 people into one room, the chances of two people having the same birthday are 50-50.  We could 'math' this out, but why not just assembles and simulate 100s of thousands of people in the seconds to prove it?
+
+In this challenge, your goal is to build a table that increment group sizes from 2 people all the way to 50 people. In each of those group sizes, run 1000 random trials and see what percent of groups had at least one set of people match. Why 1000? Theoretically, the more trials you run, the more likely you are to get a refined percent (e.g. flipping a coin four times may not a perfect 50-50 chance where it would be much closer after 1000 flips).
+
+Due to the nature of this challenge, you will need to generate your own data! I have provided a sample output of mine, but since we are randomly assigning birthdays, you may find small differences in our answers. At what group size did it exceed 75% chance? 90% chance?</Text>
+          <Font name="Microsoft Sans Serif" size="7.8" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="438" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="49" />
+          <Fields>
+            <Field name="NumberofPeople" />
+            <Field name="ChanceofSameBday" />
+          </Fields>
+          <Data>
+            <r>
+              <c>2</c>
+              <c>0.005</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>0.01</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>0.021</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>0.029</c>
+            </r>
+            <r>
+              <c>6</c>
+              <c>0.037</c>
+            </r>
+            <r>
+              <c>7</c>
+              <c>0.059</c>
+            </r>
+            <r>
+              <c>8</c>
+              <c>0.067</c>
+            </r>
+            <r>
+              <c>9</c>
+              <c>0.085</c>
+            </r>
+            <r>
+              <c>10</c>
+              <c>0.11</c>
+            </r>
+            <r>
+              <c>11</c>
+              <c>0.154</c>
+            </r>
+            <r>
+              <c>12</c>
+              <c>0.168</c>
+            </r>
+            <r>
+              <c>13</c>
+              <c>0.195</c>
+            </r>
+            <r>
+              <c>14</c>
+              <c>0.217</c>
+            </r>
+            <r>
+              <c>15</c>
+              <c>0.255</c>
+            </r>
+            <r>
+              <c>16</c>
+              <c>0.274</c>
+            </r>
+            <r>
+              <c>17</c>
+              <c>0.334</c>
+            </r>
+            <r>
+              <c>18</c>
+              <c>0.329</c>
+            </r>
+            <r>
+              <c>19</c>
+              <c>0.386</c>
+            </r>
+            <r>
+              <c>20</c>
+              <c>0.414</c>
+            </r>
+            <r>
+              <c>21</c>
+              <c>0.465</c>
+            </r>
+            <r>
+              <c>22</c>
+              <c>0.488</c>
+            </r>
+            <r>
+              <c>23</c>
+              <c>0.49</c>
+            </r>
+            <r>
+              <c>24</c>
+              <c>0.539</c>
+            </r>
+            <r>
+              <c>25</c>
+              <c>0.559</c>
+            </r>
+            <r>
+              <c>26</c>
+              <c>0.614</c>
+            </r>
+            <r>
+              <c>27</c>
+              <c>0.609</c>
+            </r>
+            <r>
+              <c>28</c>
+              <c>0.657</c>
+            </r>
+            <r>
+              <c>29</c>
+              <c>0.671</c>
+            </r>
+            <r>
+              <c>30</c>
+              <c>0.688</c>
+            </r>
+            <r>
+              <c>31</c>
+              <c>0.758</c>
+            </r>
+            <r>
+              <c>32</c>
+              <c>0.752</c>
+            </r>
+            <r>
+              <c>33</c>
+              <c>0.775</c>
+            </r>
+            <r>
+              <c>34</c>
+              <c>0.777</c>
+            </r>
+            <r>
+              <c>35</c>
+              <c>0.82</c>
+            </r>
+            <r>
+              <c>36</c>
+              <c>0.832</c>
+            </r>
+            <r>
+              <c>37</c>
+              <c>0.851</c>
+            </r>
+            <r>
+              <c>38</c>
+              <c>0.884</c>
+            </r>
+            <r>
+              <c>39</c>
+              <c>0.858</c>
+            </r>
+            <r>
+              <c>40</c>
+              <c>0.894</c>
+            </r>
+            <r>
+              <c>41</c>
+              <c>0.9</c>
+            </r>
+            <r>
+              <c>42</c>
+              <c>0.901</c>
+            </r>
+            <r>
+              <c>43</c>
+              <c>0.908</c>
+            </r>
+            <r>
+              <c>44</c>
+              <c>0.93</c>
+            </r>
+            <r>
+              <c>45</c>
+              <c>0.93</c>
+            </r>
+            <r>
+              <c>46</c>
+              <c>0.946</c>
+            </r>
+            <r>
+              <c>47</c>
+              <c>0.957</c>
+            </r>
+            <r>
+              <c>48</c>
+              <c>0.959</c>
+            </r>
+            <r>
+              <c>49</c>
+              <c>0.964</c>
+            </r>
+            <r>
+              <c>50</c>
+              <c>0.976</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="582" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_17864_35ec3440e5494b669552d75d034727e1_\Engine_10992_8f5af4e6688545d598654b6c7572964d_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="JupyterCode">
+        <Position x="978" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <productionModeScript />
+          <Notebook><![CDATA[{"cells":[{"cell_type":"markdown","metadata":{"ayx":{"cell_class":"text_cell","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","cell_type":"markdown","contents_keyword":"Alteryx.help()","first_line":"Run `Alteryx.help()` for info about useful functions.","label":"info"}},"source":["Run `Alteryx.help()` for info about useful functions.  \n","i.e., `Alteryx.read(\"#1\")`, `Alteryx.write(df,1)`, `Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")`"]},{"cell_type":"code","execution_count":1,"metadata":{"ayx":{"cell_class":"code_cell","cell_css":"border: 1px solid #58a; margin: 2px;","cell_type":"code","contents_keyword":"installPackages","first_line":"# List all non-standard packages to be imported by your","label":"deps"}},"outputs":[],"source":["# List all non-standard packages to be imported by your \n","# script here (only missing packages will be installed)\n","from ayx import Package\n","#Package.installPackages(['pandas','numpy'])"]},{"cell_type":"code","execution_count":2,"metadata":{},"outputs":[],"source":["from ayx import Alteryx\n","from scipy.optimize import curve_fit\n","import numpy as np\n","import matplotlib.pyplot as plt\n","import pandas as pd"]},{"cell_type":"code","execution_count":3,"metadata":{},"outputs":[],"source":["data = Alteryx.read(\"#1\")"]},{"cell_type":"code","execution_count":4,"metadata":{},"outputs":[],"source":["x = np.array(data['Group'].values)\n","y = np.array(data['Percentage'].values)"]},{"cell_type":"code","execution_count":5,"metadata":{},"outputs":[],"source":["def sigmoid(x, L ,x0, k, b):\n","    y = L / (1 + np.exp(-k*(x-x0)))+b\n","    return (y)\n","\n","p0 = [max(y), np.median(x),1,min(y)] # this is an mandatory initial guess\n","\n","popt, pcov = curve_fit(sigmoid, x, y,p0, method='dogbox')\n"]},{"cell_type":"code","execution_count":6,"metadata":{},"outputs":[],"source":["xplot = np.linspace(0, 50, 100)\n","yplot = sigmoid(xplot, *popt)\n","\n","plt.plot(x, y, 'o', label='data', alpha =0.8, mec='firebrick', color = 'coral' )\n","plt.plot(xplot,yplot, label='fit', linewidth=2, color = 'black')\n","plt.ylim(0, 1.3)\n","plt.legend(loc='best')\n","plt.savefig(Alteryx.getWorkflowConstant(\"Engine.WorkflowDirectory\")\n","+'fig.png')"]},{"cell_type":"code","execution_count":7,"metadata":{},"outputs":[],"source":["export_df = pd.DataFrame((xplot,yplot))"]},{"cell_type":"code","execution_count":8,"metadata":{},"outputs":[],"source":["#export_df.columns=['x','fitted']"]},{"cell_type":"code","execution_count":9,"metadata":{},"outputs":[],"source":["export_df"]},{"cell_type":"code","execution_count":10,"metadata":{},"outputs":[],"source":["Alteryx.write(export_df,2)"]},{"cell_type":"code","execution_count":null,"metadata":{},"outputs":[],"source":[]}],"metadata":{"kernelspec":{"display_name":"jupytertool_venv","language":"python","name":"jupytertool_venv"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.6.8"}},"nbformat":4,"nbformat_minor":2}]]></Notebook>
+          <Port>51857</Port>
+          <WorkflowName>f:\dropbox\dataschool\training\alteryx-weekly-challenge\todo\challenge#140 prove the birthday paradox\david_140_straightforward.yxmd</WorkflowName>
+          <specialCellMetadata>[{"label":"info","contents_keyword":"Alteryx.help()","cell_css":"border: 3px solid #357; margin: 4px; background: #fbffff","first_line":"Run `Alteryx.help()` for info about useful functions.","cell_type":"markdown","cell_class":"text_cell"},{"label":"deps","contents_keyword":"installPackages","cell_css":"border: 1px solid #58a; margin: 2px;","first_line":"# List all non-standard packages to be imported by your","cell_type":"code","cell_class":"code_cell"}]</specialCellMetadata>
+          <AssetManaged>True</AssetManaged>
+          <JupyterProduction>False</JupyterProduction>
+          <LastExecutedByEngineVersion>2019.4.0.20725</LastExecutedByEngineVersion>
+          <vEnvName>jupytertool_venv</vEnvName>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>fit curve</AnnotationText>
+          <DefaultAnnotationText>fit curve</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output2">
+          <RecordInfo>
+            <Field name="0" id="e347faac-cec7-4a58-b61b-8b0a418e4fc4" source="PythonTool:" type="Double" />
+            <Field name="1" id="068017f6-5b5b-417e-a3e4-06b5afc15c15" source="PythonTool:" type="Double" />
+            <Field name="2" id="1205728f-faae-4fcb-a21d-829efa420b14" source="PythonTool:" type="Double" />
+            <Field name="3" id="46422e20-f749-4ca6-867c-7a0a495bc3fc" source="PythonTool:" type="Double" />
+            <Field name="4" id="ea50912e-0943-4a75-82b7-fa260e581bd9" source="PythonTool:" type="Double" />
+            <Field name="5" id="848239db-2ea5-4183-b5af-143ad07d2aad" source="PythonTool:" type="Double" />
+            <Field name="6" id="3dc4c942-22dd-43e7-a5fe-8894d7cab9fe" source="PythonTool:" type="Double" />
+            <Field name="7" id="9c90fc55-9d4a-4981-909e-6050c7bee646" source="PythonTool:" type="Double" />
+            <Field name="8" id="7851cd78-a38f-4cf5-9fa6-c522223a5799" source="PythonTool:" type="Double" />
+            <Field name="9" id="8bc5fcd6-2b62-49a6-af7a-093f992aa009" source="PythonTool:" type="Double" />
+            <Field name="10" id="2ee3f7c6-ddd5-456a-80ab-5336e3b1445e" source="PythonTool:" type="Double" />
+            <Field name="11" id="815289a2-1f4f-43a5-8394-bb663058077c" source="PythonTool:" type="Double" />
+            <Field name="12" id="f7907e87-373f-4943-b61c-0d1baa7bb6fb" source="PythonTool:" type="Double" />
+            <Field name="13" id="92f65899-98d0-4a95-8b82-ea2afd87c565" source="PythonTool:" type="Double" />
+            <Field name="14" id="3afdd388-7329-4bfb-b5b3-236aa141d428" source="PythonTool:" type="Double" />
+            <Field name="15" id="f1e75310-43a6-4e54-be05-0d668f12bb2d" source="PythonTool:" type="Double" />
+            <Field name="16" id="efa3000d-985f-48ad-89f8-223cd19b7a1d" source="PythonTool:" type="Double" />
+            <Field name="17" id="34cbc557-34eb-41e1-b782-175d5e1b364d" source="PythonTool:" type="Double" />
+            <Field name="18" id="b5724ffd-91de-4fdf-8d0e-61f5a507e729" source="PythonTool:" type="Double" />
+            <Field name="19" id="11c432a7-af39-4f82-aca6-3f5c964c9878" source="PythonTool:" type="Double" />
+            <Field name="20" id="8b03530c-d359-42d6-9979-3d6dd6bf7ea4" source="PythonTool:" type="Double" />
+            <Field name="21" id="6e290e11-c51d-479b-a487-7fcc80e3a3f6" source="PythonTool:" type="Double" />
+            <Field name="22" id="b77e6301-6097-489a-be51-a48ebe003e59" source="PythonTool:" type="Double" />
+            <Field name="23" id="3e788961-7e76-4dfd-b85d-a8e098d9177f" source="PythonTool:" type="Double" />
+            <Field name="24" id="55e3b9fa-32a4-49dc-82e8-a0a15ad5b0c8" source="PythonTool:" type="Double" />
+            <Field name="25" id="9197b3e9-e649-42f2-9003-20353f50eeff" source="PythonTool:" type="Double" />
+            <Field name="26" id="fa694ece-4908-4498-b958-62f8584a9caf" source="PythonTool:" type="Double" />
+            <Field name="27" id="60de4219-1672-4773-ac43-83d01212b0c0" source="PythonTool:" type="Double" />
+            <Field name="28" id="e6410824-84fa-4931-bcc9-f92b3bb29f30" source="PythonTool:" type="Double" />
+            <Field name="29" id="6f0c6cbf-5bec-4172-8444-8c4ec4455f1f" source="PythonTool:" type="Double" />
+            <Field name="30" id="67c691f4-a516-4a4d-b1c3-b35a6327f21f" source="PythonTool:" type="Double" />
+            <Field name="31" id="48a117fc-f88b-47cc-b6ba-c639482a8b55" source="PythonTool:" type="Double" />
+            <Field name="32" id="287c02a9-e398-409f-af99-6f7329a7acbb" source="PythonTool:" type="Double" />
+            <Field name="33" id="25e5e98c-1a01-4650-a97e-eb75acc8376a" source="PythonTool:" type="Double" />
+            <Field name="34" id="1d899ae0-5d47-4f91-862f-77d2b52c083f" source="PythonTool:" type="Double" />
+            <Field name="35" id="6686441c-aacf-4b24-aee6-3cdb20ab9ccb" source="PythonTool:" type="Double" />
+            <Field name="36" id="dd654c09-6c34-4b42-91c4-27b2b24a0906" source="PythonTool:" type="Double" />
+            <Field name="37" id="a5845e3d-3c19-4a4f-a265-5f860325b614" source="PythonTool:" type="Double" />
+            <Field name="38" id="4e2cd01e-97a3-43c6-8fd2-d1a1e1a4734b" source="PythonTool:" type="Double" />
+            <Field name="39" id="3e027058-aa87-4478-983e-52a10bc60a48" source="PythonTool:" type="Double" />
+            <Field name="40" id="869e04ef-309f-4538-aabb-a4492c4e2310" source="PythonTool:" type="Double" />
+            <Field name="41" id="3359b2da-ffc7-47ad-975a-85858db4a742" source="PythonTool:" type="Double" />
+            <Field name="42" id="010f31fc-e6f7-4fee-bb1a-9e90baf7cbf4" source="PythonTool:" type="Double" />
+            <Field name="43" id="5dec7df5-3f90-4b9f-ac13-7fba304ea3ce" source="PythonTool:" type="Double" />
+            <Field name="44" id="2465b62c-c18b-47c9-b5b6-06f6fca67e6b" source="PythonTool:" type="Double" />
+            <Field name="45" id="57a12635-f72c-45a8-9fa2-54051dd38a98" source="PythonTool:" type="Double" />
+            <Field name="46" id="86fec56d-35e1-4d25-8544-aa82b4f0018f" source="PythonTool:" type="Double" />
+            <Field name="47" id="006a2b7d-b143-4dc2-97ea-be9e580a3f57" source="PythonTool:" type="Double" />
+            <Field name="48" id="232701f4-fc55-4760-8ee8-a92d3ba38919" source="PythonTool:" type="Double" />
+            <Field name="49" id="c8470efb-8239-4a65-b6ec-7f464adda13d" source="PythonTool:" type="Double" />
+            <Field name="50" id="a84b9392-8c2e-4786-befb-f663e0f1a985" source="PythonTool:" type="Double" />
+            <Field name="51" id="0600fb88-8ec0-4da4-a1b7-f47267de0dec" source="PythonTool:" type="Double" />
+            <Field name="52" id="f07d5f43-8613-4e7a-8b51-c2122eada39e" source="PythonTool:" type="Double" />
+            <Field name="53" id="6e18e861-1284-4a28-bba9-f0099887efac" source="PythonTool:" type="Double" />
+            <Field name="54" id="dbac4b45-f8f3-448c-b056-61279e420560" source="PythonTool:" type="Double" />
+            <Field name="55" id="80557a83-bda2-49ea-b046-bd926464b090" source="PythonTool:" type="Double" />
+            <Field name="56" id="5932e0f6-33d1-4c6f-ba75-3330fb45b2ec" source="PythonTool:" type="Double" />
+            <Field name="57" id="47b5d37f-6882-40b6-b5cb-7d7742e6be96" source="PythonTool:" type="Double" />
+            <Field name="58" id="3aab992a-6c3b-427f-ad85-f71935258262" source="PythonTool:" type="Double" />
+            <Field name="59" id="c0bb0332-6902-4e1a-9797-e26828ee1637" source="PythonTool:" type="Double" />
+            <Field name="60" id="f8ca3d62-ae57-4a97-a95e-c68973e3a109" source="PythonTool:" type="Double" />
+            <Field name="61" id="ef291b31-7b99-46dd-9d1b-fc41ef509f99" source="PythonTool:" type="Double" />
+            <Field name="62" id="2f4ebb5d-4e4d-463c-9e65-d2e5cc4da177" source="PythonTool:" type="Double" />
+            <Field name="63" id="35764841-3de0-4730-8058-2108add26377" source="PythonTool:" type="Double" />
+            <Field name="64" id="d82a3b65-873b-41ae-8b7a-d76c1add260a" source="PythonTool:" type="Double" />
+            <Field name="65" id="f22dc48a-18f9-472e-9088-dae99e9d428e" source="PythonTool:" type="Double" />
+            <Field name="66" id="d0eecbe4-4c15-4d41-95a7-a7069e6d72ce" source="PythonTool:" type="Double" />
+            <Field name="67" id="ed7d2d11-0222-4598-8584-5b788fcd3eed" source="PythonTool:" type="Double" />
+            <Field name="68" id="b5308137-4d16-4d3e-ac77-d020fe7b326e" source="PythonTool:" type="Double" />
+            <Field name="69" id="3f3367cb-c4bf-4fa9-b7db-6029007d7d3f" source="PythonTool:" type="Double" />
+            <Field name="70" id="080cfa7e-0cfc-4fda-8eda-c13bdb0793ab" source="PythonTool:" type="Double" />
+            <Field name="71" id="f76e9991-ef68-4b4e-977b-8696f6d9abd0" source="PythonTool:" type="Double" />
+            <Field name="72" id="f2955a70-70af-49f5-8c96-077acfc2df08" source="PythonTool:" type="Double" />
+            <Field name="73" id="f5bfd628-f5c7-4e54-afbb-42b97a929580" source="PythonTool:" type="Double" />
+            <Field name="74" id="ef4bff72-179d-4370-b04d-e6870e1bc864" source="PythonTool:" type="Double" />
+            <Field name="75" id="0c94bc57-3c06-4812-95a8-88a5fa65b717" source="PythonTool:" type="Double" />
+            <Field name="76" id="6b78b2f9-4401-4432-81e2-0465aa2421e5" source="PythonTool:" type="Double" />
+            <Field name="77" id="fd5f4801-dfeb-4d4e-9efa-a133a6f008fa" source="PythonTool:" type="Double" />
+            <Field name="78" id="e7e0d083-b18e-429d-98df-75065be61384" source="PythonTool:" type="Double" />
+            <Field name="79" id="0fff19b1-3412-4ba5-aa64-bc9f13d01849" source="PythonTool:" type="Double" />
+            <Field name="80" id="dbda2009-4bfa-48a9-b230-d5baf7bb70a8" source="PythonTool:" type="Double" />
+            <Field name="81" id="290f7fd4-8010-49e7-aeda-6ebe88fcd367" source="PythonTool:" type="Double" />
+            <Field name="82" id="99d1394b-469a-40e0-b3e5-417c508864b9" source="PythonTool:" type="Double" />
+            <Field name="83" id="cb8899e1-17f7-4235-b2ef-cc7797f6c104" source="PythonTool:" type="Double" />
+            <Field name="84" id="9fe8d392-7399-47a3-81de-2fe7b0830cb9" source="PythonTool:" type="Double" />
+            <Field name="85" id="3e14602b-6250-4a75-8053-863fa8550db9" source="PythonTool:" type="Double" />
+            <Field name="86" id="dfebf7db-8009-4260-b369-951501b1a9cb" source="PythonTool:" type="Double" />
+            <Field name="87" id="9904ff31-b550-46f0-9954-b73b6e9136a8" source="PythonTool:" type="Double" />
+            <Field name="88" id="e4ecf6e2-2554-475a-ae74-a9ff6c8dbeaf" source="PythonTool:" type="Double" />
+            <Field name="89" id="7850d9cb-6f1f-4d45-8f9d-c3d00633211e" source="PythonTool:" type="Double" />
+            <Field name="90" id="9b9f44d4-62da-4406-81de-21d170186ea4" source="PythonTool:" type="Double" />
+            <Field name="91" id="06a70a91-167d-497c-92aa-9991fdce5a97" source="PythonTool:" type="Double" />
+            <Field name="92" id="9fa1aeda-4a86-4a4c-a1ed-6d39b62349f8" source="PythonTool:" type="Double" />
+            <Field name="93" id="79df9638-ec20-4ef4-a21d-6b0a62da9d72" source="PythonTool:" type="Double" />
+            <Field name="94" id="8cb08abf-4876-424f-b6f3-691e721b4014" source="PythonTool:" type="Double" />
+            <Field name="95" id="80edf113-0e0f-410f-bf02-a89984910039" source="PythonTool:" type="Double" />
+            <Field name="96" id="fde135fc-78ef-4a0c-9069-9dabd922b57c" source="PythonTool:" type="Double" />
+            <Field name="97" id="92a18194-17e4-4bd9-8526-dc368b0ad2f3" source="PythonTool:" type="Double" />
+            <Field name="98" id="a5d4532d-93b0-44d9-adf7-9c8b0453c9a2" source="PythonTool:" type="Double" />
+            <Field name="99" id="b01b241a-ab47-4b16-9e4c-e6d1a745453c" source="PythonTool:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxJupyterPluginEngine.dll" EngineDllEntryPoint="AlteryxJupyter" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="102" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>tests</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>1</Expression_Init>
+          <Expression_Cond>tests &lt;= 1000</Expression_Cond>
+          <Expression_Loop>tests+ 1</Expression_Loop>
+          <RecordCount value="1000" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>1000 tests</AnnotationText>
+          <DefaultAnnotationText>1000 tests</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="198" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>Group</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>1</Expression_Init>
+          <Expression_Cond>Group &lt;= 50</Expression_Cond>
+          <Expression_Loop>Group + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>group size up to 50</AnnotationText>
+          <DefaultAnnotationText>group size up to 50</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="294" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>People</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>1</Expression_Init>
+          <Expression_Cond>People &lt;= Group</Expression_Cond>
+          <Expression_Loop>People + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>create person</AnnotationText>
+          <DefaultAnnotationText>create person</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="390" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeAdd(&quot;2020-01-01&quot;,&#xA;RandInt(365),'day')" field="DOB" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>random date generator (leap year)</AnnotationText>
+          <DefaultAnnotationText><![CDATA[DOB = DateTimeAdd("2020-01-01",
+RandInt(365),'day')
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="486" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="DOB" action="GroupBy" rename="DOB" />
+            <SummarizeField field="tests" action="GroupBy" rename="tests" />
+            <SummarizeField field="Group" action="GroupBy" rename="Group" />
+            <SummarizeField field="Group" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[# people with same DOB ]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[# people with same DOB ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="594" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="tests" action="GroupBy" rename="tests" />
+            <SummarizeField field="Group" action="GroupBy" rename="Group" />
+            <SummarizeField field="Count" action="Max" rename="Max_Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Identify successful tests+size</AnnotationText>
+          <DefaultAnnotationText>Identify successful tests+size</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="690" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IIF([Max_Count]&gt;1,1,0)" field="Success" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Success = IIF([Max_Count]>1,1,0)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="786" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Group" action="GroupBy" rename="Group" />
+            <SummarizeField field="Success" action="Sum" rename="Sum_Success" />
+            <SummarizeField field="tests" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Sum of successes</AnnotationText>
+          <DefaultAnnotationText>Sum of successes</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="882" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum_Success]/[Count]" field="Percentage" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Percentage = [Sum_Success]/[Count]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1086" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1182" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="x" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1278" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.WorkflowDirectory]+'fig.png'" field="Open" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Open = [Engine.WorkflowDirectory]+'fig.png'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerImage.PortfolioComposerImage">
+        <Position x="1374" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ImageMode>File</ImageMode>
+          <Filename>test.png</Filename>
+          <ModifyFilename value="True" />
+          <ModifyMode>ReplacePath</ModifyMode>
+          <ModifyField>Open</ModifyField>
+          <StopIfNotFound value="True" />
+          <ImageStyle FixedWidth="false" ImageWidth="200" ShowBorder="false" BorderWidth="1" BorderColor="#000000" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerImagePlugin" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1482" y="642" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_17864_35ec3440e5494b669552d75d034727e1_\Engine_10992_4e7a2a5f5fa746c58a75b56e95c2f362_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output2" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david_140</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

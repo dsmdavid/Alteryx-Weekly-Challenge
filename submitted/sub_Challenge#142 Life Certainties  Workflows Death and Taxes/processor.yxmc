@@ -1,0 +1,701 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="378" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Company_ZZ</Field>
+          <RegExExpression value="(\d+)(\w)" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName>Company_ZZ</RootName>
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="Salary" type="Int64" size="8" />
+            <Field field="Filing" type="String" size="7" />
+          </ParseComplex>
+          <Match>
+            <Field>Company_A_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Parse salary and type of filing</AnnotationText>
+          <DefaultAnnotationText>Parse salary and type of filing</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Num" id="5c28164d-79f7-4cf3-b3be-95acff829c2d" source="TextInput:" type="Byte" />
+            <Field name="Company_ZZ" id="eb98ec1a-727c-4396-967c-c62128ff7660" size="7" source="TextInput:" type="String" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Salary" id="8cf19a98-dc5d-429f-a5dd-f5196a975a37" source="RegEx: Parsed from Company_ZZ" type="Int64" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Filing" id="81c64c0a-bb54-40cb-9947-5b9dd0a1de48" size="7" source="RegEx: Parsed from Company_ZZ" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="474" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Filing</FieldFind>
+          <FieldSearch>ij</FieldSearch>
+          <ReplaceFoundField>Concat_Value</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Concat_Value" />
+            <Field field="Concat_Rate" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Bring rates&amp;values to filing type</AnnotationText>
+          <DefaultAnnotationText>Bring rates&amp;values to filing type</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Num" id="5c28164d-79f7-4cf3-b3be-95acff829c2d" source="TextInput:" type="Byte" />
+            <Field name="Company_ZZ" id="eb98ec1a-727c-4396-967c-c62128ff7660" size="7" source="TextInput:" type="String" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Salary" id="8cf19a98-dc5d-429f-a5dd-f5196a975a37" source="RegEx: Parsed from Company_ZZ" type="Int64" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Filing" id="81c64c0a-bb54-40cb-9947-5b9dd0a1de48" size="7" source="RegEx: Parsed from Company_ZZ" type="String" />
+            <Field name="Concat_Value" id="9aa664b3-e442-4b85-b33c-988d28e293a9" size="51" source="TextInput:" type="String" />
+            <Field name="Concat_Rate" id="073a5cf8-d1e1-4b72-980e-981095e1bccf" size="33" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="666" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Concat_Value</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>Concat_Value</RootName>
+          <Delimeters value="," />
+          <NumFields value="7" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>split values</AnnotationText>
+          <DefaultAnnotationText>split values</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Num" id="5c28164d-79f7-4cf3-b3be-95acff829c2d" source="TextInput:" type="Byte" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Salary" id="8cf19a98-dc5d-429f-a5dd-f5196a975a37" source="RegEx: Parsed from Company_ZZ" type="Int64" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Filing" id="81c64c0a-bb54-40cb-9947-5b9dd0a1de48" size="7" source="RegEx: Parsed from Company_ZZ" type="String" />
+            <Field name="Concat_Value" id="9aa664b3-e442-4b85-b33c-988d28e293a9" size="51" source="TextInput:" type="String" />
+            <Field name="Concat_Rate" id="073a5cf8-d1e1-4b72-980e-981095e1bccf" size="33" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value1" id="ee879aaf-d698-49ba-b12f-c48b1111333a" size="51" source="TextToColumns: Parsed from Concat_Value" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value2" id="f6cbbc1f-b393-4e02-8a34-72210059b68d" size="51" source="TextToColumns: Parsed from Concat_Value" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value3" id="2b5ca137-e0c6-4473-bc40-2e01cf6aa9e2" size="51" source="TextToColumns: Parsed from Concat_Value" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value4" id="82404915-fbd8-43eb-b322-f82378cc1526" size="51" source="TextToColumns: Parsed from Concat_Value" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value5" id="a0eec5cd-b6d7-449f-8d05-ce18ea9b24ee" size="51" source="TextToColumns: Parsed from Concat_Value" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value6" id="9ff1ff2d-00e1-4bb7-b61c-5848a14b4a19" size="51" source="TextToColumns: Parsed from Concat_Value" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value7" id="7dd4f934-710c-4bf8-90d3-6b914a3365ff" size="51" source="TextToColumns: Parsed from Concat_Value" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="954" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [Salary] &lt;[1]&#xA;then 0&#xA;elseif [Salary] &lt; [2]&#xA;then 1&#xA;elseif [Salary] &lt;[3]&#xA;then 2&#xA;elseif [Salary] &lt;[4]&#xA;then 3 &#xA;elseif [Salary] &lt;[5]&#xA;then 4&#xA;elseif [Salary] &lt; [6]&#xA;then 5&#xA;elseif [Salary] &lt;[7]&#xA;then 6&#xA;else 7&#xA;endif&#xA;&#xA;" field="BracketOrder" size="1" type="Byte" />
+            <FormulaField expression="GetWord([Concat_Rate], [BracketOrder])" field="TaxRate" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Bracket order (if salary &lt; bracket)  and get rate</AnnotationText>
+          <DefaultAnnotationText>BracketOrder = if [Salary] &lt;[1]
+then 0
+elseif [Salary] &lt; [2]
+then 1
+elseif [Sala...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Num" id="5c28164d-79f7-4cf3-b3be-95acff829c2d" source="TextInput:" type="Byte" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Salary" id="8cf19a98-dc5d-429f-a5dd-f5196a975a37" source="RegEx: Parsed from Company_ZZ" type="Int64" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Filing" id="81c64c0a-bb54-40cb-9947-5b9dd0a1de48" size="7" source="RegEx: Parsed from Company_ZZ" type="String" />
+            <Field name="Concat_Rate" id="073a5cf8-d1e1-4b72-980e-981095e1bccf" size="33" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="1" id="ee879aaf-d698-49ba-b12f-c48b1111333a" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="2" id="f6cbbc1f-b393-4e02-8a34-72210059b68d" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="3" id="2b5ca137-e0c6-4473-bc40-2e01cf6aa9e2" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="4" id="82404915-fbd8-43eb-b322-f82378cc1526" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="5" id="a0eec5cd-b6d7-449f-8d05-ce18ea9b24ee" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="6" id="9ff1ff2d-00e1-4bb7-b61c-5848a14b4a19" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="7" id="7dd4f934-710c-4bf8-90d3-6b914a3365ff" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field name="BracketOrder" id="8c752894-ceb0-4f6e-8b71-f74f2ff91370" source="Formula: if [Salary] &lt;[1]&#xA;then 0&#xA;elseif..." type="Byte" />
+            <Field name="TaxRate" id="c544699d-43a7-43f3-98be-a21cf0b4fc2e" size="1073741823" source="Formula: GetWord([Concat_Rate], [Bracke..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="762" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Concat_Value" selected="False" />
+            <SelectField field="Concat_Value1" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value2" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value3" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value4" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value5" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value6" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value7" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value8" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value9" selected="True" type="Int64" size="8" />
+            <SelectField field="Concat_Value10" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>change types</AnnotationText>
+          <DefaultAnnotationText>change types</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Num" id="5c28164d-79f7-4cf3-b3be-95acff829c2d" source="TextInput:" type="Byte" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Salary" id="8cf19a98-dc5d-429f-a5dd-f5196a975a37" source="RegEx: Parsed from Company_ZZ" type="Int64" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Filing" id="81c64c0a-bb54-40cb-9947-5b9dd0a1de48" size="7" source="RegEx: Parsed from Company_ZZ" type="String" />
+            <Field name="Concat_Rate" id="073a5cf8-d1e1-4b72-980e-981095e1bccf" size="33" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value1" id="ee879aaf-d698-49ba-b12f-c48b1111333a" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value2" id="f6cbbc1f-b393-4e02-8a34-72210059b68d" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value3" id="2b5ca137-e0c6-4473-bc40-2e01cf6aa9e2" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value4" id="82404915-fbd8-43eb-b322-f82378cc1526" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value5" id="a0eec5cd-b6d7-449f-8d05-ce18ea9b24ee" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value6" id="9ff1ff2d-00e1-4bb7-b61c-5848a14b4a19" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="Concat_Value7" id="7dd4f934-710c-4bf8-90d3-6b914a3365ff" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="858" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Remove</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="Employee Num" />
+            <Field name="Company_A" />
+            <Field name="Salary" />
+            <Field name="Filing" />
+            <Field name="Concat_Rate" />
+            <Field name="Concat_Value1" />
+            <Field name="Concat_Value2" />
+            <Field name="Concat_Value3" />
+            <Field name="Concat_Value4" />
+            <Field name="Concat_Value5" />
+            <Field name="Concat_Value6" />
+            <Field name="Concat_Value7" />
+            <Field name="Concat_Value8" />
+            <Field name="Concat_Value9" />
+            <Field name="Concat_Value10" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <RemovePrefixSuffix>
+            <Type>Prefix</Type>
+            <Text>Concat_Value</Text>
+            <OnError>Warn</OnError>
+          </RemovePrefixSuffix>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>rename new columns</AnnotationText>
+          <DefaultAnnotationText>rename new columns</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Num" id="5c28164d-79f7-4cf3-b3be-95acff829c2d" source="TextInput:" type="Byte" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Salary" id="8cf19a98-dc5d-429f-a5dd-f5196a975a37" source="RegEx: Parsed from Company_ZZ" type="Int64" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Filing" id="81c64c0a-bb54-40cb-9947-5b9dd0a1de48" size="7" source="RegEx: Parsed from Company_ZZ" type="String" />
+            <Field name="Concat_Rate" id="073a5cf8-d1e1-4b72-980e-981095e1bccf" size="33" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="1" id="ee879aaf-d698-49ba-b12f-c48b1111333a" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="2" id="f6cbbc1f-b393-4e02-8a34-72210059b68d" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="3" id="2b5ca137-e0c6-4473-bc40-2e01cf6aa9e2" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="4" id="82404915-fbd8-43eb-b322-f82378cc1526" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="5" id="a0eec5cd-b6d7-449f-8d05-ce18ea9b24ee" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="6" id="9ff1ff2d-00e1-4bb7-b61c-5848a14b4a19" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+            <Field description="TextToColumns: Parsed from Concat_Value" name="7" id="7dd4f934-710c-4bf8-90d3-6b914a3365ff" source="TextToColumns: Parsed from Concat_Value" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="222" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>TaxRates</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="Name" />
+                <Field name="Concat_Value" />
+                <Field name="Concat_Rate" />
+                <Field name="ij" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Filing Individual</c>
+                  <c>9525,38700,82500,157500,200000,500000,10000000000</c>
+                  <c>0.1 0.12 0.22 0.24 0.32 0.35 0.37</c>
+                  <c>I</c>
+                </r>
+                <r>
+                  <c>Filing Jointly</c>
+                  <c>19050,77400,165000,315000,400000,600000,10000000000</c>
+                  <c>0.1 0.12 0.22 0.24 0.32 0.35 0.37</c>
+                  <c>J</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" id="3d9739fa-2d79-4276-954b-dd249d72ba37" size="17" source="TextInput:" type="String" />
+            <Field name="Concat_Value" id="9aa664b3-e442-4b85-b33c-988d28e293a9" size="51" source="TextInput:" type="String" />
+            <Field name="Concat_Rate" id="073a5cf8-d1e1-4b72-980e-981095e1bccf" size="33" source="TextInput:" type="String" />
+            <Field name="ij" id="966242d0-56ac-4d97-80e8-179ce2b2935e" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1050" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="TaxRate" action="GroupBy" rename="TaxRate" />
+            <SummarizeField field="TaxRate" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>count people in bracket</AnnotationText>
+          <DefaultAnnotationText>count people in bracket</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="TaxRate" id="df7f26db-63e8-4166-8e66-17110e0fe5a5" size="1073741823" source="Summarize: GroupBy - TaxRate" type="V_WString" />
+            <Field name="Count" id="3471edc3-3482-48b9-ab56-d8554611ef1f" source="Summarize: Count - TaxRate" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="TaxRate" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="234" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Data</Name>
+          <Abbrev>D</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="10" />
+              <Fields>
+                <Field name="Employee Num" />
+                <Field name="Company_ZZ" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>514418I</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>145652J</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>258744J</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>491131J</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>53012I</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>349835I</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>471491I</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>623552J</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>593365J</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>605819J</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>100 person Sampling from Each Company</AnnotationText>
+          <DefaultAnnotationText>100 person Sampling from Each Company</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Num" id="5c28164d-79f7-4cf3-b3be-95acff829c2d" source="TextInput:" type="Byte" />
+            <Field name="Company_ZZ" id="eb98ec1a-727c-4396-967c-c62128ff7660" size="7" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="390" y="222" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>Select Column</Name>
+          <AnnotationText>Select Column</AnnotationText>
+          <DefaultAnnotationText>Control Parameter (19)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1146" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Summary</Name>
+          <Abbrev>S</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>S Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="390" y="330" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="570" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Employee Num" selected="True" />
+            <SelectField field="Salary" selected="True" />
+            <SelectField field="Filing" selected="True" />
+            <SelectField field="Concat_Value" selected="True" />
+            <SelectField field="Concat_Rate" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>drop columns</AnnotationText>
+          <DefaultAnnotationText>drop columns</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Employee Num" id="5c28164d-79f7-4cf3-b3be-95acff829c2d" source="TextInput:" type="Byte" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Salary" id="8cf19a98-dc5d-429f-a5dd-f5196a975a37" source="RegEx: Parsed from Company_ZZ" type="Int64" />
+            <Field description="RegEx: Parsed from Company_ZZ" name="Filing" id="81c64c0a-bb54-40cb-9947-5b9dd0a1de48" size="7" source="RegEx: Parsed from Company_ZZ" type="String" />
+            <Field name="Concat_Value" id="9aa664b3-e442-4b85-b33c-988d28e293a9" size="51" source="TextInput:" type="String" />
+            <Field name="Concat_Rate" id="073a5cf8-d1e1-4b72-980e-981095e1bccf" size="33" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="8" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="8" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Action" />
+      <Destination ToolID="2" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="19" Connection="Question" />
+      <Destination ToolID="26" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Select Column</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (24)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>processor</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="26" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>Company_ZZ</ReplaceText>
+              <Destination>2/Field</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (18)</Name>
+          <ToolId value="18" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (13)</Name>
+              <ToolId value="13" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (17)</Name>
+              <ToolId value="17" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Select Column</Description>
+              <Name>Select Column</Name>
+              <ToolId value="19" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (24)</Description>
+              <Name>Macro Output (24)</Name>
+              <ToolId value="24" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Select Column</Name>
+            <Description>Select Column</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="24" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
