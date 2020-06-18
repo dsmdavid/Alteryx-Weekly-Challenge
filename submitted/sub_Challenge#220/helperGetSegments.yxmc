@@ -1,0 +1,835 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="330" y="54" width="984" height="444" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Current Segments</Text>
+          <Font name="Arial" size="15.75" style="1" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="978" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>LabelForSegment</Field>
+          <Delimeters value="," />
+          <NumFields value="1" />
+          <Flags value="16" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from LabelForSegment" name="LabelForSegment" id="2ce3d39a-4826-461f-b83f-e2a1ef547e7f" size="1073741823" source="TextToColumns: Parsed from LabelForSegment" type="V_WString" />
+            <Field name="ObjType" id="ec900870-c11d-46c1-9e3c-6fa126919011" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="402" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ordered_vertices" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1170" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>ordered_vertices</UpdateField_Name>
+          <CreateField_Name>Segment</CreateField_Name>
+          <CreateField_Type>WString</CreateField_Type>
+          <CreateField_Size>10</CreateField_Size>
+          <OtherRows>NULL</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF ISNULL([Row-1:ordered_vertices]) then null() else
+','+[Row-1:LabelForSegment]+','+[LabelForSegment]+','
+endif</Expression>
+          <GroupByFields>
+            <Field field="ordered_vertices" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF ISNULL([Row-1:ordered_vertices]) then null() else
+','+[Row...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from LabelForSegment" name="LabelForSegment" id="2ce3d39a-4826-461f-b83f-e2a1ef547e7f" size="1073741823" source="TextToColumns: Parsed from LabelForSegment" type="V_WString" />
+            <Field description="Formula: IF ISNULL([Row-1:ordered_verti..." name="Segment" id="1518d7d7-e8f4-46d8-82aa-ad743c465dab" size="10" source="Formula: IF ISNULL([Row-1:ordered_verti..." type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ordered_vertices" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="594" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+            <Field name="LabelForSegment" id="41c1b432-8c8e-476c-b5f2-41677123b26a" size="1073741823" source="Formula: [ordered_vertices]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="498" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[ordered_vertices]" field="LabelForSegment" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[LabelForSegment = [ordered_vertices]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+            <Field name="LabelForSegment" id="41c1b432-8c8e-476c-b5f2-41677123b26a" size="1073741823" source="Formula: [ordered_vertices]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="474" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[ordered_vertices]" field="LabelForSegment" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[LabelForSegment = [ordered_vertices]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+            <Field name="ObjType" id="27cb022b-73be-4d52-b806-f9a8d3a19e79" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+            <Field name="LabelForSegment" id="992aa89e-142c-4e76-8aa4-877fc922d3c9" size="1073741823" source="Formula: [ordered_vertices]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="690" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+            <Connection>#3</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="a56b61b2-1db1-4dcd-a369-1bb1bc915c17" size="9" source="TextInput:" type="String" />
+            <Field name="LabelForSegment" id="a8896dc7-3456-42c8-be87-65c5de539cd2" size="1073741823" source="Formula: [ordered_vertices]" type="V_WString" />
+            <Field name="ObjType" id="a6b1a803-c916-4182-aab9-98a67c12c889" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="786" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReverseString([LabelForSegment])" field="LabelForSegment" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[LabelForSegment = ReverseString([LabelForSegment])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="a56b61b2-1db1-4dcd-a369-1bb1bc915c17" size="9" source="TextInput:" type="String" />
+            <Field name="LabelForSegment" id="a8896dc7-3456-42c8-be87-65c5de539cd2" size="1073741823" source="Formula: ReverseString([LabelForSegment..." type="V_WString" />
+            <Field name="ObjType" id="a6b1a803-c916-4182-aab9-98a67c12c889" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="882" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field name="LabelForSegment" id="2ce3d39a-4826-461f-b83f-e2a1ef547e7f" size="1073741823" source="Formula: (Multiple Sources)" type="V_WString" />
+            <Field name="ObjType" id="ec900870-c11d-46c1-9e3c-6fa126919011" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1074" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ordered_vertices" selected="True" />
+            <SelectField field="LabelForSegment" selected="True" />
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from LabelForSegment" name="LabelForSegment" id="2ce3d39a-4826-461f-b83f-e2a1ef547e7f" size="1073741823" source="TextToColumns: Parsed from LabelForSegment" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>objects</Name>
+          <Abbrev>O</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="10" />
+              <Fields>
+                <Field name="ordered_vertices" />
+                <Field name="object" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>,K,J,E,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>,M,N,O,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.859532, 54.700002 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>,P,D,H,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.865927, 54.702904 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>,Q,I,O,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>,F,A,B,E,</c>
+                  <c>{ "type": "Polygon", "coordinates": [ [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ], [ -5.866077, 54.699891 ] ] ] }</c>
+                </r>
+                <r>
+                  <c>,H,C,D,G,</c>
+                  <c>{ "type": "Polygon", "coordinates": [ [ [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ], [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] ] }</c>
+                </r>
+                <r>
+                  <c>,K,E,F,J,</c>
+                  <c>{ "type": "Polygon", "coordinates": [ [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ], [ -5.866077, 54.699891 ], [ -5.862730, 54.697708 ] ] ] }</c>
+                </r>
+                <r>
+                  <c>,L,K,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>,L,M,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>,P,Q,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>O Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+            <Field name="object" id="4f998cd1-60c0-42d2-a943-51a7695ee78f" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="306" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[ObjType] != 'Polygon'</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[ObjType] != 'Polygon'</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+            <Field name="ObjType" id="27cb022b-73be-4d52-b806-f9a8d3a19e79" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+            <Field name="ObjType" id="27cb022b-73be-4d52-b806-f9a8d3a19e79" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
+        <Position x="114" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="object" />
+          <SelectedItems>
+            <Item name="ObjType" />
+          </SelectedItems>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+            <Field name="object" id="4f998cd1-60c0-42d2-a943-51a7695ee78f" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="ObjType" id="27cb022b-73be-4d52-b806-f9a8d3a19e79" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialInfo" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="210" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="object" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="f5b5696a-3275-488a-9911-9abfb238e234" size="9" source="TextInput:" type="String" />
+            <Field name="ObjType" id="27cb022b-73be-4d52-b806-f9a8d3a19e79" size="12" source="SpatialInfo: ObjType Source=object" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1362" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="LabelForSegment" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="Formula: IF ISNULL([Row-1:ordered_verti..." name="Segment" id="1518d7d7-e8f4-46d8-82aa-ad743c465dab" size="10" source="Formula: IF ISNULL([Row-1:ordered_verti..." type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ordered_vertices" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1422" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ordered_vertices" />
+            <Field field="Segment" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="Formula: IF ISNULL([Row-1:ordered_verti..." name="Segment" id="1518d7d7-e8f4-46d8-82aa-ad743c465dab" size="10" source="Formula: IF ISNULL([Row-1:ordered_verti..." type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ordered_vertices" order="Asc" />
+            <Field field="Segment" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="Formula: IF ISNULL([Row-1:ordered_verti..." name="Segment" id="1518d7d7-e8f4-46d8-82aa-ad743c465dab" size="10" source="Formula: IF ISNULL([Row-1:ordered_verti..." type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ordered_vertices" order="Asc" />
+            <Field field="Segment" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1314" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Segment</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-17 16:12:17</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2020-06-17 16:12:17</StartDate>
+              <EndDate>2020-06-17 16:12:17</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Segment])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from LabelForSegment" name="LabelForSegment" id="2ce3d39a-4826-461f-b83f-e2a1ef547e7f" size="1073741823" source="TextToColumns: Parsed from LabelForSegment" type="V_WString" />
+            <Field description="Formula: IF ISNULL([Row-1:ordered_verti..." name="Segment" id="1518d7d7-e8f4-46d8-82aa-ad743c465dab" size="10" source="Formula: IF ISNULL([Row-1:ordered_verti..." type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ordered_vertices" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from LabelForSegment" name="LabelForSegment" id="2ce3d39a-4826-461f-b83f-e2a1ef547e7f" size="1073741823" source="TextToColumns: Parsed from LabelForSegment" type="V_WString" />
+            <Field description="Formula: IF ISNULL([Row-1:ordered_verti..." name="Segment" id="1518d7d7-e8f4-46d8-82aa-ad743c465dab" size="10" source="Formula: IF ISNULL([Row-1:ordered_verti..." type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ordered_vertices" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1542" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Segments</Name>
+          <Abbrev>S</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>S Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1254" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!REGEX_Match([Segment],',(.),\1,')</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!REGEX_Match([Segment],',(.),\1,')</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from LabelForSegment" name="LabelForSegment" id="2ce3d39a-4826-461f-b83f-e2a1ef547e7f" size="1073741823" source="TextToColumns: Parsed from LabelForSegment" type="V_WString" />
+            <Field description="Formula: IF ISNULL([Row-1:ordered_verti..." name="Segment" id="1518d7d7-e8f4-46d8-82aa-ad743c465dab" size="10" source="Formula: IF ISNULL([Row-1:ordered_verti..." type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ordered_vertices" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="ordered_vertices" id="3ff1d375-02a6-46ea-b8aa-4835f0aa7bf9" size="9" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from LabelForSegment" name="LabelForSegment" id="2ce3d39a-4826-461f-b83f-e2a1ef547e7f" size="1073741823" source="TextToColumns: Parsed from LabelForSegment" type="V_WString" />
+            <Field description="Formula: IF ISNULL([Row-1:ordered_verti..." name="Segment" id="1518d7d7-e8f4-46d8-82aa-ad743c465dab" size="10" source="Formula: IF ISNULL([Row-1:ordered_verti..." type="WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="ordered_vertices" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="False" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Unique" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="True" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (12)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (21)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>helperGetSegments</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (20)</Name>
+          <ToolId value="20" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (21)</Description>
+              <Name>Macro Output (21)</Name>
+              <ToolId value="21" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="12" Selected="True" />
+        <Tool ToolId="21" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

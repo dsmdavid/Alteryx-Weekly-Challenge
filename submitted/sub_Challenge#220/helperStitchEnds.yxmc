@@ -1,0 +1,3419 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_311857df172a44039b3c1140edfa2a2f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="210" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Label" action="GroupBy" rename="Label" />
+            <SummarizeField field="Concat_unordered" action="CountDistinct" rename="CountDistinct_Concat_unordered" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="00536ca8-7f38-461b-bf44-d82564dfd683" source="Summarize: GroupBy - Label" type="Byte" />
+            <Field name="CountDistinct_Concat_unordered" id="d38cf0f9-4aad-4442-b83d-73566d622b99" source="Summarize: CountDistinct - Concat_unordered" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_66741053ac8543dcbe5a4721d1881549_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="462" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="00536ca8-7f38-461b-bf44-d82564dfd683" source="Summarize: GroupBy - Label" type="Byte" />
+            <Field name="CountDistinct_Concat_unordered" id="d38cf0f9-4aad-4442-b83d-73566d622b99" source="Summarize: CountDistinct - Concat_unordered" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="306" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>CountDistinct_Concat_unordered</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-16 00:33:43</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2020-06-16 00:33:43</StartDate>
+              <EndDate>2020-06-16 00:33:43</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[CountDistinct_Concat_unordered] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Label" id="00536ca8-7f38-461b-bf44-d82564dfd683" source="Summarize: GroupBy - Label" type="Byte" />
+            <Field name="CountDistinct_Concat_unordered" id="d38cf0f9-4aad-4442-b83d-73566d622b99" source="Summarize: CountDistinct - Concat_unordered" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Label" id="00536ca8-7f38-461b-bf44-d82564dfd683" source="Summarize: GroupBy - Label" type="Byte" />
+            <Field name="CountDistinct_Concat_unordered" id="d38cf0f9-4aad-4442-b83d-73566d622b99" source="Summarize: CountDistinct - Concat_unordered" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="462" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Label" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Label" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Line" selected="False" input="Left_" />
+                <SelectField field="Right_Label" selected="False" rename="Right_Label" input="Right_" />
+                <SelectField field="Right_CountDistinct_Concat_unordered" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Label" id="00536ca8-7f38-461b-bf44-d82564dfd683" source="Summarize: GroupBy - Label" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="678" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Concat_unordered" selected="False" rename="Source_Concat_unordered" input="Source_" />
+                <SelectField field="Source_Label" selected="True" rename="Source_Label" input="Source_" />
+                <SelectField field="Source_SpatialObj" selected="True" rename="Source_SpatialObj" input="Source_" />
+                <SelectField field="Source_Line" selected="True" rename="Source_Line" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="870" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ST_CreateLine([Source_SpatialObj], [SpatialObj])" field="new_segment" size="536870911" type="SpatialObj" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[new_segment = ST_CreateLine([Source_SpatialObj], [SpatialObj])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Concat_unordered" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="966" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_ea089554322a44d08dff1c470d510bc6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1242" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Label" selected="True" />
+            <SelectField field="Source_Label" selected="True" />
+            <SelectField field="Source_SpatialObj" selected="True" />
+            <SelectField field="SpatialObject_TradeArea" selected="True" />
+            <SelectField field="SpatialObj_Process" selected="True" rename="new_segment" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1038" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Line" selected="False" />
+            <SelectField field="Label" selected="False" />
+            <SelectField field="SpatialObj" selected="False" />
+            <SelectField field="RadiusSize" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="SpatialObjCombine_SpatialObject_TradeArea" id="8dde8627-aa6e-43a1-afd7-cbe39c29253c" size="2147483647" source="Summarize: SpatialObjCombine - SpatialObject_TradeArea" type="SpatialObj" />
+            <Field name="SpatialObj_Process" id="a9bd1ff7-aeeb-4014-919b-3ef6a504bb40" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=Line Source2=SpatialObjCombine_SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialMatch.SpatialMatch">
+        <Position x="1338" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="new_segment" />
+          <Universe SpatialObj="SpatialObj_Process" />
+          <Method method="Intersects" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+          <IntersectPoly value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>new_segment Where Target Intersects Universe SpatialObj_Process</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Matched">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="SpatialObjCombine_SpatialObject_TradeArea" id="8dde8627-aa6e-43a1-afd7-cbe39c29253c" size="2147483647" source="Summarize: SpatialObjCombine - SpatialObject_TradeArea" type="SpatialObj" />
+            <Field name="SpatialObj_Process" id="a9bd1ff7-aeeb-4014-919b-3ef6a504bb40" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=Line Source2=SpatialObjCombine_SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Unmatched">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialMatch" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1434" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_8eb5dad4c5884779899e2067b742d9ba_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1434" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_d150db40cda54681b8102bf6517aa0f5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.TradeArea.TradeArea">
+        <Position x="714" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="SpatialObj" includeOut="True" />
+          <Units units="Kilometers" noOverlap="False" />
+          <Radius_FromField value="False" />
+          <Radii>0.005</Radii>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>0.005 Kilometers</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="bfa2969b-83d1-4448-a4e5-95b87df65154" size="2147483647" source="TradeArea: Source=SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="RadiusSize" id="77b2cfbe-9605-49f0-a56b-d8fa3f6f00c9" size="20" source="TradeArea: RadiusSize Units=Kilometers" type="V_String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxTradeArea" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialProcess.SpatialProcess">
+        <Position x="942" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObjFields field1="Line" field2="SpatialObjCombine_SpatialObject_TradeArea" />
+          <Action action="Cut2_From1" noEmpty="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cut2_From1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObjCombine_SpatialObject_TradeArea" id="8dde8627-aa6e-43a1-afd7-cbe39c29253c" size="2147483647" source="Summarize: SpatialObjCombine - SpatialObject_TradeArea" type="SpatialObj" />
+            <Field name="SpatialObj_Process" id="a9bd1ff7-aeeb-4014-919b-3ef6a504bb40" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=Line Source2=SpatialObjCombine_SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialProcess" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1134" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_e5e92ccdf8d949e9831114feb1558b9f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="846" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_1cdd6ff5d9a24d019bbe26db18a7e0fb_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="102" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input22</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="31" />
+              <Fields>
+                <Field name="Concat_unordered" />
+                <Field name="Line" />
+                <Field name="Label" />
+                <Field name="SpatialObj" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>,1,2,6,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ], [ -5.866077, 54.699891 ] ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                </r>
+                <r>
+                  <c>,1,2,6,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ], [ -5.866077, 54.699891 ] ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                </r>
+                <r>
+                  <c>,3,4,8,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                </r>
+                <r>
+                  <c>,16,4,8,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                </r>
+                <r>
+                  <c>,3,4,8,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                </r>
+                <r>
+                  <c>,11,10,5,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                </r>
+                <r>
+                  <c>,6,5,10,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                </r>
+                <r>
+                  <c>,1,2,6,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ], [ -5.866077, 54.699891 ] ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                </r>
+                <r>
+                  <c>,6,5,10,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                </r>
+                <r>
+                  <c>,8,7,12,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ], [ -5.861120, 54.698118 ] ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                </r>
+                <r>
+                  <c>,16,4,8,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                </r>
+                <r>
+                  <c>,3,4,8,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                </r>
+                <r>
+                  <c>,8,7,12,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ], [ -5.861120, 54.698118 ] ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                </r>
+                <r>
+                  <c>,9,17,16,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ], [ -5.864360, 54.703536 ] ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                </r>
+                <r>
+                  <c>,11,10,5,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                </r>
+                <r>
+                  <c>,6,5,10,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                </r>
+                <r>
+                  <c>,12,11,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                </r>
+                <r>
+                  <c>,12,11,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                </r>
+                <r>
+                  <c>,11,10,5,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                </r>
+                <r>
+                  <c>,12,11,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                </r>
+                <r>
+                  <c>,12,11,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                </r>
+                <r>
+                  <c>,8,7,12,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ], [ -5.861120, 54.698118 ] ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                </r>
+                <r>
+                  <c>,13,14,15,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.859532, 54.700002 ], [ -5.860004, 54.699878 ] ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                </r>
+                <r>
+                  <c>,15,14,13,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.859532, 54.700002 ], [ -5.858588, 54.698948 ] ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                </r>
+                <r>
+                  <c>,13,14,15,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.859532, 54.700002 ], [ -5.860004, 54.699878 ] ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                </r>
+                <r>
+                  <c>,15,14,13,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.859532, 54.700002 ], [ -5.858588, 54.698948 ] ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                </r>
+                <r>
+                  <c>,13,14,15,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.859532, 54.700002 ], [ -5.860004, 54.699878 ] ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                </r>
+                <r>
+                  <c>,15,14,13,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.859532, 54.700002 ], [ -5.858588, 54.698948 ] ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                </r>
+                <r>
+                  <c>,9,17,16,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ], [ -5.864360, 54.703536 ] ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                </r>
+                <r>
+                  <c>,16,4,8,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                </r>
+                <r>
+                  <c>,9,17,16,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ], [ -5.864360, 54.703536 ] ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="714" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="SpatialObject_TradeArea" action="SpatialObjCombine" rename="SpatialObjCombine_SpatialObject_TradeArea" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SpatialObjCombine_SpatialObject_TradeArea" id="8dde8627-aa6e-43a1-afd7-cbe39c29253c" size="2147483647" source="Summarize: SpatialObjCombine - SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="882" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObjCombine_SpatialObject_TradeArea" id="8dde8627-aa6e-43a1-afd7-cbe39c29253c" size="2147483647" source="Summarize: SpatialObjCombine - SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.TradeArea.TradeArea">
+        <Position x="966" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="Source_SpatialObj" includeOut="True" />
+          <Units units="Kilometers" noOverlap="False" />
+          <Radius_FromField value="False" />
+          <Radii>0.005</Radii>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>0.005 Kilometers</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="RadiusSize" id="89d5db96-b87a-4c35-b87a-95e1741d186a" size="20" source="TradeArea: RadiusSize Units=Kilometers" type="V_String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Concat_unordered" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxTradeArea" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialProcess.SpatialProcess">
+        <Position x="1062" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObjFields field1="new_segment" field2="SpatialObject_TradeArea" />
+          <Action action="Cut2_From1" noEmpty="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Cut2_From1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="RadiusSize" id="89d5db96-b87a-4c35-b87a-95e1741d186a" size="20" source="TradeArea: RadiusSize Units=Kilometers" type="V_String" />
+            <Field name="SpatialObj_Process" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Concat_unordered" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialProcess" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1158" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_6979ea02d2f94cb9bfdf66240f13f41b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1554" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Label" selected="False" rename="Right_Label" input="Right_" />
+                <SelectField field="Right_Source_Label" selected="False" rename="Right_Source_Label" input="Right_" />
+                <SelectField field="Right_Source_SpatialObj" selected="True" rename="Right_Source_SpatialObj" input="Right_" />
+                <SelectField field="Right_SpatialObject_TradeArea" selected="False" input="Right_" />
+                <SelectField field="Right_new_segment" selected="False" rename="Right_new_segment" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+            <Field name="Right_Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="" />
+            <Field field="Source_Label" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
+        <Position x="1686" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="new_segment" />
+          <SelectedItems>
+            <Item name="LengthKm" />
+          </SelectedItems>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+            <Field name="Right_Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="LengthKm" id="309a1d22-46a9-4272-9761-586873f41cc9" source="SpatialInfo: LengthKm Source=new_segment" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="" />
+            <Field field="Source_Label" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialInfo" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1518" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+            <Field field="Source_Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+            <Field field="Source_Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1770" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="LengthKm" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>LengthKm - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+            <Field name="Right_Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="LengthKm" id="309a1d22-46a9-4272-9761-586873f41cc9" source="SpatialInfo: LengthKm Source=new_segment" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="LengthKm" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="774" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Concat_unordered" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Concat_unordered" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Concat_unordered" selected="False" input="Right_" />
+                <SelectField field="Right_Label" selected="False" input="Right_" />
+                <SelectField field="Right_SpatialObj" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Concat_unordered" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Concat_unordered" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Concat_unordered" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.PolySplit.PolySplit">
+        <Position x="1230" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="SpatialObjCombine_SpatialObj_Process" />
+          <SplitTo type="Point" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Split_SpatialObj" id="83df7426-df59-41bb-848a-a942180b8eaf" size="2147483647" source="PolySplit: SpatialObj Source=SpatialObjCombine_SpatialObj_Process" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="264452ec-948c-402c-83c6-52cdebec9575" source="PolySplit: SequenceNum Source=SpatialObjCombine_SpatialObj_Process" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxPolySplit" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1422" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_293129c340f74a37ba5b37ff5cb7342f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1134" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="SpatialObj_Process" action="SpatialObjCombine" rename="SpatialObjCombine_SpatialObj_Process" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SpatialObjCombine_SpatialObj_Process" id="c6106061-9864-4fbe-b5fd-6efcc7c0dcb7" size="2147483647" source="Summarize: SpatialObjCombine - SpatialObj_Process" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.TradeArea.TradeArea">
+        <Position x="1326" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="Split_SpatialObj" includeOut="True" />
+          <Units units="Kilometers" noOverlap="False" />
+          <Radius_FromField value="False" />
+          <Radii>0.003</Radii>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>0.003 Kilometers</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Split_SpatialObj" id="83df7426-df59-41bb-848a-a942180b8eaf" size="2147483647" source="PolySplit: SpatialObj Source=SpatialObjCombine_SpatialObj_Process" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="264452ec-948c-402c-83c6-52cdebec9575" source="PolySplit: SequenceNum Source=SpatialObjCombine_SpatialObj_Process" type="Int32" />
+            <Field name="SpatialObject_TradeArea" id="cd8c64c5-69fa-4d5c-b942-992a90a98905" size="2147483647" source="TradeArea: Source=Split_SpatialObj Radius=0.003 Units=Kilometers" type="SpatialObj" />
+            <Field name="RadiusSize" id="3cde67d5-57f2-483a-b2af-62a540563e11" size="20" source="TradeArea: RadiusSize Units=Kilometers" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxTradeArea" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialMatch.SpatialMatch">
+        <Position x="1554" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="new_segment" />
+          <Universe SpatialObj="SpatialObject_TradeArea" />
+          <Method method="Intersects" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Universe_SpatialObject_TradeArea" selected="True" rename="Universe_SpatialObject_TradeArea" input="Universe_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+          <IntersectPoly value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>new_segment Where Target Intersects Universe SpatialObject_TradeArea</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Matched">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+            <Field name="Split_SpatialObj" id="83df7426-df59-41bb-848a-a942180b8eaf" size="2147483647" source="PolySplit: SpatialObj Source=SpatialObjCombine_SpatialObj_Process" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="264452ec-948c-402c-83c6-52cdebec9575" source="PolySplit: SequenceNum Source=SpatialObjCombine_SpatialObj_Process" type="Int32" />
+            <Field name="Universe_SpatialObject_TradeArea" id="cd8c64c5-69fa-4d5c-b942-992a90a98905" size="2147483647" source="TradeArea: Source=Split_SpatialObj Radius=0.003 Units=Kilometers" type="SpatialObj" />
+            <Field name="RadiusSize" id="3cde67d5-57f2-483a-b2af-62a540563e11" size="20" source="TradeArea: RadiusSize Units=Kilometers" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Unmatched">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialMatch" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1650" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_0b6233dda35743cbaf349110f3deee5f_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1650" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7312_df86ca0bdfcb44fa8f073b30b5dc32ed_\Engine_11924_1bbea7e466164c64be447eaa6385ac57_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1782" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+            <Field field="Source_Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="SpatialObject_TradeArea" id="c6a46924-34ea-4378-871a-8abf82a58e6a" size="2147483647" source="TradeArea: Source=Source_SpatialObj Radius=0.005 Units=Kilometers" type="SpatialObj" />
+            <Field name="new_segment" id="9ed8d146-6af6-4e87-853e-fba43a44297d" size="2147483647" source="SpatialProcess Action=Cut2_From1 Source1=new_segment Source2=SpatialObject_TradeArea" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+            <Field field="Source_Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1854" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+            <Field name="Right_Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="LengthKm" id="309a1d22-46a9-4272-9761-586873f41cc9" source="SpatialInfo: LengthKm Source=new_segment" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="LengthKm" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings>
+        <Position x="2754" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output9">
+          <RecordInfo>
+            <Field name="Count" id="a60bd373-6e46-4ce0-8eaa-0f8691021fee" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="CountRecords.yxmc" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="2898" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Concat_unordered" selected="True" input="Target_" />
+                <SelectField field="Target_Line" selected="True" input="Target_" />
+                <SelectField field="Target_Label" selected="True" input="Target_" />
+                <SelectField field="Target_SpatialObj" selected="True" input="Target_" />
+                <SelectField field="Source_Count" selected="True" input="Source_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="5cea9655-e792-4fdb-813f-1e41b7073abd" size="10" source="(Multiple Sources)" type="String" />
+            <Field name="Line" id="a8e8d7f0-41c1-402e-9f1e-d724a3846940" size="2147483647" source="(Multiple Sources)" type="SpatialObj" />
+            <Field name="Label" id="619503d7-0bd9-45b5-803a-42a810a8b3ba" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="c2932e8d-1754-4b18-9396-d3f6b27a4c9c" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="a60bd373-6e46-4ce0-8eaa-0f8691021fee" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2994" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Count</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-16 01:22:09</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2020-06-16 01:22:09</StartDate>
+              <EndDate>2020-06-16 01:22:09</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Count] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="5cea9655-e792-4fdb-813f-1e41b7073abd" size="10" source="(Multiple Sources)" type="String" />
+            <Field name="Line" id="a8e8d7f0-41c1-402e-9f1e-d724a3846940" size="2147483647" source="(Multiple Sources)" type="SpatialObj" />
+            <Field name="Label" id="619503d7-0bd9-45b5-803a-42a810a8b3ba" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="c2932e8d-1754-4b18-9396-d3f6b27a4c9c" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="a60bd373-6e46-4ce0-8eaa-0f8691021fee" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="5cea9655-e792-4fdb-813f-1e41b7073abd" size="10" source="(Multiple Sources)" type="String" />
+            <Field name="Line" id="a8e8d7f0-41c1-402e-9f1e-d724a3846940" size="2147483647" source="(Multiple Sources)" type="SpatialObj" />
+            <Field name="Label" id="619503d7-0bd9-45b5-803a-42a810a8b3ba" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="c2932e8d-1754-4b18-9396-d3f6b27a4c9c" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="a60bd373-6e46-4ce0-8eaa-0f8691021fee" source="(Multiple Sources)" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="3186" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Concat_unordered" selected="True" />
+            <SelectField field="Line" selected="True" />
+            <SelectField field="Label" selected="True" />
+            <SelectField field="SpatialObj" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="5cea9655-e792-4fdb-813f-1e41b7073abd" size="10" source="(Multiple Sources)" type="String" />
+            <Field name="Line" id="a8e8d7f0-41c1-402e-9f1e-d724a3846940" size="2147483647" source="(Multiple Sources)" type="SpatialObj" />
+            <Field name="Label" id="619503d7-0bd9-45b5-803a-42a810a8b3ba" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="c2932e8d-1754-4b18-9396-d3f6b27a4c9c" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="3330" y="702" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>ite</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>i Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="3210" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output69</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2094" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Concat_unordered" selected="True" />
+            <SelectField field="Line" selected="False" />
+            <SelectField field="new_segment" selected="True" rename="Line" />
+            <SelectField field="Label" selected="False" />
+            <SelectField field="Source_Label" selected="True" rename="Label" />
+            <SelectField field="SpatialObj" selected="True" />
+            <SelectField field="Source_SpatialObj" selected="False" />
+            <SelectField field="Right_Source_SpatialObj" selected="False" />
+            <SelectField field="LengthKm" selected="False" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="Formula: ','+ToString([Source_Label])+'..." type="String" />
+            <Field name="Line" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2022" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="','+ToString([Source_Label])+','+ToString([Label])+','" field="Concat_unordered" size="10" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Concat_unordered = ','+ToString([Source_Label])+','+ToString([Label])+','
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="Formula: ','+ToString([Source_Label])+'..." type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="new_segment" id="a0cd453d-d6fa-40b3-b4c2-17d74c111a49" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+            <Field name="Right_Source_SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="LengthKm" id="309a1d22-46a9-4272-9761-586873f41cc9" source="SpatialInfo: LengthKm Source=new_segment" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="LengthKm" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="2226" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="5cea9655-e792-4fdb-813f-1e41b7073abd" size="10" source="(Multiple Sources)" type="String" />
+            <Field name="Line" id="a8e8d7f0-41c1-402e-9f1e-d724a3846940" size="2147483647" source="(Multiple Sources)" type="SpatialObj" />
+            <Field name="Label" id="619503d7-0bd9-45b5-803a-42a810a8b3ba" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="c2932e8d-1754-4b18-9396-d3f6b27a4c9c" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="90" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="37" />
+          <Fields>
+            <Field name="Concat_unordered" />
+            <Field name="Line" />
+            <Field name="Label" />
+            <Field name="SpatialObj" />
+            <Field name="Count" />
+          </Fields>
+          <Data>
+            <r>
+              <c>,1,2,6,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ], [ -5.866077, 54.699891 ] ] }</c>
+              <c>1</c>
+              <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,1,2,6,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ], [ -5.866077, 54.699891 ] ] }</c>
+              <c>2</c>
+              <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,3,4,8,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+              <c>3</c>
+              <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,16,4,8,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+              <c>4</c>
+              <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,3,4,8,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+              <c>4</c>
+              <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,11,10,5,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ] }</c>
+              <c>5</c>
+              <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,6,5,10,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] }</c>
+              <c>5</c>
+              <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,1,2,6,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ], [ -5.866077, 54.699891 ] ] }</c>
+              <c>6</c>
+              <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,6,5,10,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] }</c>
+              <c>6</c>
+              <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,8,7,12,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ], [ -5.861120, 54.698118 ] ] }</c>
+              <c>7</c>
+              <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,16,4,8,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+              <c>8</c>
+              <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,3,4,8,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+              <c>8</c>
+              <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,8,7,12,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ], [ -5.861120, 54.698118 ] ] }</c>
+              <c>8</c>
+              <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,9,17,16,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ], [ -5.864360, 54.703536 ] ] }</c>
+              <c>9</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,11,10,5,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ] }</c>
+              <c>10</c>
+              <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,6,5,10,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] }</c>
+              <c>10</c>
+              <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,11,10,5,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ] }</c>
+              <c>11</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,12,11,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+              <c>11</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,12,11,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+              <c>11</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,12,11,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+              <c>12</c>
+              <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,12,11,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+              <c>12</c>
+              <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,8,7,12,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ], [ -5.861120, 54.698118 ] ] }</c>
+              <c>12</c>
+              <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,13,14,15,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.859532, 54.700002 ], [ -5.860004, 54.699878 ] ] }</c>
+              <c>13</c>
+              <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,13,14,15,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.859532, 54.700002 ], [ -5.860004, 54.699878 ] ] }</c>
+              <c>14</c>
+              <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,13,14,15,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.859532, 54.700002 ], [ -5.860004, 54.699878 ] ] }</c>
+              <c>15</c>
+              <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,16,4,8,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+              <c>16</c>
+              <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,9,17,16,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ], [ -5.864360, 54.703536 ] ] }</c>
+              <c>16</c>
+              <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,9,17,16,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ], [ -5.864360, 54.703536 ] ] }</c>
+              <c>17</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,1,5,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.867043, 54.699395 ] ] }</c>
+              <c>1</c>
+              <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,2,3,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.866946, 54.702495 ] ] }</c>
+              <c>2</c>
+              <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,3,2,</c>
+              <c />
+              <c>3</c>
+              <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,7,6,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.866077, 54.699891 ] ] }</c>
+              <c>7</c>
+              <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,9,8,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.863802, 54.701019 ] ] }</c>
+              <c>9</c>
+              <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,13,12,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.861120, 54.698118 ] ] }</c>
+              <c>13</c>
+              <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,14,9,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.862730, 54.701589 ] ] }</c>
+              <c>14</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,15,12,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.861120, 54.698118 ] ] }</c>
+              <c>15</c>
+              <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>,17,15,</c>
+              <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.860004, 54.699878 ] ] }</c>
+              <c>17</c>
+              <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+              <c>0</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="41ce1642-88e3-4e67-b5df-6864314e89a0" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="f229ad8f-8b26-4932-9d5e-0a55642f2ab2" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="86ba4a91-252b-42e2-a86b-9d6452ace6cf" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="70bf52d6-a644-4291-8fa0-0ef575957b43" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="c207afc3-9d08-44b0-a444-bb50a7a88dea" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="162" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="f0e85c2b-8ffa-4eab-980d-032f7977a874" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Concat_unordered" id="41ce1642-88e3-4e67-b5df-6864314e89a0" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="f229ad8f-8b26-4932-9d5e-0a55642f2ab2" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="86ba4a91-252b-42e2-a86b-9d6452ace6cf" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="70bf52d6-a644-4291-8fa0-0ef575957b43" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="c207afc3-9d08-44b0-a444-bb50a7a88dea" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;</Operator>
+            <Field>RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-16 01:41:40</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2020-06-16 01:41:40</StartDate>
+              <EndDate>2020-06-16 01:41:40</EndDate>
+              <Operand>30</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] &lt; 30</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="f0e85c2b-8ffa-4eab-980d-032f7977a874" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Concat_unordered" id="41ce1642-88e3-4e67-b5df-6864314e89a0" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="f229ad8f-8b26-4932-9d5e-0a55642f2ab2" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="86ba4a91-252b-42e2-a86b-9d6452ace6cf" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="70bf52d6-a644-4291-8fa0-0ef575957b43" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="c207afc3-9d08-44b0-a444-bb50a7a88dea" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="f0e85c2b-8ffa-4eab-980d-032f7977a874" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Concat_unordered" id="41ce1642-88e3-4e67-b5df-6864314e89a0" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="f229ad8f-8b26-4932-9d5e-0a55642f2ab2" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="86ba4a91-252b-42e2-a86b-9d6452ace6cf" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="70bf52d6-a644-4291-8fa0-0ef575957b43" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="c207afc3-9d08-44b0-a444-bb50a7a88dea" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialInfo.SpatialInfo">
+        <Position x="666" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="Line" />
+          <SelectedItems>
+            <Item name="EndPointsObj" />
+          </SelectedItems>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Start" id="244740dd-7515-4b98-97d1-3b02af14dcc6" size="2147483647" source="SpatialInfo: EndPointsObj Source=Line" type="SpatialObj" />
+            <Field name="End" id="6c736126-9b02-4022-b08e-a35e01b0d7a6" size="2147483647" source="SpatialInfo: EndPointsObj Source=Line" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialInfo" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="774" y="606" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[SpatialObj]= [Start] ||
+[SpatialObj] =[End]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[SpatialObj]= [Start] ||
+[SpatialObj] =[End]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Start" id="244740dd-7515-4b98-97d1-3b02af14dcc6" size="2147483647" source="SpatialInfo: EndPointsObj Source=Line" type="SpatialObj" />
+            <Field name="End" id="6c736126-9b02-4022-b08e-a35e01b0d7a6" size="2147483647" source="SpatialInfo: EndPointsObj Source=Line" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="144d2d8c-16d9-461a-b6c0-18cbc6fd57f4" size="10" source="TextInput:" type="String" />
+            <Field name="Line" id="1b71a1f4-8d07-44ec-9c5f-c47620706c36" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Label" id="ea11a39f-c46e-40b5-aab2-c371e404c650" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="af1e7fb8-742c-4ed5-9507-b7ab376684dc" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Start" id="244740dd-7515-4b98-97d1-3b02af14dcc6" size="2147483647" source="SpatialInfo: EndPointsObj Source=Line" type="SpatialObj" />
+            <Field name="End" id="6c736126-9b02-4022-b08e-a35e01b0d7a6" size="2147483647" source="SpatialInfo: EndPointsObj Source=Line" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="870" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Label" action="GroupBy" rename="Label" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="ff701291-3bf3-4e0b-a67e-e04ed2d11f07" source="Summarize: GroupBy - Label" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="80">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Label" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Label" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Label" selected="True" input="Left_" />
+                <SelectField field="Left_CountDistinct_Concat_unordered" selected="True" input="Left_" />
+                <SelectField field="Right_Label" selected="False" rename="Right_Label" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Label" id="00536ca8-7f38-461b-bf44-d82564dfd683" source="Summarize: GroupBy - Label" type="Byte" />
+            <Field name="CountDistinct_Concat_unordered" id="d38cf0f9-4aad-4442-b83d-73566d622b99" source="Summarize: CountDistinct - Concat_unordered" type="Int64" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Label" id="00536ca8-7f38-461b-bf44-d82564dfd683" source="Summarize: GroupBy - Label" type="Byte" />
+            <Field name="CountDistinct_Concat_unordered" id="d38cf0f9-4aad-4442-b83d-73566d622b99" source="Summarize: CountDistinct - Concat_unordered" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Label" id="ff701291-3bf3-4e0b-a67e-e04ed2d11f07" source="Summarize: GroupBy - Label" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2214" y="174" width="152.0632" height="24" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 70</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="True" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2310" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_10656_f9f3a951972a43ad9e9420db2c175281_\Engine_11924_9f64e4d3e8624f33b4ecc84a16d04e99_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Map</DefaultTab>
+                  <Hints>
+                    <Map>
+                      <BaseMap>[No Base Map]</BaseMap>
+                    </Map>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="44">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2238" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Label" selected="True" />
+                <SelectField field="new_segment" selected="True" />
+                <SelectField field="Right_Source_SpatialObj" selected="True" rename="SpatialObj" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Label" id="2b21e55d-eb84-40d9-b454-bd0f3b90da69" source="TextInput:" type="Byte" />
+                <Field name="new_segment" id="f0ea246c-8692-46c8-895b-91ac8602defa" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" />
+                <Field name="SpatialObj" id="007e4611-9439-42e6-8924-fe2e774464ad" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="2418" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="Concat_unordered" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="Concat_unordered" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Left_Concat_unordered" selected="False" input="Left_" />
+                    <SelectField field="Left_Label" selected="False" input="Left_" />
+                    <SelectField field="Left_SpatialObj" selected="False" input="Left_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="TextInput:" type="String" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Concat_unordered" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="TextInput:" type="String" />
+                <Field name="Line" id="a6c93364-8922-47fb-9275-b37f5de6b980" size="2147483647" source="TextInput:" type="SpatialObj" />
+                <Field name="Label" id="2b21e55d-eb84-40d9-b454-bd0f3b90da69" source="TextInput:" type="Byte" />
+                <Field name="SpatialObj" id="007e4611-9439-42e6-8924-fe2e774464ad" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="TextInput:" type="String" />
+                <Field name="Line" id="a6c93364-8922-47fb-9275-b37f5de6b980" size="2147483647" source="TextInput:" type="SpatialObj" />
+                <Field name="Label" id="2b21e55d-eb84-40d9-b454-bd0f3b90da69" source="TextInput:" type="Byte" />
+                <Field name="SpatialObj" id="007e4611-9439-42e6-8924-fe2e774464ad" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="Concat_unordered" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="48">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2274" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="TextInput:" type="String" />
+                <Field name="Label" id="2b21e55d-eb84-40d9-b454-bd0f3b90da69" source="TextInput:" type="Byte" />
+                <Field name="SpatialObj" id="007e4611-9439-42e6-8924-fe2e774464ad" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="Label" order="" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="49">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2322" y="450" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Label" selected="False" />
+                <SelectField field="SpatialObj" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="50">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2322" y="342" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Label" selected="True" type="String" size="3" />
+                <SelectField field="new_segment" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Label" id="2b21e55d-eb84-40d9-b454-bd0f3b90da69" size="3" source="TextInput:" type="String" />
+                <Field name="SpatialObj" id="007e4611-9439-42e6-8924-fe2e774464ad" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="51">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="2394" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Label" selected="True" input="Target_" />
+                    <SelectField field="Source_Concat_unordered" selected="True" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Label" id="2b21e55d-eb84-40d9-b454-bd0f3b90da69" size="3" source="TextInput:" type="String" />
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2490" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[Concat_unordered]+[Label]+','" field="Concat_unordered" size="10" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[Concat_unordered = [Concat_unordered]+[Label]+','
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Label" id="2b21e55d-eb84-40d9-b454-bd0f3b90da69" size="3" source="TextInput:" type="String" />
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="Formula: [Concat_unordered]+[Label]+','" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="54">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2646" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Line" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Line" id="a6c93364-8922-47fb-9275-b37f5de6b980" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="55">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="2754" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <AutoResetMode>Custom</AutoResetMode>
+              <MultiMetaInfo>
+                <MetaInfo name="#1">
+                  <RecordInfo>
+                    <Field name="Line" id="12008d97-89c3-4506-8520-ab36b38222ae" size="2147483647" source="TextInput:" type="SpatialObj" column="1" />
+                  </RecordInfo>
+                </MetaInfo>
+                <MetaInfo name="#2">
+                  <RecordInfo>
+                    <Field name="new_segment" id="fdfa85f6-4ef4-4aef-a4c3-be88adc67c34" size="2147483647" source="Formula: ST_CreateLine([Source_SpatialO..." type="SpatialObj" column="1" />
+                    <Field name="Label" id="f8a63762-a21e-4c9c-ae86-9e5633e66b62" source="TextInput:" type="Byte" column="3" />
+                  </RecordInfo>
+                </MetaInfo>
+              </MultiMetaInfo>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ManualDelayed</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Line" id="a07e73dc-c9df-4b11-b859-cf6ed22c95ed" size="2147483647" source="(Multiple Sources)" type="SpatialObj" />
+                <Field name="Label" id="807a2c1f-350c-48cd-88ff-8cadeb467046" source="TextInput:" type="Byte" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="56">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="2850" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="Line" action="SpatialObjCombine" rename="Line" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Line" id="fdce8b12-a6a8-44e8-9bb2-24eaded7415b" size="2147483647" source="Summarize: SpatialObjCombine - Line" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2946" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_10656_f9f3a951972a43ad9e9420db2c175281_\Engine_11924_3342396a7ac140359a679e07d79b51e6_.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Map</DefaultTab>
+                  <Hints>
+                    <Map>
+                      <BaseMap>[No Base Map]</BaseMap>
+                    </Map>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="2790" y="330" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Target_Line" selected="True" input="Target_" />
+                    <SelectField field="Source_Concat_unordered" selected="True" input="Source_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Line" id="fdce8b12-a6a8-44e8-9bb2-24eaded7415b" size="2147483647" source="Summarize: SpatialObjCombine - Line" type="SpatialObj" />
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="Formula: [Concat_unordered]+[Label]+','" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="59">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="2622" y="606" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Concat_unordered" id="cf8e8130-692f-4eea-a1ac-b3891bf25903" size="10" source="TextInput:" type="String" />
+                <Field name="Line" id="639522b7-cd6c-44e5-ab57-a1104992251b" size="2147483647" source="TextInput:" type="SpatialObj" />
+                <Field name="Label" id="5076897c-0ab4-4ba8-9d82-f2e25778d283" source="TextInput:" type="Byte" />
+                <Field name="SpatialObj" id="88efe5fe-e3b0-4e93-9f04-87ba8e655791" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="60">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2550" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="new_segment" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Label" id="2b21e55d-eb84-40d9-b454-bd0f3b90da69" source="TextInput:" type="Byte" />
+                <Field name="SpatialObj" id="007e4611-9439-42e6-8924-fe2e774464ad" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="61">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="2742" y="618" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="True" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Source_Concat_unordered" selected="True" input="Source_" />
+                    <SelectField field="Target_Concat_unordered" selected="False" input="Target_" />
+                    <SelectField field="Target_Line" selected="False" input="Target_" />
+                    <SelectField field="Source_Line" selected="True" input="Source_" />
+                    <SelectField field="Target_Label" selected="True" input="Target_" />
+                    <SelectField field="Target_SpatialObj" selected="True" input="Target_" />
+                    <SelectField field="*Unknown" selected="False" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Concat_unordered" id="41a9d0df-cb4a-4171-aa11-d85decbc1e36" size="10" source="Formula: [Concat_unordered]+[Label]+','" type="String" />
+                <Field name="Line" id="fdce8b12-a6a8-44e8-9bb2-24eaded7415b" size="2147483647" source="Summarize: SpatialObjCombine - Line" type="SpatialObj" />
+                <Field name="Label" id="5076897c-0ab4-4ba8-9d82-f2e25778d283" source="TextInput:" type="Byte" />
+                <Field name="SpatialObj" id="88efe5fe-e3b0-4e93-9f04-87ba8e655791" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="2934" y="630" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Concat_unordered" id="12b1b511-f7d2-42ed-9afb-ef336512ab8e" size="10" source="(Multiple Sources)" type="String" />
+                <Field name="Line" id="5debc444-92d0-480c-abb6-28ce424ae86c" size="2147483647" source="(Multiple Sources)" type="SpatialObj" />
+                <Field name="Label" id="2a85a311-3962-424c-ba8c-82520f29a8ec" source="TextInput:" type="Byte" />
+                <Field name="SpatialObj" id="f7429b52-abd7-4e56-b0ec-82b4c1395148" size="2147483647" source="TextInput:" type="SpatialObj" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="63" Connection="Input8" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="80" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="80" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Left" />
+      <Destination ToolID="10" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Left" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Left" />
+      <Destination ToolID="25" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="35" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="35" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="30" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Unique" />
+      <Destination ToolID="30" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="15" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="40" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Matched" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Unmatched" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Unmatched" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="46" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="46" Connection="Left" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Join" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Left" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Matched" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Unmatched" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Unmatched" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output9" />
+      <Destination ToolID="64" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="64" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="False" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="True" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="77" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="True" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="80" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Join" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="46" Connection="Join" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="46" Connection="Right" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="51" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="58" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="58" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="61" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="61" Connection="Targets" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>helperStitchEnds</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (67)</Name>
+          <ToolId value="67" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (68)</Description>
+              <Name>Macro Output (68)</Name>
+              <ToolId value="68" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (69)</Description>
+              <Name>Macro Output (69)</Name>
+              <ToolId value="69" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (22)</Name>
+              <ToolId value="22" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input22</Input>
+        <Output>ite</Output>
+        <IterationLimit value="15" />
+        <LimitBehavior>Warn</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="False" />
+        <Tool ToolId="6" Selected="False" />
+        <Tool ToolId="12" Selected="False" />
+        <Tool ToolId="16" Selected="False" />
+        <Tool ToolId="17" Selected="False" />
+        <Tool ToolId="20" Selected="False" />
+        <Tool ToolId="21" Selected="False" />
+        <Tool ToolId="28" Selected="False" />
+        <Tool ToolId="34" Selected="False" />
+        <Tool ToolId="37" Selected="False" />
+        <Tool ToolId="41" Selected="False" />
+        <Tool ToolId="42" Selected="False" />
+        <Tool ToolId="57" Selected="False" />
+        <Tool ToolId="63" Selected="True" />
+        <Tool ToolId="68" Selected="True" />
+        <Tool ToolId="69" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

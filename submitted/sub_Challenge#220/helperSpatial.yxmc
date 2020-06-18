@@ -1,0 +1,2709 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.SpatialMatch.SpatialMatch">
+        <Position x="450" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="line" />
+          <Universe SpatialObj="line" />
+          <Method method="Intersects" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Universe_Label" selected="True" rename="Universe_Label" input="Universe_" />
+                <SelectField field="Universe_SpatialObj" selected="True" rename="Universe_SpatialObj" input="Universe_" />
+                <SelectField field="Universe_Source_Label" selected="True" rename="Universe_Source_Label" input="Universe_" />
+                <SelectField field="Universe_Source_SpatialObj" selected="True" rename="Universe_Source_SpatialObj" input="Universe_" />
+                <SelectField field="Universe_line" selected="True" rename="Universe_line" input="Universe_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+          <IntersectPoly value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>line Where Target Intersects Universe line</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Matched">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Universe_Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Unmatched">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSpatialMatch" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="150" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Label</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-15 14:47:28</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2020-06-15 14:47:28</StartDate>
+              <EndDate>2020-06-15 14:47:28</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Label] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="294" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>!=</Operator>
+            <Field>Source_Label</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-15 14:49:29</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2020-06-15 14:49:29</StartDate>
+              <EndDate>2020-06-15 14:49:29</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Source_Label] != 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="594" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Label" action="GroupBy" rename="Label" />
+            <SummarizeField field="Source_Label" action="GroupBy" rename="Source_Label" />
+            <SummarizeField field="Label" action="Count" rename="Count" />
+            <SummarizeField field="Universe_Source_Label" action="CountDistinct" rename="CountDistinct_Universe_Source_Label" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="854e91ef-deb5-4211-b7db-3f89643ee6eb" source="Summarize: GroupBy - Label" type="Byte" />
+            <Field name="Source_Label" id="2fe7ef82-aa25-4232-840a-f8641e13b43f" source="Summarize: GroupBy - Source_Label" type="Byte" />
+            <Field name="Count" id="7063cee6-42e2-4b67-b353-2ec0da4ceea1" source="Summarize: Count - Label" type="Int64" />
+            <Field name="CountDistinct_Universe_Source_Label" id="dd059df2-63a2-4bcd-a548-d561f05d16ab" source="Summarize: CountDistinct - Universe_Source_Label" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="Asc" />
+            <Field field="Source_Label" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="750" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Label" selected="False" rename="Right_Label" input="Right_" />
+                <SelectField field="Right_Source_Label" selected="False" rename="Right_Source_Label" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="7063cee6-42e2-4b67-b353-2ec0da4ceea1" source="Summarize: Count - Label" type="Int64" />
+            <Field name="CountDistinct_Universe_Source_Label" id="dd059df2-63a2-4bcd-a548-d561f05d16ab" source="Summarize: CountDistinct - Universe_Source_Label" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Label" order="" />
+            <Field field="Source_Label" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Label" id="854e91ef-deb5-4211-b7db-3f89643ee6eb" source="Summarize: GroupBy - Label" type="Byte" />
+            <Field name="Source_Label" id="2fe7ef82-aa25-4232-840a-f8641e13b43f" source="Summarize: GroupBy - Source_Label" type="Byte" />
+            <Field name="Count" id="7063cee6-42e2-4b67-b353-2ec0da4ceea1" source="Summarize: Count - Label" type="Int64" />
+            <Field name="CountDistinct_Universe_Source_Label" id="dd059df2-63a2-4bcd-a548-d561f05d16ab" source="Summarize: CountDistinct - Universe_Source_Label" type="Int64" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Label" />
+            <Field field="Source_Label" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="858" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Count" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Count - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="7063cee6-42e2-4b67-b353-2ec0da4ceea1" source="Summarize: Count - Label" type="Int64" />
+            <Field name="CountDistinct_Universe_Source_Label" id="dd059df2-63a2-4bcd-a548-d561f05d16ab" source="Summarize: CountDistinct - Universe_Source_Label" type="Int64" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Count" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="210" y="6" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control Parameter (20)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="186" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="282" y="66" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="954" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output24</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="42" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input25</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="272" />
+              <Fields>
+                <Field name="Label" />
+                <Field name="SpatialObj" />
+                <Field name="Source_Label" />
+                <Field name="Source_SpatialObj" />
+                <Field name="line" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.868555, 54.701881 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.865927, 54.702904 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.863802, 54.701019 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864038, 54.697163 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.861120, 54.698118 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.860004, 54.699878 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864360, 54.703536 ], [ -5.862021, 54.701999 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>1</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.869435, 54.701515 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>2</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.868555, 54.701881 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>3</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.866946, 54.702495 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>4</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.865927, 54.702904 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>5</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.867043, 54.699395 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>6</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.866077, 54.699891 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>7</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.864671, 54.700566 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>8</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.863802, 54.701019 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>9</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.862730, 54.701589 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>10</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.864038, 54.697163 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>11</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.862730, 54.697708 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>12</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.861120, 54.698118 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>13</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.858588, 54.698948 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>14</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.859532, 54.700002 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>15</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.860004, 54.699878 ] ] }</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+                  <c>16</c>
+                  <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862021, 54.701999 ], [ -5.864360, 54.703536 ] ] }</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="930" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>2</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="e33d6e35-e5ea-4080-ae95-2ce1ca41320b" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="67c81757-fe21-4ab5-a20c-ed646cb077f6" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Source_Label" id="234b3bd4-f851-4e5c-a489-31625f5a739b" source="TextInput:" type="Byte" />
+            <Field name="Source_SpatialObj" id="13eb0219-b19e-4f92-b175-f8e1ddba2082" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="line" id="ff50f076-34b9-43d6-b6b6-718d8523ca50" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Count" id="7063cee6-42e2-4b67-b353-2ec0da4ceea1" source="Summarize: Count - Label" type="Int64" />
+            <Field name="CountDistinct_Universe_Source_Label" id="dd059df2-63a2-4bcd-a548-d561f05d16ab" source="Summarize: CountDistinct - Universe_Source_Label" type="Int64" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Count" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1026" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6508_fd85de301c22451abd89e2d1df396151_\Engine_11924_ace084d007374823aca3c1b371d47a0b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="222" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="17" />
+          <Fields>
+            <Field name="Label" />
+            <Field name="SpatialObj" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>{ "type": "Point", "coordinates": [ -5.869435, 54.701515 ] }</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>{ "type": "Point", "coordinates": [ -5.868555, 54.701881 ] }</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>{ "type": "Point", "coordinates": [ -5.866946, 54.702495 ] }</c>
+            </r>
+            <r>
+              <c>4</c>
+              <c>{ "type": "Point", "coordinates": [ -5.865927, 54.702904 ] }</c>
+            </r>
+            <r>
+              <c>5</c>
+              <c>{ "type": "Point", "coordinates": [ -5.867043, 54.699395 ] }</c>
+            </r>
+            <r>
+              <c>6</c>
+              <c>{ "type": "Point", "coordinates": [ -5.866077, 54.699891 ] }</c>
+            </r>
+            <r>
+              <c>7</c>
+              <c>{ "type": "Point", "coordinates": [ -5.864671, 54.700566 ] }</c>
+            </r>
+            <r>
+              <c>8</c>
+              <c>{ "type": "Point", "coordinates": [ -5.863802, 54.701019 ] }</c>
+            </r>
+            <r>
+              <c>9</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862730, 54.701589 ] }</c>
+            </r>
+            <r>
+              <c>10</c>
+              <c>{ "type": "Point", "coordinates": [ -5.864038, 54.697163 ] }</c>
+            </r>
+            <r>
+              <c>11</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862730, 54.697708 ] }</c>
+            </r>
+            <r>
+              <c>12</c>
+              <c>{ "type": "Point", "coordinates": [ -5.861120, 54.698118 ] }</c>
+            </r>
+            <r>
+              <c>13</c>
+              <c>{ "type": "Point", "coordinates": [ -5.858588, 54.698948 ] }</c>
+            </r>
+            <r>
+              <c>14</c>
+              <c>{ "type": "Point", "coordinates": [ -5.859532, 54.700002 ] }</c>
+            </r>
+            <r>
+              <c>15</c>
+              <c>{ "type": "Point", "coordinates": [ -5.860004, 54.699878 ] }</c>
+            </r>
+            <r>
+              <c>16</c>
+              <c>{ "type": "Point", "coordinates": [ -5.864360, 54.703536 ] }</c>
+            </r>
+            <r>
+              <c>17</c>
+              <c>{ "type": "Point", "coordinates": [ -5.862021, 54.701999 ] }</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Label" id="faf838fb-d4ae-485a-b023-22f2dbb19f0f" source="TextInput:" type="Byte" />
+            <Field name="SpatialObj" id="d92a3f02-8e5f-431f-b74b-f8d1a8055737" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="318" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_6508_fd85de301c22451abd89e2d1df396151_\Engine_11924_8d941d894b804903b71fbcabdfa29055_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Matched" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="3" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="True" />
+      <Destination ToolID="3" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="22" Connection="Action" />
+      <Destination ToolID="11" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Join" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Question" />
+      <Destination ToolID="21" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="20" Connection="Question" />
+      <Destination ToolID="22" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="21" Connection="Action" />
+      <Destination ToolID="6" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (20)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (24)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (25)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>helperSpatial</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="21" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>6/Simple/Operands/Operand</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="22" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>11/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (19)</Name>
+          <ToolId value="19" />
+          <Questions>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (20)</Description>
+              <Name>Control Parameter (20)</Name>
+              <ToolId value="20" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (24)</Description>
+              <Name>Macro Output (24)</Name>
+              <ToolId value="24" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (25)</Name>
+              <ToolId value="25" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (20)</Name>
+            <Description>Control Parameter (20)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="24" Selected="True" />
+        <Tool ToolId="27" Selected="False" />
+        <Tool ToolId="29" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

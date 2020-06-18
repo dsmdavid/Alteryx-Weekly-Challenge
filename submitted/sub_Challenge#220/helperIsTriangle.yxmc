@@ -1,0 +1,828 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Concat_unordered" />
+                <Field name="Line" />
+                <Field name="Right_Concat_unordered" />
+                <Field name="Right_Line" />
+                <Field name="Object" />
+                <Field name="AreaSqMi" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>,6,5,10,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] }</c>
+                  <c>,11,10,5,</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ] }</c>
+                  <c>{ "type": "MultiLineString", "coordinates": [ [ [ -5.862730, 54.697708 ], [ -5.864038, 54.697163 ], [ -5.867043, 54.699395 ] ], [ [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ], [ -5.864038, 54.697163 ] ] ] }</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field name="Line" id="c03e2140-03a1-440e-8f95-c3538b721c7c" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+            <Field name="Right_Line" id="6f5d8ac3-8b3e-4b9d-adb6-0f76ac543924" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Object" id="b2b03acd-5bfc-4728-80b3-6233f3849503" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="AreaSqMi" id="883d64e7-8825-4d86-a29f-288ebae71531" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="246" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_13612_28627ced61484a5abd53139ed4fe5dc0_\Engine_11428_632c4c8ef4244093aeda5265b5be2d9e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="258" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Concat_unordered</Field>
+          <Delimeters value="," />
+          <NumFields value="1" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Concat_unordered" name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextToColumns: Parsed from Concat_unordered" type="String" />
+            <Field name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="450" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="fcf743a2-f280-4129-a4ed-50abb52ba0ce" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Concat_unordered" name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextToColumns: Parsed from Concat_unordered" type="String" />
+            <Field name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>Concat_unordered</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-16 00:02:02</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2020-06-16 00:02:02</StartDate>
+              <EndDate>2020-06-16 00:02:02</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([Concat_unordered])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Concat_unordered" name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextToColumns: Parsed from Concat_unordered" type="String" />
+            <Field name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from Concat_unordered" name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextToColumns: Parsed from Concat_unordered" type="String" />
+            <Field name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="258" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Right_Concat_unordered</Field>
+          <Delimeters value="," />
+          <NumFields value="1" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Right_Concat_unordered" name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextToColumns: Parsed from Right_Concat_unordered" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="450" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="746d6371-0d72-4b3c-90c6-566901bdd6b9" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Right_Concat_unordered" name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextToColumns: Parsed from Right_Concat_unordered" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="354" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotEmpty</Operator>
+            <Field>Right_Concat_unordered</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-16 00:02:38</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2020-06-16 00:02:38</StartDate>
+              <EndDate>2020-06-16 00:02:38</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsEmpty([Right_Concat_unordered])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Right_Concat_unordered" name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextToColumns: Parsed from Right_Concat_unordered" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Right_Concat_unordered" name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextToColumns: Parsed from Right_Concat_unordered" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Line" selected="False" />
+            <SelectField field="Right_Line" selected="False" />
+            <SelectField field="Object" selected="False" />
+            <SelectField field="AreaSqMi" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="534" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Concat_unordered" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Right_Concat_unordered" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Right_Concat_unordered" selected="True" rename="Left_Right_Concat_unordered" input="Left_" />
+                <SelectField field="Right_RecordID" selected="True" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_Concat_unordered" selected="True" rename="Right_Concat_unordered" input="Right_" />
+                <SelectField field="Right_Right_Concat_unordered" selected="True" rename="Right_Right_Concat_unordered" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" id="fcf743a2-f280-4129-a4ed-50abb52ba0ce" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Concat_unordered" name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextToColumns: Parsed from Concat_unordered" type="String" />
+            <Field name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Concat_unordered" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" id="fcf743a2-f280-4129-a4ed-50abb52ba0ce" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Concat_unordered" name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextToColumns: Parsed from Concat_unordered" type="String" />
+            <Field name="Left_Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+            <Field name="Right_RecordID" id="746d6371-0d72-4b3c-90c6-566901bdd6b9" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Right_Concat_unordered" name="Right_Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextToColumns: Parsed from Right_Concat_unordered" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Concat_unordered" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" id="746d6371-0d72-4b3c-90c6-566901bdd6b9" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Right_Concat_unordered" name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextToColumns: Parsed from Right_Concat_unordered" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Right_Concat_unordered" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="630" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_13612_28627ced61484a5abd53139ed4fe5dc0_\Engine_11428_c19fd71913db4cbbad5bb88f800bb262_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="630" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_13612_28627ced61484a5abd53139ed4fe5dc0_\Engine_11428_481aaa311d37431988c9458b7e965da7_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="630" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_13612_28627ced61484a5abd53139ed4fe5dc0_\Engine_11428_63440c2186024500b748d47305a0012b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="762" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>New Field</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>NULL</OtherRows>
+          <NumRows value="1" />
+          <Expression>ABS([RecordID]-[Row-1:RecordID]) * ABS([Row-1:Right_RecordID]-[Right_RecordID])</Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ABS([RecordID]-[Row-1:RecordID]) * ABS([Row-1:Right_RecordID]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="fcf743a2-f280-4129-a4ed-50abb52ba0ce" source="RecordID: Starting Value=1" type="Int32" />
+            <Field description="TextToColumns: Parsed from Concat_unordered" name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextToColumns: Parsed from Concat_unordered" type="String" />
+            <Field name="Left_Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+            <Field name="Right_RecordID" id="746d6371-0d72-4b3c-90c6-566901bdd6b9" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Right_Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Right_Concat_unordered" name="Right_Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextToColumns: Parsed from Right_Concat_unordered" type="String" />
+            <Field description="Formula: ABS([RecordID]-[Row-1:RecordID..." name="New Field" id="3cf97a67-85e2-4dde-a6fd-5dbace915e49" source="Formula: ABS([RecordID]-[Row-1:RecordID..." type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Concat_unordered" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="858" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="New Field" action="Max" rename="Max_New Field" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: ABS([RecordID]-[Row-1:RecordID..." name="Max_New Field" id="ca0fbb55-e19e-457e-b728-6e0a8a1d6adc" source="Formula: ABS([RecordID]-[Row-1:RecordID..." type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="954" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Max_New Field] !=1" field="IsTriangle" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[IsTriangle = [Max_New Field] !=1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="Formula: ABS([RecordID]-[Row-1:RecordID..." name="Max_New Field" id="ca0fbb55-e19e-457e-b728-6e0a8a1d6adc" source="Formula: ABS([RecordID]-[Row-1:RecordID..." type="Int32" />
+            <Field name="IsTriangle" id="7f04b2f8-a1c2-40d0-a06e-f45802902d19" source="Formula: [Max_New Field] !=1" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1062" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Concat_unordered" id="53f1308e-9217-4694-abd4-80d6aee9c7df" size="8" source="TextInput:" type="String" />
+            <Field name="Line" id="c03e2140-03a1-440e-8f95-c3538b721c7c" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Right_Concat_unordered" id="e1febc11-322a-4339-a2ce-a3b1584bfb44" size="9" source="TextInput:" type="String" />
+            <Field name="Right_Line" id="6f5d8ac3-8b3e-4b9d-adb6-0f76ac543924" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Object" id="b2b03acd-5bfc-4728-80b3-6233f3849503" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="AreaSqMi" id="883d64e7-8825-4d86-a29f-288ebae71531" source="TextInput:" type="Byte" />
+            <Field description="Formula: ABS([RecordID]-[Row-1:RecordID..." name="Max_New Field" id="ca0fbb55-e19e-457e-b728-6e0a8a1d6adc" source="Formula: ABS([RecordID]-[Row-1:RecordID..." type="Int32" />
+            <Field name="IsTriangle" id="7f04b2f8-a1c2-40d0-a06e-f45802902d19" source="Formula: [Max_New Field] !=1" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1182" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output19</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="66" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control Parameter (20)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="17" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Left" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Right" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (1)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (19)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (20)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>helperIsTriangle</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (18)</Name>
+          <ToolId value="18" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (19)</Description>
+              <Name>Macro Output (19)</Name>
+              <ToolId value="19" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (20)</Description>
+              <Name>Control Parameter (20)</Name>
+              <ToolId value="20" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (20)</Name>
+            <Description>Control Parameter (20)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="2" Selected="False" />
+        <Tool ToolId="11" Selected="False" />
+        <Tool ToolId="12" Selected="False" />
+        <Tool ToolId="13" Selected="False" />
+        <Tool ToolId="19" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

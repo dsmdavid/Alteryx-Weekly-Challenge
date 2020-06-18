@@ -1,0 +1,1212 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="354" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ST_Combine([SpatialObjCombine_line], [Universe_SpatialObjCombine_line])" field="new_line" size="536870911" type="SpatialObj" />
+            <FormulaField expression="[Concat_Value]+','+ [Universe_Concat_Value]" field="Vertices" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>new_line = ST_Combine([SpatialObjCombine_line], [Universe_SpatialObjCombine_line...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="new_line" id="8529808a-df4c-4200-9a41-76957ab3df13" size="2147483647" source="Formula: ST_Combine([SpatialObjCombine_..." type="SpatialObj" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.PolySplit.PolySplit">
+        <Position x="450" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="new_line" />
+          <SplitTo type="Point" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxPolySplit" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>
+          </TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Map</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                  <ShowField>Split_SpatialObj</ShowField>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="546" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="Split_SpatialObj" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Unique">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Split_SpatialObj" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Duplicates">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Split_SpatialObj" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.FindNearest.FindNearest">
+        <Position x="666" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="Split_SpatialObj" />
+          <Universe SpatialObj="Split_SpatialObj" />
+          <HowMany value="4" />
+          <MaxDistance value="20" />
+          <MaxDistanceUnits>Miles</MaxDistanceUnits>
+          <Ignore0 value="False" />
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Target_Universe_RecordID" selected="True" rename="Target_Universe_RecordID" input="Target_" />
+                <SelectField field="Target_Universe_SpatialObjCombine_line" selected="True" rename="Target_Universe_SpatialObjCombine_line" input="Target_" />
+                <SelectField field="Target_Universe_Concat_Value" selected="True" rename="Target_Universe_Concat_Value" input="Target_" />
+                <SelectField field="Universe_RecordID" selected="True" rename="Universe_RecordID" input="Universe_" />
+                <SelectField field="Universe_SpatialObjCombine_line" selected="True" rename="Universe_SpatialObjCombine_line" input="Universe_" />
+                <SelectField field="Universe_Concat_Value" selected="True" rename="Universe_Concat_Value" input="Universe_" />
+                <SelectField field="Universe_Universe_RecordID" selected="True" rename="Universe_Universe_RecordID" input="Universe_" />
+                <SelectField field="Universe_Universe_SpatialObjCombine_line" selected="True" rename="Universe_Universe_SpatialObjCombine_line" input="Universe_" />
+                <SelectField field="Universe_Universe_Concat_Value" selected="True" rename="Universe_Universe_Concat_Value" input="Universe_" />
+                <SelectField field="Universe_FindNearestRank" selected="True" rename="Universe_FindNearestRank" input="Universe_" />
+                <SelectField field="Universe_DistanceMiles" selected="True" rename="Universe_DistanceMiles" input="Universe_" />
+                <SelectField field="Universe_Direction" selected="True" rename="Universe_Direction" input="Universe_" />
+                <SelectField field="Universe_Vertices" selected="True" rename="Universe_Vertices" input="Universe_" />
+                <SelectField field="Universe_Split_SpatialObj" selected="True" rename="Universe_Split_SpatialObj" input="Universe_" />
+                <SelectField field="Universe_Split_SequenceNum" selected="True" rename="Universe_Split_SequenceNum" input="Universe_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Matched">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Target_Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Target_Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Target_Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+            <Field name="Universe_RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="Universe_DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Universe_Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Universe_Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Universe_Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Universe_Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+            <Field name="FindNearestRank2" id="9893e0f5-ea20-4012-a3b0-2a9cb012a84b" source="FindNearest: Rank" type="Int16" />
+            <Field name="DistanceMiles2" id="986f5284-40d7-4e7e-a096-d9b3ae7d7e51" source="FindNearest: Distance Units=Miles" type="Double" />
+            <Field name="Direction2" id="b75c8ce5-47ba-43ab-b4c6-440f365ad088" size="2" source="FindNearest: Direction" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Split_SpatialObj" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Unmatched">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Split_SpatialObj" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxFindNearest" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="774" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Split_SequenceNum" action="GroupBy" rename="Split_SequenceNum" />
+            <SummarizeField field="DistanceMiles2" action="Sum" rename="Sum_DistanceMiles2" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Split_SequenceNum" id="078bd024-eca3-4011-bf56-853b65e561ca" source="Summarize: GroupBy - Split_SequenceNum" type="Int32" />
+            <Field name="Sum_DistanceMiles2" id="503f3ef9-9705-48c7-ba95-0d55435108b4" source="Summarize: Sum - DistanceMiles2" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Split_SequenceNum" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="858" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Sum_DistanceMiles2" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sum_DistanceMiles2 - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Split_SequenceNum" id="078bd024-eca3-4011-bf56-853b65e561ca" source="Summarize: GroupBy - Split_SequenceNum" type="Int32" />
+            <Field name="Sum_DistanceMiles2" id="503f3ef9-9705-48c7-ba95-0d55435108b4" source="Summarize: Sum - DistanceMiles2" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Sum_DistanceMiles2" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="954" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Split_SequenceNum" id="078bd024-eca3-4011-bf56-853b65e561ca" source="Summarize: GroupBy - Split_SequenceNum" type="Int32" />
+            <Field name="Sum_DistanceMiles2" id="503f3ef9-9705-48c7-ba95-0d55435108b4" source="Summarize: Sum - DistanceMiles2" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Sum_DistanceMiles2" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1050" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Split_SequenceNum" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Split_SequenceNum" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Split_SequenceNum" selected="True" rename="Right_Split_SequenceNum" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Target_Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Target_Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Target_Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+            <Field name="Universe_RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="Universe_DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Universe_Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Universe_Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Universe_Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Universe_Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+            <Field name="FindNearestRank2" id="9893e0f5-ea20-4012-a3b0-2a9cb012a84b" source="FindNearest: Rank" type="Int16" />
+            <Field name="DistanceMiles2" id="986f5284-40d7-4e7e-a096-d9b3ae7d7e51" source="FindNearest: Distance Units=Miles" type="Double" />
+            <Field name="Direction2" id="b75c8ce5-47ba-43ab-b4c6-440f365ad088" size="2" source="FindNearest: Direction" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Split_SequenceNum" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Target_Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Target_Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Target_Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+            <Field name="Universe_RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="Universe_DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Universe_Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Universe_Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Universe_Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Universe_Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+            <Field name="FindNearestRank2" id="9893e0f5-ea20-4012-a3b0-2a9cb012a84b" source="FindNearest: Rank" type="Int16" />
+            <Field name="DistanceMiles2" id="986f5284-40d7-4e7e-a096-d9b3ae7d7e51" source="FindNearest: Distance Units=Miles" type="Double" />
+            <Field name="Direction2" id="b75c8ce5-47ba-43ab-b4c6-440f365ad088" size="2" source="FindNearest: Direction" type="String" />
+            <Field name="Right_Split_SequenceNum" id="078bd024-eca3-4011-bf56-853b65e561ca" source="Summarize: GroupBy - Split_SequenceNum" type="Int32" />
+            <Field name="Sum_DistanceMiles2" id="503f3ef9-9705-48c7-ba95-0d55435108b4" source="Summarize: Sum - DistanceMiles2" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Split_SequenceNum" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Split_SequenceNum" id="078bd024-eca3-4011-bf56-853b65e561ca" source="Summarize: GroupBy - Split_SequenceNum" type="Int32" />
+            <Field name="Sum_DistanceMiles2" id="503f3ef9-9705-48c7-ba95-0d55435108b4" source="Summarize: Sum - DistanceMiles2" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Split_SequenceNum" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1146" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="DistanceMiles" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DistanceMiles - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Target_Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Target_Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Target_Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+            <Field name="Universe_RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="Universe_DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Universe_Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Universe_Vertices" id="d201852d-b0fd-4ea3-acd1-08fee2bf322f" size="1073741823" source="Formula: [Concat_Value]+','+ [Universe_..." type="V_WString" />
+            <Field name="Universe_Split_SpatialObj" id="f26b4e39-3f89-446d-bd53-b691d845dfb7" size="2147483647" source="PolySplit: SpatialObj Source=new_line" type="SpatialObj" />
+            <Field name="Universe_Split_SequenceNum" id="faba0213-e611-483f-a44b-a7771b25303d" source="PolySplit: SequenceNum Source=new_line" type="Int32" />
+            <Field name="FindNearestRank2" id="9893e0f5-ea20-4012-a3b0-2a9cb012a84b" source="FindNearest: Rank" type="Int16" />
+            <Field name="DistanceMiles2" id="986f5284-40d7-4e7e-a096-d9b3ae7d7e51" source="FindNearest: Distance Units=Miles" type="Double" />
+            <Field name="Direction2" id="b75c8ce5-47ba-43ab-b4c6-440f365ad088" size="2" source="FindNearest: Direction" type="String" />
+            <Field name="Right_Split_SequenceNum" id="078bd024-eca3-4011-bf56-853b65e561ca" source="Summarize: GroupBy - Split_SequenceNum" type="Int32" />
+            <Field name="Sum_DistanceMiles2" id="503f3ef9-9705-48c7-ba95-0d55435108b4" source="Summarize: Sum - DistanceMiles2" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="DistanceMiles" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.PolyBuild.PolyBuild">
+        <Position x="1242" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SpatialObj field="Universe_Split_SpatialObj" />
+          <GroupField field="" />
+          <BuildType>SequencePolyline</BuildType>
+          <SequenceField field="" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SpatialObj_Built" id="edbd328f-1fac-47d3-9105-59b6c68d762b" size="2147483647" source="PolyBuild: Method=SequencePolyline Source=Universe_Split_SpatialObj" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="DistanceMiles" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxPolyBuild" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="354" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Concat_Value]+','+[Universe_Concat_Value]" field="Vertices" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Vertices = [Concat_Value]+','+[Universe_Concat_Value]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field name="Vertices" id="0c2b8807-3037-4b39-b583-f7270c71885d" size="1073741823" source="Formula: [Concat_Value]+','+[Universe_C..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="486" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Vertices</Field>
+          <Delimeters value="," />
+          <NumFields value="1" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Vertices" name="Vertices" id="0c2b8807-3037-4b39-b583-f7270c71885d" size="1073741823" source="TextToColumns: Parsed from Vertices" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="558" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Vertices" selected="True" type="Int16" size="2" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Vertices" name="Vertices" id="0c2b8807-3037-4b39-b583-f7270c71885d" source="TextToColumns: Parsed from Vertices" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="630" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Ascending" />
+            <Field field="Vertices" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RecordID - Ascending
+Vertices - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Vertices" name="Vertices" id="0c2b8807-3037-4b39-b583-f7270c71885d" source="TextToColumns: Parsed from Vertices" type="Int16" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="RecordID" order="Ascending" />
+            <Field field="Vertices" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="714" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Vertices" selected="True" type="String" size="5" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+            <Field description="TextToColumns: Parsed from Vertices" name="Vertices" id="0c2b8807-3037-4b39-b583-f7270c71885d" size="5" source="TextToColumns: Parsed from Vertices" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="834" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+            <SummarizeField field="Vertices" action="Concat" rename="Concat_Vertices">
+              <Concat_Start />
+              <Separator>,</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="9760ca23-11d6-49af-9c7d-8c16dc22dd5e" source="Summarize: GroupBy - RecordID" type="Byte" />
+            <Field name="Concat_Vertices" id="d3cf3dea-c5f4-411b-9992-0f1964eba33d" size="2147483647" source="Summarize: Concat - Vertices" type="V_String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1314" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="SpatialObj_Built" id="edbd328f-1fac-47d3-9105-59b6c68d762b" size="2147483647" source="PolyBuild: Method=SequencePolyline Source=Universe_Split_SpatialObj" type="SpatialObj" />
+            <Field name="RecordID" id="9760ca23-11d6-49af-9c7d-8c16dc22dd5e" source="Summarize: GroupBy - RecordID" type="Byte" />
+            <Field name="Concat_Vertices" id="d3cf3dea-c5f4-411b-9992-0f1964eba33d" size="2147483647" source="Summarize: Concat - Vertices" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="66" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input21</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="5" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="SpatialObjCombine_line" />
+                <Field name="Concat_Value" />
+                <Field name="Universe_RecordID" />
+                <Field name="Universe_SpatialObjCombine_line" />
+                <Field name="Universe_Concat_Value" />
+                <Field name="FindNearestRank" />
+                <Field name="DistanceMiles" />
+                <Field name="Direction" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.869435, 54.701515 ], [ -5.868555, 54.701881 ], [ -5.869435, 54.701515 ] ] }</c>
+                  <c>1,2</c>
+                  <c>3</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.866946, 54.702495 ], [ -5.865927, 54.702904 ], [ -5.866946, 54.702495 ] ] }</c>
+                  <c>3,4</c>
+                  <c>2</c>
+                  <c>7.69392316975448e-02</c>
+                  <c>NE</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.859532, 54.700002 ], [ -5.860004, 54.699878 ], [ -5.859532, 54.700002 ] ] }</c>
+                  <c>14,15</c>
+                  <c>13</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.858588, 54.698948 ], [ -5.859532, 54.700002 ], [ -5.858588, 54.698948 ] ] }</c>
+                  <c>13,14</c>
+                  <c>2</c>
+                  <c>2.06898089572368e-02</c>
+                  <c>NE</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.867043, 54.699395 ], [ -5.866077, 54.699891 ], [ -5.867043, 54.699395 ] ] }</c>
+                  <c>5,6</c>
+                  <c>7</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ] ] }</c>
+                  <c>7,8</c>
+                  <c>2</c>
+                  <c>7.29412671002586e-02</c>
+                  <c>NE</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ] ] }</c>
+                  <c>7,8</c>
+                  <c>9</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ], [ -5.862730, 54.701589 ] ] }</c>
+                  <c>9,17</c>
+                  <c>2</c>
+                  <c>5.81298360804838e-02</c>
+                  <c>NE</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.862730, 54.701589 ], [ -5.862021, 54.701999 ], [ -5.862730, 54.701589 ] ] }</c>
+                  <c>9,17</c>
+                  <c>7</c>
+                  <c>{ "type": "LineString", "coordinates": [ [ -5.864671, 54.700566 ], [ -5.863802, 54.701019 ], [ -5.864671, 54.700566 ] ] }</c>
+                  <c>7,8</c>
+                  <c>2</c>
+                  <c>9.81335238552847e-02</c>
+                  <c>SW</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="162" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-15 21:11:55</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2020-06-15 21:11:55</StartDate>
+              <EndDate>2020-06-15 21:11:55</EndDate>
+              <Operand>1</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" id="1dd396de-866f-4863-9e92-b22241b18bfe" source="TextInput:" type="Byte" />
+            <Field name="SpatialObjCombine_line" id="f968b24a-87fa-4965-b9b5-751699352c41" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Concat_Value" id="19749414-4f03-420e-b51a-63184fba1494" size="5" source="TextInput:" type="String" />
+            <Field name="Universe_RecordID" id="2b70a1a3-8d29-4b11-b8c7-9079d26a006b" source="TextInput:" type="Byte" />
+            <Field name="Universe_SpatialObjCombine_line" id="59ff8095-d3f0-4b1c-8ada-b20d8aeb3f04" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Universe_Concat_Value" id="f9ce3d05-f0ed-452c-8987-30af119627ad" size="5" source="TextInput:" type="String" />
+            <Field name="FindNearestRank" id="f9669339-289f-42fa-9e1e-f20ef84b02e2" source="TextInput:" type="Byte" />
+            <Field name="DistanceMiles" id="0ed83949-d5b4-4db5-9340-02e2e8a9825b" source="TextInput:" type="Double" />
+            <Field name="Direction" id="48fb1a97-5d30-4a39-b09f-dd5709d182db" size="2" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1434" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output24</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="186" y="78" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Control Parameter (25)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="174" y="174" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Unique" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Unique" />
+      <Destination ToolID="6" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Unique" />
+      <Destination ToolID="6" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Matched" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Matched" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="19" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="26" Connection="Action" />
+      <Destination ToolID="22" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="25" Connection="Question" />
+      <Destination ToolID="26" Connection="Question" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.Control Parameter (25)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>helperMakeLine</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="26" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>22/Simple/Operands/Operand</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (23)</Name>
+          <ToolId value="23" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (21)</Name>
+              <ToolId value="21" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (24)</Description>
+              <Name>Macro Output (24)</Name>
+              <ToolId value="24" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>Control Parameter (25)</Description>
+              <Name>Control Parameter (25)</Name>
+              <ToolId value="25" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>Control Parameter (25)</Name>
+            <Description>Control Parameter (25)</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="4" Selected="False" />
+        <Tool ToolId="24" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
