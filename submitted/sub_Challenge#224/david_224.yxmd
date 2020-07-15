@@ -1,0 +1,782 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="438" y="66" width="468" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #224</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="138" width="660" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[This week's challenge focuses on a dataset that describes mushrooms but has been encoded. In the 23 columns describing various attributes of each mushroom observed, the values are represented by a single character. Use the Attribute Info to replace the coded information with the values they represent.
+
+
+Data Source: https://www.kaggle.com/uciml/mushroom-classification
+]]></Text>
+          <Font name="Microsoft Sans Serif" size="11.25" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="618" y="330" width="84" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Output
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="330" width="84" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Inputs
+
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">datasets_478_974_mushrooms.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>datasets_478_974_mushrooms.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="class" id="f5d4764b-0029-4705-bd88-f5d6a49bd761" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="cap-shape" id="a70bb84c-54aa-4a48-8546-067876db3311" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="cap-surface" id="20e6c62d-256d-4f75-98fd-ede079f2d4ad" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="cap-color" id="7ba6c8ef-2771-4d20-b272-b67d46ce0a02" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="bruises" id="61b08217-2737-46c4-9771-4efa747505a8" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="odor" id="8dc3c161-073d-436c-88bb-eebf6f61f68a" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="gill-attachment" id="b05d7210-5aa5-41e5-8b36-9b351d432515" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="gill-spacing" id="299e3c12-b7ca-4d4d-ba33-87210b635228" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="gill-size" id="ec3e8ae9-a286-4dd9-9d3a-e6820704efff" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="gill-color" id="da804769-c8ed-4ded-be3d-b288443e96ff" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="stalk-shape" id="2b87e6bb-2f27-4589-8671-bced4454e001" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="stalk-root" id="0dccd4e6-1e43-430a-b950-263a9ef8773f" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="stalk-surface-above-ring" id="9847ded6-109b-41c7-96b7-65e45b9cad4a" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="stalk-surface-below-ring" id="17fda108-092e-41e4-a2c5-9cceff667511" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="stalk-color-above-ring" id="8a89da01-e1ce-424a-81f6-0df4619108e1" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="stalk-color-below-ring" id="5f813441-c5c9-46d3-8af3-3c0162f37b2c" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="veil-type" id="afb410e7-c1e6-4dee-b1c2-191bd504f7e1" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="veil-color" id="bf5b2df9-78da-4934-9d2d-183c9a8799d2" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="ring-number" id="2cbcdd01-1bb6-4ac8-9e4b-2f2e4d9ee588" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="ring-type" id="5174d89c-0734-45d0-bd1f-44449982e373" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="spore-print-color" id="a956b2d2-80d2-4e33-b225-4ec9a9beb811" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="population" id="1b6a9c58-71f2-4471-b4c6-78d57e1fde26" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+            <Field name="habitat" id="1bd49381-a811-4640-be74-f2e166da02a6" size="254" source="File: F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#224\datasets_478_974_mushrooms.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="630" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Challenge_224_output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Challenge_224_output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="class" id="02e3e8f4-2ada-49f3-b47d-297413f0243e" size="2048" source="CrossTab:Header:Attribute:class:Concat:" type="V_String" />
+            <Field name="cap_shape" id="f613c205-e6e9-43a9-9a84-76c11e0e5696" size="2048" source="CrossTab:Header:Attribute:cap-shape:Concat:" type="V_String" />
+            <Field name="cap_surface" id="6782b9f6-eef1-41c7-972e-8f6fe500fe17" size="2048" source="CrossTab:Header:Attribute:cap-surface:Concat:" type="V_String" />
+            <Field name="cap_color" id="5c747a57-dd2b-4b8e-a491-c708f422d896" size="2048" source="CrossTab:Header:Attribute:cap-color:Concat:" type="V_String" />
+            <Field name="bruises" id="7e1646ef-e03f-4624-affe-e60039067add" size="2048" source="CrossTab:Header:Attribute:bruises:Concat:" type="V_String" />
+            <Field name="odor" id="2c3fca87-8a94-4dc3-8a2b-f34893657238" size="2048" source="CrossTab:Header:Attribute:odor:Concat:" type="V_String" />
+            <Field name="gill_attachment" id="6ee5274b-4c35-4dc0-912d-806081ed8e63" size="2048" source="CrossTab:Header:Attribute:gill-attachment:Concat:" type="V_String" />
+            <Field name="gill_spacing" id="0000be74-6a68-46ad-ad48-0a619cdc1bfb" size="2048" source="CrossTab:Header:Attribute:gill-spacing:Concat:" type="V_String" />
+            <Field name="gill_size" id="8ee91916-705e-4481-be78-5cc0719335a0" size="2048" source="CrossTab:Header:Attribute:gill-size:Concat:" type="V_String" />
+            <Field name="gill_color" id="c4939c26-7442-4330-b4f6-3a21ac6dfbb2" size="2048" source="CrossTab:Header:Attribute:gill-color:Concat:" type="V_String" />
+            <Field name="stalk_shape" id="c62ab1c3-c352-4804-9d3b-53d083d82c10" size="2048" source="CrossTab:Header:Attribute:stalk-shape:Concat:" type="V_String" />
+            <Field name="stalk_root" id="1370d1d6-96bd-442c-a7ca-182cd7b15de7" size="2048" source="CrossTab:Header:Attribute:stalk-root:Concat:" type="V_String" />
+            <Field name="stalk_surface_above_ring" id="fb3e87d5-739a-4998-a34b-4d156a485bd1" size="2048" source="CrossTab:Header:Attribute:stalk-surface-above-ring:Concat:" type="V_String" />
+            <Field name="stalk_surface_below_ring" id="f5b640a2-0c0d-4251-b9d9-7493f6524648" size="2048" source="CrossTab:Header:Attribute:stalk-surface-below-ring:Concat:" type="V_String" />
+            <Field name="stalk_color_above_ring" id="fab965dd-f721-4105-9d17-af0a343ab86a" size="2048" source="CrossTab:Header:Attribute:stalk-color-above-ring:Concat:" type="V_String" />
+            <Field name="stalk_color_below_ring" id="bb02568c-4c77-4623-86ab-31bc0e9f57fe" size="2048" source="CrossTab:Header:Attribute:stalk-color-below-ring:Concat:" type="V_String" />
+            <Field name="veil_type" id="c861bc63-f124-423e-88f8-b9e7c189ea4f" size="2048" source="CrossTab:Header:Attribute:veil-type:Concat:" type="V_String" />
+            <Field name="veil_color" id="3f615cc1-455a-4edf-9f00-7bb1b1f6ae22" size="2048" source="CrossTab:Header:Attribute:veil-color:Concat:" type="V_String" />
+            <Field name="ring_number" id="dc367d16-ab02-416c-ba2e-6ff8ff21c9a5" size="2048" source="CrossTab:Header:Attribute:ring-number:Concat:" type="V_String" />
+            <Field name="ring_type" id="d746a7fd-8600-4170-99ab-2ee7bb56afea" size="2048" source="CrossTab:Header:Attribute:ring-type:Concat:" type="V_String" />
+            <Field name="spore_print_color" id="e2e14ad2-04fb-4b3f-95c9-ea1a31db7814" size="2048" source="CrossTab:Header:Attribute:spore-print-color:Concat:" type="V_String" />
+            <Field name="population" id="a4f883b9-efa3-4b3e-9c00-dd49e6980d04" size="2048" source="CrossTab:Header:Attribute:population:Concat:" type="V_String" />
+            <Field name="habitat" id="93d92fa8-11f1-4a83-ae18-14de49d81f40" size="2048" source="CrossTab:Header:Attribute:habitat:Concat:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="738" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_12868_cbe23447a5cc4bc98075455a79891cf5_\Engine_16580_b50a1da375e84106895fdfdd0ed7bb98_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Attribute Info.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Attribute Info.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" id="0b60300e-4660-4a1b-aaea-5a242260af71" size="114" source="TextInput:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="390" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>Field1</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value=":" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>To Columns - to get attributes</AnnotationText>
+          <DefaultAnnotationText>To Columns - on ":"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings>
+        <Position x="462" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Field1","1","2"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="186" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Skip</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Skip 1st 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="546" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>2</Field>
+          <Delimeters value="," />
+          <NumFields value="1" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>To rows to get all values for an attribute</AnnotationText>
+          <DefaultAnnotationText>To rows to get all values for an attribute</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="630" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>2</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>2</RootName>
+          <Delimeters value="=" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>to columns to get mapping</AnnotationText>
+          <DefaultAnnotationText><![CDATA[to columns to get ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="234" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([Field1],&quot;.*?\(classes(.*)\)&quot;, &quot;class\1&quot;)" field="Field1" size="114" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>First row has title, name of attribute doesn't match</AnnotationText>
+          <DefaultAnnotationText><![CDATA[Field1 = REGEX_Replace([Field1],".*?\(classes(.*)\)", "class\1")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="186" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="318" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings>
+        <Position x="1146" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="CReW_ExpectEqual.yxmc" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicReplace.DynamicReplace">
+        <Position x="918" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field_FieldName>FieldName</Field_FieldName>
+          <Field_OutputValue>Decoded</Field_OutputValue>
+          <Field_Expression>Formula</Field_Expression>
+          <ValueIsExpression value="False" />
+          <Unmatched_Behavior>Warn</Unmatched_Behavior>
+          <FieldTypeMode>Autofield</FieldTypeMode>
+          <OutputFieldType type="Double" size="8" scale="1" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="class" id="81b3a81a-200d-4bb2-a648-56e8872e2bea" size="9" source="DynamicReplace:" type="String" />
+            <Field name="cap-shape" id="e310ffd2-864f-4fe1-8930-2ca872ca929c" size="7" source="DynamicReplace:" type="String" />
+            <Field name="cap-surface" id="c811a0af-a990-4bf8-82ca-28bb0976c1cd" size="7" source="DynamicReplace:" type="String" />
+            <Field name="cap-color" id="137be0c2-b10d-4883-bb57-70b37d1ab2ff" size="8" source="DynamicReplace:" type="String" />
+            <Field name="bruises" id="5753b7f5-c7ae-4ed3-93f3-5dbb503a097a" size="7" source="DynamicReplace:" type="String" />
+            <Field name="odor" id="496daeb0-c2b1-4e50-b812-8b5d7704e152" size="8" source="DynamicReplace:" type="String" />
+            <Field name="gill-attachment" id="f5d0ce0e-960d-40a0-8977-2f3169541991" size="10" source="DynamicReplace:" type="String" />
+            <Field name="gill-spacing" id="b6b71e37-d9fb-4d71-86c4-38b37432b44d" size="7" source="DynamicReplace:" type="String" />
+            <Field name="gill-size" id="ebac5496-c0a9-4a2b-b6b4-d82b6c74e217" size="6" source="DynamicReplace:" type="String" />
+            <Field name="gill-color" id="a5a17eb2-f41c-4111-b90f-bffdf2eca373" size="9" source="DynamicReplace:" type="String" />
+            <Field name="stalk-shape" id="778664e6-195b-42e9-9c6d-02a71cd49480" size="9" source="DynamicReplace:" type="String" />
+            <Field name="stalk-root" id="f1249439-f3ff-416f-96f8-bcd7ad393c04" size="11" source="DynamicReplace:" type="String" />
+            <Field name="stalk-surface-above-ring" id="85cdce45-a2e5-43d6-b999-896c4011e5c8" size="7" source="DynamicReplace:" type="String" />
+            <Field name="stalk-surface-below-ring" id="cff5d6f3-e7bd-4a1d-a3ad-6c32ba197316" size="7" source="DynamicReplace:" type="String" />
+            <Field name="stalk-color-above-ring" id="6114ad80-a3b8-4d0a-9a93-cd3024f5d93b" size="8" source="DynamicReplace:" type="String" />
+            <Field name="stalk-color-below-ring" id="5a0ab193-d61b-4055-9a16-587776cadae1" size="8" source="DynamicReplace:" type="String" />
+            <Field name="veil-type" id="f458a3b7-81b9-48b3-8306-a9d36353fcda" size="9" source="DynamicReplace:" type="String" />
+            <Field name="veil-color" id="2754a7aa-2e2b-4c9e-853a-f5a2092343d9" size="6" source="DynamicReplace:" type="String" />
+            <Field name="ring-number" id="1b056604-8d9a-4a77-9095-9bc710c2bd13" size="4" source="DynamicReplace:" type="String" />
+            <Field name="ring-type" id="5d19248b-e6c6-4126-a881-a014b7893ffc" size="10" source="DynamicReplace:" type="String" />
+            <Field name="spore-print-color" id="fc928d55-0ac9-4257-8085-8d8d9445c009" size="9" source="DynamicReplace:" type="String" />
+            <Field name="population" id="527d2ba3-91cd-4727-8e6d-3d1d6ad77f30" size="9" source="DynamicReplace:" type="String" />
+            <Field name="habitat" id="05390ec2-d8fc-4919-b046-b55e523b01b0" size="7" source="DynamicReplace:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Counts">
+          <RecordInfo>
+            <Field name="FieldName" id="248e6fe3-9197-4ac5-a6dd-547e00cb11a8" size="24" source="DynamicReplace:" type="V_String" />
+            <Field name="OutputValue" id="cf2b1614-c610-49ed-9271-32d19404b639" size="11" source="DynamicReplace:" type="V_String" />
+            <Field name="Count" id="5410c080-8dd1-47ed-9dc4-71107cf2c2b6" source="DynamicReplace: Count" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicReplace" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="726" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field1" selected="False" />
+            <SelectField field="1" selected="True" rename="FieldName" />
+            <SelectField field="2" selected="False" />
+            <SelectField field="21" selected="True" rename="Decoded" />
+            <SelectField field="22" selected="True" rename="Encoded" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="822" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;[_CurrentField_]='&quot;+ToString([Encoded])+&quot;'&quot;" field="Formula" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Formula = "[_CurrentField_]='"+ToString([Encoded])+"'"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1074" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="class" />
+            <Field name="cap-shape" />
+            <Field name="cap-surface" />
+            <Field name="cap-color" />
+            <Field name="bruises" />
+            <Field name="odor" />
+            <Field name="gill-attachment" />
+            <Field name="gill-spacing" />
+            <Field name="gill-size" />
+            <Field name="gill-color" />
+            <Field name="stalk-shape" />
+            <Field name="stalk-root" />
+            <Field name="stalk-surface-above-ring" />
+            <Field name="stalk-surface-below-ring" />
+            <Field name="stalk-color-above-ring" />
+            <Field name="stalk-color-below-ring" />
+            <Field name="veil-type" />
+            <Field name="veil-color" />
+            <Field name="ring-number" />
+            <Field name="ring-type" />
+            <Field name="spore-print-color" />
+            <Field name="population" />
+            <Field name="habitat" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression>replace([_CurrentField_],"-","_")</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Match new naming convention ("_" instead of "-")</AnnotationText>
+          <DefaultAnnotationText>Match new naming convention ("_" instead of "-")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="class" id="81b3a81a-200d-4bb2-a648-56e8872e2bea" size="9" source="DynamicReplace:" type="String" />
+            <Field name="cap_shape" id="e310ffd2-864f-4fe1-8930-2ca872ca929c" size="7" source="DynamicReplace:" type="String" />
+            <Field name="cap_surface" id="c811a0af-a990-4bf8-82ca-28bb0976c1cd" size="7" source="DynamicReplace:" type="String" />
+            <Field name="cap_color" id="137be0c2-b10d-4883-bb57-70b37d1ab2ff" size="8" source="DynamicReplace:" type="String" />
+            <Field name="bruises" id="5753b7f5-c7ae-4ed3-93f3-5dbb503a097a" size="7" source="DynamicReplace:" type="String" />
+            <Field name="odor" id="496daeb0-c2b1-4e50-b812-8b5d7704e152" size="8" source="DynamicReplace:" type="String" />
+            <Field name="gill_attachment" id="f5d0ce0e-960d-40a0-8977-2f3169541991" size="10" source="DynamicReplace:" type="String" />
+            <Field name="gill_spacing" id="b6b71e37-d9fb-4d71-86c4-38b37432b44d" size="7" source="DynamicReplace:" type="String" />
+            <Field name="gill_size" id="ebac5496-c0a9-4a2b-b6b4-d82b6c74e217" size="6" source="DynamicReplace:" type="String" />
+            <Field name="gill_color" id="a5a17eb2-f41c-4111-b90f-bffdf2eca373" size="9" source="DynamicReplace:" type="String" />
+            <Field name="stalk_shape" id="778664e6-195b-42e9-9c6d-02a71cd49480" size="9" source="DynamicReplace:" type="String" />
+            <Field name="stalk_root" id="f1249439-f3ff-416f-96f8-bcd7ad393c04" size="11" source="DynamicReplace:" type="String" />
+            <Field name="stalk_surface_above_ring" id="85cdce45-a2e5-43d6-b999-896c4011e5c8" size="7" source="DynamicReplace:" type="String" />
+            <Field name="stalk_surface_below_ring" id="cff5d6f3-e7bd-4a1d-a3ad-6c32ba197316" size="7" source="DynamicReplace:" type="String" />
+            <Field name="stalk_color_above_ring" id="6114ad80-a3b8-4d0a-9a93-cd3024f5d93b" size="8" source="DynamicReplace:" type="String" />
+            <Field name="stalk_color_below_ring" id="5a0ab193-d61b-4055-9a16-587776cadae1" size="8" source="DynamicReplace:" type="String" />
+            <Field name="veil_type" id="f458a3b7-81b9-48b3-8306-a9d36353fcda" size="9" source="DynamicReplace:" type="String" />
+            <Field name="veil_color" id="2754a7aa-2e2b-4c9e-853a-f5a2092343d9" size="6" source="DynamicReplace:" type="String" />
+            <Field name="ring_number" id="1b056604-8d9a-4a77-9095-9bc710c2bd13" size="4" source="DynamicReplace:" type="String" />
+            <Field name="ring_type" id="5d19248b-e6c6-4126-a881-a014b7893ffc" size="10" source="DynamicReplace:" type="String" />
+            <Field name="spore_print_color" id="fc928d55-0ac9-4257-8085-8d8d9445c009" size="9" source="DynamicReplace:" type="String" />
+            <Field name="population" id="527d2ba3-91cd-4727-8e6d-3d1d6ad77f30" size="9" source="DynamicReplace:" type="String" />
+            <Field name="habitat" id="05390ec2-d8fc-4919-b046-b55e523b01b0" size="7" source="DynamicReplace:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="164" y="1040" width="656" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Alteryx Educational Asset - Terms and Conditions</Caption>
+          <Style TextColor="#ffffff" FillColor="#0d2345" BorderColor="#ffffff" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="174" y="1074" width="636" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use of this Alteryx asset is for educational purposes only and bound by the conditions set forth on alteryx.com/terms-and-conditions. Alteryx Information may not be reproduced, transmitted or distributed without Alteryx, Inc.'s permission.”</Text>
+              <Font name="Times New Roman" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="71" Connection="Expressions" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="62" Connection="Expected" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="62" Connection="Actual" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output26" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="72" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="74" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david_224</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
