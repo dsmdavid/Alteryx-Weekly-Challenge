@@ -1,0 +1,929 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="582" y="318" width="132" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Output
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="318" width="84" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Inputs
+
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="654" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_20428_9d5aa540cf494db69f3c9d8513c7c35f_\Engine_22988_c5633eec6dc34295b434c996da38d60c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="438" y="66" width="468" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #233</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="138" width="660" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Use these datasets to create a map showing the locations of sighting from 2019, and a table with the 25 most active cities over the dataset, including the most active year for each of those cities and the number of sightings that occurred in that active year. 
+
+Data Source: https://www.kaggle.com/thaddeussegura/ufo-sightings?select=clean_ufo_data.csv
+https://simplemaps.com/data/us-cities</Text>
+          <Font name="Microsoft Sans Serif" size="11.25" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="582" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BoundingRect" id="f9895284-d6e4-4e70-848f-776c62f9c5ef" size="2147483647" source="Map:" type="SpatialObj" />
+            <Field name="Layout" id="3dcc2f81-2cb4-4687-8d16-4c2f2477e897" size="2147483647" source="Report:Layout:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">UFO Sightings.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>UFO Sightings.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="id" id="ca480898-46d1-47f1-aa5d-74085a66c87b" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\clean_ufo_data.csv" type="Int32" />
+            <Field name="Occured DateTime" id="e61c0131-3cc6-41eb-a0e3-cb100c3ef471" source="DateTime: To MM/dd/yy hh:mm" type="DateTime" />
+            <Field name="city" id="cf3a610a-7e16-43d1-8280-6e61c988a599" size="63" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\clean_ufo_data.csv" type="V_String" />
+            <Field name="state" id="3638608f-5db1-4e4b-9360-be9a5ebdd7de" size="2" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\clean_ufo_data.csv" type="String" />
+            <Field name="shape" id="70244885-18e7-4e9d-953d-7389780f0efd" size="10" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\clean_ufo_data.csv" type="String" />
+            <Field name="duration" id="01e5108b-a98c-48c4-92e2-ed8f3f46a5bb" size="145" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\clean_ufo_data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">US Cities.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>US Cities.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="City" id="a580f791-5453-4e20-a449-56d4fe98bbf7" size="35" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\uscities.csv" type="V_String" />
+            <Field name="State" id="495b75c9-fb55-498d-bee9-93a41dcab7e7" size="2" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\uscities.csv" type="String" />
+            <Field name="population" id="5353d4b8-e68a-4d38-9128-e24d10a337e0" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\uscities.csv" type="Double" />
+            <Field name="lat" id="fcb6e203-cc0e-4797-8c87-3caee3d64d41" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\uscities.csv" type="Double" />
+            <Field name="lng" id="ce53a0a1-6866-4e3e-a6f5-4cff87858054" source="File: C:\Users\cusic\alteryx.com\GRP_Instructional Designers - Documents\Weekly Challenge\Weekly Challenge Submissions\UFO Sightings - Mike C\uscities.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.CreatePoints.CreatePoints">
+        <Position x="163" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields fieldX="lng" fieldY="lat" />
+          <Mode>Double</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxCreatePoints" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="260" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="city" />
+            <Field field="state" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="City" />
+            <Field field="State" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_city" selected="False" input="Left_" />
+                <SelectField field="Left_state" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="City" action="GroupBy" rename="City" />
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="id" action="CountDistinct" rename="CountDistinct_id" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Activity by City in dataset</AnnotationText>
+          <DefaultAnnotationText>Activity by City in dataset</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="450" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="CountDistinct_id" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CountDistinct_id - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="642" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>25</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 25</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="454" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="City" action="GroupBy" rename="City" />
+            <SummarizeField field="State" action="GroupBy" rename="State" />
+            <SummarizeField field="year" action="GroupBy" rename="year" />
+            <SummarizeField field="id" action="CountDistinct" rename="CountDistinct_id" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Activity by City in dataset</AnnotationText>
+          <DefaultAnnotationText>Activity by City in dataset</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="357" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Left([Occured DateTime], 4)" field="year" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[year = Left([Occured DateTime], 4)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="551" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="City" order="Ascending" />
+            <Field field="State" order="Ascending" />
+            <Field field="CountDistinct_id" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>City - Ascending
+State - Ascending
+CountDistinct_id - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="648" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False">
+            <Field name="City" />
+            <Field name="State" />
+          </GroupFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Year with the most activity per city</AnnotationText>
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="744" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="City" />
+            <Field field="State" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="City" />
+            <Field field="State" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_CountDistinct_id" selected="True" rename="Total Sightings" input="Left_" />
+                <SelectField field="Right_City" selected="False" input="Right_" />
+                <SelectField field="Right_State" selected="False" input="Right_" />
+                <SelectField field="Right_year" selected="True" rename="Most Active Year" input="Right_" />
+                <SelectField field="Right_CountDistinct_id" selected="True" rename="Sightings in Active Year" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="841" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Total Sightings" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total Sightings - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.ReportMap.ReportMap">
+        <Position x="841" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TemporaryFileLocationXML>C:\Users\dsmda\AppData\Local\Temp\Engine_20428_9d5aa540cf494db69f3c9d8513c7c35f_\Engine_22988_590dfa27dfd6459d8c1d4953908bebe9_.xml</TemporaryFileLocationXML>
+          <IsMetric value="False" />
+          <ImageWidth>8</ImageWidth>
+          <ImageHeight>6</ImageHeight>
+          <ImageResolution>1</ImageResolution>
+          <ReferenceMap>Latest:DarkCarto</ReferenceMap>
+          <BackgroundColor>#fdfeff</BackgroundColor>
+          <DropShadow>False</DropShadow>
+          <ScaleUnits>Miles</ScaleUnits>
+          <ExpandExtent>10</ExpandExtent>
+          <MinimumWidth>0.5</MinimumWidth>
+          <DataConnections>
+            <DataConnection name="#1">
+              <ConnectionType>IncomingConnection</ConnectionType>
+              <Connection>#1</Connection>
+              <FileName />
+              <SpatialObj />
+              <GroupField />
+              <ThemeField>shape</ThemeField>
+              <LabelField />
+            </DataConnection>
+          </DataConnections>
+          <Layers>
+            <Layer name="1" order="0">
+              <LayerType>Points</LayerType>
+              <isBaseLayer value="False" />
+              <isReorderedBaseLayer value="False" />
+              <isRestlyedBaseLayer value="False" />
+              <baseLabelOverriden value="False" />
+              <isThemeLayer value="False" />
+              <DisplayName>#1</DisplayName>
+              <DataConnection>#1</DataConnection>
+              <ShowInLegend value="True" />
+              <ZoomToLayer value="True" />
+              <Disable value="False" />
+              <PointStyle StockPointStyle="circle" Size="6" OutlineColor="#ffffff" Opacity="75" />
+              <ThemeStyle TileMethod="IndividualValue" NumTiles="5" ColorMethod="Map" StartColor="#0000ff" EndColor="#ff0000" UniqueColors="#ab2560,#aba573,#30626b,#91697b,#5e5719,#914977,#498e91,#28bcc4,#6b5c5e,#395e4b,#36296b,#2d6b62,#5f753d,#752d35,#5e4b29" SpecificValues="" ManualTiles="" NoneSpecificValuesAction="Color" UpperCutoffIncludedExcluded="Excluded" />
+              <LabelStyle Disabled="false" />
+            </Layer>
+            <Layer name="Base Layers - Points" order="1">
+              <DisplayName>Base Layers - Points</DisplayName>
+              <DataConnection />
+              <LayerType>Placeholder</LayerType>
+              <ShowLabel value="False" />
+            </Layer>
+            <Layer name="Base Layers - Lines" order="2">
+              <DisplayName>Base Layers - Lines</DisplayName>
+              <DataConnection />
+              <LayerType>Placeholder</LayerType>
+              <ShowLabel value="False" />
+            </Layer>
+            <Layer name="Base Layers - Polygons" order="3">
+              <DisplayName>Base Layers - Polygons</DisplayName>
+              <DataConnection />
+              <LayerType>Placeholder</LayerType>
+              <ShowLabel value="False" />
+            </Layer>
+          </Layers>
+          <Legend>
+            <LegendStyle Position="Right" UseCommaSeparators="false" />
+          </Legend>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxReportMap" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="654" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>ToNumber([year]) &gt;= 2019</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ToNumber([year]) &gt;= 2019</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="938" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="City" selected="True" Alignment="Left" />
+            <Field name="State" selected="True" Alignment="Left" />
+            <Field name="Total Sightings" selected="True" Alignment="Right" />
+            <Field name="Most Active Year" selected="True" Alignment="Left" />
+            <Field name="Sightings in Active Year" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1035" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="True">
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerLayout.PortfolioComposerLayout">
+        <Position x="1230" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupingMode>PerRecord</GroupingMode>
+          <PreserveSourceFields value="False" />
+          <Orientation>V</Orientation>
+          <Separator>Continuous</Separator>
+          <Width>100%</Width>
+          <Height />
+          <BorderStyle Enabled="false" Color="#000000" Width="2" />
+          <SeparatorStyle Enabled="false" Color="#000000" Width="1" />
+          <Padding>0</Padding>
+          <LayoutFields orderChanged="True">
+            <Field name="Header" selected="True" Width="" Alignment="Center" />
+            <Field name="Map" selected="True" Alignment="Center" />
+            <Field name="Table" selected="True" Alignment="Center" />
+          </LayoutFields>
+          <MergeIntoTable value="False" />
+          <SectionNameForGroup />
+          <SectionNameForAllRecords />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Vertical Layout
+Each Individual Record</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerLayoutPlugin" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1229" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_20428_9d5aa540cf494db69f3c9d8513c7c35f_\Engine_22988_1af26c7aa45e44d3bee90cc4e93d9cb6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Map>
+                  <BaseMap>[No Base Map]</BaseMap>
+                </Map>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="1326" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType />
+          <OutputFile>output2019.pdf</OutputFile>
+          <BatchMode value="False" />
+          <DataField>Layout</DataField>
+          <Separator>Continuous</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="612" Height="792" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings>
+        <Position x="1132" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="HeaderText">UFO Sightings (2019)</Value>
+          <Value name="IncludeDate">False</Value>
+          <Value name="DateFormat">Month dd, yyyy</Value>
+          <Value name="IncludeImage">True</Value>
+          <Value name="AlteryxLogo">True</Value>
+          <Value name="OwnLogo">False</Value>
+          <Value name="ImageFile" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="HeaderMacro.yxmc" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="164" y="1040" width="656" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Alteryx Educational Asset - Terms and Conditions</Caption>
+          <Style TextColor="#ffffff" FillColor="#0d2345" BorderColor="#ffffff" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="174" y="1074" width="636" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use of this Alteryx asset is for educational purposes only and bound by the conditions set forth on alteryx.com/terms-and-conditions. Alteryx Information may not be reproduced, transmitted or distributed without Alteryx, Inc.'s permission.”</Text>
+              <Font name="Times New Roman" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="48" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Join" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="56" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Join" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="64" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="64" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="61" Connection="True" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Join" />
+      <Destination ToolID="68" Connection="Report Layout" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output13" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david233</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

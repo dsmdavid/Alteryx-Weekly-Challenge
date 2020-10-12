@@ -1,0 +1,1206 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="149">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1074" y="438" width="360" height="552" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Process numbers in groups of 3</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="146">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="222" y="750" width="852" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Get text for numbers 1 to 99</Text>
+          <Font name="Arial" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="125" g="190" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="570" y="306" width="144" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Output
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="306" width="84" height="156" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Inputs
+
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="438" y="66" width="468" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #235</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="138" width="660" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>This week's challenge picks up where we left off last week. As it turns out, the values we formatted last week were prices on a contract. It is common in many legal documents to write out the values displayed as an additional redundancy to ensure everyone is on the same page and there are no typos. Maybe we should do the same...
+
+Convert the values in the table into written form. (e.g. 9612001.00 &gt; nine million six hundred twelve thousand one dollars and no cents)</Text>
+          <Font name="Microsoft Sans Serif" size="11.25" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">234_Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>234_Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" id="ef49ae78-5045-4fa0-a92c-0a697021acf1" source="CrossTab:Group:Concat:" type="Byte" />
+            <Field name="1" id="66230c43-74ea-4943-9a6a-7bb328b00705" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="2" id="8f2e92fe-5362-4746-9269-b0a66c082dc8" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="3" id="83d8ef8c-ba83-4006-a8f8-ec7157421181" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="4" id="3e41dfd2-98ab-4704-b7bb-3748b4c58277" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="5" id="2cac0e82-f1c5-41ae-afd9-df21e9a93c71" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="6" id="6d31ddea-029b-488c-8fa4-dba75d3dd273" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="7" id="ff778e98-4dd7-4506-93c7-0dbdefc67765" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="8" id="f3ce782e-ecd8-4117-8961-377ad0205e26" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="9" id="9d39f805-beec-477f-b8cb-210d65a50ed7" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="10" id="41645d1d-06b6-4788-97b9-c8d49263558c" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="11" id="292d2494-4a78-4242-8f12-e28258cefcea" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="12" id="b9f35584-4448-41bf-8ae9-ff50881b6756" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="28" />
+          <Fields>
+            <Field name="Field1" />
+            <Field name="Field2" />
+          </Fields>
+          <Data>
+            <r>
+              <c>one</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>two</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>three</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>four</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>five</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>six</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>seven</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>eight</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>nine</c>
+              <c>9</c>
+            </r>
+            <r>
+              <c>ten</c>
+              <c>10</c>
+            </r>
+            <r>
+              <c>eleven</c>
+              <c>11</c>
+            </r>
+            <r>
+              <c>twelve</c>
+              <c>12</c>
+            </r>
+            <r>
+              <c>thirteen</c>
+              <c>13</c>
+            </r>
+            <r>
+              <c>fourteen</c>
+              <c>14</c>
+            </r>
+            <r>
+              <c>fifteen</c>
+              <c>15</c>
+            </r>
+            <r>
+              <c>sixteen</c>
+              <c>16</c>
+            </r>
+            <r>
+              <c>seventeen</c>
+              <c>17</c>
+            </r>
+            <r>
+              <c>eighteen</c>
+              <c>18</c>
+            </r>
+            <r>
+              <c>nineteen</c>
+              <c>19</c>
+            </r>
+            <r>
+              <c>twenty</c>
+              <c>20</c>
+            </r>
+            <r>
+              <c>thirty</c>
+              <c>30</c>
+            </r>
+            <r>
+              <c>forty</c>
+              <c>40</c>
+            </r>
+            <r>
+              <c>fifty</c>
+              <c>50</c>
+            </r>
+            <r>
+              <c>sixty</c>
+              <c>60</c>
+            </r>
+            <r>
+              <c>seventy</c>
+              <c>70</c>
+            </r>
+            <r>
+              <c>eighty</c>
+              <c>80</c>
+            </r>
+            <r>
+              <c>ninety</c>
+              <c>90</c>
+            </r>
+            <r>
+              <c />
+              <c>a</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="570" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" id="157ec443-d63f-49bc-94e2-85d184d5c53a" source="CrossTab:Group:Concat:" type="Byte" />
+            <Field name="1" id="755df6b0-db6d-49f7-b445-12bc6891c290" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="2" id="a20d8f4f-daa1-407b-aed4-f4ced1eb7258" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="3" id="c53548a6-bcc4-4d6a-b09a-6a599e8d6f71" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="4" id="cca376d1-cfb2-4466-bf94-1e5b8de3c90d" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="5" id="fd404e12-c889-4b1b-8ff5-25ce1610fa8d" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="6" id="6573b0ce-6e04-496e-a780-d2a68aacbf97" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="7" id="79a24bbc-686d-4751-bb7d-5dae28a87445" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="8" id="d9755e53-4f9c-4480-83f6-cac02ccbbb1c" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="9" id="a7bcecc8-0962-4361-a63d-7b6098944eb4" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="10" id="96226b5e-3742-4148-a848-725fb67aef6d" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="11" id="ebc831cd-212b-49c0-8a46-def22e1eee14" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="12" id="484d910d-c69a-4927-ab18-ffb42f61f65b" size="2048" source="Formula: If isempty([_CurrentField_]) then &quot;0&quot; else [_CurrentField_] endif" type="V_WString" />
+            <Field name="Text" id="51def06e-97af-444c-b666-cab9587df0d8" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="66" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="4" />
+          <Fields>
+            <Field name="Field1" />
+            <Field name="Field2" />
+          </Fields>
+          <Data>
+            <r>
+              <c>hundred</c>
+              <c>100</c>
+            </r>
+            <r>
+              <c>thousand</c>
+              <c>1000</c>
+            </r>
+            <r>
+              <c>million</c>
+              <c>1000000</c>
+            </r>
+            <r>
+              <c />
+              <c />
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="107">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field1" selected="True" size="255" />
+            <SelectField field="Field2" selected="True" size="255" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>make larger strings</AnnotationText>
+          <DefaultAnnotationText>make larger strings</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[N_f2] > 19
+]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[[N_f2] > 19
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="246" y="870" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ToNumber([Field2])" field="N_f2" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[N_f2 = ToNumber([Field2])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="426" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name />
+          <CreateField_Name>RowCount</CreateField_Name>
+          <CreateField_Type>Int32</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <Expression_Init>0</Expression_Init>
+          <Expression_Cond>RowCount &lt; 10</Expression_Cond>
+          <Expression_Loop>RowCount + 1</Expression_Loop>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="618" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>RowCount</FieldFind>
+          <FieldSearch>Field2</FieldSearch>
+          <ReplaceFoundField>Field1</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="False" />
+          <ReplaceAppendFields>
+            <Field field="Field1" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="117">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="522" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RowCount" selected="True" type="String" size="11" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="118">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="702" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Field1]+' '+[Field1_2]" field="Field1" size="255" type="String" />
+            <FormulaField expression="([N_f2]+tonumber([RowCount]))" field="N_f2" size="2" type="Int16" />
+            <FormulaField expression="tostring([N_f2])" field="Field2" size="255" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>make number text</AnnotationText>
+          <DefaultAnnotationText>Field1 = [Field1]+' '+[Field1_2]
+N_f2 = ([N_f2]+tonumber([RowCount]))
+Field2 = t...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="119">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="966" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="N_f2" selected="False" />
+            <SelectField field="RowCount" selected="False" />
+            <SelectField field="Field1_2" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Numbers 1 - 99</AnnotationText>
+          <DefaultAnnotationText>Numbers 1 - 99</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="786" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings>
+        <Position x="882" y="822" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Field1","Field2","N_f2"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="137">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1254" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Length([hdu]) &gt; 1&#xA;then [hdu] + ' million'&#xA;else '' &#xA;endif" field="0_hdu_million" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[0_hdu_million = if Length([hdu]) > 1
+then [hdu] + ' million'
+else '' 
+endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="138">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1254" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Length([hdu]) &gt; 1&#xA;then [hdu] + ' thousand'&#xA;else '' &#xA;endif" field="1_hdu_thousand" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>thousand</AnnotationText>
+          <DefaultAnnotationText><![CDATA[1_hdu_thousand = if Length([hdu]) > 1
+then [hdu] + ' thousand'
+else '' 
+endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="139">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1254" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[hdu] + ' dollars'" field="2_hdu_dollars" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>dollars</AnnotationText>
+          <DefaultAnnotationText><![CDATA[2_hdu_dollars = [hdu] + ' dollars'
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="140">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1254" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if Length([hdu]) &gt; 1&#xA;then ' and ' + [hdu] + ' cents'&#xA;else ' and no cents' &#xA;endif" field="3_hdu_cents" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>cents</AnnotationText>
+          <DefaultAnnotationText>3_hdu_cents = if Length([hdu]) &gt; 1
+then ' and ' + [hdu] + ' cents'
+else ' and no...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="141">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="1458" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="ID" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="ID" />
+            </JoinInfo>
+            <JoinInfo connection="#3">
+              <Field field="ID" />
+            </JoinInfo>
+            <JoinInfo connection="#4">
+              <Field field="ID" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="False" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#1_hdu" selected="False" />
+                <SelectField field="Input_#2_ID" selected="False" />
+                <SelectField field="Input_#2_hdu" selected="False" />
+                <SelectField field="Input_#3_ID" selected="False" />
+                <SelectField field="Input_#3_hdu" selected="False" />
+                <SelectField field="Input_#4_ID" selected="False" />
+                <SelectField field="Input_#4_hdu" selected="False" />
+                <SelectField field="Input_#2_hdu_million" selected="False" />
+                <SelectField field="Input_#3_hdu_million" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>id</AnnotationText>
+          <DefaultAnnotationText>id</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="142">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1650" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ID" action="GroupBy" rename="ID" />
+            <SummarizeField field="Value" action="Concat" rename="Concat_Value">
+              <Concat_Start />
+              <Separator><![CDATA[ ]]></Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>concatenate text</AnnotationText>
+          <DefaultAnnotationText>concatenate text</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="143">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1542" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="ID" />
+          </KeyFields>
+          <DataFields>
+            <Field field="ID" selected="False" />
+            <Field field="0_hdu_million" selected="True" />
+            <Field field="1_hdu_thousand" selected="True" />
+            <Field field="2_hdu_dollars" selected="True" />
+            <Field field="3_hdu_cents" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="144">
+      <GuiSettings>
+        <Position x="1734" y="630" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"Concat_Value"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="147">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1854" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_ID" selected="False" rename="Right_ID" input="Right_" />
+                <SelectField field="Right_Concat_Value" selected="True" rename="Text" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="148">
+      <GuiSettings>
+        <Position x="1986" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="CReW_ExpectEqual.yxmc" />
+    </Node>
+    <Node ToolID="150">
+      <GuiSettings>
+        <Position x="1146" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.hdu"><![CDATA[ID=ID
+h=1
+d=2
+u=3
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>hdu (136)</Name>
+          <AnnotationText>millions</AnnotationText>
+          <DefaultAnnotationText>millions</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#235\hdu.yxmc" />
+    </Node>
+    <Node ToolID="151">
+      <GuiSettings>
+        <Position x="1146" y="654" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.hdu"><![CDATA[ID=ID
+h=4
+d=5
+u=6
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>hdu (135)</Name>
+          <AnnotationText>thousands</AnnotationText>
+          <DefaultAnnotationText>thousands</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#235\hdu.yxmc" />
+    </Node>
+    <Node ToolID="152">
+      <GuiSettings>
+        <Position x="1146" y="582" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.hdu"><![CDATA[ID=ID
+h=7
+d=8
+u=9
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>hdu (130)</Name>
+          <AnnotationText>dollars</AnnotationText>
+          <DefaultAnnotationText>dollars</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="hdu.yxmc" />
+    </Node>
+    <Node ToolID="153">
+      <GuiSettings>
+        <Position x="1146" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.hdu"><![CDATA[ID=ID
+h=10
+d=11
+u=12
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>hdu (132)</Name>
+          <AnnotationText>cents</AnnotationText>
+          <DefaultAnnotationText>cents</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="F:\Dropbox\DataSchool\Training\Alteryx-Weekly-Challenge\Challenge#235\hdu.yxmc" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="140" y="1292" width="656" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Alteryx Educational Asset - Terms and Conditions</Caption>
+          <Style TextColor="#ffffff" FillColor="#0d2345" BorderColor="#ffffff" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="150" y="1326" width="636" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use of this Alteryx asset is for educational purposes only and bound by the conditions set forth on alteryx.com/terms-and-conditions. Alteryx Information may not be reproduced, transmitted or distributed without Alteryx, Inc.'s permission.”</Text>
+              <Font name="Times New Roman" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="152" Connection="hdu" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="152" Connection="reference" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="153" Connection="hdu" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="153" Connection="reference" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="151" Connection="hdu" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="151" Connection="reference" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="150" Connection="hdu" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="119" Connection="Output" />
+      <Destination ToolID="150" Connection="reference" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="147" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="144" Connection="Output26" />
+      <Destination ToolID="147" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="148" Connection="Expected" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="147" Connection="Join" />
+      <Destination ToolID="148" Connection="Actual" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="113" Connection="True" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="113" Connection="False" />
+      <Destination ToolID="120" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="118" Connection="Output" />
+      <Destination ToolID="120" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="114" Connection="Output" />
+      <Destination ToolID="113" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="114" Connection="Output" />
+      <Destination ToolID="116" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="117" Connection="Output" />
+      <Destination ToolID="116" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="Output" />
+      <Destination ToolID="117" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="118" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="120" Connection="Output" />
+      <Destination ToolID="121" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output26" />
+      <Destination ToolID="119" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="137" Connection="Output" />
+      <Destination ToolID="141" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="138" Connection="Output" />
+      <Destination ToolID="141" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="139" Connection="Output" />
+      <Destination ToolID="141" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="140" Connection="Output" />
+      <Destination ToolID="141" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="141" Connection="Output" />
+      <Destination ToolID="143" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="142" Connection="Output" />
+      <Destination ToolID="144" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="143" Connection="Output" />
+      <Destination ToolID="142" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="150" Connection="Output" />
+      <Destination ToolID="137" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="151" Connection="Output" />
+      <Destination ToolID="138" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="152" Connection="Output" />
+      <Destination ToolID="139" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="153" Connection="Output" />
+      <Destination ToolID="140" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david_235</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

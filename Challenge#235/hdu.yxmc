@@ -1,0 +1,1076 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="270" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>h</FieldFind>
+          <FieldSearch>Field2</FieldSearch>
+          <ReplaceFoundField>Field2</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Field1" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>hundreds</AnnotationText>
+          <DefaultAnnotationText>hundreds</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" id="61350f4b-47b2-4bd3-b5cf-7808ee9a4b60" source="TextInput:" type="Byte" />
+            <Field name="h" id="aa6b1147-d4e9-408d-bbda-3fcef70518d1" size="1" source="TextInput:" type="String" />
+            <Field name="d" id="10db29a8-4972-4ac8-9921-1fbd576d14c3" size="1" source="TextInput:" type="String" />
+            <Field name="u" id="cc23bac7-65f3-456c-b5a1-4db470858034" size="1" source="TextInput:" type="String" />
+            <Field name="Field1" id="954efe1b-604e-471e-a610-df6f84fefc32" size="13" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="378" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[d] + [u]" field="du" size="1073741823" type="V_WString" />
+            <FormulaField expression="if IsNull([Field1]) then ''&#xA;else [Field1] + ' hundred'&#xA;endif" field="Field1" size="255" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>du = [d] + [u]
+Field1 = if IsNull([Field1]) then ''
+else [Field1] + ' hundred'
+e...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" id="61350f4b-47b2-4bd3-b5cf-7808ee9a4b60" source="TextInput:" type="Byte" />
+            <Field name="h" id="aa6b1147-d4e9-408d-bbda-3fcef70518d1" size="1" source="TextInput:" type="String" />
+            <Field name="d" id="10db29a8-4972-4ac8-9921-1fbd576d14c3" size="1" source="TextInput:" type="String" />
+            <Field name="u" id="cc23bac7-65f3-456c-b5a1-4db470858034" size="1" source="TextInput:" type="String" />
+            <Field name="Field1" id="954efe1b-604e-471e-a610-df6f84fefc32" size="13" source="Formula: if IsNull([Field1]) then ''&#xA;el..." type="String" />
+            <Field name="du" id="e8a77a02-00b4-49dc-9400-2afc03e3f2c3" size="1073741823" source="Formula: [d] + [u]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="534" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>du</FieldFind>
+          <FieldSearch>Field2</FieldSearch>
+          <ReplaceFoundField>Field2</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Field1" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>1-99</AnnotationText>
+          <DefaultAnnotationText>1-99</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" id="61350f4b-47b2-4bd3-b5cf-7808ee9a4b60" source="TextInput:" type="Byte" />
+            <Field name="h" id="aa6b1147-d4e9-408d-bbda-3fcef70518d1" size="1" source="TextInput:" type="String" />
+            <Field name="d" id="10db29a8-4972-4ac8-9921-1fbd576d14c3" size="1" source="TextInput:" type="String" />
+            <Field name="u" id="cc23bac7-65f3-456c-b5a1-4db470858034" size="1" source="TextInput:" type="String" />
+            <Field name="Field1" id="954efe1b-604e-471e-a610-df6f84fefc32" size="13" source="Formula: if IsNull([Field1]) then ''&#xA;el..." type="String" />
+            <Field name="du" id="e8a77a02-00b4-49dc-9400-2afc03e3f2c3" size="1073741823" source="Formula: [d] + [u]" type="V_WString" />
+            <Field name="Field1_2" id="954efe1b-604e-471e-a610-df6f84fefc32" size="13" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="642" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Field1] + &#xA;if isnull([Field1_2]) then ''&#xA;else ' '+ [Field1_2] &#xA;endif" field="hdu" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[hdu = [Field1] + 
+if isnull([Field1_2]) then ''
+else ' '+ [Field1_2] 
+endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" id="61350f4b-47b2-4bd3-b5cf-7808ee9a4b60" source="TextInput:" type="Byte" />
+            <Field name="h" id="aa6b1147-d4e9-408d-bbda-3fcef70518d1" size="1" source="TextInput:" type="String" />
+            <Field name="d" id="10db29a8-4972-4ac8-9921-1fbd576d14c3" size="1" source="TextInput:" type="String" />
+            <Field name="u" id="cc23bac7-65f3-456c-b5a1-4db470858034" size="1" source="TextInput:" type="String" />
+            <Field name="Field1" id="954efe1b-604e-471e-a610-df6f84fefc32" size="13" source="Formula: if IsNull([Field1]) then ''&#xA;el..." type="String" />
+            <Field name="du" id="e8a77a02-00b4-49dc-9400-2afc03e3f2c3" size="1073741823" source="Formula: [d] + [u]" type="V_WString" />
+            <Field name="Field1_2" id="954efe1b-604e-471e-a610-df6f84fefc32" size="13" source="TextInput:" type="String" />
+            <Field name="hdu" id="e306f087-bf21-4102-81c2-d1e7820fa6be" size="1073741823" source="Formula: [Field1] + &#xA;if isnull([Field1_..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>reference</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="100" />
+              <Fields>
+                <Field name="Field1" />
+                <Field name="Field2" />
+                <Field name="N_f2" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>one</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>two</c>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>three</c>
+                  <c>3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>four</c>
+                  <c>4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>five</c>
+                  <c>5</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>six</c>
+                  <c>6</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>seven</c>
+                  <c>7</c>
+                  <c>7</c>
+                </r>
+                <r>
+                  <c>eight</c>
+                  <c>8</c>
+                  <c>8</c>
+                </r>
+                <r>
+                  <c>nine</c>
+                  <c>9</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>ten</c>
+                  <c>10</c>
+                  <c>10</c>
+                </r>
+                <r>
+                  <c>eleven</c>
+                  <c>11</c>
+                  <c>11</c>
+                </r>
+                <r>
+                  <c>twelve</c>
+                  <c>12</c>
+                  <c>12</c>
+                </r>
+                <r>
+                  <c>thirteen</c>
+                  <c>13</c>
+                  <c>13</c>
+                </r>
+                <r>
+                  <c>fourteen</c>
+                  <c>14</c>
+                  <c>14</c>
+                </r>
+                <r>
+                  <c>fifteen</c>
+                  <c>15</c>
+                  <c>15</c>
+                </r>
+                <r>
+                  <c>sixteen</c>
+                  <c>16</c>
+                  <c>16</c>
+                </r>
+                <r>
+                  <c>seventeen</c>
+                  <c>17</c>
+                  <c>17</c>
+                </r>
+                <r>
+                  <c>eighteen</c>
+                  <c>18</c>
+                  <c>18</c>
+                </r>
+                <r>
+                  <c>nineteen</c>
+                  <c>19</c>
+                  <c>19</c>
+                </r>
+                <r>
+                  <c />
+                  <c>a</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>twenty</c>
+                  <c>20</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>twenty one</c>
+                  <c>21</c>
+                  <c>21</c>
+                </r>
+                <r>
+                  <c>twenty two</c>
+                  <c>22</c>
+                  <c>22</c>
+                </r>
+                <r>
+                  <c>twenty three</c>
+                  <c>23</c>
+                  <c>23</c>
+                </r>
+                <r>
+                  <c>twenty four</c>
+                  <c>24</c>
+                  <c>24</c>
+                </r>
+                <r>
+                  <c>twenty five</c>
+                  <c>25</c>
+                  <c>25</c>
+                </r>
+                <r>
+                  <c>twenty six</c>
+                  <c>26</c>
+                  <c>26</c>
+                </r>
+                <r>
+                  <c>twenty seven</c>
+                  <c>27</c>
+                  <c>27</c>
+                </r>
+                <r>
+                  <c>twenty eight</c>
+                  <c>28</c>
+                  <c>28</c>
+                </r>
+                <r>
+                  <c>twenty nine</c>
+                  <c>29</c>
+                  <c>29</c>
+                </r>
+                <r>
+                  <c>thirty</c>
+                  <c>30</c>
+                  <c>30</c>
+                </r>
+                <r>
+                  <c>thirty one</c>
+                  <c>31</c>
+                  <c>31</c>
+                </r>
+                <r>
+                  <c>thirty two</c>
+                  <c>32</c>
+                  <c>32</c>
+                </r>
+                <r>
+                  <c>thirty three</c>
+                  <c>33</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>thirty four</c>
+                  <c>34</c>
+                  <c>34</c>
+                </r>
+                <r>
+                  <c>thirty five</c>
+                  <c>35</c>
+                  <c>35</c>
+                </r>
+                <r>
+                  <c>thirty six</c>
+                  <c>36</c>
+                  <c>36</c>
+                </r>
+                <r>
+                  <c>thirty seven</c>
+                  <c>37</c>
+                  <c>37</c>
+                </r>
+                <r>
+                  <c>thirty eight</c>
+                  <c>38</c>
+                  <c>38</c>
+                </r>
+                <r>
+                  <c>thirty nine</c>
+                  <c>39</c>
+                  <c>39</c>
+                </r>
+                <r>
+                  <c>forty</c>
+                  <c>40</c>
+                  <c>40</c>
+                </r>
+                <r>
+                  <c>forty one</c>
+                  <c>41</c>
+                  <c>41</c>
+                </r>
+                <r>
+                  <c>forty two</c>
+                  <c>42</c>
+                  <c>42</c>
+                </r>
+                <r>
+                  <c>forty three</c>
+                  <c>43</c>
+                  <c>43</c>
+                </r>
+                <r>
+                  <c>forty four</c>
+                  <c>44</c>
+                  <c>44</c>
+                </r>
+                <r>
+                  <c>forty five</c>
+                  <c>45</c>
+                  <c>45</c>
+                </r>
+                <r>
+                  <c>forty six</c>
+                  <c>46</c>
+                  <c>46</c>
+                </r>
+                <r>
+                  <c>forty seven</c>
+                  <c>47</c>
+                  <c>47</c>
+                </r>
+                <r>
+                  <c>forty eight</c>
+                  <c>48</c>
+                  <c>48</c>
+                </r>
+                <r>
+                  <c>forty nine</c>
+                  <c>49</c>
+                  <c>49</c>
+                </r>
+                <r>
+                  <c>fifty</c>
+                  <c>50</c>
+                  <c>50</c>
+                </r>
+                <r>
+                  <c>fifty one</c>
+                  <c>51</c>
+                  <c>51</c>
+                </r>
+                <r>
+                  <c>fifty two</c>
+                  <c>52</c>
+                  <c>52</c>
+                </r>
+                <r>
+                  <c>fifty three</c>
+                  <c>53</c>
+                  <c>53</c>
+                </r>
+                <r>
+                  <c>fifty four</c>
+                  <c>54</c>
+                  <c>54</c>
+                </r>
+                <r>
+                  <c>fifty five</c>
+                  <c>55</c>
+                  <c>55</c>
+                </r>
+                <r>
+                  <c>fifty six</c>
+                  <c>56</c>
+                  <c>56</c>
+                </r>
+                <r>
+                  <c>fifty seven</c>
+                  <c>57</c>
+                  <c>57</c>
+                </r>
+                <r>
+                  <c>fifty eight</c>
+                  <c>58</c>
+                  <c>58</c>
+                </r>
+                <r>
+                  <c>fifty nine</c>
+                  <c>59</c>
+                  <c>59</c>
+                </r>
+                <r>
+                  <c>sixty</c>
+                  <c>60</c>
+                  <c>60</c>
+                </r>
+                <r>
+                  <c>sixty one</c>
+                  <c>61</c>
+                  <c>61</c>
+                </r>
+                <r>
+                  <c>sixty two</c>
+                  <c>62</c>
+                  <c>62</c>
+                </r>
+                <r>
+                  <c>sixty three</c>
+                  <c>63</c>
+                  <c>63</c>
+                </r>
+                <r>
+                  <c>sixty four</c>
+                  <c>64</c>
+                  <c>64</c>
+                </r>
+                <r>
+                  <c>sixty five</c>
+                  <c>65</c>
+                  <c>65</c>
+                </r>
+                <r>
+                  <c>sixty six</c>
+                  <c>66</c>
+                  <c>66</c>
+                </r>
+                <r>
+                  <c>sixty seven</c>
+                  <c>67</c>
+                  <c>67</c>
+                </r>
+                <r>
+                  <c>sixty eight</c>
+                  <c>68</c>
+                  <c>68</c>
+                </r>
+                <r>
+                  <c>sixty nine</c>
+                  <c>69</c>
+                  <c>69</c>
+                </r>
+                <r>
+                  <c>seventy</c>
+                  <c>70</c>
+                  <c>70</c>
+                </r>
+                <r>
+                  <c>seventy one</c>
+                  <c>71</c>
+                  <c>71</c>
+                </r>
+                <r>
+                  <c>seventy two</c>
+                  <c>72</c>
+                  <c>72</c>
+                </r>
+                <r>
+                  <c>seventy three</c>
+                  <c>73</c>
+                  <c>73</c>
+                </r>
+                <r>
+                  <c>seventy four</c>
+                  <c>74</c>
+                  <c>74</c>
+                </r>
+                <r>
+                  <c>seventy five</c>
+                  <c>75</c>
+                  <c>75</c>
+                </r>
+                <r>
+                  <c>seventy six</c>
+                  <c>76</c>
+                  <c>76</c>
+                </r>
+                <r>
+                  <c>seventy seven</c>
+                  <c>77</c>
+                  <c>77</c>
+                </r>
+                <r>
+                  <c>seventy eight</c>
+                  <c>78</c>
+                  <c>78</c>
+                </r>
+                <r>
+                  <c>seventy nine</c>
+                  <c>79</c>
+                  <c>79</c>
+                </r>
+                <r>
+                  <c>eighty</c>
+                  <c>80</c>
+                  <c>80</c>
+                </r>
+                <r>
+                  <c>eighty one</c>
+                  <c>81</c>
+                  <c>81</c>
+                </r>
+                <r>
+                  <c>eighty two</c>
+                  <c>82</c>
+                  <c>82</c>
+                </r>
+                <r>
+                  <c>eighty three</c>
+                  <c>83</c>
+                  <c>83</c>
+                </r>
+                <r>
+                  <c>eighty four</c>
+                  <c>84</c>
+                  <c>84</c>
+                </r>
+                <r>
+                  <c>eighty five</c>
+                  <c>85</c>
+                  <c>85</c>
+                </r>
+                <r>
+                  <c>eighty six</c>
+                  <c>86</c>
+                  <c>86</c>
+                </r>
+                <r>
+                  <c>eighty seven</c>
+                  <c>87</c>
+                  <c>87</c>
+                </r>
+                <r>
+                  <c>eighty eight</c>
+                  <c>88</c>
+                  <c>88</c>
+                </r>
+                <r>
+                  <c>eighty nine</c>
+                  <c>89</c>
+                  <c>89</c>
+                </r>
+                <r>
+                  <c>ninety</c>
+                  <c>90</c>
+                  <c>90</c>
+                </r>
+                <r>
+                  <c>ninety one</c>
+                  <c>91</c>
+                  <c>91</c>
+                </r>
+                <r>
+                  <c>ninety two</c>
+                  <c>92</c>
+                  <c>92</c>
+                </r>
+                <r>
+                  <c>ninety three</c>
+                  <c>93</c>
+                  <c>93</c>
+                </r>
+                <r>
+                  <c>ninety four</c>
+                  <c>94</c>
+                  <c>94</c>
+                </r>
+                <r>
+                  <c>ninety five</c>
+                  <c>95</c>
+                  <c>95</c>
+                </r>
+                <r>
+                  <c>ninety six</c>
+                  <c>96</c>
+                  <c>96</c>
+                </r>
+                <r>
+                  <c>ninety seven</c>
+                  <c>97</c>
+                  <c>97</c>
+                </r>
+                <r>
+                  <c>ninety eight</c>
+                  <c>98</c>
+                  <c>98</c>
+                </r>
+                <r>
+                  <c>ninety nine</c>
+                  <c>99</c>
+                  <c>99</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field1" id="954efe1b-604e-471e-a610-df6f84fefc32" size="13" source="TextInput:" type="String" />
+            <Field name="Field2" id="a08fd537-584f-476b-827c-ba539c3c807b" size="2" source="TextInput:" type="String" />
+            <Field name="N_f2" id="56acf973-c13e-46ab-877e-a24fd19229cc" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>hdu</Name>
+          <Abbrev>D</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="19" />
+              <Fields>
+                <Field name="ID" />
+                <Field name="h" />
+                <Field name="d" />
+                <Field name="u" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>6</c>
+                  <c>8</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>4</c>
+                  <c>4</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>8</c>
+                  <c>9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>3</c>
+                  <c>0</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>6</c>
+                  <c>5</c>
+                  <c>9</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>4</c>
+                  <c>7</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>6</c>
+                  <c>3</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>4</c>
+                  <c>6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>5</c>
+                  <c>8</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>a</c>
+                  <c>b</c>
+                  <c>c</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>D Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" id="61350f4b-47b2-4bd3-b5cf-7808ee9a4b60" source="TextInput:" type="Byte" />
+            <Field name="h" id="aa6b1147-d4e9-408d-bbda-3fcef70518d1" size="1" source="TextInput:" type="String" />
+            <Field name="d" id="10db29a8-4972-4ac8-9921-1fbd576d14c3" size="1" source="TextInput:" type="String" />
+            <Field name="u" id="cc23bac7-65f3-456c-b5a1-4db470858034" size="1" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="798" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ID" selected="True" />
+            <SelectField field="hdu" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ID" id="61350f4b-47b2-4bd3-b5cf-7808ee9a4b60" source="TextInput:" type="Byte" />
+            <Field name="hdu" id="e306f087-bf21-4102-81c2-d1e7820fa6be" size="1073741823" source="Formula: [Field1] + &#xA;if isnull([Field1_..." type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1038" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev>o</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>o Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings>
+        <Position x="918" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="List Box (11)">"hdu"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[nulls and duplicate space
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[nulls and duplicate space]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output26">
+          <RecordInfo>
+            <Field name="ID" id="61350f4b-47b2-4bd3-b5cf-7808ee9a4b60" source="Formula: IF [_CurrentFieldName_] IN(&quot;hd..." type="Byte" />
+            <Field name="hdu" id="e306f087-bf21-4102-81c2-d1e7820fa6be" size="1073741823" source="Formula: [_CurrentField_]" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="3" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="1" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="1" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output26" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (6)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (5)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (9)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>hdu</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (8)</Name>
+          <ToolId value="8" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (6)</Name>
+              <ToolId value="6" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (5)</Name>
+              <ToolId value="5" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (9)</Description>
+              <Name>Macro Output (9)</Name>
+              <ToolId value="9" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="5" Selected="True" />
+        <Tool ToolId="6" Selected="True" />
+        <Tool ToolId="9" Selected="True" />
+        <Tool ToolId="10" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
