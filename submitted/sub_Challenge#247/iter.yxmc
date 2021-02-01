@@ -1,0 +1,790 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="114" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>iter</Name>
+          <Abbrev>i</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="30" />
+              <Fields>
+                <Field name="Name" />
+                <Field name="Source_Name" />
+                <Field name="Tile_Num" />
+                <Field name="Tile_SequenceNum" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Aaron</c>
+                  <c>Ben</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Aaron</c>
+                  <c>Christa</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Aaron</c>
+                  <c>Mandy</c>
+                  <c>1</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Aaron</c>
+                  <c>Nisha</c>
+                  <c>1</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Aaron</c>
+                  <c>Philip</c>
+                  <c>1</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>Ben</c>
+                  <c>Aaron</c>
+                  <c>2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Ben</c>
+                  <c>Christa</c>
+                  <c>2</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Ben</c>
+                  <c>Mandy</c>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Ben</c>
+                  <c>Nisha</c>
+                  <c>2</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Ben</c>
+                  <c>Philip</c>
+                  <c>2</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>Christa</c>
+                  <c>Aaron</c>
+                  <c>3</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Christa</c>
+                  <c>Ben</c>
+                  <c>3</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Christa</c>
+                  <c>Mandy</c>
+                  <c>3</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Christa</c>
+                  <c>Nisha</c>
+                  <c>3</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Christa</c>
+                  <c>Philip</c>
+                  <c>3</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>Mandy</c>
+                  <c>Aaron</c>
+                  <c>4</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Mandy</c>
+                  <c>Ben</c>
+                  <c>4</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Mandy</c>
+                  <c>Christa</c>
+                  <c>4</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Mandy</c>
+                  <c>Nisha</c>
+                  <c>4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Mandy</c>
+                  <c>Philip</c>
+                  <c>4</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>Nisha</c>
+                  <c>Aaron</c>
+                  <c>5</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Nisha</c>
+                  <c>Ben</c>
+                  <c>5</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Nisha</c>
+                  <c>Christa</c>
+                  <c>5</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Nisha</c>
+                  <c>Mandy</c>
+                  <c>5</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Nisha</c>
+                  <c>Philip</c>
+                  <c>5</c>
+                  <c>5</c>
+                </r>
+                <r>
+                  <c>Philip</c>
+                  <c>Aaron</c>
+                  <c>6</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>Philip</c>
+                  <c>Ben</c>
+                  <c>6</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>Philip</c>
+                  <c>Christa</c>
+                  <c>6</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>Philip</c>
+                  <c>Mandy</c>
+                  <c>6</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>Philip</c>
+                  <c>Nisha</c>
+                  <c>6</c>
+                  <c>5</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>i Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="414" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="798" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Source_Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Name" selected="True" rename="Right_Name" input="Right_" />
+                <SelectField field="Right_Source_Name" selected="True" rename="Right_Source_Name" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Source_Name" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+            <Field name="Right_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Right_Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Right_Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Right_Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Source_Name" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Name" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="702" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Name" selected="True" rename="Right_Name" input="Right_" />
+                <SelectField field="Right_Source_Name" selected="True" rename="Right_Source_Name" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Name" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+            <Field name="Right_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Right_Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Right_Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Right_Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Name" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Name" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="906" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Source_Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Name" selected="True" rename="Right_Name" input="Right_" />
+                <SelectField field="Right_Source_Name" selected="True" rename="Right_Source_Name" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Name" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+            <Field name="Right_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Right_Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Right_Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Right_Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Name" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Source_Name" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1038" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Source_Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Source_Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Name" selected="True" rename="Right_Name" input="Right_" />
+                <SelectField field="Right_Source_Name" selected="True" rename="Right_Source_Name" input="Right_" />
+                <SelectField field="Right_Tile_Num" selected="True" rename="Right_Tile_Num" input="Right_" />
+                <SelectField field="Right_Tile_SequenceNum" selected="True" rename="Right_Tile_SequenceNum" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Source_Name" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+            <Field name="Right_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Right_Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Right_Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Right_Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Source_Name" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Source_Name" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="750" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Result</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>R Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1230" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>iter</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>i Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1134" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Tile_Num" order="Ascending" />
+            <Field field="Tile_SequenceNum" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Tile_Num - Ascending
+Tile_SequenceNum - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="7" source="TextInput:" type="String" />
+            <Field name="Source_Name" size="7" source="TextInput:" type="String" />
+            <Field name="Tile_Num" source="TextInput:" type="Byte" />
+            <Field name="Tile_SequenceNum" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Tile_Num" order="Ascending" />
+            <Field field="Tile_SequenceNum" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="330" y="222" width="144" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Start with the first available meeting</Text>
+          <Font name="Arial" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="582" y="222" width="492" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Remove all other potential meetings for the attendees</Text>
+          <Font name="Arial" size="12" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Right" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Right" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Right" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Right" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>iter</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (8)</Name>
+          <ToolId value="8" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (9)</Description>
+              <Name>Macro Output (9)</Name>
+              <ToolId value="9" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (10)</Description>
+              <Name>Macro Output (10)</Name>
+              <ToolId value="10" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>iter</Input>
+        <Output>iter</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="9" Selected="True" />
+        <Tool ToolId="10" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
