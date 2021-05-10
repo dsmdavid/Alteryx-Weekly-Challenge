@@ -1,0 +1,1374 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.FindNearest.FindNearest">
+        <Position x="546" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Target SpatialObj="Centroid" />
+          <Universe SpatialObj="Centroid" />
+          <HowMany value="1" />
+          <MaxDistance value="20" />
+          <MaxDistanceUnits>Miles</MaxDistanceUnits>
+          <Ignore0 value="False" />
+          <DriveTimeDataSet>Latest</DriveTimeDataSet>
+          <SelectConfiguration>
+            <Configuration outputConnection="Matched">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Universe_Name" selected="True" rename="Universe_Name" input="Universe_" />
+                <SelectField field="Universe_Centroid" selected="True" rename="Universe_Centroid" input="Universe_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Matched">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Universe_Name" size="18" source="TextInput:" type="String" />
+            <Field name="Date Order was Placed" source="TextInput:" type="Date" />
+            <Field name="Delivery Point Lat" source="TextInput:" type="Double" />
+            <Field name="Delivery Point Long" source="TextInput:" type="Double" />
+            <Field name="Order Amount" source="TextInput:" type="Double" />
+            <Field name="Universe_Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="FindNearestRank" source="FindNearest: Rank" type="Int16" />
+            <Field name="DistanceMiles" source="FindNearest: Distance Units=Miles" type="Double" />
+            <Field name="Direction" size="2" source="FindNearest: Direction" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Position" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Unmatched">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Position" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxFindNearest" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="642" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Position" selected="True" />
+            <SelectField field="Universe_Name" selected="True" rename="Name" />
+            <SelectField field="Universe_Centroid" selected="True" rename="Centroid" />
+            <SelectField field="DistanceMiles" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Name" size="18" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="DistanceMiles" source="FindNearest: Distance Units=Miles" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Position" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Name" selected="True" rename="Right_Name" input="Right_" />
+                <SelectField field="Right_Centroid" selected="True" rename="Right_Centroid" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Exclude visited</AnnotationText>
+          <DefaultAnnotationText>Exclude visited</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Name" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Right_Name" size="18" source="TextInput:" type="String" />
+            <Field name="Date Order was Placed" source="TextInput:" type="Date" />
+            <Field name="Delivery Point Lat" source="TextInput:" type="Double" />
+            <Field name="Delivery Point Long" source="TextInput:" type="Double" />
+            <Field name="Order Amount" source="TextInput:" type="Double" />
+            <Field name="Right_Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Name" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Name" size="18" source="TextInput:" type="String" />
+            <Field name="Date Order was Placed" source="TextInput:" type="Date" />
+            <Field name="Delivery Point Lat" source="TextInput:" type="Double" />
+            <Field name="Delivery Point Long" source="TextInput:" type="Double" />
+            <Field name="Order Amount" source="TextInput:" type="Double" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Name" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="270" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Position" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Position - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Position" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="354" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Last</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Last 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Position" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="834" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="(Multiple Sources)" type="Byte" />
+            <Field name="DistanceMiles" source="FindNearest: Distance Units=Miles" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="738" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Position]+1" field="Position" size="2" type="Int16" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Position = [Position]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Position" source="Formula: [Position]+1" type="Byte" />
+            <Field name="Name" size="18" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="DistanceMiles" source="FindNearest: Distance Units=Miles" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="162" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>visited</Name>
+          <Abbrev>V</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Name" />
+                <Field name="Centroid" />
+                <Field name="Position" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>Flora's Flower Shop</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.768559, 33.041334 ] }</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>V Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="66" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Orders</Name>
+          <Abbrev>O</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="86" />
+              <Fields>
+                <Field name="Name" />
+                <Field name="Date Order was Placed" />
+                <Field name="Delivery Point Lat" />
+                <Field name="Delivery Point Long" />
+                <Field name="Order Amount" />
+                <Field name="Centroid" />
+              </Fields>
+              <Data>
+                <r>
+                  <c><![CDATA[ Alfred Conner]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.00206537</c>
+                  <c>-96.88264232</c>
+                  <c>87.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.882642, 33.002065 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Ann Stewart]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.11035103</c>
+                  <c>-96.84277844</c>
+                  <c>95.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.842778, 33.110351 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Anna Alexander]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.20087372</c>
+                  <c>-96.86660191</c>
+                  <c>88.7</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.866602, 33.200874 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Arthur Ferguson]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.93297875</c>
+                  <c>-96.80364379</c>
+                  <c>76.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.803644, 32.932979 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Benny Nash]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.0262752</c>
+                  <c>-96.86264717</c>
+                  <c>81.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.862647, 33.026275 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Bobby Patterson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.16165276</c>
+                  <c>-96.86710323</c>
+                  <c>84.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.867103, 33.161653 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Bonnie Stewart]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.17724796</c>
+                  <c>-96.92736974</c>
+                  <c>93.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.927370, 33.177248 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Brooke Alvarado]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.97065432</c>
+                  <c>-96.76666271</c>
+                  <c>78.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.766663, 32.970654 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Carl Henderson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.1218462</c>
+                  <c>-96.82256269</c>
+                  <c>97.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.822563, 33.121846 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Carlton Todd]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.96299285</c>
+                  <c>-96.80376645</c>
+                  <c>71.4</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.803766, 32.962993 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Cecil Mitchell]]></c>
+                  <c>2021-05-02</c>
+                  <c>32.99101044</c>
+                  <c>-96.92817759</c>
+                  <c>81.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.928178, 32.991010 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Clifton Barker]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.97299038</c>
+                  <c>-96.85027927</c>
+                  <c>78.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.850279, 32.972990 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Cynthia Evans]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.17366706</c>
+                  <c>-96.92455239</c>
+                  <c>57.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.924552, 33.173667 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Deborah Sanders]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.14983962</c>
+                  <c>-96.77087345</c>
+                  <c>77.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.770873, 33.149840 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Denise Foster]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.20930351</c>
+                  <c>-96.85463603</c>
+                  <c>78.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.854636, 33.209304 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Doris Robinson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.10872815</c>
+                  <c>-96.83003833</c>
+                  <c>99.8</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.830038, 33.108728 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Douglas Rodriguez]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.11121008</c>
+                  <c>-96.88793239</c>
+                  <c>61.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.887932, 33.111210 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Elizabeth Perry]]></c>
+                  <c>2021-05-04</c>
+                  <c>33.0170344</c>
+                  <c>-96.74605726</c>
+                  <c>55.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.746057, 33.017034 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Eric Sanchez]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.0879679</c>
+                  <c>-96.82833374</c>
+                  <c>66.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.828334, 33.087968 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Eugene Alexander]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.16832589</c>
+                  <c>-96.98094447</c>
+                  <c>58.7</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.980944, 33.168326 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Felipe Klein]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.95787098</c>
+                  <c>-96.82508647</c>
+                  <c>75.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.825086, 32.957871 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Gary Ward]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.21543915</c>
+                  <c>-96.91583268</c>
+                  <c>85.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.915833, 33.215439 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ George Bell]]></c>
+                  <c>2021-05-07</c>
+                  <c>33.16144419</c>
+                  <c>-96.69980124</c>
+                  <c>63.4</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.699801, 33.161444 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Geraldine Rose]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.9853286</c>
+                  <c>-96.77301165</c>
+                  <c>85.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.773012, 32.985329 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jack Huff]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.96593725</c>
+                  <c>-96.79475316</c>
+                  <c>93.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.794753, 32.965937 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jane Fletcher]]></c>
+                  <c>2021-05-04</c>
+                  <c>32.96072791</c>
+                  <c>-96.75606785</c>
+                  <c>54.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.756068, 32.960728 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Janis Jimenez]]></c>
+                  <c>2021-05-04</c>
+                  <c>32.93295654</c>
+                  <c>-96.76136797</c>
+                  <c>64.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.761368, 32.932957 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jason Russell]]></c>
+                  <c>2021-05-04</c>
+                  <c>33.16169346</c>
+                  <c>-96.75195196</c>
+                  <c>94.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.751952, 33.161693 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jeffrey Morris]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.09544559</c>
+                  <c>-96.81886306</c>
+                  <c>59.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.818863, 33.095446 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jennie Ray]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.00845785</c>
+                  <c>-96.90157695</c>
+                  <c>76.7</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.901577, 33.008458 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jenny Park]]></c>
+                  <c>2021-05-04</c>
+                  <c>32.97879911</c>
+                  <c>-96.74651443</c>
+                  <c>83.4</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.746514, 32.978799 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jeremy Carter]]></c>
+                  <c>2021-05-07</c>
+                  <c>33.20303405</c>
+                  <c>-96.67361144</c>
+                  <c>77.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.673611, 33.203034 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jeremy Thompson]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.21091374</c>
+                  <c>-96.9328591</c>
+                  <c>87.8</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.932859, 33.210914 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jerry Howard]]></c>
+                  <c>2021-05-05</c>
+                  <c>33.22926013</c>
+                  <c>-96.7270706</c>
+                  <c>56</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.727071, 33.229260 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jerry Johnson]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.21683964</c>
+                  <c>-96.91930285</c>
+                  <c>73.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.919303, 33.216840 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jesse Patterson]]></c>
+                  <c>2021-05-06</c>
+                  <c>33.10196881</c>
+                  <c>-96.70259383</c>
+                  <c>51</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.702594, 33.101969 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Jimmy Green]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.17923454</c>
+                  <c>-96.87394789</c>
+                  <c>65.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.873948, 33.179235 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Johnny Lewis]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.10458718</c>
+                  <c>-96.89726275</c>
+                  <c>86</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.897263, 33.104587 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Johnny Sanchez]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.21599616</c>
+                  <c>-96.8075506</c>
+                  <c>52.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.807551, 33.215996 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Joseph Barnes]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.13655906</c>
+                  <c>-96.80857965</c>
+                  <c>89.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.808580, 33.136559 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Joyce Wallace]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.97298184</c>
+                  <c>-96.76444284</c>
+                  <c>63</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.764443, 32.972982 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Justin Richardson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.0546264</c>
+                  <c>-96.86734023</c>
+                  <c>72.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.867340, 33.054626 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Kevin Patterson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.15213069</c>
+                  <c>-96.79019466</c>
+                  <c>98.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.790195, 33.152131 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Kristen Morales]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.9333638</c>
+                  <c>-96.8409622</c>
+                  <c>62.1</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.840962, 32.933364 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Lamar Pena]]></c>
+                  <c>2021-05-02</c>
+                  <c>32.94793578</c>
+                  <c>-96.91737881</c>
+                  <c>59.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.917379, 32.947936 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Lana Phelps]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.9927975</c>
+                  <c>-96.78120814</c>
+                  <c>83.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.781208, 32.992798 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Larry King]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.09452902</c>
+                  <c>-96.87455415</c>
+                  <c>82.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.874554, 33.094529 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Lawrence Flores]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.05808001</c>
+                  <c>-96.84852413</c>
+                  <c>95.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.848524, 33.058080 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Lillian Cooper]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.03577099</c>
+                  <c>-96.83704937</c>
+                  <c>58.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.837049, 33.035771 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Mabel Matthews]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.00938911</c>
+                  <c>-96.91447494</c>
+                  <c>52</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.914475, 33.009389 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Maggie Edwards]]></c>
+                  <c>2021-05-04</c>
+                  <c>32.9478728</c>
+                  <c>-96.7417763</c>
+                  <c>61.1</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.741776, 32.947873 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Margaret Lee]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.13436466</c>
+                  <c>-96.78448517</c>
+                  <c>87.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.784485, 33.134365 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Marsha Jennings]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.9320961</c>
+                  <c>-96.86644492</c>
+                  <c>66.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.866445, 32.932096 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Martha Watson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.22217609</c>
+                  <c>-96.85312943</c>
+                  <c>87.7</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.853129, 33.222176 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Mary Bailey]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.17850038</c>
+                  <c>-96.89637049</c>
+                  <c>69.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.896370, 33.178500 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Michelle Collins]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.0387393</c>
+                  <c>-96.78556471</c>
+                  <c>67</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.785565, 33.038739 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Miranda Berry]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.02504519</c>
+                  <c>-96.94366655</c>
+                  <c>82.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.943667, 33.025045 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Miriam Mack]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.95599445</c>
+                  <c>-96.81567228</c>
+                  <c>60.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.815672, 32.955994 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Nicholas Allen]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.16310537</c>
+                  <c>-96.81077109</c>
+                  <c>50.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.810771, 33.163105 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Oliver Jordan]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.01146018</c>
+                  <c>-96.89990622</c>
+                  <c>62.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.899906, 33.011460 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Patrick Diaz]]></c>
+                  <c>2021-05-07</c>
+                  <c>33.20696315</c>
+                  <c>-96.68266146</c>
+                  <c>60.1</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.682661, 33.206963 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Patrick Johnson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.16050013</c>
+                  <c>-96.79676127</c>
+                  <c>63.1</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.796761, 33.160500 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Phil Lynch]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.93286662</c>
+                  <c>-96.83453439</c>
+                  <c>91.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.834534, 32.932867 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Phillip Morris]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.10780075</c>
+                  <c>-96.82298459</c>
+                  <c>85.4</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.822985, 33.107801 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Robert White]]></c>
+                  <c>2021-05-07</c>
+                  <c>33.19686117</c>
+                  <c>-96.6863349</c>
+                  <c>55</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.686335, 33.196861 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Roger Barnes]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.10646649</c>
+                  <c>-96.78368367</c>
+                  <c>98.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.783684, 33.106466 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Roger Ross]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.19576369</c>
+                  <c>-96.80490386</c>
+                  <c>54.4</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.804904, 33.195764 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Ronald Moore]]></c>
+                  <c>2021-05-05</c>
+                  <c>33.04588264</c>
+                  <c>-96.72205581</c>
+                  <c>98.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.722056, 33.045883 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Ruby Perez]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.06767391</c>
+                  <c>-96.78579417</c>
+                  <c>77.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.785794, 33.067674 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Russell Jenkins]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.12383178</c>
+                  <c>-96.83156778</c>
+                  <c>86.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.831568, 33.123832 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Russell Johnson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.14293969</c>
+                  <c>-96.77726568</c>
+                  <c>68.4</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.777266, 33.142940 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Russell Patterson]]></c>
+                  <c>2021-05-05</c>
+                  <c>33.22632839</c>
+                  <c>-96.70295859</c>
+                  <c>76.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.702959, 33.226328 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Sean Sanders]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.1493823</c>
+                  <c>-96.90146855</c>
+                  <c>52.7</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.901469, 33.149382 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Shawn Ramirez]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.22956785</c>
+                  <c>-96.87117123</c>
+                  <c>84.8</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.871171, 33.229568 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Tammy Lee]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.15673483</c>
+                  <c>-96.88369404</c>
+                  <c>63.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.883694, 33.156735 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Teresa Johnson]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.09367602</c>
+                  <c>-96.88788098</c>
+                  <c>67.3</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.887881, 33.093676 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Theresa Morris]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.2014135</c>
+                  <c>-96.94534937</c>
+                  <c>67.6</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.945349, 33.201414 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Tina Hill]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.15994194</c>
+                  <c>-96.85873952</c>
+                  <c>85.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.858740, 33.159942 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Todd Baker]]></c>
+                  <c>2021-05-02</c>
+                  <c>33.0574898</c>
+                  <c>-96.98313707</c>
+                  <c>88.1</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.983137, 33.057490 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Todd Brown]]></c>
+                  <c>2021-05-07</c>
+                  <c>33.13617346</c>
+                  <c>-96.67997595</c>
+                  <c>73.7</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.679976, 33.136173 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Todd Jackson]]></c>
+                  <c>2021-05-07</c>
+                  <c>33.2182337</c>
+                  <c>-96.68664829</c>
+                  <c>68.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.686648, 33.218234 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Todd Watson]]></c>
+                  <c>2021-05-05</c>
+                  <c>33.17721301</c>
+                  <c>-96.70775668</c>
+                  <c>83.2</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.707757, 33.177213 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Tommy Brooks]]></c>
+                  <c>2021-05-03</c>
+                  <c>32.93534109</c>
+                  <c>-96.76854995</c>
+                  <c>98.5</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.768550, 32.935341 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Victor Russell]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.05867752</c>
+                  <c>-96.79391065</c>
+                  <c>76</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.793911, 33.058678 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Walter Price]]></c>
+                  <c>2021-05-03</c>
+                  <c>33.21068909</c>
+                  <c>-96.77693376</c>
+                  <c>58.9</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.776934, 33.210689 ] }</c>
+                </r>
+                <r>
+                  <c><![CDATA[ Willie Kelly]]></c>
+                  <c>2021-05-02</c>
+                  <c>32.99064845</c>
+                  <c>-96.89821068</c>
+                  <c>65.1</c>
+                  <c>{ "type": "Point", "coordinates": [ -96.898211, 32.990648 ] }</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>O Input</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="18" source="TextInput:" type="String" />
+            <Field name="Date Order was Placed" source="TextInput:" type="Date" />
+            <Field name="Delivery Point Lat" source="TextInput:" type="Double" />
+            <Field name="Delivery Point Long" source="TextInput:" type="Double" />
+            <Field name="Order Amount" source="TextInput:" type="Double" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="930" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Engine.IterationNumber] &lt; 29</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Engine.IterationNumber] &lt; 29</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="(Multiple Sources)" type="Byte" />
+            <Field name="DistanceMiles" source="FindNearest: Distance Units=Miles" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="(Multiple Sources)" type="Byte" />
+            <Field name="DistanceMiles" source="FindNearest: Distance Units=Miles" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1026" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>iterative</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>i Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1026" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>end</Name>
+          <Abbrev>E</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>E Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" />
+            <SelectField field="Centroid" selected="True" />
+            <SelectField field="Position" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="19" source="TextInput:" type="String" />
+            <Field name="Centroid" size="2147483647" source="TextInput:" type="SpatialObj" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Position" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="6" Connection="Matched" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Right" />
+      <Destination ToolID="6" Connection="Universe" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="6" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="8" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="8" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="True" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="False" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (18)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (19)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>visits</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (16)</Name>
+          <ToolId value="16" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (15)</Name>
+              <ToolId value="15" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (18)</Description>
+              <Name>Macro Output (18)</Name>
+              <ToolId value="18" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (19)</Description>
+              <Name>Macro Output (19)</Name>
+              <ToolId value="19" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>visited</Input>
+        <Output>iterative</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="18" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
