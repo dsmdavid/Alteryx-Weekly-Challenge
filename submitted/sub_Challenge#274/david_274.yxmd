@@ -1,0 +1,1206 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="138" y="474" width="336" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>measurements</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="558" y="270" width="156" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Output
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="270" width="156" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Inputs
+
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_8104_9e750b08fb9e469da0f3fa7537925921_\Engine_2496_4ae9b200fc494937a7af8d87bc880e76_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="438" y="66" width="468" height="40" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #274</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="138" width="660" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Make the dataset easier to read by creating a column of measurements and another for powers. The measurements column should include all measurements in a single cell with each original column on its own line within the cell. The powers column should only include the superpowers that character has. Be sure to remove characters with no powers!
+
+Data Source: https://www.kaggle.com/spatika/marvel-comics-characters-stats-and-powers
+]]></Text>
+          <Font name="Microsoft Sans Serif" size="11.25" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="138" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_8104_9e750b08fb9e469da0f3fa7537925921_\Engine_2496_4dd8e775161148c7bc3e92f19fd1b7b9_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Input.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Name" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Alignment_x" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Gender" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="EyeColor" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="HairColor" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Publisher" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Height" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Weight" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Intelligence_x" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Strength" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Speed" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Durability_x" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Power" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Combat" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Total" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Agility" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Accelerated Healing" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Lantern Power Ring" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Dimensional Awareness" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Cold Resistance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Durability_y" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Stealth" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Energy Absorption" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Flight" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Danger Sense" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Underwater breathing" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Marksmanship" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Weapons Master" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Power Augmentation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Animal Attributes" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Longevity" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Intelligence_y" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Super Strength" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Cryokinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Telepathy" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Energy Armor" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Energy Blasts" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Duplication" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Size Changing" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Density Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Stamina" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Astral Travel" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Audio Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Dexterity" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Omnitrix" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Super Speed" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Possession" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Animal Oriented Powers" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Weapon-based Powers" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Electrokinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Darkforce Manipulation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Death Touch" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Teleportation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Enhanced Senses" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Telekinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Energy Beams" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Magic" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Hyperkinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Jump" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Clairvoyance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Dimensional Travel" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Power Sense" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Shapeshifting" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Peak Human Condition" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Immortality" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Camouflage" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Element Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Phasing" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Astral Projection" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Electrical Transport" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Fire Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Projection" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Summoning" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Enhanced Memory" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Reflexes" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Invulnerability" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Energy Constructs" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Force Fields" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Self-Sustenance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Anti-Gravity" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Empathy" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Power Nullifier" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Radiation Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Psionic Powers" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Elasticity" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Substance Secretion" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Elemental Transmogrification" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Technopath/Cyberpath" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Photographic Reflexes" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Seismic Power" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Animation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Precognition" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Mind Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Fire Resistance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Power Absorption" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Enhanced Hearing" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Nova Force" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Insanity" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Hypnokinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Animal Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Natural Armor" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Intangibility" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Enhanced Sight" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Molecular Manipulation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Heat Generation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Adaptation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Gliding" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Power Suit" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Mind Blast" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Probability Manipulation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Gravity Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Regeneration" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Light Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Echolocation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Levitation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Toxin and Disease Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Banish" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Energy Manipulation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Heat Resistance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Natural Weapons" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Time Travel" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Enhanced Smell" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Illusions" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Thirstokinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Hair Manipulation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Illumination" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Omnipotent" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Cloaking" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Changing Armor" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Power Cosmic" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Biokinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Water Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Radiation Immunity" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vision - Telescopic" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Toxin and Disease Resistance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Spatial Awareness" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Energy Resistance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Telepathy Resistance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Molecular Combustion" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Omnilingualism" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Portal Creation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Magnetism" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Mind Control Resistance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Plant Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Sonar" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Sonic Scream" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Time Manipulation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Enhanced Touch" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Magic Resistance" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Invisibility" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Sub-Mariner" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Radiation Absorption" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Intuitive aptitude" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vision - Microscopic" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Melting" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Wind Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Super Breath" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Wallcrawling" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vision - Night" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vision - Infrared" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Grim Reaping" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Matter Absorption" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="The Force" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Resurrection" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Terrakinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vision - Heat" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vitakinesis" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Radar Sense" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Qwardian Power Ring" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Weather Control" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vision - X-Ray" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vision - Thermal" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Web Creation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Reality Warping" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Odin Force" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Symbiote Costume" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Speed Force" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Phoenix Force" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Molecular Dissipation" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Vision - Cryo" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Omnipresent" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+            <Field name="Omniscient" size="254" source="File: C:\Users\iwiggins\OneDrive - alteryx.com\Desktop\marvel_demo_stats_powers.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="570" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Output.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="Name" size="254" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="Alignment_x" size="254" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="Gender" size="254" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="EyeColor" size="254" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="HairColor" size="254" source="CrossTab:Group:Concat:" type="V_String" />
+            <Field name="Measurements" size="2048" source="CrossTab:Header:Publisher:Marvel Comics:Concat:" type="V_String" />
+            <Field name="Powers" size="2048" source="CrossTab:Header:Publisher:Marvel Comics:Concat:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="162" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Field_1" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Field_1" selected="False" />
+            <Field field="Name" selected="False" />
+            <Field field="Alignment_x" selected="False" />
+            <Field field="Gender" selected="False" />
+            <Field field="EyeColor" selected="False" />
+            <Field field="HairColor" selected="False" />
+            <Field field="Publisher" selected="False" />
+            <Field field="Height" selected="True" />
+            <Field field="Weight" selected="True" />
+            <Field field="Intelligence_x" selected="True" />
+            <Field field="Strength" selected="True" />
+            <Field field="Speed" selected="True" />
+            <Field field="Durability_x" selected="True" />
+            <Field field="Power" selected="True" />
+            <Field field="Combat" selected="True" />
+            <Field field="Total" selected="True" />
+            <Field field="Agility" selected="False" />
+            <Field field="Accelerated Healing" selected="False" />
+            <Field field="Lantern Power Ring" selected="False" />
+            <Field field="Dimensional Awareness" selected="False" />
+            <Field field="Cold Resistance" selected="False" />
+            <Field field="Durability_y" selected="False" />
+            <Field field="Stealth" selected="False" />
+            <Field field="Energy Absorption" selected="False" />
+            <Field field="Flight" selected="False" />
+            <Field field="Danger Sense" selected="False" />
+            <Field field="Underwater breathing" selected="False" />
+            <Field field="Marksmanship" selected="False" />
+            <Field field="Weapons Master" selected="False" />
+            <Field field="Power Augmentation" selected="False" />
+            <Field field="Animal Attributes" selected="False" />
+            <Field field="Longevity" selected="False" />
+            <Field field="Intelligence_y" selected="False" />
+            <Field field="Super Strength" selected="False" />
+            <Field field="Cryokinesis" selected="False" />
+            <Field field="Telepathy" selected="False" />
+            <Field field="Energy Armor" selected="False" />
+            <Field field="Energy Blasts" selected="False" />
+            <Field field="Duplication" selected="False" />
+            <Field field="Size Changing" selected="False" />
+            <Field field="Density Control" selected="False" />
+            <Field field="Stamina" selected="False" />
+            <Field field="Astral Travel" selected="False" />
+            <Field field="Audio Control" selected="False" />
+            <Field field="Dexterity" selected="False" />
+            <Field field="Omnitrix" selected="False" />
+            <Field field="Super Speed" selected="False" />
+            <Field field="Possession" selected="False" />
+            <Field field="Animal Oriented Powers" selected="False" />
+            <Field field="Weapon-based Powers" selected="False" />
+            <Field field="Electrokinesis" selected="False" />
+            <Field field="Darkforce Manipulation" selected="False" />
+            <Field field="Death Touch" selected="False" />
+            <Field field="Teleportation" selected="False" />
+            <Field field="Enhanced Senses" selected="False" />
+            <Field field="Telekinesis" selected="False" />
+            <Field field="Energy Beams" selected="False" />
+            <Field field="Magic" selected="False" />
+            <Field field="Hyperkinesis" selected="False" />
+            <Field field="Jump" selected="False" />
+            <Field field="Clairvoyance" selected="False" />
+            <Field field="Dimensional Travel" selected="False" />
+            <Field field="Power Sense" selected="False" />
+            <Field field="Shapeshifting" selected="False" />
+            <Field field="Peak Human Condition" selected="False" />
+            <Field field="Immortality" selected="False" />
+            <Field field="Camouflage" selected="False" />
+            <Field field="Element Control" selected="False" />
+            <Field field="Phasing" selected="False" />
+            <Field field="Astral Projection" selected="False" />
+            <Field field="Electrical Transport" selected="False" />
+            <Field field="Fire Control" selected="False" />
+            <Field field="Projection" selected="False" />
+            <Field field="Summoning" selected="False" />
+            <Field field="Enhanced Memory" selected="False" />
+            <Field field="Reflexes" selected="False" />
+            <Field field="Invulnerability" selected="False" />
+            <Field field="Energy Constructs" selected="False" />
+            <Field field="Force Fields" selected="False" />
+            <Field field="Self-Sustenance" selected="False" />
+            <Field field="Anti-Gravity" selected="False" />
+            <Field field="Empathy" selected="False" />
+            <Field field="Power Nullifier" selected="False" />
+            <Field field="Radiation Control" selected="False" />
+            <Field field="Psionic Powers" selected="False" />
+            <Field field="Elasticity" selected="False" />
+            <Field field="Substance Secretion" selected="False" />
+            <Field field="Elemental Transmogrification" selected="False" />
+            <Field field="Technopath/Cyberpath" selected="False" />
+            <Field field="Photographic Reflexes" selected="False" />
+            <Field field="Seismic Power" selected="False" />
+            <Field field="Animation" selected="False" />
+            <Field field="Precognition" selected="False" />
+            <Field field="Mind Control" selected="False" />
+            <Field field="Fire Resistance" selected="False" />
+            <Field field="Power Absorption" selected="False" />
+            <Field field="Enhanced Hearing" selected="False" />
+            <Field field="Nova Force" selected="False" />
+            <Field field="Insanity" selected="False" />
+            <Field field="Hypnokinesis" selected="False" />
+            <Field field="Animal Control" selected="False" />
+            <Field field="Natural Armor" selected="False" />
+            <Field field="Intangibility" selected="False" />
+            <Field field="Enhanced Sight" selected="False" />
+            <Field field="Molecular Manipulation" selected="False" />
+            <Field field="Heat Generation" selected="False" />
+            <Field field="Adaptation" selected="False" />
+            <Field field="Gliding" selected="False" />
+            <Field field="Power Suit" selected="False" />
+            <Field field="Mind Blast" selected="False" />
+            <Field field="Probability Manipulation" selected="False" />
+            <Field field="Gravity Control" selected="False" />
+            <Field field="Regeneration" selected="False" />
+            <Field field="Light Control" selected="False" />
+            <Field field="Echolocation" selected="False" />
+            <Field field="Levitation" selected="False" />
+            <Field field="Toxin and Disease Control" selected="False" />
+            <Field field="Banish" selected="False" />
+            <Field field="Energy Manipulation" selected="False" />
+            <Field field="Heat Resistance" selected="False" />
+            <Field field="Natural Weapons" selected="False" />
+            <Field field="Time Travel" selected="False" />
+            <Field field="Enhanced Smell" selected="False" />
+            <Field field="Illusions" selected="False" />
+            <Field field="Thirstokinesis" selected="False" />
+            <Field field="Hair Manipulation" selected="False" />
+            <Field field="Illumination" selected="False" />
+            <Field field="Omnipotent" selected="False" />
+            <Field field="Cloaking" selected="False" />
+            <Field field="Changing Armor" selected="False" />
+            <Field field="Power Cosmic" selected="False" />
+            <Field field="Biokinesis" selected="False" />
+            <Field field="Water Control" selected="False" />
+            <Field field="Radiation Immunity" selected="False" />
+            <Field field="Vision - Telescopic" selected="False" />
+            <Field field="Toxin and Disease Resistance" selected="False" />
+            <Field field="Spatial Awareness" selected="False" />
+            <Field field="Energy Resistance" selected="False" />
+            <Field field="Telepathy Resistance" selected="False" />
+            <Field field="Molecular Combustion" selected="False" />
+            <Field field="Omnilingualism" selected="False" />
+            <Field field="Portal Creation" selected="False" />
+            <Field field="Magnetism" selected="False" />
+            <Field field="Mind Control Resistance" selected="False" />
+            <Field field="Plant Control" selected="False" />
+            <Field field="Sonar" selected="False" />
+            <Field field="Sonic Scream" selected="False" />
+            <Field field="Time Manipulation" selected="False" />
+            <Field field="Enhanced Touch" selected="False" />
+            <Field field="Magic Resistance" selected="False" />
+            <Field field="Invisibility" selected="False" />
+            <Field field="Sub-Mariner" selected="False" />
+            <Field field="Radiation Absorption" selected="False" />
+            <Field field="Intuitive aptitude" selected="False" />
+            <Field field="Vision - Microscopic" selected="False" />
+            <Field field="Melting" selected="False" />
+            <Field field="Wind Control" selected="False" />
+            <Field field="Super Breath" selected="False" />
+            <Field field="Wallcrawling" selected="False" />
+            <Field field="Vision - Night" selected="False" />
+            <Field field="Vision - Infrared" selected="False" />
+            <Field field="Grim Reaping" selected="False" />
+            <Field field="Matter Absorption" selected="False" />
+            <Field field="The Force" selected="False" />
+            <Field field="Resurrection" selected="False" />
+            <Field field="Terrakinesis" selected="False" />
+            <Field field="Vision - Heat" selected="False" />
+            <Field field="Vitakinesis" selected="False" />
+            <Field field="Radar Sense" selected="False" />
+            <Field field="Qwardian Power Ring" selected="False" />
+            <Field field="Weather Control" selected="False" />
+            <Field field="Vision - X-Ray" selected="False" />
+            <Field field="Vision - Thermal" selected="False" />
+            <Field field="Web Creation" selected="False" />
+            <Field field="Reality Warping" selected="False" />
+            <Field field="Odin Force" selected="False" />
+            <Field field="Symbiote Costume" selected="False" />
+            <Field field="Speed Force" selected="False" />
+            <Field field="Phoenix Force" selected="False" />
+            <Field field="Molecular Dissipation" selected="False" />
+            <Field field="Vision - Cryo" selected="False" />
+            <Field field="Omnipresent" selected="False" />
+            <Field field="Omniscient" selected="False" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="258" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="replace([Name],'_x','')" field="Name" size="14" type="String" />
+            <FormulaField expression="trim([Name]) + ' - ' + trim([Value])" field="label" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Name = replace([Name],'_x','')
+label = trim([Name]) + ' - ' + trim([Value])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="354" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Field_1" action="GroupBy" rename="Field_1" />
+            <SummarizeField field="label" action="Concat" rename="Measurements">
+              <Concat_Start />
+              <Separator>\n</Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="270" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Field_1" />
+            <Field field="Name" />
+            <Field field="Alignment_x" />
+            <Field field="Gender" />
+            <Field field="EyeColor" />
+            <Field field="HairColor" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Field_1" selected="False" />
+            <Field field="Name" selected="False" />
+            <Field field="Alignment_x" selected="False" />
+            <Field field="Gender" selected="False" />
+            <Field field="EyeColor" selected="False" />
+            <Field field="HairColor" selected="False" />
+            <Field field="Publisher" selected="False" />
+            <Field field="Height" selected="False" />
+            <Field field="Weight" selected="False" />
+            <Field field="Intelligence_x" selected="False" />
+            <Field field="Strength" selected="False" />
+            <Field field="Speed" selected="False" />
+            <Field field="Durability_x" selected="False" />
+            <Field field="Power" selected="False" />
+            <Field field="Combat" selected="False" />
+            <Field field="Total" selected="False" />
+            <Field field="Agility" selected="True" />
+            <Field field="Accelerated Healing" selected="True" />
+            <Field field="Lantern Power Ring" selected="True" />
+            <Field field="Dimensional Awareness" selected="True" />
+            <Field field="Cold Resistance" selected="True" />
+            <Field field="Durability_y" selected="True" />
+            <Field field="Stealth" selected="True" />
+            <Field field="Energy Absorption" selected="True" />
+            <Field field="Flight" selected="True" />
+            <Field field="Danger Sense" selected="True" />
+            <Field field="Underwater breathing" selected="True" />
+            <Field field="Marksmanship" selected="True" />
+            <Field field="Weapons Master" selected="True" />
+            <Field field="Power Augmentation" selected="True" />
+            <Field field="Animal Attributes" selected="True" />
+            <Field field="Longevity" selected="True" />
+            <Field field="Intelligence_y" selected="True" />
+            <Field field="Super Strength" selected="True" />
+            <Field field="Cryokinesis" selected="True" />
+            <Field field="Telepathy" selected="True" />
+            <Field field="Energy Armor" selected="True" />
+            <Field field="Energy Blasts" selected="True" />
+            <Field field="Duplication" selected="True" />
+            <Field field="Size Changing" selected="True" />
+            <Field field="Density Control" selected="True" />
+            <Field field="Stamina" selected="True" />
+            <Field field="Astral Travel" selected="True" />
+            <Field field="Audio Control" selected="True" />
+            <Field field="Dexterity" selected="True" />
+            <Field field="Omnitrix" selected="True" />
+            <Field field="Super Speed" selected="True" />
+            <Field field="Possession" selected="True" />
+            <Field field="Animal Oriented Powers" selected="True" />
+            <Field field="Weapon-based Powers" selected="True" />
+            <Field field="Electrokinesis" selected="True" />
+            <Field field="Darkforce Manipulation" selected="True" />
+            <Field field="Death Touch" selected="True" />
+            <Field field="Teleportation" selected="True" />
+            <Field field="Enhanced Senses" selected="True" />
+            <Field field="Telekinesis" selected="True" />
+            <Field field="Energy Beams" selected="True" />
+            <Field field="Magic" selected="True" />
+            <Field field="Hyperkinesis" selected="True" />
+            <Field field="Jump" selected="True" />
+            <Field field="Clairvoyance" selected="True" />
+            <Field field="Dimensional Travel" selected="True" />
+            <Field field="Power Sense" selected="True" />
+            <Field field="Shapeshifting" selected="True" />
+            <Field field="Peak Human Condition" selected="True" />
+            <Field field="Immortality" selected="True" />
+            <Field field="Camouflage" selected="True" />
+            <Field field="Element Control" selected="True" />
+            <Field field="Phasing" selected="True" />
+            <Field field="Astral Projection" selected="True" />
+            <Field field="Electrical Transport" selected="True" />
+            <Field field="Fire Control" selected="True" />
+            <Field field="Projection" selected="True" />
+            <Field field="Summoning" selected="True" />
+            <Field field="Enhanced Memory" selected="True" />
+            <Field field="Reflexes" selected="True" />
+            <Field field="Invulnerability" selected="True" />
+            <Field field="Energy Constructs" selected="True" />
+            <Field field="Force Fields" selected="True" />
+            <Field field="Self-Sustenance" selected="True" />
+            <Field field="Anti-Gravity" selected="True" />
+            <Field field="Empathy" selected="True" />
+            <Field field="Power Nullifier" selected="True" />
+            <Field field="Radiation Control" selected="True" />
+            <Field field="Psionic Powers" selected="True" />
+            <Field field="Elasticity" selected="True" />
+            <Field field="Substance Secretion" selected="True" />
+            <Field field="Elemental Transmogrification" selected="True" />
+            <Field field="Technopath/Cyberpath" selected="True" />
+            <Field field="Photographic Reflexes" selected="True" />
+            <Field field="Seismic Power" selected="True" />
+            <Field field="Animation" selected="True" />
+            <Field field="Precognition" selected="True" />
+            <Field field="Mind Control" selected="True" />
+            <Field field="Fire Resistance" selected="True" />
+            <Field field="Power Absorption" selected="True" />
+            <Field field="Enhanced Hearing" selected="True" />
+            <Field field="Nova Force" selected="True" />
+            <Field field="Insanity" selected="True" />
+            <Field field="Hypnokinesis" selected="True" />
+            <Field field="Animal Control" selected="True" />
+            <Field field="Natural Armor" selected="True" />
+            <Field field="Intangibility" selected="True" />
+            <Field field="Enhanced Sight" selected="True" />
+            <Field field="Molecular Manipulation" selected="True" />
+            <Field field="Heat Generation" selected="True" />
+            <Field field="Adaptation" selected="True" />
+            <Field field="Gliding" selected="True" />
+            <Field field="Power Suit" selected="True" />
+            <Field field="Mind Blast" selected="True" />
+            <Field field="Probability Manipulation" selected="True" />
+            <Field field="Gravity Control" selected="True" />
+            <Field field="Regeneration" selected="True" />
+            <Field field="Light Control" selected="True" />
+            <Field field="Echolocation" selected="True" />
+            <Field field="Levitation" selected="True" />
+            <Field field="Toxin and Disease Control" selected="True" />
+            <Field field="Banish" selected="True" />
+            <Field field="Energy Manipulation" selected="True" />
+            <Field field="Heat Resistance" selected="True" />
+            <Field field="Natural Weapons" selected="True" />
+            <Field field="Time Travel" selected="True" />
+            <Field field="Enhanced Smell" selected="True" />
+            <Field field="Illusions" selected="True" />
+            <Field field="Thirstokinesis" selected="True" />
+            <Field field="Hair Manipulation" selected="True" />
+            <Field field="Illumination" selected="True" />
+            <Field field="Omnipotent" selected="True" />
+            <Field field="Cloaking" selected="True" />
+            <Field field="Changing Armor" selected="True" />
+            <Field field="Power Cosmic" selected="True" />
+            <Field field="Biokinesis" selected="True" />
+            <Field field="Water Control" selected="True" />
+            <Field field="Radiation Immunity" selected="True" />
+            <Field field="Vision - Telescopic" selected="True" />
+            <Field field="Toxin and Disease Resistance" selected="True" />
+            <Field field="Spatial Awareness" selected="True" />
+            <Field field="Energy Resistance" selected="True" />
+            <Field field="Telepathy Resistance" selected="True" />
+            <Field field="Molecular Combustion" selected="True" />
+            <Field field="Omnilingualism" selected="True" />
+            <Field field="Portal Creation" selected="True" />
+            <Field field="Magnetism" selected="True" />
+            <Field field="Mind Control Resistance" selected="True" />
+            <Field field="Plant Control" selected="True" />
+            <Field field="Sonar" selected="True" />
+            <Field field="Sonic Scream" selected="True" />
+            <Field field="Time Manipulation" selected="True" />
+            <Field field="Enhanced Touch" selected="True" />
+            <Field field="Magic Resistance" selected="True" />
+            <Field field="Invisibility" selected="True" />
+            <Field field="Sub-Mariner" selected="True" />
+            <Field field="Radiation Absorption" selected="True" />
+            <Field field="Intuitive aptitude" selected="True" />
+            <Field field="Vision - Microscopic" selected="True" />
+            <Field field="Melting" selected="True" />
+            <Field field="Wind Control" selected="True" />
+            <Field field="Super Breath" selected="True" />
+            <Field field="Wallcrawling" selected="True" />
+            <Field field="Vision - Night" selected="True" />
+            <Field field="Vision - Infrared" selected="True" />
+            <Field field="Grim Reaping" selected="True" />
+            <Field field="Matter Absorption" selected="True" />
+            <Field field="The Force" selected="True" />
+            <Field field="Resurrection" selected="True" />
+            <Field field="Terrakinesis" selected="True" />
+            <Field field="Vision - Heat" selected="True" />
+            <Field field="Vitakinesis" selected="True" />
+            <Field field="Radar Sense" selected="True" />
+            <Field field="Qwardian Power Ring" selected="True" />
+            <Field field="Weather Control" selected="True" />
+            <Field field="Vision - X-Ray" selected="True" />
+            <Field field="Vision - Thermal" selected="True" />
+            <Field field="Web Creation" selected="True" />
+            <Field field="Reality Warping" selected="True" />
+            <Field field="Odin Force" selected="True" />
+            <Field field="Symbiote Costume" selected="True" />
+            <Field field="Speed Force" selected="True" />
+            <Field field="Phoenix Force" selected="True" />
+            <Field field="Molecular Dissipation" selected="True" />
+            <Field field="Vision - Cryo" selected="True" />
+            <Field field="Omnipresent" selected="True" />
+            <Field field="Omniscient" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="366" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Value</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-06-29 23:09:24</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>True</Operand>
+              <StartDate>2021-06-29 23:09:24</StartDate>
+              <EndDate>2021-06-29 23:09:24</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Value] = "True"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="426" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="trim(Replace([Name2],'_y',''))" field="Name2" size="28" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Name2 = trim(Replace([Name2],'_y',''))
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="522" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Field_1" action="GroupBy" rename="Field_1" />
+            <SummarizeField field="Name" action="GroupBy" rename="Name" />
+            <SummarizeField field="Alignment_x" action="GroupBy" rename="Alignment_x" />
+            <SummarizeField field="Gender" action="GroupBy" rename="Gender" />
+            <SummarizeField field="EyeColor" action="GroupBy" rename="EyeColor" />
+            <SummarizeField field="HairColor" action="GroupBy" rename="HairColor" />
+            <SummarizeField field="Name2" action="Concat" rename="Powers">
+              <Concat_Start />
+              <Separator><![CDATA[, ]]></Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="618" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Field_1</FieldFind>
+          <FieldSearch>Field_1</FieldSearch>
+          <ReplaceFoundField>Measurements</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Measurements" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="810" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Field_1" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Field_1 - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="714" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Field_1" selected="True" type="Int64" size="8" />
+            <SelectField field="Name" selected="True" />
+            <SelectField field="Alignment_x" selected="True" />
+            <SelectField field="Gender" selected="True" />
+            <SelectField field="EyeColor" selected="True" />
+            <SelectField field="HairColor" selected="True" />
+            <SelectField field="Measurements" selected="True" />
+            <SelectField field="Powers" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="906" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_8104_9e750b08fb9e469da0f3fa7537925921_\Engine_2496_3e47637751e6466a99f25dac75b1bce5_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="164" y="1040" width="656" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Alteryx Educational Asset - Terms and Conditions</Caption>
+          <Style TextColor="#ffffff" FillColor="#0d2345" BorderColor="#ffffff" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="174" y="1074" width="636" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use of this Alteryx asset is for educational purposes only and bound by the conditions set forth on alteryx.com/terms-and-conditions. Alteryx Information may not be reproduced, transmitted or distributed without Alteryx, Inc.'s permission.”</Text>
+              <Font name="Times New Roman" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="53" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="53" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="True" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david_274</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

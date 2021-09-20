@@ -1,0 +1,1647 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="438" y="402" width="444" height="372" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Outputs
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="74" y="402" width="216" height="132" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Input
+
+
+
+
+
+
+]]></Text>
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7488_1983e074d61f4c028a194fb2a4155418_\Engine_14332_2109e7cd210e4f8ea137261569382558_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="54" width="324" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="606" y="66" width="276" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Weekly Challenge #283</Text>
+          <Font name="Microsoft Sans Serif" size="16.2" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="2" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="150" width="808" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[In this dataset, the name of the athletes has been changed to a “Record ID”.
+
+For this challenge, your job is to:
+- List the participating countries and how many athletes for each country
+- List of the 5 countries with the most athletes
+- List the first 5 countries (alphabetic order) with the least athletes (they are more than 5)
+- List all the countries and disciplines by alphabetic order and, add the athlete count and athlete ID
+
+
+Data Source: https://www.kaggle.com/arjunprasadsarkhel/2021-olympics-in-tokyo
+]]></Text>
+          <Font name="Microsoft Sans Serif" size="12" style="0" />
+          <TextColor name="Gray" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="206" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7488_1983e074d61f4c028a194fb2a4155418_\Engine_14332_59f8b523d8f2423fa5cc3da3b9f5d1c0_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">dataset_athletes.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dataset_athletes.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="NOC" size="255" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Desktop\Alteryx EN Weekly Challenges\Paralympic\Athletes.xlsx|||`Details$`" type="V_String" />
+            <Field name="Discipline" size="255" source="File: C:\Users\marie.couperier\OneDrive - alteryx.com\Desktop\Alteryx EN Weekly Challenges\Paralympic\Athletes.xlsx|||`Details$`" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="474" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="206" />
+          <Fields>
+            <Field name="NOC" />
+            <Field name="Count" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Afghanistan</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Albania</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>Algeria</c>
+              <c>41</c>
+            </r>
+            <r>
+              <c>American Samoa</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Andorra</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Angola</c>
+              <c>20</c>
+            </r>
+            <r>
+              <c>Antigua and Barbuda</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Argentina</c>
+              <c>180</c>
+            </r>
+            <r>
+              <c>Armenia</c>
+              <c>16</c>
+            </r>
+            <r>
+              <c>Aruba</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Australia</c>
+              <c>470</c>
+            </r>
+            <r>
+              <c>Austria</c>
+              <c>72</c>
+            </r>
+            <r>
+              <c>Azerbaijan</c>
+              <c>41</c>
+            </r>
+            <r>
+              <c>Bahamas</c>
+              <c>16</c>
+            </r>
+            <r>
+              <c>Bahrain</c>
+              <c>31</c>
+            </r>
+            <r>
+              <c>Bangladesh</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Barbados</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Belarus</c>
+              <c>104</c>
+            </r>
+            <r>
+              <c>Belgium</c>
+              <c>125</c>
+            </r>
+            <r>
+              <c>Belize</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Benin</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Bermuda</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Bhutan</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Bolivia</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Bosnia and Herzegovina</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Botswana</c>
+              <c>13</c>
+            </r>
+            <r>
+              <c>Brazil</c>
+              <c>291</c>
+            </r>
+            <r>
+              <c>Brunei Darussalam</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Bulgaria</c>
+              <c>41</c>
+            </r>
+            <r>
+              <c>Burkina Faso</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Burundi</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Cambodia</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Cameroon</c>
+              <c>11</c>
+            </r>
+            <r>
+              <c>Canada</c>
+              <c>368</c>
+            </r>
+            <r>
+              <c>Cape Verde</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Cayman Islands</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Central African Republic</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Chad</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Chile</c>
+              <c>56</c>
+            </r>
+            <r>
+              <c>Chinese Taipei</c>
+              <c>67</c>
+            </r>
+            <r>
+              <c>Colombia</c>
+              <c>64</c>
+            </r>
+            <r>
+              <c>Comoros</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Congo</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Cook Islands</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Costa Rica</c>
+              <c>13</c>
+            </r>
+            <r>
+              <c>Croatia</c>
+              <c>57</c>
+            </r>
+            <r>
+              <c>Cuba</c>
+              <c>69</c>
+            </r>
+            <r>
+              <c>Cyprus</c>
+              <c>14</c>
+            </r>
+            <r>
+              <c>Czech Republic</c>
+              <c>117</c>
+            </r>
+            <r>
+              <c>Côte d'Ivoire</c>
+              <c>29</c>
+            </r>
+            <r>
+              <c>Democratic Republic of Timor-Leste</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Democratic Republic of the Congo</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Denmark</c>
+              <c>103</c>
+            </r>
+            <r>
+              <c>Djibouti</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Dominica</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Dominican Republic</c>
+              <c>61</c>
+            </r>
+            <r>
+              <c>Ecuador</c>
+              <c>46</c>
+            </r>
+            <r>
+              <c>Egypt</c>
+              <c>133</c>
+            </r>
+            <r>
+              <c>El Salvador</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Equatorial Guinea</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Eritrea</c>
+              <c>13</c>
+            </r>
+            <r>
+              <c>Estonia</c>
+              <c>33</c>
+            </r>
+            <r>
+              <c>Eswatini</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Ethiopia</c>
+              <c>42</c>
+            </r>
+            <r>
+              <c>Federated States of Micronesia</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Fiji</c>
+              <c>28</c>
+            </r>
+            <r>
+              <c>Finland</c>
+              <c>45</c>
+            </r>
+            <r>
+              <c>France</c>
+              <c>377</c>
+            </r>
+            <r>
+              <c>Gabon</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Gambia</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Georgia</c>
+              <c>35</c>
+            </r>
+            <r>
+              <c>Germany</c>
+              <c>400</c>
+            </r>
+            <r>
+              <c>Ghana</c>
+              <c>14</c>
+            </r>
+            <r>
+              <c>Great Britain</c>
+              <c>366</c>
+            </r>
+            <r>
+              <c>Greece</c>
+              <c>75</c>
+            </r>
+            <r>
+              <c>Grenada</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Guam</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Guatemala</c>
+              <c>22</c>
+            </r>
+            <r>
+              <c>Guinea</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Guinea-Bissau</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Guyana</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Haiti</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Honduras</c>
+              <c>25</c>
+            </r>
+            <r>
+              <c>Hong Kong, China</c>
+              <c>40</c>
+            </r>
+            <r>
+              <c>Hungary</c>
+              <c>155</c>
+            </r>
+            <r>
+              <c>Iceland</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>India</c>
+              <c>117</c>
+            </r>
+            <r>
+              <c>Indonesia</c>
+              <c>26</c>
+            </r>
+            <r>
+              <c>Iraq</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Ireland</c>
+              <c>116</c>
+            </r>
+            <r>
+              <c>Islamic Republic of Iran</c>
+              <c>66</c>
+            </r>
+            <r>
+              <c>Israel</c>
+              <c>85</c>
+            </r>
+            <r>
+              <c>Italy</c>
+              <c>356</c>
+            </r>
+            <r>
+              <c>Jamaica</c>
+              <c>60</c>
+            </r>
+            <r>
+              <c>Japan</c>
+              <c>586</c>
+            </r>
+            <r>
+              <c>Jordan</c>
+              <c>11</c>
+            </r>
+            <r>
+              <c>Kazakhstan</c>
+              <c>92</c>
+            </r>
+            <r>
+              <c>Kenya</c>
+              <c>78</c>
+            </r>
+            <r>
+              <c>Kiribati</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Kosovo</c>
+              <c>10</c>
+            </r>
+            <r>
+              <c>Kuwait</c>
+              <c>10</c>
+            </r>
+            <r>
+              <c>Kyrgyzstan</c>
+              <c>16</c>
+            </r>
+            <r>
+              <c>Lao People's Democratic Republic</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Latvia</c>
+              <c>29</c>
+            </r>
+            <r>
+              <c>Lebanon</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Lesotho</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Liberia</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Libya</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Liechtenstein</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Lithuania</c>
+              <c>37</c>
+            </r>
+            <r>
+              <c>Luxembourg</c>
+              <c>11</c>
+            </r>
+            <r>
+              <c>Madagascar</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Malawi</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Malaysia</c>
+              <c>29</c>
+            </r>
+            <r>
+              <c>Maldives</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Mali</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Malta</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Marshall Islands</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Mauritania</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Mauritius</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Mexico</c>
+              <c>155</c>
+            </r>
+            <r>
+              <c>Monaco</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Mongolia</c>
+              <c>43</c>
+            </r>
+            <r>
+              <c>Montenegro</c>
+              <c>35</c>
+            </r>
+            <r>
+              <c>Morocco</c>
+              <c>48</c>
+            </r>
+            <r>
+              <c>Mozambique</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>Myanmar</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Namibia</c>
+              <c>11</c>
+            </r>
+            <r>
+              <c>Nauru</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Nepal</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Netherlands</c>
+              <c>274</c>
+            </r>
+            <r>
+              <c>New Zealand</c>
+              <c>202</c>
+            </r>
+            <r>
+              <c>Nicaragua</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>Niger</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Nigeria</c>
+              <c>59</c>
+            </r>
+            <r>
+              <c>North Macedonia</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>Norway</c>
+              <c>92</c>
+            </r>
+            <r>
+              <c>Oman</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Pakistan</c>
+              <c>10</c>
+            </r>
+            <r>
+              <c>Palau</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Palestine</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Panama</c>
+              <c>9</c>
+            </r>
+            <r>
+              <c>Papua New Guinea</c>
+              <c>7</c>
+            </r>
+            <r>
+              <c>Paraguay</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>People's Republic of China</c>
+              <c>401</c>
+            </r>
+            <r>
+              <c>Peru</c>
+              <c>33</c>
+            </r>
+            <r>
+              <c>Philippines</c>
+              <c>18</c>
+            </r>
+            <r>
+              <c>Poland</c>
+              <c>195</c>
+            </r>
+            <r>
+              <c>Portugal</c>
+              <c>85</c>
+            </r>
+            <r>
+              <c>Puerto Rico</c>
+              <c>35</c>
+            </r>
+            <r>
+              <c>Qatar</c>
+              <c>14</c>
+            </r>
+            <r>
+              <c>ROC</c>
+              <c>318</c>
+            </r>
+            <r>
+              <c>Refugee Olympic Team</c>
+              <c>26</c>
+            </r>
+            <r>
+              <c>Republic of Korea</c>
+              <c>223</c>
+            </r>
+            <r>
+              <c>Republic of Moldova</c>
+              <c>19</c>
+            </r>
+            <r>
+              <c>Romania</c>
+              <c>99</c>
+            </r>
+            <r>
+              <c>Rwanda</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Saint Kitts and Nevis</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Saint Lucia</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Samoa</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>San Marino</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Sao Tome and Principe</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Saudi Arabia</c>
+              <c>32</c>
+            </r>
+            <r>
+              <c>Senegal</c>
+              <c>9</c>
+            </r>
+            <r>
+              <c>Serbia</c>
+              <c>83</c>
+            </r>
+            <r>
+              <c>Seychelles</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Sierra Leone</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Singapore</c>
+              <c>23</c>
+            </r>
+            <r>
+              <c>Slovakia</c>
+              <c>38</c>
+            </r>
+            <r>
+              <c>Slovenia</c>
+              <c>51</c>
+            </r>
+            <r>
+              <c>Solomon Islands</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Somalia</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>South Africa</c>
+              <c>171</c>
+            </r>
+            <r>
+              <c>South Sudan</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Spain</c>
+              <c>324</c>
+            </r>
+            <r>
+              <c>Sri Lanka</c>
+              <c>9</c>
+            </r>
+            <r>
+              <c>St Vincent and the Grenadines</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Sudan</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Suriname</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Sweden</c>
+              <c>129</c>
+            </r>
+            <r>
+              <c>Switzerland</c>
+              <c>115</c>
+            </r>
+            <r>
+              <c>Syrian Arab Republic</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>Tajikistan</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>Thailand</c>
+              <c>39</c>
+            </r>
+            <r>
+              <c>Togo</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Tonga</c>
+              <c>5</c>
+            </r>
+            <r>
+              <c>Trinidad and Tobago</c>
+              <c>31</c>
+            </r>
+            <r>
+              <c>Tunisia</c>
+              <c>57</c>
+            </r>
+            <r>
+              <c>Turkey</c>
+              <c>102</c>
+            </r>
+            <r>
+              <c>Turkmenistan</c>
+              <c>8</c>
+            </r>
+            <r>
+              <c>Tuvalu</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Uganda</c>
+              <c>24</c>
+            </r>
+            <r>
+              <c>Ukraine</c>
+              <c>152</c>
+            </r>
+            <r>
+              <c>United Arab Emirates</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>United Republic of Tanzania</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>United States of America</c>
+              <c>615</c>
+            </r>
+            <r>
+              <c>Uruguay</c>
+              <c>11</c>
+            </r>
+            <r>
+              <c>Uzbekistan</c>
+              <c>63</c>
+            </r>
+            <r>
+              <c>Vanuatu</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Venezuela</c>
+              <c>43</c>
+            </r>
+            <r>
+              <c>Vietnam</c>
+              <c>17</c>
+            </r>
+            <r>
+              <c>Virgin Islands, British</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Virgin Islands, US</c>
+              <c>4</c>
+            </r>
+            <r>
+              <c>Yemen</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>Zambia</c>
+              <c>29</c>
+            </r>
+            <r>
+              <c>Zimbabwe</c>
+              <c>5</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>List the participating countries and how many athletes for each country</AnnotationText>
+          <DefaultAnnotationText>List the participating countries and how many athletes for each country</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="690" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="NOC" />
+            <Field name="Count" />
+          </Fields>
+          <Data>
+            <r>
+              <c>United States of America</c>
+              <c>615</c>
+            </r>
+            <r>
+              <c>Japan</c>
+              <c>586</c>
+            </r>
+            <r>
+              <c>Australia</c>
+              <c>470</c>
+            </r>
+            <r>
+              <c>People's Republic of China</c>
+              <c>401</c>
+            </r>
+            <r>
+              <c>Germany</c>
+              <c>400</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>List of the 5 countries with the most athletes</AnnotationText>
+          <DefaultAnnotationText>List of the 5 countries with the most athletes</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="798" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7488_1983e074d61f4c028a194fb2a4155418_\Engine_14332_c6ffdd148f4b432490c00002ae4683d4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7488_1983e074d61f4c028a194fb2a4155418_\Engine_14332_7841d87e98fc49d781d1d397d00d260c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="474" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="5" />
+          <Fields>
+            <Field name="NOC" />
+            <Field name="Count" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Andorra</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Bermuda</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Brunei Darussalam</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Central African Republic</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>Dominica</c>
+              <c>2</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>List the first 5 countries (alphabetic order) with the least athletes</AnnotationText>
+          <DefaultAnnotationText>List the first 5 countries (alphabetic order) with the least athletes</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="798" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7488_1983e074d61f4c028a194fb2a4155418_\Engine_14332_4afd2d1b8e6043fe9de4f2f81bfdcb79_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="690" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">Ouptput.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>List all the countries and disciplines by alphabetic order and, add the athlete count and athlete ID</AnnotationText>
+          <DefaultAnnotationText>Ouptput.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="NOC" size="255" source="Summarize: GroupBy - NOC" type="V_String" />
+            <Field name="Discipline" size="255" source="Summarize: GroupBy - Discipline" type="V_String" />
+            <Field name="Count" source="Summarize: Count - RecordID" type="Int64" />
+            <Field name="RecordID" size="2147483647" source="Summarize: Concat - RecordID" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="294" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="NOC" action="GroupBy" rename="NOC" />
+            <SummarizeField field="RecordID" action="CountDistinct" rename="CountDistinct_RecordID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="570" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7488_1983e074d61f4c028a194fb2a4155418_\Engine_14332_54a2d94e25784a4d8bd0ea22f72b3e09_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="366" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="CountDistinct_RecordID" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CountDistinct_RecordID - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="450" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>5</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 5</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="810" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7488_1983e074d61f4c028a194fb2a4155418_\Engine_14332_a38d9dd60afe4afca247f8cdcd4e2532_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="366" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Last</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Last 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="402" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CountDistinct_RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CountDistinct_RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_NOC" selected="False" input="Left_" />
+                <SelectField field="Left_CountDistinct_RecordID" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="474" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>5</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 5</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="666" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\dsmda\AppData\Local\Temp\Engine_7488_1983e074d61f4c028a194fb2a4155418_\Engine_14332_40a547ae25a44f70a8a81b3862a34dcf_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="306" y="750" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="NOC" action="GroupBy" rename="NOC" />
+            <SummarizeField field="Discipline" action="GroupBy" rename="Discipline" />
+            <SummarizeField field="RecordID" action="Count" rename="Count" />
+            <SummarizeField field="Athlete" action="Concat" rename="Concat_Athlete">
+              <Concat_Start />
+              <Separator><![CDATA[, ]]></Separator>
+              <Concat_End />
+            </SummarizeField>
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="234" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'Athlete ' + ToString([RecordID])" field="Athlete" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Athlete = 'Athlete ' + ToString([RecordID])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="1316" width="656" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Alteryx Educational Asset - Terms and Conditions</Caption>
+          <Style TextColor="#ffffff" FillColor="#0d2345" BorderColor="#ffffff" Transparency="1" Margin="10" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="64" y="1350" width="636" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Use of this Alteryx asset is for educational purposes only and bound by the conditions set forth on alteryx.com/terms-and-conditions. Alteryx Information may not be reproduced, transmitted or distributed without Alteryx, Inc.'s permission.”</Text>
+              <Font name="Times New Roman" size="8.25" style="0" />
+              <TextColor name="White" />
+              <FillColor name="White" />
+              <Shape shape="3" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="72" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="72" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Join" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>david_283</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="fa6e8a78-6ee3-4b0b-92aa-c19ce8d45761" />
+      <Telemetry>
+        <PreviousWorkflowId value="" />
+        <OriginWorkflowId value="fa6e8a78-6ee3-4b0b-92aa-c19ce8d45761" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
